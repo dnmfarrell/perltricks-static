@@ -1,0 +1,46 @@
+{{ partial "header.html" . }}
+  <section id="content" role="main">
+    <section class="entry-content">
+      <div class="container">
+        <div class="row">
+          <div class="blog-post">
+            <div class="col-md-9">
+              <article>
+              <h2 class="blog-post-title">{{ .Title }}</h2>
+              <p class="blog-post-meta">{{ .Date.Format "Jan 2, 2006" }} by <a href="/authors/{{ index .Params.authors 0 | urlize }}">{{ index .Params.authors 0 }}</a></p>
+              <div class="centering">
+                <img alt="" style="margin-bottom:5%;max-width:100%" src="{{ .Params.image }}"/>
+              </div>
+                {{ .Content }}
+              </article>
+              <div class="tags">
+                {{ range .Params.tags}}
+                  <div class="tag"><a href="/tags/{{ . }}">{{ . }}</a></div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="col-md-3 menu">
+              <div class="sidebar-module" id="latest">
+                  <div id="header">
+                      <img src="/images/side_bar/write_25.png" alt=""/>
+                      &nbsp;&nbsp;&nbsp; OUR LATEST ARTICLES
+                  </div>
+                  {{ range first 5 .Site.Pages }}
+                  <div class="entry">
+                    <img src="{{ .Params.image }}" alt="1"/>
+                    <a href="{{ .Permalink }}">
+                      <h6>{{ .Title }}</h6></a>
+                    <p>{{ .Description }}</p>
+                  </div>
+                  {{ end }}
+                  <div style="margin-top:15px;"></div>
+               </div>
+            </div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/PerlTricks" data-widget-id="618973837762383879">Tweets by @PerlTricks</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+{{ partial "footer.html" . }}

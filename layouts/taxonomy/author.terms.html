@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+{{ $authors := .Site.Data.author }}
+<section id="main">
+  <div>
+    <div class="container blog-post">
+    <h2 id="title">{{ .Title }}</h2>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms.ByCount }}
+      <div class="row">
+        {{ $author_name := index $value.Name | urlize }}
+        {{ $author := index $authors $author_name }}
+        <div class="col-sm-2">
+          <div class="circle-avatar" style="background-image:url({{ $author.image }})"></div>
+        </div>
+        <div class="col-sm-9">
+          <h3>{{ $author.name }}</h3>
+          <p>{{$author.bio}}</p>
+<h5><a href="/{{ $data.Plural }}/{{ $author_name }}">Browse their articles</a></h5>
+        </div>
+      </div>
+    {{ end }}
+    </div>
+  </div>
+</section>
+{{ partial "footer.html" . }}

@@ -1,0 +1,27 @@
+<article>
+<div class="row blog-post">
+  <div class="col-sm-3">
+      {{ $author_name := index .Params.authors 0 | urlize }}
+      {{ $author := index .Site.Data.author $author_name }}
+    <a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">
+      <div class="img_container">
+        <img class="thumb" alt ="" src="{{ or .Params.image $author.image }}"/>
+        <img class="frame" alt ="" src="/images/thumbs/thumb_frame.png"/>
+      </div>
+    </a>
+  </div>
+  <div class="col-sm-9">
+    <a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">
+      <h2 class="blog-post-title">{{ .Title }}</h2>
+    </a>
+    <p>by <a href="/authors/{{ index .Params.authors 0 | urlize }}">{{ index .Params.authors 0 }}</a></p>
+    <div class="tags">
+      {{ range .Params.tags}}
+      <div class="tag"><a href="/tags/{{ . }}">{{ . }}</a></div>
+      {{ end }}
+    </div>
+    <p>{{ .Description }}</p>
+    <h5><a class="moretag" href="{{ .Permalink }}">Read it</a></h5>
+  </div>
+</div>
+</article>

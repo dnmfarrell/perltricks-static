@@ -1,0 +1,7 @@
+baseurl = "http://perltricks.com/"
+languageCode = "en-us"
+title = "Perl programming news, code and culture"
+paginate = 30
+[taxonomies]
+author = "authors"
+tag = "tags"

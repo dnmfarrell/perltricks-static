@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<section id="content" role="main">
+  <div class="container">
+    {{ range $index, $page := .Paginator.Pages }}
+      {{ if eq $page.Type "article" }}
+        {{ .Render "li" }}
+      {{ end }}
+    {{ end }}
+    {{ partial "pagination.html" .Paginator }}
+    <div class="push"></div>
+  </div>
+</section>
+{{ partial "footer.html" . }}
+
