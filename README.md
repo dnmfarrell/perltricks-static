@@ -7,7 +7,7 @@ If you're interested in writing for PerlTricks.com read the guide below; you can
 
 Technology
 ----------
-The website is built with [Hugo](http::/gohugo.io) and hosted on GitHub Pages.
+The website is built with [Hugo](http://gohugo.io) and hosted on GitHub Pages.
 
 Style Guide
 ===========
