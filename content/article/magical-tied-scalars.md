@@ -12,7 +12,7 @@
         "brian d foy"
      ],
      "date" : "2016-02-16T09:50:00",
-     "draft" : true
+     "draft" : false
   }
 
 Perl's `tie` mechanism allows me to create something that looks like a scalar but does anything I want it to do. I can change how the familiar scalar interface of simple access and assignment actually work. I've found this so useful at times that I devoted an entire chapter of [Mastering Perl](http://www.masteringperl.org/) to it.
