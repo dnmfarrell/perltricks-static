@@ -3,7 +3,8 @@
        "tie",
        "scalar",
        "callback",
-       "cycle"
+       "cycle",
+       "mastering_perl"
      ],
      "title" : "Magical tied scalars",
      "description" : "Subvert and simplify code with tied scalars",
@@ -39,7 +40,7 @@ Besides all the goofy things going on with the code, such as printing directly a
 
 I could have replaced the subroutine using one of the techniques I showed in [Mastering Perl](http://www.masteringperl.org/), but there was something simpler. If I could get `$color` to change on its own, I wouldn't have to mess with the code.
 
-Thus, I invented Tie::Cycle. The `tie` interface allows me to decide what a scalar should do when I access it or store it. I supply code behind both of those operations by defining special subroutines. Here's an extract of the code that shows those special methods:
+Thus, I invented [Tie::Cycle](https://metacpan.org/pod/Tie::Cycle). The `tie` interface allows me to decide what a scalar should do when I access it or store it. I supply code behind both of those operations by defining special subroutines. Here's an extract of the code that shows those special methods:
 
 ``` prettyprint
 package Tie::Cycle;
@@ -93,7 +94,7 @@ while( $count++ < 10 ) {
         }
 ```
 
-Each time through the `while`, I output the value of `$scalar`. It doesn't look like I'm doing anything fancy, but I'm implicitly calling `Tie::Cycle::FETCH` each time. Now the colors rotate:
+Each time through the `while`, I output the value of `$scalar`. It doesn't look like I'm doing anything fancy, but I'm implicitly calling `Tie::Cycle::FETCH` each time. Now the colors rotate.
 
 This is a bit more fun when I cycle through colored boxes:
 
@@ -170,7 +171,7 @@ while( $count++ < 10 ) {
         }
 ```
 
-Each time I access the scalar, I get back the previous value multiplied by the ratio. In this case, I multiply the previous value by `2` each time:
+Each time I access the scalar, I get back the previous value multiplied by the ratio. In this case, I multiply the previous value by `2` each time.
 
 This is a tidy solution because it fits into the code that's already there. The existing code that expected a single value gets a scalar that changes its value each time.
 
@@ -244,9 +245,7 @@ while( $count++ < 10 ) {
         }
 ```
 
-Now the output backs off and speeds up:
-
-There's something that might be more useful. Perhaps I want to use the load average to decide the number:
+Now the output backs off and speeds up. There's something that might be more useful. Perhaps I want to use the load average to decide the number:
 
 ``` prettyprint
 use Sys::LoadAvg qw(loadavg);
@@ -300,7 +299,7 @@ while( $count++ < 10 ) {
 print "\n";
 ```
 
-Every time I access it I get the next number in the Fibonacci series. Curiously, doing it this way, I'm computing a number that I'll use in the future by pushing it onto the end and returning the oldest value by shifting it off the front. There's no recursion here like in almost every example on the interwebs:
+Every time I access it I get the next number in the Fibonacci series. Curiously, doing it this way, I'm computing a number that I'll use in the future by pushing it onto the end and returning the oldest value by shifting it off the front. There's no recursion here like in almost every example on the interwebs.
 
 But, it can generate other series too. Instead of looking at the previous two values, I can give `TIESCALAR` a different number to specify how many previous numbers to sum:
 
@@ -314,6 +313,4 @@ while( $count++ < 10 ) {
 print "\n";
 ```
 
-The idea is the same, but the sums are different:
-
-If you've used a tied variable in an interesting way, let us know about it!
+The idea is the same, but the sums are different. If you've used a tied variable in an interesting way, let us know about it!
