@@ -69,9 +69,9 @@ The front matter contains the article metadata. Here's an example for a recent a
 
 Older articles also have the `slug` attribute, which determines the URL of the article. This isn't necessary anymore (it's used to preserve historic URLs for articles from our old site). Instead just name the file the same as the title of the article, but in lowercase and with spaces replaced with hypens (`-`). In this example case, the filename is `content/article/magical-tied-scalars.md`. 
 
-Once `draft` is changed to `true`, the article will be listed on the website at `perltricks.com/article/magical-tied-scalars`. So when providing a pull request, keep this as `false`. The site editor will switch this to `true` once the article is ready to be published.
+Once `draft` is changed to `false`, the article will be listed on the website at `perltricks.com/article/magical-tied-scalars`. So when providing a pull request, keep this as `true`. The site editor will switch this to `false` once the article is ready to be published.
 
-Titles-as-filenames has another benefit: no two articles can have the same title, which avoids issues with 2 articles having duplicate titles.
+Titles-as-filenames has another benefit: no two articles can have the same title, which avoids issues with 2 articles having duplicate URLs.
 
 The front matter is provided inline in the markdown file, immediately followed by the article body, in GitHub flavored markdown. The two main rules to know here are as follows:
 
@@ -87,10 +87,13 @@ Code is highlighted using `prettify.js` and it will automatically detect the cod
 
 Otherwise just use a code block (fenced or indented style) and it will be displayed in monospace on a dark background. This is used for showing data and terminal commands.
 
-The other thing to know is article headers are size `h3`. So use the following construct
+The other thing to know is article subheadings are size `h3`. So use the following construct
 
     ### Subtitle goes here
+
+The article metadata like author, title and date are contained in the front matter and not needed in the article markdown body.
 
 See the `content/article` directory for more complete examples of our articles.
 
 &copy; PerlTricks.com
+
