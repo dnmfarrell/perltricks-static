@@ -1,5 +1,5 @@
 {
-   "title" : "What's new on CPAN - January 2015",
+   "title" : "What's new on CPAN - January 2016",
    "image" : "/images/213/AF57B300-5234-11E5-B481-F86745487EAA.png",
    "tags" : [
       "cpan",
