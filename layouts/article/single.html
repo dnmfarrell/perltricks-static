@@ -7,9 +7,7 @@
             <article>
             <h1 class="blog-post-title">{{ .Title }}</h1>
             <p class="blog-post-meta">{{ .Date.Format "Jan 2, 2006" }} by <a href="/authors/{{ index .Params.authors 0 | urlize }}">{{ index .Params.authors 0 }}</a></p>
-            <div class="centering">
-              <img alt="" style="margin-bottom:5%;max-width:100%" src="{{ .Params.image }}"/>
-            </div>
+            <img alt="" src="{{ .Params.image }}"/>
               {{ .Content }}
             </article>
             <p><strong>Tags</strong></p>
