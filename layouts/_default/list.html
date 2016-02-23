@@ -1,12 +1,19 @@
 {{ partial "header.html" . }}
 <section id="content" role="main">
   <div class="container">
-    {{ range $index, $page := .Paginator.Pages }}
-      {{ if eq $page.Type "article" }}
-        {{ .Render "li" }}
-      {{ end }}
-    {{ end }}
-    {{ partial "pagination.html" .Paginator }}
+    <div class="row">
+      <div class="col-sm-9">
+        {{ range $index, $page := .Paginator.Pages }}
+          {{ if eq $page.Type "article" }}
+            {{ .Render "li" }}
+          {{ end }}
+        {{ end }}
+        {{ partial "pagination.html" .Paginator }}
+      </div>
+      <div class="col-sm-3">
+        {{ partial "twitter.html" . }}
+      </div>
+    </div>
     <div class="push"></div>
   </div>
 </section>
