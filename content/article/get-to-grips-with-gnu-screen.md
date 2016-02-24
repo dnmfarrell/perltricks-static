@@ -9,15 +9,14 @@
    "title" : "Get to grips with GNU Screen",
    "image" : "/images/153/A8652C2A-B58C-11E4-ADDC-6A05DB487E9F.png",
    "tags" : [
-      "linux",
-      "sysadmin",
-      "open_source",
-      "terminal",
       "command_line",
-      "gnu_screen",
-      "osx",
-      "tmux",
-      "old_site"
+      "multiplexer",
+      "old_site",
+      "screen",
+      "sysadmin",
+      "terminal",
+      "terminator",
+      "tmux"
    ]
 }
 
