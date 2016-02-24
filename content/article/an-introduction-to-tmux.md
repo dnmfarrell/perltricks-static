@@ -14,7 +14,7 @@
       "David Farrell"
    ],
    "description" : "How to get started with the open source terminal multiplexer ",
-   "date" : "2016-02-24T15:17:18",
+   "date" : "2016-02-24T09:29:18",
    "draft" : false
 }
 
