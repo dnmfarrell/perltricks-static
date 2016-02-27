@@ -1,6 +1,7 @@
 {
    "image" : "/images/137/98701E0A-7A2D-11E4-99A4-350AB3613736.png",
    "tags" : [
+      "cpan",
       "git",
       "aws",
       "selenium",

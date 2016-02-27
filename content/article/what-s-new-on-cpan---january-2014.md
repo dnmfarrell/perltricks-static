@@ -9,7 +9,6 @@
    "title" : "What's new on CPAN - January 2014",
    "image" : null,
    "tags" : [
-      "community",
       "cpan",
       "module",
       "news",

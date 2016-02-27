@@ -1,5 +1,6 @@
 {
    "tags" : [
+      "cpan",
       "git",
       "gps",
       "marvel",

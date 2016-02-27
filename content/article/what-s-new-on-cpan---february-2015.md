@@ -2,6 +2,7 @@
    "title" : "What's new on CPAN - February 2015",
    "image" : "/images/156/18F30D70-C0E3-11E4-AB33-E3A60EA848F6.png",
    "tags" : [
+      "cpan",
       "yaml",
       "git",
       "aws",

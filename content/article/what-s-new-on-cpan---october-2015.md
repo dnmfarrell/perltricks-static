@@ -2,6 +2,7 @@
    "title" : "What's new on CPAN - October 2015",
    "image" : "/images/199/D54A503A-ADB2-11E4-874A-94B4DA487E9F.png",
    "tags" : [
+      "cpan",
       "airbrake",
       "slack",
       "jira",

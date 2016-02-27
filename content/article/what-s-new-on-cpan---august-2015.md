@@ -1,6 +1,7 @@
 {
    "image" : "/images/192/AF57B300-5234-11E5-B481-F86745487EAA.png",
    "tags" : [
+      "cpan",
       "hadoop",
       "webmaster_tools",
       "cloudfront",

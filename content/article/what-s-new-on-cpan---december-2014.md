@@ -9,6 +9,7 @@
    "title" : "What's new on CPAN - December 2014",
    "image" : "/images/142/C1BC7C64-948A-11E4-907D-A439A59D04B1.png",
    "tags" : [
+      "cpan",
       "dancer",
       "tcp",
       "tesco",

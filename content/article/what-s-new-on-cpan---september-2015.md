@@ -1,5 +1,6 @@
 {
    "tags" : [
+      "cpan",
       "json",
       "libpuzzle",
       "http_headers",

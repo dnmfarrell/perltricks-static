@@ -9,6 +9,7 @@
    "title" : "What's new on CPAN - June 2015",
    "image" : "/images/181/88AAA022-2639-11E5-B854-07139DAABC69.png",
    "tags" : [
+      "cpan",
       "catalyst",
       "dancer",
       "mojo",

@@ -2,6 +2,7 @@
    "title" : "What's new on CPAN - November 2015",
    "image" : "/images/202/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
    "tags" : [
+      "cpan",
       "phantomjs",
       "dynamodb",
       "zendesk",

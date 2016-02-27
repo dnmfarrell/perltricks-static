@@ -9,7 +9,6 @@
    "title" : "What's new on CPAN - April 2014",
    "image" : "/images/86/ECD84E74-FF2E-11E3-9FEB-5C05A68B9E16.png",
    "tags" : [
-      "community",
       "cpan",
       "module",
       "news",

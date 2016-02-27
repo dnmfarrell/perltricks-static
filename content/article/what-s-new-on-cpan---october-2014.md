@@ -1,5 +1,6 @@
 {
    "tags" : [
+      "cpan",
       "dancer",
       "urandom",
       "ffi",

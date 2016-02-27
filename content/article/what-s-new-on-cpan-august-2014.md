@@ -9,6 +9,7 @@
    "title" : "What's new on CPAN August 2014",
    "image" : "/images/113/84802C58-3245-11E4-A076-27047BB45C3F.png",
    "tags" : [
+      "cpan",
       "dist_zilla",
       "pcduino",
       "appium",

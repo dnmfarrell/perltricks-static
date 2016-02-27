@@ -7,6 +7,7 @@
    "date" : "2014-07-03T14:00:46",
    "draft" : false,
    "tags" : [
+      "cpan",
       "module",
       "stratopan",
       "dancer",

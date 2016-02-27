@@ -9,6 +9,7 @@
    "title" : "What's new on CPAN July 2014",
    "image" : "/images/106/BFE732AE-1978-11E4-8AC9-F1C02D77B041.png",
    "tags" : [
+      "cpan",
       "mojolicious",
       "amazon",
       "hbase",

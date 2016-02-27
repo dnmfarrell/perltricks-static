@@ -1,5 +1,6 @@
 {
    "tags" : [
+      "cpan",
       "weather",
       "hmac",
       "pirate_bus",

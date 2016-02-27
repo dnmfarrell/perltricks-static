@@ -7,6 +7,7 @@
    "date" : "2015-08-04T12:55:33",
    "draft" : false,
    "tags" : [
+      "cpan",
       "mojo",
       "pingen",
       "topological",

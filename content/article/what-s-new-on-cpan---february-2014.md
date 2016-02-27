@@ -7,7 +7,6 @@
    "date" : "2014-03-03T04:10:36",
    "draft" : false,
    "tags" : [
-      "community",
       "cpan",
       "module",
       "news",

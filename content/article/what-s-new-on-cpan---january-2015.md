@@ -9,6 +9,7 @@
    "draft" : false,
    "slug" : "149/2015/2/6/What-s-new-on-CPAN---January-2015",
    "tags" : [
+      "cpan",
       "catalyst",
       "dist_zilla",
       "platypus",
