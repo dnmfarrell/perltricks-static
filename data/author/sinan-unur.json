@@ -1,7 +1,5 @@
 {
   "name": "Sinan Unur",
-  "bio": "Sinan Unur is an economist and developer who specializes in the economics of health care. You can often find him blogging about programming, or answering questions on StackOverflow.",
-  "image": "/images/author/sinan.jpg",
-  "twitter": "sinan_unur",
-  "website": "http://blog.nu42.com/"
+  "bio": "Sinan Unur is an economist and developer who specializes in the economics of health care. You can often find him [blogging](http://blog.nu42.com/) about programming, or answering questions on StackOverflow.",
+  "image": "/images/author/sinan.jpg"
 }

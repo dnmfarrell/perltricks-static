@@ -1,8 +1,6 @@
 {
   "name": "Timm Murray",
-  "bio": "Timm Murray is a Perl programmer and hardware specialist. He is the creator of UAV::Pilot the de-facto standard Perl drone library. He regularly blogs about Perl and hardware hacking.",
-  "image": "/images/author/timm.jpg",
-  "twitter": "wumpuscave",
-  "website": "http://http://www.wumpus-cave.net/"
+  "bio": "Timm Murray is a Perl programmer and hardware specialist. He is the creator of [UAV::Pilot](https://metacpan.org/pod/UAV::Pilot) the de-facto standard Perl drone library. He regularly [blogs](http://http://www.wumpus-cave.net/) about Perl and hardware hacking.",
+  "image": "/images/author/timm.jpg"
 }
 

@@ -16,7 +16,7 @@
           </div>
           <div class="col-sm-9">
             <h3>{{ $author.name }}</h3>
-            <p>{{$author.bio}}</p>
+            <p>{{$author.bio | markdownify }}</p>
             <h5><a href="/{{ $data.Plural }}/{{ $author_name }}">Browse their articles</a></h5>
           </div>
         </div>
