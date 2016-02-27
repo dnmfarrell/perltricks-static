@@ -18,7 +18,7 @@
    "draft" : false
 }
 
-[Tmux](https://tmux.github.io/) is a terminal multiplexer: it like a power-up for terminal programming. You can manage several terminals under a session, split terminal screens, detach and re-attach sessions and much more. If you do most of your programming at the command line, you'll find using a terminal multiplexer invaluable.
+[Tmux](https://tmux.github.io/) is a terminal multiplexer: it's like a power-up for terminal programming. You can manage several terminals under a session, split terminal screens, detach and re-attach sessions and much more. If you do most of your programming at the command line, you'll find using a terminal multiplexer invaluable.
 
 ### Setup
 First you'll need to install Tmux via your package manager or [download](https://tmux.github.io/) it. Tmux is highly configurable but the first change I'd recommend is to ssh, not Tmux. Make ssh "keep alive" for all connections by adding this to `~/.ssh/config`:
@@ -27,7 +27,7 @@ First you'll need to install Tmux via your package manager or [download](https:/
        ServerAliveInternal 300
        ServerAliveCountMax 3
 
-If the file doesn't exist, create it. This configuration instructs your local machine for all user ssh sessions to send a server alive message every 300 seconds to keep the ssh session alive. If the local machine sends 3 unanswered messages, it will disconnect the session. You should tweak these settings to suit your needs: for instance restricting the `host` to specific domains let's you have different settings per domain. If you have a slow or unreliable internet connection, consider changing `ServerAliveInternal` to a lower number to send more frequent messages.
+If the file doesn't exist, create it. This configuration instructs your local machine for all user ssh sessions to send a server alive message every 300 seconds to keep the ssh session alive. If the local machine sends 3 unanswered messages, it will disconnect the session. You should tweak these settings to suit your needs: for instance by restricting the `host` to specific domains you can have different settings per domain. If you have a slow or unreliable internet connection, consider changing `ServerAliveInternal` to a lower number to send more frequent messages.
 
 If you have permission on the servers you use, you can update them with a similar configuration, in `/etc/ssh/sshd_config`:
 
@@ -115,14 +115,14 @@ These are the key pane controls:
 
 The arrows `←↑→↓` represent the arrow keys, just use one of these. For example to jump to a pane on the right, you'd press `Ctrl-b →`. The change pane size controls are a little different. To make that work you first have to have more than one pane. Next press `Ctrl-b` and keep the control key held down. Now you can repeatedly press an arrow key to change the pane size.
 
-`Ctrl-b !` is one of my favorite features. It pops the current pane out of the window and moves it to its own window. This is wonderful if you find yourself doing some unrelated activity in one pane and want to re-organize them.
+`Ctrl-b !` is one of my favorite features. It pops the current pane out of the window and moves it to its own window. This is wonderful if you find yourself doing some unrelated activity in one pane and want to re-organize your setup.
 
 ### Scrolling and copy/paste
 If you can master scrolling and copy/paste in Tmux, you can master anything. I won't lie, this is the clunkiest feature. But it's really useful. The interface is modal, so start by entering scroll mode:
 
-`Ctrl-b [`. Pressing `esc` will exit scroll mode. You should know you're in scroll mode because an orange line count appears in the top-right corner of the pane.
+Type `Ctrl-b [`. Pressing `esc` will exit scroll mode. You should know you're in scroll mode because an orange line count appears in the top-right corner of the pane.
 
-Once you're in scroll mode, you can move the cursor using the arrow keys and page up and down. By default Tmux doesn't retain much history, but you can change that (see config).
+Once you're in scroll mode, you can move the cursor using the arrow keys and page up and down. By default Tmux doesn't retain much history, but you can change that (see the Config options section).
 
 You can copy and paste in scroll mode. This is useful when you have split screens as a regular highlight and copy using the mouse won't work across vertically split panes.
 
@@ -133,7 +133,7 @@ To copy, position the cursor where you want to start copying. Press `Ctrl-space`
 ![copy win](http://googledrive.com/host/0BwRnByTz2iUXYjRpRTIxZWVDUUE)
 
 ### Session control
-Sessions are one of the most useful features of Tmux. They let you group multiple terminal processes into a single Tmux session which can be worked on (attached), put into the background (detached) and discarded as you see fit. Programmers will often have different sessions for different projects or clients. Because Tmux operates under a client-server architecture, even if the original terminal that started Tmux dies or your desktop GUI crashes, the Tmux session will be preserved, along with all of the terminal sessions in it.
+Sessions are one of the most useful features of Tmux. They let you group multiple terminal processes into a single Tmux session which can be worked on (attached), put into the background (detached) and discarded as you see fit. Programmers will often have different sessions for different projects. Because Tmux operates under a client-server architecture, even if the original terminal that started Tmux dies or your desktop GUI crashes, the Tmux session will be preserved, along with all of the terminal sessions in it.
 
 Detach your Tmux session with `Ctrl-b d`. This will return you to a regular terminal prompt.
 
@@ -143,7 +143,7 @@ To list existing Tmux sessions just use the `ls` command:
     0: 1 windows (created Thu Jan 28 08:15:20 2016) [190x50] (attached)
     2: 2 windows (created Thu Jan 28 09:11:59 2016) [190x50]
 
-This shows that I have two Tmux sessions running, one of which is attached to a Terminal window already. To attach to a session just use the `attach` command at the terminal prompt:
+This shows that I have two Tmux sessions running, one of which is attached to a terminal window already. To attach to a session just use the `attach` command at the terminal prompt:
 
     $ tmux attach
 
