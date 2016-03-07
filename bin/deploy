@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+WD=$(pwd)
+DIR=${WD: -17}
+
+if test "$DIR" != "perltricks-static"
+  then
+    echo "$0 must be run from the root project directory"
+    exit 0;
+fi
+
+hugo
+cd public
+git add *
+git commit -m 'Generate site'
+git push origin master
