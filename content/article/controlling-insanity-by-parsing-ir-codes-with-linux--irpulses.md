@@ -1,14 +1,16 @@
 {
     "title": "Controlling insanity by parsing IR codes with Linux::IRPulses",
-    "image": "http://googledrive.com/host/0B0tGYRRVhE9GNW1UYmgyLVZ3cTA",
+    "image": "http://googledrive.com/host/0BwRnByTz2iUXTUhuU1BhTjNkNVk",
     "tags": [
         "perl",
         "ir",
+        "linux_irpulses",
+        "lirc",
         "remote",
-        "raspberry pi"
+        "raspberry_pi"
     ],
     "draft": true,
-    "date": "2016-03-02T23:17:00",
+    "date": "2016-03-08T08:17:00",
     "description": "Parsing IR remote codes",
     "authors" : [
         "Timm Murray"
@@ -20,7 +22,7 @@
 Disentangle the problem with LIRC and Linux::IRPulses.*
 
 Infrared remotes are one of those things where every manufacturer thinks they have the
-One True Way of doing it. You would think that there's only one or two straightforward
+One True Way&trade; of doing it. You would think that there's only one or two straightforward
 ways to pulse a little IR light. Clearly, we're all wrong, because the home entertainment
 industry invents new ones all the time. That's not even counting the other sectors and
 hobbyist projects that come up with entirely different methods.
@@ -35,8 +37,8 @@ we need to ignore the top layers of LIRC and parse the pulse data directly. That
 what [Linux::IRPulses](https://metacpan.org/pod/Linux::IRPulses) does.
 
 We first need the hardware to detect the pulses. On a regular computer, there are many
-modules available which can be plugged in to a USB port. On a Single Board
-Computer like the Raspberry Pi, we have General Purpose Input/Output (GPIO) pins,
+modules available which can be plugged in to a USB port. On a single board
+computer like the Raspberry Pi, we have General Purpose Input/Output (GPIO) pins,
 which can read the timing of the pulses.
 
 ### Setting up the Raspberry Pi
@@ -52,7 +54,7 @@ frequency, but this is just the first thing that manufacturers all did different
 The TSOP38138 is an IR remote receiver that runs at 38KHz. It's part of a family of
 devices that run at different frequencies, any of which are likely adequate.
 
-IR receivers for picking up remote data have three pins--power, ground, and data.
+IR receivers for picking up remote data have three pins: power, ground, and data.
 Connect power to a +3.3V pin on the Raspberry Pi, ground to ground, and data to
 GPIO 23. See [the Raspberry Pi GPIO documentation](https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/) for the location of the pins.
 
@@ -109,7 +111,7 @@ And then reboot. Once you're back up, you can test it by plugging in your IR mod
 to the right pins and pointing a remote at it. Using `mode2 -d /dev/lirc0`,
 you should see the `pulse` and `space` data being sent.
 
-### Decoding the Undecodable
+### Decoding the undecodable
 
 Sony runs their remotes at 40KHz. It starts by sending a header of a 2400μs pulse and
 600μs space. After the header, a 1 bit is sent by a 1200μs pulse, and a zero with a
@@ -119,7 +121,7 @@ bits long depending on the remote. This is about as straightforward as things ge
 NEC uses a 38KHz carrier frequency. There's a 9000μs header followed by a 4500μs space.
 A 1 bit is sent by a 562.5μs pulse. A 0 bit is sent by a 562.5μs pulse. Wait, what? No,
 that's not a typo. NEC differentiates ones and zeros by the length of the space that
-comes after the pulse--1687.5μs for 1, and 562.5μs for 0.
+comes after the pulse: 1687.5μs for 1, and 562.5μs for 0.
 
 [EasyRaceLapTimer](http://www.easyracelaptimer.com) (an Open Source
 quadcopter race timer system) is on a 38KHz frequency. It sends a 300μs pulse followed
@@ -135,7 +137,7 @@ intended.
 All that is to say that we have a complicated job on our hands, and the above only
 covers a few of the examples out there.
 
-### >Linux::IRPulses
+### Linux::IRPulses
 
 The goal of this module is to simplify the process reading these pulses and spaces
 while tolerating the numbers being off.
@@ -184,11 +186,9 @@ my $ir = Linux::IRPulses->new({
 
 The parser will continue looking for ones and zeros until it's collected enough for the
 given `bit_count`. Once the right number has been met, it calls the subref
-specified in `callback` with a hashref. The hash contains keys for
+specified in `callback` with a hashref. The hashref contains keys for
 `code` (the IR code that was detected) and `pulse_obj` (the
-Linux::IRPulses object).
-
-All the length numbers will be checked with a tolerance of 20%.
+Linux::IRPulses object). All the length numbers are checked with a tolerance of 20%.
 
 We don't promise you will keep your sanity after working with IR data, but hopefully
 `Linux::IRPulses` can help you go mad with dignity.
