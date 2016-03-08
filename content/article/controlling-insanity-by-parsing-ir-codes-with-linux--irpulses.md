@@ -9,8 +9,8 @@
         "remote",
         "raspberry_pi"
     ],
-    "draft": true,
-    "date": "2016-03-08T08:17:00",
+    "draft": false,
+    "date": "2016-03-08T08:37:00",
     "description": "Parsing IR remote codes",
     "authors" : [
         "Timm Murray"
