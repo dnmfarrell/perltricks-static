@@ -14,7 +14,7 @@
      "authors" : [
         "David Farrell"
      ],
-     "date" : "2016-04-04T09:21:32",
+     "date" : "2016-03-04T09:21:32",
      "title" : "What's new on CPAN - February 2016",
      "draft" : false
   }
