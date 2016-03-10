@@ -31,13 +31,13 @@ my $date = $dt->datetime;
 
 print $fh qq(
   {
-    "title" : "$title",
-    "author": ["$author"],
-    "date"  : "$date",
-    "tags"  : [],
-    "draft" : true,
-    "description" : "$description",
-    "image" : ""
+    "title"  : "$title",
+    "authors": ["$author"],
+    "date"   : "$date",
+    "tags"   : [],
+    "draft"  : true,
+    "image"  : "",
+    "description" : "$description"
   }
 
 The article body goes here. Use [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) to write the article body. Don't forget to delete this line!
