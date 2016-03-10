@@ -1,9 +1,9 @@
 
   {
     "title" : "What is the Perl Core?",
-    "author": ["David Farrell"],
+    "authors": ["David Farrell"],
     "date"  : "2016-03-09T10:04:57",
-    "tags"  : [],
+    "tags"  : ["perl"],
     "draft" : true,
     "description" : "Unfortunately there's more than one way to package it",
     "image" : ""
