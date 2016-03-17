@@ -170,7 +170,7 @@ Using the code above I did a comparison of the modules and programs shipped with
 |enc2xs ||
 |libnetcfg ||
 
-Ubuntu and OSX ship with Perl 5.18 so I looked for missing programs and modules against the 5.18 source code. For Fedora I compared the system `perl` against the 5.22 source. These results show that Fedora is missing quite a few modules and programs: experimental, corelist, autodie, the Math:: modules and Time::Piece strike me as significant omissions. For Ubuntu, excluding `perldoc` is a [real shame](http://perltricks.com/article/155/2015/2/26/Hello-perldoc--productivity-booster/). OSX comes away gleaming though: nearly all core modules and programs were present.
+Ubuntu and OSX ship with Perl 5.18 so I looked for missing programs and modules against the 5.18 source code. For Fedora I compared the system `perl` against the 5.22 source. These results show that Fedora is missing quite a few modules and programs: experimental, corelist, autodie, the Math:: modules and Time::Piece strike me as significant omissions. For Ubuntu, excluding `perldoc` is a [real shame](http://perltricks.com/article/155/2015/2/26/Hello-perldoc--productivity-booster/). OSX came away gleaming though: nearly all core modules and programs were present.
 
 ### Conclusion
 
