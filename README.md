@@ -3,7 +3,7 @@ PerlTricks.com
 
 [PerlTricks.com](http://perltricks.com) is a website dedicated to Perl programming code and community news.
 
-If you're interested in writing for PerlTricks.com read the guide below; you can send us a pull request with your article or just email the editor (`editor@perltricks.com`) if you have any questions. We're always looking for new writers and material!
+If you're interested in writing for PerlTricks.com read the guide below; you can send us a pull request with your article or just [email](mailto:editor@perltricks.com) the editor if you have any questions. We're always looking for new writers and material!
 
 Technology
 ----------
@@ -45,7 +45,7 @@ Language
 
 Markup
 ------
-Articles are written in [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). Every article is prefaced with [front matter](http://gohugo.io/content/front-matter/) in JSON.
+Articles are written in [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). Every article is prefaced with [front matter](http://gohugo.io/content/front-matter/) in JSON. See [Generate Article Template](#generatearticletemplate) to get started quickly.
 
 The front matter contains the article metadata. Here's an example for a recent article:
 
@@ -73,7 +73,7 @@ Once `draft` is changed to `false`, the article will be listed on the website at
 
 Titles-as-filenames has another benefit: no two articles can have the same title, which avoids issues with 2 articles having duplicate URLs.
 
-The front matter is provided inline in the markdown file, immediately followed by the article body, in GitHub flavored markdown. The two main rules to know here are as follows:
+The front matter is provided inline in the markdown file, immediately followed by the article body, in GitHub flavored markdown ([cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)). The two main rules to know here are as follows:
 
 If you want highlighted code syntax, use a fenced code block with the `prettyprint`  keyword:
 
@@ -93,7 +93,12 @@ The other thing to know is article subheadings are size `h3`. So use the followi
 
 The article metadata like author, title and date are contained in the front matter and not needed in the article markdown body.
 
-See the `content/article` directory for more complete examples of our articles.
+See the `content/article` directory for examples of our articles.
+
+Generate Article Template
+-------------------------
+You can generate an article template with the Perl script `bin/new-article`. It requires a `--title` argument and optionally takes `--description` and `--author` arguments. It must be run from the root project directory, like this:
+
+    $ ./bin/new-article --title 'Some New Perl Article' --author 'David Farrell' --desc 'There is more than one way to do it'
 
 &copy; PerlTricks.com
-
