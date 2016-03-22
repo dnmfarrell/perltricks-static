@@ -32,8 +32,6 @@ Several XPS 13 reviews cited how difficult the laptop was to physically open whe
 
 One under-appreciated feature are the [rubber supports](https://d3nevzfk7ii3be.cloudfront.net/igi/SVmnkACIFvh1Kxio.medium): they're great at holding the machine steady on low-friction surfaces. I never thought about this before, until on a recent trip my colleague's machine was slipping all over the place.
 
-.
-
 ### Power and performance
 
 Internally the XPS 13 uses the latest Intel Broadwell architecture and performs decently but not spectacularly in [benchmarks](http://www.techradar.com/us/reviews/pc-mac/laptops-portable-pcs/laptops-and-netbooks/dell-xps-13-2015-1279013/review/2). As a programmer I have modest performance needs and have found it powerful enough for casual gaming, audio and video editing. My personal yardstick is that unlike with my 2011 MacBook Air, the fan no longer goes crazy every time I watch a YouTube video. In fact the fan is silent most of the time.
