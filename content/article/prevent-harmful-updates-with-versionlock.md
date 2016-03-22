@@ -3,15 +3,15 @@
     "title"  : "Prevent harmful Linux updates with versionlock",
     "authors": ["David Farrell"],
     "date"   : "2016-03-21T20:46:17",
-    "tags"   : ["fedora", "yum", "dnf", "linux"],
+    "tags"   : ["fedora", "yum", "dnf", "linux", "versionlock", "ubuntu", "debian"],
     "draft"  : true,
-    "image"  : "",
+    "image"  : "/images/prevent-harmful-updates-with-versionlock/software padlock.jpg",
     "description" : "How to avoid breaking software updates"
   }
 
-On my home machine I run Fedora, a Linux distro famous for being at the cutting-edge of Linux development. My laptop is the [Dell XPS 13](http://perltricks.com/article/187/2015/8/18/Laptop-review--Dell-XPS-13-2015/) which uses some fairly advanced hardware. In Open Source this can be combustible combination: older Linux kernels can't handle my machine's hardware, and brand new kernels often break it too. Every time I do a software update, I'm walking a tightrope.
+On my home machine I run Fedora, a Linux distro famous for being at the cutting-edge of Linux development. My laptop is the [Dell XPS 13](http://perltricks.com/article/187/2015/8/18/Laptop-review--Dell-XPS-13-2015/) which uses some fairly advanced hardware. In Open Source this can be dangerous combination: older Linux kernels can't handle my machine's hardware, and brand new kernels often break it too. Every time I do a software update, I'm walking a tightrope.
 
-The way I handle this is with a package manager plugin called [versionlock(https://github.com/rpm-software-management/dnf-plugins-extras). It lets me tell the package manager to lock certain packages at their current version and voila! I can update my system with peace of mind.
+The way I handle this is with a package manager plugin called [versionlock](https://github.com/rpm-software-management/dnf-plugins-extras). It lets me tell the package manager to lock certain packages at their current version and voilà! I can blindly apply all software updates and know that those troublesome packages will not be upgraded.
 
 ### Installation
 
@@ -33,13 +33,13 @@ The yum version:
 
     $ sudo yum versionlock add my-package
 
-You can lock multiple packages in one command. I used this to lock all of the kernel-related modules:
+As you can see, the commands for dnf and yum are the same. You can lock multiple packages in one command. Here's how I prevent my system from upgrading the kernel packages:
 
     $ sudo dnf versionlock add kernel-0:4.3.5-300.fc23 kernel-modules-0:4.3.5-300.fc23 kernel-core-0:4.3.5-300.fc23 kernel-devel-0:4.3.5-300.fc23
 
 ### List locked packages
 
-To see what packages are locked, use the `list` command:
+To see which packages are locked, use the `list` command:
 
     $ dnf versionlock list
     Last metadata expiration check: 0:00:00 ago on Mon Mar 21 20:58:57 2016.
@@ -58,8 +58,17 @@ To remove all packages from the lock list, use `clear`:
 
     $ sudo yum versionlock clear
 
+### Help
+
+If you ever forget these commands, you can list the available commands with `help`:
+
+    $ dnf help versionlock
+    versionlock [add|exclude|list|delete|clear] [<package-nevr-spec>]
+
+### How many installers do you need?
+
+On Fedora I also remove the [Gnome Software](https://wiki.gnome.org/Apps/Software) program (`gnome-software` package). Whilst it's useful to be reminded of pending updates via the GUI, any package installed via Gnome Software is not part of the dnf history. That makes it harder when it's necessary to downgrade or remove a troublesome package.
+
 ### Conclusion
 
-Managing packages can be a pain, but `versionlock` makes life easier. If you use Debian or Ubuntu you can use `apt-mark hold my-package` and `apt-mark unhold my-package` to similar effect.
-
-On Fedora I also remove the Gnome Software program (`gnome-software` package). Whilst it's useful to be reminded of pending updates, any package installed via Gnome Software is not part of the dnf history. That makes it harder when it's necessary to downgrade or remove a troublesome package.
+Managing packages can be a pain, but versionlock makes life easier. If you use Debian or Ubuntu you can use `apt-mark hold my-package` and `apt-mark unhold my-package` to similar effect.
