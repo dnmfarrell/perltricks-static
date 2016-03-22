@@ -45,7 +45,7 @@ Language
 
 Markup
 ------
-Articles are written in [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). Every article is prefaced with [front matter](http://gohugo.io/content/front-matter/) in JSON. See [Generate Article Template](#generatearticletemplate) to get started quickly.
+Articles are written in [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). Every article is prefaced with [front matter](http://gohugo.io/content/front-matter/) in JSON. See [Generate Article Template](#generate-article-template) to get started quickly.
 
 The front matter contains the article metadata. Here's an example for a recent article:
 
@@ -67,7 +67,7 @@ The front matter contains the article metadata. Here's an example for a recent a
   }
 ```
 
-Older articles also have the `slug` attribute, which determines the URL of the article. This isn't necessary anymore (it's used to preserve historic URLs for articles from our old site). Instead just name the file the same as the title of the article, but in lowercase and with spaces replaced with hypens (`-`). In this example case, the filename is `content/article/magical-tied-scalars.md`. 
+Older articles also have the `slug` attribute, which determines the URL of the article. This isn't necessary anymore (it's used to preserve historic URLs for articles from our old site). Instead just name the file the same as the title of the article, but in lowercase and with spaces replaced with hypens (`-`). In this example case, the filename is `content/article/magical-tied-scalars.md`.
 
 Once `draft` is changed to `false`, the article will be listed on the website at `perltricks.com/article/magical-tied-scalars`. So when providing a pull request, keep this as `true`. The site editor will switch this to `false` once the article is ready to be published.
 
