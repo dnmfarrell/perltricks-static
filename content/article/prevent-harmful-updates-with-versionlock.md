@@ -4,7 +4,7 @@
     "authors": ["David Farrell"],
     "date"   : "2016-03-21T20:46:17",
     "tags"   : ["fedora", "yum", "dnf", "linux", "versionlock", "ubuntu", "debian"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/prevent-harmful-updates-with-versionlock/software padlock.jpg",
     "description" : "How to avoid breaking software updates"
   }
