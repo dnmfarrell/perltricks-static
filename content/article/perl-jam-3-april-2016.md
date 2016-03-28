@@ -1,6 +1,6 @@
 
   {
-    "title" : "Pelr Jam 3: The Camel Strikes Back",
+    "title" : "Perl Jam 3: The Camel Strikes Back",
     "authors": ["brian d foy"],
     "date"  : "2016-04-01T10:04:57",
     "tags"  : ["perl", "core", "security"],
