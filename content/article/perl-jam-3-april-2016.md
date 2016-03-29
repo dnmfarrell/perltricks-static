@@ -182,4 +182,4 @@ Perhaps the biggest problem with Perl is that anyone with a text editor can writ
 
 If you've made it this far without complaining on Twitter, Reddit, or Hacker News, congratulations. You know what day of the year it is.
 
-These are real issues, though, and if your application is senstive to small differences in numbers (such as calculating fundamental constants of the universe or pension fund allocations), you're probably using sophisicated number libraries and have various levels of audits to verify the results.
+These are real issues, though, and if your application is senstive to small differences in numbers (such as calculating fundamental constants of the universe or pension fund allocations), you're probably using sophisticated number libraries and have various levels of audits to verify the results.
