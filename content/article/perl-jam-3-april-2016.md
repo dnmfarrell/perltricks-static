@@ -1,6 +1,6 @@
 
   {
-    "title" : "Perl Jam 3: The Camel Strikes Back",
+    "title" : "Perl Jam VI: The Return of the Camel",
     "authors": ["brian d foy"],
     "date"  : "2016-04-01T10:04:57",
     "tags"  : ["perl", "core", "security"],
@@ -37,11 +37,11 @@ There's more than one way to round a number. Most want to get to the nearest num
 
 If you use the GNU C compiler (or something based on it), you round half to even as the default. Perl relies on this behavior.
 
-	$ perl -e 'printf "%.0f\n", shift' 1.5
-	2
+  $ perl -e 'printf "%.0f\n", shift' 1.5
+  2
 
-	$ perl -e 'printf "%.0f\n", shift' 2.5
-	2
+  $ perl -e 'printf "%.0f\n", shift' 2.5
+  2
 
 Every time you try this you get the same answer (so, no stochastic or alternate rounding). The GNU C compiler can also use floor, ceiling, or truncate, but those have similar problems.
 
@@ -51,10 +51,9 @@ As you are rounding, you are going to get more even numbers than odd numbers. If
 
 Among the heated technical debates, such as vi or emacs, tabs or spaces, or Star Wars or Star Trek (the first answer in each is the right one), the ones that matter, such as the correct value of modulo addition with negative numbers, are overlooked.
 
-[quote The perldoc documentation for the % operators]
-____
-Binary "%" is the modulo operator, which computes the division remainder of its first argument with respect to its second argument. Given integer operands $m and $n : If $n is positive, then $m % $n is $m minus the largest multiple of $n less than or equal to $m. If $n is negative, then $m % $n is $m minus the smallest multiple of $n that is not less than $m (that is, the result will be less than or equal to zero).
-____
+> Binary "%" is the modulo operator, which computes the division remainder of its first argument with respect to its second argument. Given integer operands $m and $n : If $n is positive, then $m % $n is $m minus the largest multiple of $n less than or equal to $m. If $n is negative, then $m % $n is $m minus the smallest multiple of $n that is not less than $m (that is, the result will be less than or equal to zero).
+> 
+> -- <cite>The perldoc documentation for the % operators</cite>
 
 The modulo operators take two numbers and does something to them. For `$m % $n`, you have
 
@@ -76,29 +75,29 @@ $n //= 13;
 my $template = <<'HERE';
 m = %d  n = %d
 
-	 $m %  $n = %d
-	-$m %  $n = %d
-	 $m % -$n = %d
-	-$m % -$n = %d
+   $m %  $n = %d
+  -$m %  $n = %d
+   $m % -$n = %d
+  -$m % -$n = %d
 HERE
 
 printf $template,
-	 $m, $n,
-	 $m %  $n,
-	-$m %  $n,
-	 $m % -$n,
-	-$m % -$n;
+   $m, $n,
+   $m %  $n,
+  -$m %  $n,
+   $m % -$n,
+  -$m % -$n;
 ```
 
 Running this give different results depending on the location of the unary minus operator:
 
-	$ perl modulo.pl 137 12
-	m = 137  n = 12
+  $ perl modulo.pl 137 12
+  m = 137  n = 12
 
-		 $m %  $n = 5
-		-$m %  $n = 7
-		 $m % -$n = -7
-		-$m % -$n = -5
+     $m %  $n = 5
+    -$m %  $n = 7
+     $m % -$n = -7
+    -$m % -$n = -5
 
 That unary minus operator is two precedence levels above the modulo operator. That Perl makes one operator better than another is a whole other issue, but that's the way it is and we can't fix it now. Try it again. Use the parentheses (a feature Perl stole from LISP, which had some extra to spare) to separate the operators:
 
@@ -111,28 +110,28 @@ $n //= 13;
 my $template = <<'HERE';
 m = %d  n = %d
 
-	  $m %  $n  = %d
-	-($m %  $n) = %d
-	  $m % -$n  = %d
-	-($m % -$n) = %d
+    $m %  $n  = %d
+  -($m %  $n) = %d
+    $m % -$n  = %d
+  -($m % -$n) = %d
 HERE
 
 printf $template,
-	  $m, $n,
-	  $m %  $n,
-	-($m %  $n),
-	  $m % -$n,
-	-($m % -$n);
+    $m, $n,
+    $m %  $n,
+  -($m %  $n),
+    $m % -$n,
+  -($m % -$n);
 ```
 
 You get different numbers this time:
 
-	m = 137  n = 12
+  m = 137  n = 12
 
-		  $m %  $n  = 5
-		-($m %  $n) = -5
-		  $m % -$n  = -7
-		-($m % -$n) = 7
+      $m %  $n  = 5
+    -($m %  $n) = -5
+      $m % -$n  = -7
+    -($m % -$n) = 7
 
 But it's even worse, because those numbers aren't what the documentation says they should be. "If `$n` is positive, then `$m % $n` is `$m` minus the largest multiple of `$n` less than or equal to `$m`". Let's take the case of -137 and 12. There are a couple of ways to look at this. If a "multiple" we call `$i` must be positive, there is no value such that `$n * $i` will be less than or equal to any negative value. If that `$i` can be negative, the word "largest"  is a bit troublesome. Wikipedia says [large numbers are positive](https://en.wikipedia.org/wiki/Large_numbers).
 
@@ -140,33 +139,33 @@ But it's even worse, because those numbers aren't what the documentation says th
 
 Perl has a [rand](http://perldoc.perl.org/functions/rand.html) function. It claims to return "a random fractional number greater than or equal to 0", but it doesn't. It's not random. It's fake random in a way that might work if you only want to use one of them to complete a homework assignment in a beginning programming course in middle school. Although the documentation includes a footnote saying "You should not rely on it in security-sensitive situations", it does not say "Don't ever use this." like it should. Try this program:
 
-	$ perl -le 'srand(137); print rand for 1 .. 10'
+  $ perl -le 'srand(137); print rand for 1 .. 10'
 
 It outputs some numbers, which might look like this:
 
-	0.470744323291914
-	0.278795581867115
-	0.263413724062172
-	0.646815254210146
-	0.958771364426031
-	0.3733677954733
-	0.561358958619476
-	0.537256242282716
-	0.967152799238111
-	0.846555037715689
+  0.470744323291914
+  0.278795581867115
+  0.263413724062172
+  0.646815254210146
+  0.958771364426031
+  0.3733677954733
+  0.561358958619476
+  0.537256242282716
+  0.967152799238111
+  0.846555037715689
 
 Run it again:
 
-	0.470744323291914
-	0.278795581867115
-	0.263413724062172
-	0.646815254210146
-	0.958771364426031
-	0.3733677954733
-	0.561358958619476
-	0.537256242282716
-	0.967152799238111
-	0.846555037715689
+  0.470744323291914
+  0.278795581867115
+  0.263413724062172
+  0.646815254210146
+  0.958771364426031
+  0.3733677954733
+  0.561358958619476
+  0.537256242282716
+  0.967152799238111
+  0.846555037715689
 
 Not only do you get the same numbers, but you get them in the same order. Perl tries to hide this from you by automatically calling `srand` and giving it a "random" number to start the completely repeatable sequence.
 
