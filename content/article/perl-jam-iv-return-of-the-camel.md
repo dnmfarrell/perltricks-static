@@ -2,9 +2,9 @@
   {
     "title" : "Perl Jam VI: The Return of the Camel",
     "authors": ["brian d foy"],
-    "date"  : "2016-04-01T10:04:57",
+    "date"  : "2016-04-01T08:32:57",
     "tags"  : ["perl", "core", "security"],
-    "draft" : true,
+    "draft" : false,
     "description" : "Perl's ignored security problems",
     "image" : ""
   }
@@ -55,14 +55,14 @@ Among the heated technical debates, such as vi or emacs, tabs or spaces, or Star
 > 
 > -- <cite>The perldoc documentation for the % operators</cite>
 
-The modulo operators take two numbers and does something to them. For `$m % $n`, you have
+The modulo operators take two numbers and does something to them. For `$m % $n`, you have:
 
-| $m | $n | % | % |
-|-----------|-----------|-----------|
-| 0 | 0 | undefined | undefined |
-| + | + | + | $m - $n * $i ∈ $n * $i <= $m and ($m - $n * $i) < $n|
-| + | - | - | $m - $n * $i ∈ $n * $i >= $m and ($m - $n * $i) < $n|
-| - | + | - |
+| $m | $n | % |
+|----|----|---|
+| 0 | 0 | undefined |
+| + | + | $m - $n * $i ∈ $n * $i <= $m and ($m - $n * $i) < $n|
+| + | - | $m - $n * $i ∈ $n * $i >= $m and ($m - $n * $i) < $n|
+| - | + | |
 | - | - | |
 
 
@@ -91,13 +91,13 @@ printf $template,
 
 Running this give different results depending on the location of the unary minus operator:
 
-  $ perl modulo.pl 137 12
-  m = 137  n = 12
+    $ perl modulo.pl 137 12
+    m = 137  n = 12
 
-     $m %  $n = 5
-    -$m %  $n = 7
-     $m % -$n = -7
-    -$m % -$n = -5
+       $m %  $n = 5
+      -$m %  $n = 7
+       $m % -$n = -7
+      -$m % -$n = -5
 
 That unary minus operator is two precedence levels above the modulo operator. That Perl makes one operator better than another is a whole other issue, but that's the way it is and we can't fix it now. Try it again. Use the parentheses (a feature Perl stole from LISP, which had some extra to spare) to separate the operators:
 
@@ -126,12 +126,12 @@ printf $template,
 
 You get different numbers this time:
 
-  m = 137  n = 12
+    m = 137  n = 12
 
-      $m %  $n  = 5
-    -($m %  $n) = -5
-      $m % -$n  = -7
-    -($m % -$n) = 7
+        $m %  $n  = 5
+      -($m %  $n) = -5
+        $m % -$n  = -7
+      -($m % -$n) = 7
 
 But it's even worse, because those numbers aren't what the documentation says they should be. "If `$n` is positive, then `$m % $n` is `$m` minus the largest multiple of `$n` less than or equal to `$m`". Let's take the case of -137 and 12. There are a couple of ways to look at this. If a "multiple" we call `$i` must be positive, there is no value such that `$n * $i` will be less than or equal to any negative value. If that `$i` can be negative, the word "largest"  is a bit troublesome. Wikipedia says [large numbers are positive](https://en.wikipedia.org/wiki/Large_numbers).
 
@@ -143,29 +143,29 @@ Perl has a [rand](http://perldoc.perl.org/functions/rand.html) function. It clai
 
 It outputs some numbers, which might look like this:
 
-  0.470744323291914
-  0.278795581867115
-  0.263413724062172
-  0.646815254210146
-  0.958771364426031
-  0.3733677954733
-  0.561358958619476
-  0.537256242282716
-  0.967152799238111
-  0.846555037715689
+    0.470744323291914
+    0.278795581867115
+    0.263413724062172
+    0.646815254210146
+    0.958771364426031
+    0.3733677954733
+    0.561358958619476
+    0.537256242282716
+    0.967152799238111
+    0.846555037715689
 
 Run it again:
 
-  0.470744323291914
-  0.278795581867115
-  0.263413724062172
-  0.646815254210146
-  0.958771364426031
-  0.3733677954733
-  0.561358958619476
-  0.537256242282716
-  0.967152799238111
-  0.846555037715689
+    0.470744323291914
+    0.278795581867115
+    0.263413724062172
+    0.646815254210146
+    0.958771364426031
+    0.3733677954733
+    0.561358958619476
+    0.537256242282716
+    0.967152799238111
+    0.846555037715689
 
 Not only do you get the same numbers, but you get them in the same order. Perl tries to hide this from you by automatically calling `srand` and giving it a "random" number to start the completely repeatable sequence.
 
