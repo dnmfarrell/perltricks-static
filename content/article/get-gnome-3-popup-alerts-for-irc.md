@@ -26,16 +26,16 @@ Warning, this script has a lot of dependencies. To use it, you'll need to be run
 $ cpan -fi Gtk3::Notify
 ```
 
-Gtk3::Notify has several C library [dependencies](https://github.com/sillymoose/irssi/blob/master/gnotify.pl#L98), so you'll need to install those too - your Linux distro's package manager should have them.
+Gtk3::Notify has several C library [dependencies](https://github.com/dnmfarrell/irssi/blob/master/gnotify.pl#L98), so you'll need to install those too - your Linux distro's package manager should have them.
 
 ### Installation
 
-Unless you're running any scripts with Irssi already, you'll need to create a scripts directory, and download [gnotify.pl](https://raw.githubusercontent.com/sillymoose/irssi/master/gnotify.pl):
+Unless you're running any scripts with Irssi already, you'll need to create a scripts directory, and download [gnotify.pl](https://raw.githubusercontent.com/dnmfarrell/irssi/master/gnotify.pl):
 
 ``` prettyprint
 $ mkdir ~/.irssi/scripts
 $ cd ~/.irssi/scripts
-$ curl -O https://raw.githubusercontent.com/sillymoose/irssi/master/gnotify.pl
+$ curl -O https://raw.githubusercontent.com/dnmfarrell/irssi/master/gnotify.pl
 ```
 
 To have Irssi to autoload the script, create an "autorun" subdirectory with a symlink back to the script:
@@ -56,11 +56,11 @@ To make sure gnotify.pl is working, start Irssi and try sending a private messag
 
 Just replace username with your own IRC username, for me it looks like this:
 
-[![](/static/images/95/irssi_msg_small.png)](/static/images/95/irssi_msg.png "A popup alert shows the message")
+![](/images/95/irssi_msg.png)
 
 At the bottom of the screen you can see the popup alert.
 
-[![](/static/images/95/irssi_gnotify_small.png)](/static/images/95/irssi_gnotify.png "Sending a private message on Irssi")
+![](/images/95/irssi_gnotify.png)
 
 ### Conclusion
 

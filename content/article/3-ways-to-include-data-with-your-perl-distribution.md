@@ -3,7 +3,7 @@
    "tags" : [
       "configuration",
       "module",
-      "__DATA__",
+      "__data__",
       "old_site"
    ],
    "image" : "/images/66/EC3CE0E2-FF2E-11E3-8F16-5C05A68B9E16.png",

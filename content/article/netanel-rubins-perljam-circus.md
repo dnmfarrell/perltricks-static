@@ -1,10 +1,10 @@
   {
-     "image" : "http://googledrive.com/host/0BwRnByTz2iUXMUdoRDVvRGpsU1U",
+     "image" : "/images/netanel-rubins-perljam-circus/cover.jpg",
      "tags" : [
         "chaos_communication_congress",
         "ccc",
-        "black hat",
-        "netanel rubin",
+        "black_hat",
+        "netanel_rubin",
         "infosec"
      ],
      "title" : "Netanel Rubin's Perl Jam circus",

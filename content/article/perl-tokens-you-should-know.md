@@ -3,9 +3,9 @@
       "variable",
       "token",
       "global_variables",
-      "__PACKAGE__",
-      "__END__",
-      "__DATA__",
+      "__package__",
+      "__end__",
+      "__data__",
       "old_site"
    ],
    "image" : null,

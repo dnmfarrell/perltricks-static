@@ -46,7 +46,7 @@ $ android
 
 This will open a GUI menu from where you can download and install the required Android tools and libraries. Using the menu, install Android SDK Tools, Android SDK Platform-tools, Android SDK Build-tools and Android 4.2.2.
 
-[![The Android SDK Manager](/static/images/97/android_sdk_manager_small.png)](/static/images/97/android_sdk_manager.png "The Android SDK Manager")
+![The Android SDK Manager](/images/97/android_sdk_manager.png)
 
 You'll also need a copy of the Perl 5.20.0 [tarball](http://www.cpan.org/src/5.0/perl-5.20.0.tar.gz). Untar this at the command line too:
 
@@ -64,15 +64,15 @@ $ android avd
 
 This will launch the Android Virtual Device Manager:
 
-[![The Android Virtual Device Manager](/static/images/97/android_avd_1_small.png)](/static/images/97/android_avd_1.png "The Android Virtual Device Manager")
+![The Android Virtual Device Manager](/images/97/android_avd_1.png)
 
 Click "new" to create a new AVD. I created one with the following settings:
 
-[![Create a new AVD](/static/images/97/android_avd_2.png)](/static/images/97/android_avd_2.png "Create a new AVD")
+![Create a new AVD](/images/97/android_avd_2.png)
 
 Make sure you select "ARM (androideabi-v7a)" as the CPU/ABI option. Keep in mind your platform's hardware when choosing these settings. I found higher resolution devices ran very slowly on my old MacBook. The "use snapshot" option is a timesaver that saves the virtual device's state post-boot, so saves you from waiting for the virtual device to boot up again after the first time. Once you've created the AVD, you should see it listed in the AVD Manager window:
 
-[![The AVD has been created](/static/images/97/android_avd_4_small.png)](/static/images/97/android_avd_4.png "The AVD has been created")
+![The AVD has been created](/images/97/android_avd_4.png)
 
 Having created a new AVD, you can close the AVD Manager window.
 
@@ -103,11 +103,11 @@ $ emulator @kitkat&
 
 You should see your emulated device start booting in a new window:
 
-[![The loaded AVD](/static/images/97/android_boot.png)](/static/images/97/android_boot.png "The loaded AVD")
+![The loaded AVD](/images/97/android_boot.png)
 
 Once it's booted, it will look like this:
 
-[![The AVD is booting](/static/images/97/android_loaded.png)](/static/images/97/android_loaded.png "The AVD is booting")
+![The AVD is booting](/images/97/android_loaded.png)
 
 With the fully booted AVD still running, return to the command line and type:
 

@@ -10,6 +10,7 @@
    "tags" : [
       "community",
       "news",
+      "perltricks",
       "old_site"
    ],
    "title" : "PerlTricks.com is a year old"
@@ -21,7 +22,7 @@
 
 For our first 6 months our visitor count oscillated between 2,500 and 3,000 visitors per month. Since then the numbers surged to 17,000:
 
-[![Visitors Chart](/static/images/78/perltricks_pageviews_13_14_small.png)](/static/images/78/perltricks_pageviews_13_14.png "PerlTricks.com Visitors March 2013 - February 2014")
+![Visitors Chart](/images/78/perltricks_pageviews_13_14.png)
 
 My guess is that two factors account for most of the growth: writing a broader range of Perl related articles beyond simple tutorials and the site re-design which occurred in December. In the next year, I'd like to grow the visitor numbers to 70,000 per month. I think this is realistic based on [numbers](http://szabgab.com/the-popularity-of-perl-in-2013.html) for other Perl sites.
 
@@ -29,7 +30,7 @@ Our pages-per-visit metric remained steady at ~1.5 for the year. This is curious
 
 In terms of Geography, there are no surprises really. Most of our visitors came from the U.S. followed by the U.K.,India, Germany and Canada:
 
-[![Visitors By Country Chart](/static/images/78/perltricks_visitors_country_small.png)](/static/images/78/perltricks_visitors_country.png "PerlTricks.com Visitors By Country")
+![Visitors By Country Chart](/images/78/perltricks_visitors_country.png)
 
 ### Our Articles
 
@@ -60,7 +61,7 @@ There are several ways you can help us:
 
 ### Thank you
 
-Thank you to everyone who has supported us over the past year on twitter, Reddit and by email. In particular I'd like to thank: Andy Lester of [Perl Buzz](http://perlbuzz.com/) and Yanick Champoux and Gabor Szabo of [Perl Weekly](http://perlweekly.com/) for regularly featuring our articles. Both sites are great ways to stay informed of the latest happenings in the Perl community. I'd also like to thank brian d foy for running the Perl Nerd Merit Badge Contest (which provided the prizes for our own contest). We recently [interviewed](http://perltricks.com/article/75/2014/3/6/Perl-master-an-interview-with-brian-d-foy) brian to discuss his new book, Mastering Perl second edition. brian shared his views on the book, technical writing and many other Perly topics.
+Thank you to everyone who has supported us over the past year on twitter, Reddit and by email. In particular I'd like to thank: Andy Lester of Perl Buzz and Yanick Champoux and Gabor Szabo of [Perl Weekly](http://perlweekly.com/) for regularly featuring our articles. Both sites are great ways to stay informed of the latest happenings in the Perl community. I'd also like to thank brian d foy for running the Perl Nerd Merit Badge Contest (which provided the prizes for our own contest). We recently [interviewed](http://perltricks.com/article/75/2014/3/6/Perl-master-an-interview-with-brian-d-foy) brian to discuss his new book, Mastering Perl second edition. brian shared his views on the book, technical writing and many other Perly topics.
 
 Finally I'd like to thank Jeffrey Thalhammer for his mentorship and encouragement. His startup, [Stratopan.com](https://stratopan.com/) provides cloud-based configuration management for Perl.
 

@@ -48,7 +48,7 @@ $ revealup server presentation.md --port 5000
 
 Now open your browser and navigate to http://localhost:5000. You should see something like this:
 
-[![](/static/images/94/slide1_small.png)](/static/images/94/slide1.png "A single slide presentation")
+![](/images/94/slide1.png)
 
 Let's add a second slide to showcase how different headers appear. In App::revealup the horizontal slide separator is three hyphens in a row ("---").
 
@@ -67,7 +67,7 @@ June 2014
 
 App::reveal dynamically reads the source presentation file, so you can leave the process running and just save the changes to the source presentation file. Reloading the browser at http://localhost:5000 should show the updated presentation. Press → to move to the second slide.
 
-[![](/static/images/94/slide2_small.png)](/static/images/94/slide2.png "Our second slide")
+![](/images/94/slide2.png)
 
 You can add vertical slides too. These are delimited by three underscores ("\_\_\_"):
 
@@ -97,15 +97,15 @@ ___
 
 Refreshing the browser, we get two additional slides. Press ↓ to move down one slide:
 
-[![](/static/images/94/slide3_small.png)](/static/images/94/slide3.png "An unordered list. Press down to see the next vertical slide")
+![](/images/94/slide3.png)
 
-[![](/static/images/94/slide4_small.png)](/static/images/94/slide4.png "An ordered list")
+![](/images/94/slide4.png)
 
 Instead of trawling through every slide, I've completed the rest of the presentation and put it on [GitHub](https://gist.github.com/dnmfarrell/1b118c5813a7a10ea7e2). The presentation content is an overview of the markdown syntax. Try running it with App::revealup!
 
 One nice feature is if you ever want to zoom out, just press the escape key:
 
-[![](/static/images/94/slide_zoom_small.png)](/static/images/94/slide_zoom.png "Zoomed out view of completed presentation")
+![](/images/94/slide_zoom.png)
 
 ### How App::revealup works
 

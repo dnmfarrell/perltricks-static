@@ -51,9 +51,9 @@ I get a list of the links on the PerlTricks main page:
     0: http://perltricks.com/favicon.ico
     1: http://perltricks.com/feed/atom
     2: http://perltricks.com/feed/rss
-    3: http://perltricks.com/static/css/bootstrap.min.css
-    4: http://perltricks.com/static/css/carousel.css
-    5: http://perltricks.com/static/css/perltricks.css
+    3: http://perltricks.com/css/bootstrap.min.css
+    4: http://perltricks.com/css/carousel.css
+    5: http://perltricks.com/css/perltricks.css
     6: https://twitter.com/intent/follow?screen_name=perltricks
     7: http://perltricks.com/feed/rss
     ...

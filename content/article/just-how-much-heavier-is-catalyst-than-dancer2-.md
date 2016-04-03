@@ -32,7 +32,8 @@ To compare the two frameworks, we need to compare all of their dependencies; not
 
 I created two stacks, one for [Catalyst](https://stratopan.com/sillymoose/WebStuff/Catalyst/graphs) and one for [Dancer2](https://stratopan.com/sillymoose/WebStuff/Dancer2/graphs). Their respective dependency graphs are shown below:
 
-[![Catalyst framework](/static/images/85/catalyst%20dependencies_small.png)](/static/images/85/catalyst%20dependencies.png "Stratopan Catalyst stack") [![Dancer2 framework](/static/images/85/dancer2%20dependencies_small.png)](/static/images/85/dancer2%20dependencies.png "Stratopan Dancer2 stack")
+![Catalyst framework](/images/85/catalyst%20dependencies.png)
+![Dancer2 framework](/images/85/dancer2%20dependencies.png)
 
 Tabulating the Stratopan data for the two stacks we get:
 

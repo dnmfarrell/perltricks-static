@@ -11,7 +11,7 @@
       "linux",
       "sysadmin",
       "config",
-      "OSX",
+      "osx",
       "cron",
       "old_site"
    ],

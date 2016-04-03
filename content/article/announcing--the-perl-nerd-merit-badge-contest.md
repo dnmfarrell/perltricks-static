@@ -24,7 +24,7 @@ We're looking to find the best Perl programming tricks out there. It can be a Pe
 
 The three best submissions will each win a Perl Nerd Merit Badge and have their Perl trick published on this website with full accreditation. Please read the contest rules below before entering. Good luck!
 
-![](/static/images/64/Perl_Nerd_Merit_Badges.jpg)
+![](/images/64/Perl_Nerd_Merit_Badges.jpg)
 
 ### The Velociraptor as a Perl icon
 

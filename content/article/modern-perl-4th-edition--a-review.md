@@ -58,7 +58,7 @@ Which is clearly easier for beginners to understand. Code-wise, many of the exam
 
 The biggest change with the new edition comes from The Pragmatic Bookshelf - their version is simply *gorgeous*. Full color with larger fonts, icons and callouts, the book really pops. This is the layout Modern Perl needs *and* deserves. See this comparison between the Onyx Neon and Pragmatic Bookshelf versions:
 
-[![Modern Perl side-by-side comparison of editions](http://googledrive.com/host/0BwRnByTz2iUXeDgzVlJRWmtkX0k/)](http://googledrive.com/host/0BwRnByTz2iUXUFN1Smo5WGJRZ0U/ "The Pragmatic Bookshelf edition is gorgeous")
+![](/images/205/comparison.png)
 
 ### Alternatives
 

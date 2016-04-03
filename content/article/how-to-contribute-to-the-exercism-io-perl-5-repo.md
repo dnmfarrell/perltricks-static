@@ -29,17 +29,17 @@ You'll need a GitHub account and Perl installed. That's it!
 
 To contribute to a project on GitHub, we'll use the "fork and pull" approach. First we'll login to GitHub:
 
-[![](/static/images/91/github_1_small.png)](/static/images/91/github_1.png "Login to GitHub")
+![](/images/91/github_1.png "Login to GitHub")
 
 Next, search for the exercism/xperl5 repo:
 
-[![](/static/images/91/github_2_small.png)](/static/images/91/github_2.png "Search for exercism/xperl5")
+![](/images/91/github_2.png "Search for exercism/xperl5")
 
-[![](/static/images/91/github_3_small.png)](/static/images/91/github_3.png "Click the fork button")
+![](/images/91/github_3.png "Click the fork button")
 
 Click the "Fork" button to copy the repo into our own perltricks/xperl5 repo:
 
-[![](/static/images/91/github_4_small.png)](/static/images/91/github_4.png "Our own forked repo")
+![](/images/91/github_4.png "Our own forked repo")
 
 ### Get the exercises
 
@@ -214,11 +214,11 @@ If the forked repo is out of sync with exercism/xperl5 you'll need to [rebase](h
 
 Returning to GitHub, all we have to do is initiate a pull request from our forked repo at perltricks/xperl5. Clicking the "pull requests" link on the right of the screen brings us to the pull requests screen:
 
-[![](/static/images/91/github_5_small.png)](/static/images/91/github_5.png "The pull requests screen")
+![](/images/91/github_5.png)
 
 Clicking the "new pull request" button will create the pull request form, GitHub automatically knows that the pull request should go back to exercism/xperl5.
 
-[![](/static/images/91/github_6_small.png)](/static/images/91/github_6.png "The new pull request. Send the pull request!")
+![](/images/91/github_6.png)
 
 Clicking the "Send pull request" button submits the pull request and we're done! The exercism repo committers usually respond within a couple of hours. So now you've seen how easy it is to port an exercise, be warned it can be addictive ...
 

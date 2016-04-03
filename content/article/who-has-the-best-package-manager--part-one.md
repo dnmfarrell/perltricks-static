@@ -53,13 +53,13 @@ Upon locating a target result in each search, I opened the package page and scor
 
 ### PHP: Packagist
 
-[![](/static/images/110/pm_packagist_small.png)](/static/images/110/pm_packagist.png "The Packagist homepage")
+![](/images/110/pm_packagist.png)
 
 First up is [Packagist](https://packagist.org/statistics), the largest PHP package search engine, with over 36,000 [packages](https://packagist.org/statistics) indexed. Packagist integrates with [Composer](https://getcomposer.org/), a PHP dependency management system.
 
 Packagist auto-focused to the text search box and provided live search results as I entered the search terms. For every search result Packagist return the package name, description, number of downloads and star count. Search results were paginated and no facility for sorting or filtering the search results was provided.
 
-[![](/static/images/110/pm_packagist_search_selenium_small.png)](/static/images/110/pm_packagist_search_selenium.png "Packagist search")
+![](/images/110/pm_packagist_search_selenium.png)
 
 The search results were mixed: the target [selenium package](https://packagist.org/packages/alexandresalome/php-selenium) was returned 3rd on the list of results. The SQLite3 search did not return any useful packages (bindings to SQLite3), but this is perhaps because PHP 5.3 ships with a built in [SQLite class](http://php.net/manual/en/book.sqlite3.php). The Web Framework [search](https://packagist.org/search/?q=web%20framework) did not return any [target packages](http://mashable.com/2014/04/04/php-frameworks-build-applications/) in the top 20 results, with [Laravel](https://packagist.org/packages/laravel/framework) being returned 21<sup>st</sup>.
 
@@ -67,7 +67,7 @@ The search results were mixed: the target [selenium package](https://packagist.o
 
 Packagist provided a basic set of metadata including: name, description, version number, download statistics, version history and dependencies. No package had license information, unit test coverage, platform compatibility or continuous integration results. There was no facility to "star" or review a module (presumably the star count on the search results came from GitHub).
 
-[![](/static/images/110/pm_packagist_laravel_small.png)](/static/images/110/pm_packagist_laravel.png "Laravel package page")
+![](/images/110/pm_packagist_laravel.png)
 
 #### Metadata: 2/5
 
@@ -93,13 +93,13 @@ Helpfully, Packagist listed the required text on every package page.
 
 ### Python: PyPI
 
-[![](/static/images/110/pm_pypi_small.png)](/static/images/110/pm_pypi.png "The PyPI homepage")
+![](/images/110/pm_pypi.png)
 
 Next up is Python's [PyPi](https://pypi.python.org/pypi), which has over 47,500 packages.
 
 PyPI's search results returned the package name, a match-strength indicator called "weight" and a description. The search results for [Selenium](https://pypi.python.org/pypi/selenium/2.42.1) and [SQLite3](https://pypi.python.org/pypi/db-sqlite3/0.0.1) were good with the target libraries in the top 2 results each time.
 
-[![](/static/images/110/pm_pypi_search_selenium_small.png)](/static/images/110/pm_pypi_search_selenium.png "PyPI search")
+![](/images/110/pm_pypi_search_selenium.png)
 
 The search results for "web framework" were mixed: I was looking for common Python [web frameworks](https://wiki.python.org/moin/WebFrameworks) and only one, [Watson](https://pypi.python.org/pypi/watson-framework/2.2.7) was listed in the top 20 results. Django was 280<sup>th</sup> with Flask arriving 574<sup>th</sup> in the list. PyPI was the only package manager to not paginate search results, which made it easy to traverse search results results and export them. There was no function to filter or sort the results under different criteria.
 
@@ -107,7 +107,7 @@ The search results for "web framework" were mixed: I was looking for common Pyth
 
 The metadata provided varied from package to package, but PyPI usually provided: the last upload date, number of downloads, author name, package owner and maintainers, package homepage link and a DOAP.xml record. The [Watson](https://pypi.python.org/pypi/watson-framework/2.2.7) package included a build status with unit test coverage. Only 1 of the three packages provided a license. There didn't seem to be a facility to provide user reviews or "stars" which would indicate whether a package was any good or not.
 
-[![](/static/images/110/pm_pypi_selenium_small.png)](/static/images/110/pm_pypi_selenium.png "Selenium package page")
+![](/images/110/pm_pypi_selenium.png)
 
 #### Metadata: 3/5
 
@@ -127,19 +127,19 @@ PyPI provides installation guidance on it's homepage. Additionally most of the r
 
 ### Perl: metacpan
 
-[![](/static/images/110/pm_metacpan_small.png)](/static/images/110/pm_metacpan.png "The metacpan homepage")
+![](/images/110/pm_metacpan.png)
 
 [metacpan](https://metacpan.org/) is described as a CPAN [search engine](https://metacpan.org/about) and provides nearly all of the features of CPAN, plus many features that CPAN doesn't offer. It has been around since 2013, and indexes over 30,000 packages.
 
 metacpan's search page autofocused on the text input search box and provide predictive text search. The search results contained the package name, description, an average review score (if there are any reviews), a count of "++"s (which are like GitHub stars) and the author name. Helpfully, sub-packages in the same namespace were indented below higher-level packages.
 
-[![](/static/images/110/pm_cpan_selenium_search_small.png)](/static/images/110/pm_cpan_selenium_search.png "metacpan search")
+![](/images/110/pm_cpan_selenium_search.png)
 
 The Selenium search returned the target package ([WWW:Selenium](https://metacpan.org/pod/WWW::Selenium)) first, however SQLite3's target package ([DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)) was returned 17th in the search results. The Web Framework search results were not great: the first 20 results were for old frameworks or irrelevant packages. However the target packages (e.g. Catalyst, Dancer, Mojolicious and Kelp) were found in top 40 results. metacpan paginated the search results, 20 per page, which meant the target packages were actually on [page 2](https://metacpan.org/search?p=2&q=web+framework) . No method to filter or sort the search results was provided.
 
 #### Search: 3/5
 
-[![](/static/images/110/pm_cpan_sqlite_small.png)](/static/images/110/pm_cpan_sqlite.png "DBD::SQLite package page")
+![](/images/110/pm_cpan_sqlite.png)
 
 metacpan provided a wealth of package metadata: the package name, description, version number, activity histogram, issues list, CPAN Testers [results](http://www.cpantesters.org/distro/D/DBD-SQLite.html?oncpan=1&distmat=1&version=1.42) (an external CI platform that runs the package against many different operating systems and Perl versions to detect portability issues), [kwalitee](http://cpants.cpanauthors.org/kwalitee) rating, reviews and "++" counts. It also provides a dependencies list, a dependent packages list and a nifty dependencies chart. This example is for [WWW::Selenium](https://metacpan.org/pod/WWW::Selenium):
 
@@ -165,19 +165,19 @@ No information was provided by metacpan on how to install a module.
 
 Node.js: npm
 
-[![](/static/images/110/pm_npm_small.png)](/static/images/110/pm_npm.png "The npm homepage")
+![](/images/110/pm_npm.png)
 
 [npm](https://www.npmjs.org/) is the Node.js package manager. It boasts over 89,500 packages, which is the most of any package manager in this review.
 
 The npm search results were good: although the target Selenium [package](https://www.npmjs.org/package/selenium-webdriver) was 7th in the list of results, both the SQLite3 and Web Framework searches returned the target packages ([sqlite3](https://www.npmjs.org/package/sqlite3), [](https://www.npmjs.org/package/express)express) first in the results list. npm displayed the package name, description, download statistics, a "star" count and a keyword list. The search results were paginated and no filtering or sorting function was provided.
 
-[![](/static/images/110/pm_npm_search_webf_small.png)](/static/images/110/pm_npm_search_webf.png "npm web framework search")
+![](/images/110/pm_npm_search_webf.png)
 
 #### Search: 5/5
 
 npm provided a useful set of metadata including: download statistics, license, issues link, version, dependencies and dependant packages When available it also pulled the Travis CI status from GitHub. No information was provided regarding unit test coverage or platform availability. There didn't seem to be a function for adding user reviews of packages to npm.
 
-[![](/static/images/110/pm_npm_express_small.png)](/static/images/110/pm_npm_express.png "express package page")
+![](/images/110/pm_npm_express.png)
 
 #### Metadata: 4/5
 
@@ -197,25 +197,25 @@ The npm homepage explained how to install a package, and linked to a more detail
 
 ### Ruby: RubyGems
 
-[![](/static/images/110/pm_gem_small.png)](/static/images/110/pm_gem.png "The RubyGems homepage")
+![](/images/110/pm_gem.png)
 
 [RubyGems](https://rubygems.org) is the Ruby package manager and has over 87,000 packages.
 
 RubyGems search was mixed, for the SQLite3 and Selenium searches the target package was returned in the top 2 results. However RubyGems returned no results for the Web Framework search, which given the popularity of Ruby on Rails is astonishing. For each search result RubyGems displayed the package name, description and number of downloads. Results were paginated and no facility was provided for sorting or filtering the results returned.
 
-[![](/static/images/110/pm_gem_search_webf_small.png)](/static/images/110/pm_gem_search_webf.png "RubyGems web framework search")
+![](/images/110/pm_gem_search_webf.png)
 
 #### Search: 2/5
 
 A basic set of metadata was provided: package name, description, author(s), version number, download statistics, license name, dependencies and a version history time line. There was no facility to "star" or review a module. No information was provided regarding cross platform support or unit test coverage.
 
-[![](/static/images/110/pm_gem_sqlite_small.png)](/static/images/110/pm_gem_sqlite.png "SQLite package page")
+![](/images/110/pm_gem_sqlite.png)
 
 #### Metadata: 2/5
 
 RubyGems' documentation consisted of a link to an external site. The SQLite3 package used [RubyDoc](http://rubydoc.info/) which is like a nicer-looking JavaDoc. Selenium-Webdriver used Google code and in the case of Sinatra, their own [website](http://www.sinatrarb.com/). The documentation was inconsistent in style, layout, content and quality.
 
-[![](/static/images/110/pm_gem_sqlite_doc_small.png)](/static/images/110/pm_gem_sqlite_doc.png "SQLite documentation")
+![](/images/110/pm_gem_sqlite_doc.png)
 
 #### Documentation: 2/5
 

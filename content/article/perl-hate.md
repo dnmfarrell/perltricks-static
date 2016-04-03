@@ -33,7 +33,7 @@ To rank-and-file programmers' thoughtful [rants](http://www.kuro5hin.org/story/2
 
 Or producing creative artworks:
 
-[![](http://www.fetidcascade.com/images/perl.jpg)](http://www.fetidcascade.com/images/perl.jpg)
+![](http://www.fetidcascade.com/images/perl.jpg)
 
 ### Aesthetically speaking
 
@@ -59,9 +59,9 @@ Uncyclopedia has a hilarious [Perl entry](http://uncyclopedia.wikia.com/wiki/Per
 
 Of course Perl 6 has not escaped the criticism. There is some creative Perl 6 art out there. Like these [fake O'Reilly covers](http://hbfs.wordpress.com/2009/11/13/the-perl-6-logo/):
 
-[![](/static/images/82/perl_6_cover_1_small.jpg)](/static/images/82/perl_6_cover_1.jpg)
+![](/images/82/perl_6_cover_1.jpg)
 
-[![](/static/images/82/perl_6_cover_2_small.png)](/static/images/82/perl_6_cover_2.png)
+![](/images/82/perl_6_cover_2.png)
 
 ### On mortality
 

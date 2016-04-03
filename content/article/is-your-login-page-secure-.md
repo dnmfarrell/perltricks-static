@@ -25,14 +25,14 @@ How many criteria do you think there are for a web application to securely login
 4.  Prevent brute-force attacks
 5.  Log, monitor and notify
 
-So there are 5 criteria, but how you do implement them? I've created a [new web application](https://github.com/sillymoose/SecApp_login) called "SecApp" using Perl's Catalyst web framework that attempts to satisfy these criteria - we'll step through each one and you can judge for yourself if it does.
+So there are 5 criteria, but how you do implement them? I've created a [new web application](https://github.com/dnmfarrell/SecApp_login) called "SecApp" using Perl's Catalyst web framework that attempts to satisfy these criteria - we'll step through each one and you can judge for yourself if it does.
 
 ### How to setup the app
 
 If you'd like to download the app and follow along you can, but this step is optional. You're going to need at least Perl 5.14.4 and a git installed. To download the app from our github page, just open up the command line and enter:
 
 ``` prettyprint
-$ git clone https://github.com/sillymoose/SecApp_login
+$ git clone https://github.com/dnmfarrell/SecApp_login
 ```
 
 There's no way around it; this app has a lot of dependencies. To ease the burden, start by installing [cpanminus](https://metacpan.org/pod/App::cpanminus) at the command line:
@@ -62,25 +62,25 @@ HTTP::Server::PSGI: Accepting connections at http://0:3000/
 
 Open your browsers and navigate to http://localhost:3000. You see this simple welcome message:
 
-[![secapp](/static/images/84/secapp_welcome_600.png)](/static/images/84/secapp_welcome.png)
+![](/images/84/secapp_welcome.png)
 
 If you visit http://localhost/login, it should load the login page:
 
-[![secapp](/static/images/84/secapp_login_600.png)](/static/images/84/secapp_login.png)
+![](/images/84/secapp_login.png)
 
 Using the username "test\_user\_01" and "Hfa \*-£(&&%HBbWqpV%"\_=asd" you should be able to login.
 
-[![secapp](/static/images/84/secapp_login_credentials_600.png)](/static/images/84/secapp_login_credentials.png)
+![](/images/84/secapp_login_credentials.png)
 
 A successful login will display a simple message and logout link:
 
-[![secapp](/static/images/84/secapp_landing_600.png)](/static/images/84/secapp_landing.png)
+![](/images/84/secapp_landing.png)
 
 ### 1. Prevent information leaks
 
 Information leaks give would-be attackers clues that undermine the login security. One way they do this is by giving information about the software running the web application (which may have known weaknesses).
 
-In SecApp I've turned off the typical Catalyst information leaks. In the root application file [SecApp.pm](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp.pm) the "-Debug" plugin has been removed, which prints a full stack trace in the case of an error:
+In SecApp I've turned off the typical Catalyst information leaks. In the root application file [SecApp.pm](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp.pm) the "-Debug" plugin has been removed, which prints a full stack trace in the case of an error:
 
 ``` prettyprint
 use Catalyst qw/
@@ -103,7 +103,7 @@ These two changes stop the application from informing users the underlying appli
 
 The other type of information leak we need to prevent is indicating logical vulnerabilities by responding differently to similar requests. For example, by responding to login attempts with incorrect usernames with the error message "incorrect username", attackers can brute-force attack the username until they receive the message "incorrect password", at which point they know they have guessed a correct username.
 
-In SecApp, we want to respond with a generic message every time the login attempt fails, and not indicate which field was incorrect. The login function is implemented in our [Root.pm](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L42) controller - we'll look at the code later, but for now you can see that there is only one error message returned.
+In SecApp, we want to respond with a generic message every time the login attempt fails, and not indicate which field was incorrect. The login function is implemented in our [Root.pm](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L42) controller - we'll look at the code later, but for now you can see that there is only one error message returned.
 
 ### 2. Handle credentials secretively
 
@@ -111,7 +111,7 @@ The [The Web Application Hacker's Handbook](http://www.amazon.com/gp/product/111
 
 > All credentials should be created, stored, and transmitted in a manner that does not lead to unauthorized disclosure.
 
-In SecApp [Root.pm](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L11), we use Catalyst's auto Controller function to check that every request is over SSL:
+In SecApp [Root.pm](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L11), we use Catalyst's auto Controller function to check that every request is over SSL:
 
 ``` prettyprint
 # this method will be called everytime
@@ -145,7 +145,7 @@ sub end : ActionClass('RenderView') {
 }
 ```
 
-SecApp sets several other security headers in the [end method](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L90), you can read about what they do [here](http://perltricks.com/article/81/2014/3/31/Perl-web-application-security-HTTP-headers).
+SecApp sets several other security headers in the [end method](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L90), you can read about what they do [here](http://perltricks.com/article/81/2014/3/31/Perl-web-application-security-HTTP-headers).
 
 SecApp only authenticates login requests received via POST. We achieve this by using Catalyst's chained dispatching and HTTP method matching:
 
@@ -169,9 +169,9 @@ sub login_form :Chained('login') PathPart('') Args(0) GET {
 }
 ```
 
-The [code](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L42) has been abbreviated here for clarity. But effectively the "login\_auth" subroutine will only fire if the request to "/login" was made via POST, else just load the login page with the "login\_form" sub. Cool right? Catalyst project manager John Napiorkowski mused on these features in an illustrative [blog post](http://jjnapiorkowski.typepad.com/modern-perl/2013/08/thoughts-on-catalyst-soa-and-web-services.html#.U11rEjnXvqg).
+The [code](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp/Controller/Root.pm#L42) has been abbreviated here for clarity. But effectively the "login\_auth" subroutine will only fire if the request to "/login" was made via POST, else just load the login page with the "login\_form" sub. Cool right? Catalyst project manager John Napiorkowski mused on these features in an illustrative [blog post](http://jjnapiorkowski.typepad.com/modern-perl/2013/08/thoughts-on-catalyst-soa-and-web-services.html#.U11rEjnXvqg).
 
-Finally, SecApp stores the passwords in an hashed format, using a relatively strong algorithm (bcrypt). The following code in [User.pm](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp/Schema/Result/User.pm#L130) adds the functionality:
+Finally, SecApp stores the passwords in an hashed format, using a relatively strong algorithm (bcrypt). The following code in [User.pm](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp/Schema/Result/User.pm#L130) adds the functionality:
 
 ``` prettyprint
 __PACKAGE__->add_columns(
@@ -235,7 +235,7 @@ sub login_auth :Chained('login') PathPart('') Args(0) POST {
 
 Let's walk through the code. If the CAPTCHA functionality is enabled, the login function will attempt to validate the CAPTCHA. If successful, the code then retrieves the username and password, and if they exist, attempts to validate them using the authenticate method. The authenticate method checks both username and password in full against the database. If the username and password are validated, then the user will be re-directed to the landing page which is in the secure Admin.pm controller. Else an error message will set indicating a bad username or password. In all failing cases, the login form will be reloaded and displayed.
 
-So the code looks good, but how do we know if it will do the right thing in all cases? Fortunately [Catalyst::Test](https://metacpan.org/pod/Catalyst::Test) can make unit testing an application's methods easy. SecApp has the test file [Root.t](https://github.com/sillymoose/SecApp_login/blob/master/t/Root.t) which tests the login function with many different combinations of credentials, such as null, zero-length string, correct username incorrect password etc. Running these tests makes it easy to confirm that the login function does the right thing. Want to check for yourself? At the command line run:
+So the code looks good, but how do we know if it will do the right thing in all cases? Fortunately [Catalyst::Test](https://metacpan.org/pod/Catalyst::Test) can make unit testing an application's methods easy. SecApp has the test file [Root.t](https://github.com/dnmfarrell/SecApp_login/blob/master/t/Root.t) which tests the login function with many different combinations of credentials, such as null, zero-length string, correct username incorrect password etc. Running these tests makes it easy to confirm that the login function does the right thing. Want to check for yourself? At the command line run:
 
 ``` prettyprint
 $ TESTING=1 perl -Ilib t/Root.t
@@ -243,9 +243,9 @@ $ TESTING=1 perl -Ilib t/Root.t
 
 ### 4. Prevent brute-force attacks
 
-Brute force attacks are attempts to crack the username and password of an account by repeatedly trying different combinations until one succeeds. SecApp uses [Captcha::reCAPTCHA](https://metacpan.org/pod/Captcha::reCAPTCHA) to prevent automated brute force attacks. You'll need a Google account and web domain to sign up for it (it's free). The difficulty of the captcha puzzles presented are very difficult to reliably pass with automation. If you do have a Google [reCAPtCHA account](https://www.google.com/recaptcha/intro/index.html), you can try it out with SecApp by updating [SecApp.pm](https://github.com/sillymoose/SecApp_login/blob/master/lib/SecApp.pm#L54) with your account credentials.
+Brute force attacks are attempts to crack the username and password of an account by repeatedly trying different combinations until one succeeds. SecApp uses [Captcha::reCAPTCHA](https://metacpan.org/pod/Captcha::reCAPTCHA) to prevent automated brute force attacks. You'll need a Google account and web domain to sign up for it (it's free). The difficulty of the captcha puzzles presented are very difficult to reliably pass with automation. If you do have a Google [reCAPtCHA account](https://www.google.com/recaptcha/intro/index.html), you can try it out with SecApp by updating [SecApp.pm](https://github.com/dnmfarrell/SecApp_login/blob/master/lib/SecApp.pm#L54) with your account credentials.
 
-[![secapp](/static/images/84/secapp_login_catpcha_600.png)](/static/images/84/secapp_login_catpcha.png)
+![](/images/84/secapp_login_catpcha.png)
 
 Seeing as brute-force attacks can only succeed if they can try millions of attempts, why not just add a time-delay like "sleep(2)" to the login function? The problem with that defence is that it opens the web application up to another attack-vector: denial of service. If an attacker can issue several requests every 2 seconds to the login function, it may tie up all of the application's processes and stop it from responding to regular web requests. Not good!
 

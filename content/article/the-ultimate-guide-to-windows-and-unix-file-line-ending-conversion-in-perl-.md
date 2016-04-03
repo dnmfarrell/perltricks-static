@@ -5,8 +5,8 @@
       "windows",
       "powershell",
       "bash",
-      "CRLF",
-      "OSX",
+      "crlf",
+      "osx",
       "old_site"
    ],
    "image" : null,

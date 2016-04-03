@@ -58,11 +58,11 @@ $ perl create_keepass_db.pl
 
 If you have KeePassX or KeePass installed, you can open the newly-created "MyAppDetails.kdb" file. When you do, you'll be asked for the master password that we set:"
 
-[![keepassx login](/static/images/79/keepassx_login.png)](/static/images/79/keepassx_login.png "The KeePassX login window")
+![keepassx login](/images/79/keepassx_login.png)
 
 Once you've entered the master password, KeePassX will show the main window, which lists the groups and entries in the database file. You can see the "Apps" group on the left and the "email" entry that was created listed in the main window.
 
-[![keepassx main screen](/static/images/79/keepassx_group_entry_added_small.png)](/static/images/79/keepassx_group_entry_added.png "The KeePassX main window our Apps group and email entry are showing")
+![keepassx main screen](/images/79/keepassx_group_entry_added.png)
 
 ### Reading KeePass databases
 

@@ -92,7 +92,7 @@ sudo service nginx start
 
 Now check out the site at http://localhost:
 
-[![The default Dancer app - statically deployed](/static/images/102/dancer2_small.png)](/static/images/102/dancer2.png "The default Dancer app - statically deployed")
+![The default Dancer app - statically deployed](/images/102/dancer2.png)
 
 Looks pretty good to me!
 

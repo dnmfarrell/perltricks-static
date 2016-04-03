@@ -4,7 +4,7 @@
       "configuration",
       "sysadmin",
       "perlbrew",
-      "ImageMagick",
+      "imagemagick",
       "old_site"
    ],
    "image" : "/images/57/EC09836E-FF2E-11E3-9F8C-5C05A68B9E16.png",

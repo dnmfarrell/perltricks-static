@@ -82,7 +82,7 @@ The main changes here are:
 
 The other difference is that this code will run a lot faster than the first example. How much faster depends on the platform and the number of input records. In my testing on a quad core processor, I found that the MCE::Grep was consistently 100-150% faster, but with more cores I would expect this to increase further.
 
-![](/static/images/61/mce_grep_comparison_630.png)
+![](/images/61/mce_grep_comparison_630.png)
 
 The other basic automation models [MCE::Loop](https://metacpan.org/pod/MCE::Loop) and [MCE::Map](https://metacpan.org/pod/MCE::Map) work in much the same was as MCE::Grep.
 
@@ -130,7 +130,7 @@ The code above uses MCE::Grep, but the same init() command is provided for all M
 
 When the source type is an array, MCE auto-calculates the chunk size based on the number of input records and workers available. You can override this, however in my testing I found that the auto-calculated chunk-size was nearly always optimal. Here is a typical result set, for processing a 55mb log file:
 
-![](/static/images/61/mce_grep_chunk_size_630.png)
+![](/images/61/mce_grep_chunk_size_630.png)
 
 If the source type is a filehandle, the chunk size defaults to 2 (The module's author Mario Roy has told me this will change in the next version, 1.506). Therefore you may want to override the chunk size to try to get better performance. You can do this using the "init()" method:
 

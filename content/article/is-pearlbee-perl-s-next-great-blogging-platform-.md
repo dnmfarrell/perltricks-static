@@ -29,29 +29,29 @@ I tested the PearlBee on a machine running Fedora 19, MariaDB v5.5.34 and Perl 5
 
 PearlBee comes with an administration portal from where you can write new blog posts. It's accessed via a login page at /admin. The default login credentials are "admin" and "password".
 
-![PearlBee login page screenshot](/static/images/69/admin_login.png)
+![PearlBee login page screenshot](/images/69/admin_login.png)
 
 Once logged in, by default the new post form will display:
 
-![PearlBee new post page screenshot](/static/images/69/new_post.png)
+![PearlBee new post page screenshot](/images/69/new_post.png)
 
 The form is well put together: it has title, slug and cover image file upload controls and a WYSIWYG editor for the main blog text. To the right of the main form is a details form, for setting the blog post category and adding tags. PearlBee creates a tag object for every tag text entered, allowing the tags to be searched against and reused in later posts.
 
-![PearlBee new post page screenshot](/static/images/69/completed_post.png)
+![PearlBee new post page screenshot](/images/69/completed_post.png)
 
 Having completed the form, press "Publish" to save the post and make it live. PearlBee will display a helpful success message:
 
-![PearlBee saved post page screenshot](/static/images/69/saved_post.png)
+![PearlBee saved post page screenshot](/images/69/saved_post.png)
 
 And the post will now be live on the main blog page:
 
-![PearlBee page frontpage screenshot](/static/images/69/post_on_frontpage.png)
+![PearlBee page frontpage screenshot](/images/69/post_on_frontpage.png)
 
 Notice how PearlBee has updated the categories and tags on the right side of the screen for convenient filtering.
 
 One thing that could be better is the image handling. I found that a square image was unevenly flattened into landscape proportions (but it displays correctly on the blog front page).
 
-![PearlBee saved post flat image page screenshot](/static/images/69/flat_onion_image.png)
+![PearlBee saved post flat image page screenshot](/images/69/flat_onion_image.png)
 
 I tested PearlBee's image upload with both jpeg and png files and both worked fine.
 
@@ -59,7 +59,7 @@ I tested PearlBee's image upload with both jpeg and png files and both worked fi
 
 PearlBee's admin portal has a slick and clean interface. Menu drop-down lists expand and contract smoothly and forms are provided to manage the site's data. We've encountered some of the database model objects already: posts, categories and tags. Here is the post management page:
 
-![PearlBee post management page screenshot](/static/images/69/post_management.png)
+![PearlBee post management page screenshot](/images/69/post_management.png)
 
 The page lists all posts and provides there high level attributes such as author, title and categories. It also provides switches to quickly change a post's status. This is useful if a post needs to be taken-down and edited, or re-posted. At the time of review the page contained a couple of typos and unfortunately the link to view the article did not work (neither the link on the title or the eye icon). These can be worked around though.
 
@@ -71,13 +71,13 @@ There is also a site-wide settings page for the blog. From here you can set the 
 
 PearlBee comes with a comments system built-in. The comments form appears beneath a blog post, with existing comments showing there as well:
 
-![PearlBee comment management page screenshot](/static/images/69/comment_posted.png)
+![PearlBee comment management page screenshot](/images/69/comment_posted.png)
 
 I thought the styling on the comments form looks professional and reminded me of the "Disqus" comments system design. PearlBee provides a CAPTCHA on the form out-of-the-box, which is a useful spam filter.
 
 All comments are moderated, and require approval before going live. I tested the comment submission and moderation process and it worked first time. This is the comments management page:
 
-![PearlBee comment management page screenshot](/static/images/69/comment_management.png)
+![PearlBee comment management page screenshot](/images/69/comment_management.png)
 
 Once approved, comments appear beneath the blog post.
 

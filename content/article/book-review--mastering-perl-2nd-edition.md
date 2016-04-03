@@ -45,7 +45,7 @@ The content of the new edition has been refreshed and beefed-up; it's about 50 p
 
 ### Style changes
 
-![](/static/images/67/mastering_perl_first_second_cover.png)
+![](/images/67/mastering_perl_first_second_cover.png)
 
 The covers for the first and second editions are shown above. Style-wise O'Reilly has given Mastering Perl a spring clean. The cover title lettering has changed from Garamond to URW Typewriter, and the family of vicuñas has undergone a North Korean-style airbrushing, with the (presumably) troublesome second fawn removed entirely. I like the new cover, it feels cleaner and more modern but stays faithful to the Perl tradition with the blue background and camel-related animal on the cover. Beyond the cover, the book's pages have not changed in style at all, with the same fonts and spacing used throughout.
 

@@ -20,7 +20,7 @@
 **Let's talk about the elephant in the room, that new cover of Mastering Perl. Do you like it?**
  I saw the change when the book was nearing completion, because they usually save that activity for the end of the publication process. I haven't seen it in print yet, but I don't think it will influence people that much, as people tend to buy technical books based on the title and the content rather than the cover. It seems similar to what Apple did with iOS 7—make everything very thin and flat. I'm getting old so I need everything to be bigger! It's something different than what people have seen before and I think it will take a while for the style to take hold and then people will identify it with the Perl series much like the previous style.
 
-![](/static/images/67/mastering_perl_first_second_cover.png)
+![](/images/67/mastering_perl_first_second_cover.png)
 
 **Originally you set out the vision for Mastering Perl to be: "teach people to work on their own and get them on the road to being a Perl master" — how do you think the new edition of Mastering Perl achieves that?**
 
