@@ -8,7 +8,7 @@
       "terminator",
       "tmux"
    ],
-   "image" : "http://googledrive.com/host/0BwRnByTz2iUXazVBdzNFRU1QV1k",
+   "image" : "/images/an-introduction-to-tmux/tmux-panes.png",
    "title" : "An introduction to Tmux",
    "authors" : [
       "David Farrell"
@@ -97,9 +97,15 @@ If you know the window number you can also jump straight to it with `Ctrl-b #` r
 You might be wondering what's the benefit of using Tmux windows over tabbed terminals. First, with regular terminals if the window manager crashes, you'll lose the terminals as well. This won't happen with Tmux: it will keep the terminals running in the background and you can re-attach a new terminal to them at any time. Windows can also be subdivided into panes, all running pseudo-terminals. Let's look at them now.
 
 ### Pane control
-Panes are great. You can split a window horizontally, vertically and with any dimensions you like. Recently I was processing a huge set of data; I arranged my Tmux window with 3 panes running the data processing and 1 pane monitoring the server resources with [htop](http://hisham.hm/htop/). This server is almost overloaded:
+Panes are great. You can split a window horizontally, vertically and with any dimensions you like. Have you ever wanted to quickly look up a man page whilst coding? Instead of dropping back to the terminal, looking up the man page and then foregrounding your editor, just open a new vertical pane, like this:
 
-![Tmux Panes](http://googledrive.com/host/0BwRnByTz2iUXazVBdzNFRU1QV1k)
+![Tmux Panes](/images/an-introduction-to-tmux/tmux-split-screen.png)
+
+Now you can read the man page and code at the same time; you can even copy and paste between the two panes. Much more convenient!
+
+Recently I was processing a huge set of data; I arranged my Tmux window with 3 panes running the data processing and 1 pane monitoring the server resources with [htop](http://hisham.hm/htop/). This server is almost overloaded:
+
+![Tmux Panes](/images/an-introduction-to-tmux/tmux-panes.png)
 
 These are the key pane controls:
 
@@ -118,7 +124,7 @@ The arrows `←↑→↓` represent the arrow keys, just use one of these. For e
 `Ctrl-b !` is one of my favorite features. It pops the current pane out of the window and moves it to its own window. This is wonderful if you find yourself doing some unrelated activity in one pane and want to re-organize your setup.
 
 ### Scrolling and copy/paste
-If you can master scrolling and copy/paste in Tmux, you can master anything. I won't lie, this is the clunkiest feature. But it's really useful. The interface is modal, so start by entering scroll mode:
+If you can master scrolling and copy/paste in Tmux, you can master anything. I won't lie, this is the clunkiest feature. But it's really useful. The interface is modal, so start by entering scroll mode.
 
 Type `Ctrl-b [`. Pressing `esc` will exit scroll mode. You should know you're in scroll mode because an orange line count appears in the top-right corner of the pane.
 
@@ -126,11 +132,11 @@ Once you're in scroll mode, you can move the cursor using the arrow keys and pag
 
 You can copy and paste in scroll mode. This is useful when you have split screens as a regular highlight and copy using the mouse won't work across vertically split panes.
 
-![copy fail](http://googledrive.com/host/0BwRnByTz2iUXN09fQVJCS1hTVXc)
+![copy fail](/images/an-introduction-to-tmux/tmux-copy-fail.png)
 
 To copy, position the cursor where you want to start copying. Press `Ctrl-space` to begin highlighting the text to copy. Press `Alt-w` to copy the highlighted text. Pressing `Ctrl-b ]` will paste the copied text. There are ways to make copy and paste easier: Tmux has a "vim like" copy mode (see the Config options section).
 
-![copy win](http://googledrive.com/host/0BwRnByTz2iUXYjRpRTIxZWVDUUE)
+![copy win](/images/an-introduction-to-tmux/tmux-copy-win.png)
 
 ### Session control
 Sessions are one of the most useful features of Tmux. They let you group multiple terminal processes into a single Tmux session which can be worked on (attached), put into the background (detached) and discarded as you see fit. Programmers will often have different sessions for different projects. Because Tmux operates under a client-server architecture, even if the original terminal that started Tmux dies or your desktop GUI crashes, the Tmux session will be preserved, along with all of the terminal sessions in it.
@@ -152,7 +158,7 @@ By default Tmux attaches to the next unattached session ("2") in this case. If I
     $ tmux attach -t 2
 
 ### Config options
-The file `~/.tmux.conf` is a plaintext file used by Tmux for local config. This example config file shows some common options:
+The file `~/.tmux.conf` is a plaintext file used by Tmux for local config. This is what mine looks like:
 
     # set scroll history to 10,000 lines
     set-option -g history-limit 10000
@@ -161,16 +167,15 @@ The file `~/.tmux.conf` is a plaintext file used by Tmux for local config. This 
     set -g utf8 on set-window-option -g utf8 on
     set -g default-terminal screen-256color
     
+    # don't use a login shell
+    set-option -g default-command /bin/bash
+
     # unbind the prefix and bind it to Ctrl-a like screen
     unbind C-b set -g prefix C-a bind C-a send-prefix
-    
-    # use zsh instead of bash
-    set -g default-command /bin/zsh set -g default-shell /bin/zsh \`\`\`
 
-    # enable vi-like copy/paste
-    set-window-option -g mode-keys vi
+By default Tmux uses a login shell, so every new pane will execute `.bash_profile`. I prefer to disable that behavior and just launch regular non-login shells. Tmux has hundreds more options: many users will switch to a different shell like zsh, enable pane switching with the trackpad, display custom data in the Tmux footer (like weather info!) and so on. Copying other programmers' [conf files](https://github.com/search?utf8=%E2%9C%93&q=.tmux.conf) is a great way to learn and experiment.
 
-To reload your `.tmux.conf` within a Tmux session, type: `Ctrl-b :` then `source-file ~/.tmux.conf`. These are just example settings - you should tweak them to suit your preferences.
+To reload your `.tmux.conf` within a Tmux session, type: `Ctrl-b :` then `source-file ~/.tmux.conf`.
 
 ### Tmux resources
 The official Tmux [website](https://tmux.github.io/) is a good starting point with summary information, a changelog, downloads and a link to the extensive [man page](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&sec=1). The Arch Linux [tmux documentation](https://wiki.archlinux.org/index.php/Tmux) covers advanced features and troubleshooting tips. The book [tmux - Productive Mouse-Free Development](https://pragprog.com/book/bhtmux/tmux) by Pragmatic Bookshelf is thorough introduction to Tmux.
