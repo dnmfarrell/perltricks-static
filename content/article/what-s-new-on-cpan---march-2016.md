@@ -15,7 +15,7 @@
    "date" : "2016-04-06T09:12:09",
    "title" : "What's new on CPAN - March 2016",
    "description" : "A curated look at March's new CPAN uploads",
-   "draft" : true,
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ]
