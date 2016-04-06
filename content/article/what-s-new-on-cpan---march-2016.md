@@ -12,7 +12,7 @@
       "mce"
    ],
    "image" : "/images/172/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
-   "date" : "2016-04-06T09:1:09",
+   "date" : "2016-04-06T09:12:09",
    "title" : "What's new on CPAN - March 2016",
    "description" : "A curated look at March's new CPAN uploads",
    "draft" : true,
