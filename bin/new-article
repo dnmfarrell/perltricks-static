@@ -4,13 +4,16 @@ use Cwd;
 use Getopt::Long 'GetOptions';
 use Time::Piece;
 
+my @categories = qw/apps community cpan data development hardware managing_perl perl6 security testing web/;
+
 GetOptions(
   'title=s'       => \my $title,
+  'category=s'    => \my $category,
   'description=s' => \(my $description = ''),
   'author=s'      => \(my $author = ''),
   'help'          => \&usage,
 ) or usage();
-usage() unless $title;
+usage() unless $title && $category && (grep $_ eq $category, @categories);
 
 # check we're in perltricks-static
 my $cwd = cwd();
@@ -50,6 +53,8 @@ sub usage {
   print "\n$0 [OPTIONS]\n\n";
   print "Options
   --title, -t        Article title (required)
+  --category, -c     One of: apps,community,cpan,data,development,hardware
+                             managing_perl,perl6,security,testing,web
   --description, -d  Description (subtitle)
   --author, -a       Author
   --help, -h         Print help

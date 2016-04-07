@@ -126,9 +126,9 @@ The arrows `←↑→↓` represent the arrow keys, just use one of these. For e
 `Ctrl-b !` is one of my favorite features. It pops the current pane out of the window and moves it to its own window. This is wonderful if you find yourself doing some unrelated activity in one pane and want to re-organize your setup.
 
 ### Scrolling and copy/paste
-If you can master scrolling and copy/paste in Tmux, you can master anything. I won't lie, this is the clunkiest feature. But it's really useful. The interface is modal, so start by entering scroll mode.
+If you can master scrolling and copy/paste in Tmux, you can master anything. I won't lie, this is the clunkiest feature. But it's really useful. The interface is modal, so start by entering scroll mode by typing `Ctrl-b [`.
 
-Type `Ctrl-b [`. Pressing `esc` will exit scroll mode. You should know you're in scroll mode because an orange line count appears in the top-right corner of the pane.
+Pressing `esc` will exit scroll mode. You should know you're in scroll mode because an orange line count appears in the top-right corner of the pane.
 
 Once you're in scroll mode, you can move the cursor using the arrow keys and page up and down. By default Tmux doesn't retain much history, but you can change that (see the Config options section).
 
@@ -136,9 +136,11 @@ You can copy and paste in scroll mode. This is useful when you have split screen
 
 ![copy fail](/images/an-introduction-to-tmux/tmux-copy-fail.png)
 
-To copy, position the cursor where you want to start copying. Press `Ctrl-space` to begin highlighting the text to copy. Press `Alt-w` to copy the highlighted text. Pressing `Ctrl-b ]` will paste the copied text. There are ways to make copy and paste easier: Tmux has a "vim like" copy mode (see the Config options section).
+To copy, position the cursor where you want to start copying. Press `Ctrl-space` to begin highlighting the text to copy. Press `Alt-w` to copy the highlighted text. Pressing `Ctrl-b ]` will paste the copied text. There are ways to make copy and paste easier: Tmux has a "vim like" copy mode (see the Config options section and the [man](http://man.openbsd.org/OpenBSD-current/man1/tmux.1) page for details).
 
 ![copy win](/images/an-introduction-to-tmux/tmux-copy-win.png)
+
+**Shortcut** You can jump into scroll mode and page up in one fell swoop with `Ctrl-b PgUp` (thanks to Ludovic Tolhurst for the tip).
 
 ### Session control
 Sessions are one of the most useful features of Tmux. They let you group multiple terminal processes into a single Tmux session which can be worked on (attached), put into the background (detached) and discarded as you see fit. Programmers will often have different sessions for different projects. Because Tmux operates under a client-server architecture, even if the original terminal that started Tmux dies or your desktop GUI crashes, the Tmux session will be preserved, along with all of the terminal sessions in it.
@@ -163,23 +165,25 @@ By default Tmux attaches to the next unattached session ("2") in this case. If I
 The file `~/.tmux.conf` is a plaintext file used by Tmux for local config. This is what mine looks like:
 
     # set scroll history to 10,000 lines
-    set-option -g history-limit 10000
+    set -g history-limit 10000
     
     # modern encoding and colors
     set -g utf8 on set-window-option -g utf8 on
     set -g default-terminal screen-256color
     
     # don't use a login shell
-    set-option -g default-command /bin/bash
+    set -g default-command /bin/bash
 
     # unbind the prefix and bind it to Ctrl-a like screen
     unbind C-b set -g prefix C-a bind C-a send-prefix
 
-By default Tmux uses a login shell, so every new pane will execute `.bash_profile`. I prefer to disable that behavior and just launch regular non-login shells. Tmux has hundreds more options: many users will switch to a different shell like zsh, enable pane switching with the trackpad, display custom data in the Tmux footer (like weather info!) and so on. Copying other programmers' [conf files](https://github.com/search?utf8=%E2%9C%93&q=.tmux.conf) is a great way to learn and experiment.
+Tmux starts with a tiny scroll history, so I like to bump that up. The modern encoding and colors are there to jive with my terminal setup - they may even be the default Tmux settings by now. By default Tmux uses a login shell, so every new pane will execute `.bash_profile`. I prefer to disable that behavior and just launch regular non-login shells.
+
+Tmux has hundreds more options: many users will switch to a different shell like zsh, enable pane switching with the trackpad, display custom data in the Tmux footer (like weather info!) and so on. Copying other programmers' [conf files](https://github.com/search?utf8=%E2%9C%93&q=.tmux.conf) is a great way to learn and experiment.
 
 To reload your `.tmux.conf` within a Tmux session, type: `Ctrl-b :` then `source-file ~/.tmux.conf`.
 
 ### Tmux resources
-The official Tmux [website](https://tmux.github.io/) is a good starting point with summary information, a changelog, downloads and a link to the extensive [man page](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&sec=1). The Arch Linux [tmux documentation](https://wiki.archlinux.org/index.php/Tmux) covers advanced features and troubleshooting tips. The book [tmux - Productive Mouse-Free Development](https://pragprog.com/book/bhtmux/tmux) by Pragmatic Bookshelf is thorough introduction to Tmux.
+The official Tmux [website](https://tmux.github.io/) is a good starting point with summary information, a changelog, downloads and a link to the extensive [man page](http://man.openbsd.org/OpenBSD-current/man1/tmux.1). The Arch Linux [tmux documentation](https://wiki.archlinux.org/index.php/Tmux) covers advanced features and troubleshooting tips. The book [tmux - Productive Mouse-Free Development](https://pragprog.com/book/bhtmux/tmux) by Pragmatic Bookshelf is thorough introduction to Tmux.
 
 [GNU Screen](http://perltricks.com/article/153/2015/2/16/Get-to-grips-with-GNU-Screen/) is another terminal multiplexer program. It's older than Tmux and a little bit crufty, but it has most of the features Tmux has. The controls for Screen and Tmux are similar enough that if you know one of them you can get by using the other. The Tmux [FAQ](https://raw.githubusercontent.com/tmux/tmux/master/FAQ) lists the differences between them.
