@@ -7,7 +7,7 @@
    ],
    "draft" : false,
    "date" : "2015-03-23T12:42:08",
-   "categories" : "science",
+   "categories" : "data",
    "image" : "/images/161/8E7370C2-D159-11E4-B723-63A34E596431.jpeg",
    "description" : "Algorithm::Kelly makes it easy",
    "slug" : "161/2015/3/23/Calculate-Fortune-s-Formula-with-Perl",
