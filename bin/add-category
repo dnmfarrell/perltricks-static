@@ -24,7 +24,7 @@ sub add_category {
     unless $header && $body;
 
   my $json = decode_json($header);
-  $json->{category} = $category;
+  $json->{categories} = $category;
   $header = JSON->new->pretty->encode($json);
   return $header . $body;
 }
