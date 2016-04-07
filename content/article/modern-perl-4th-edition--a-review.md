@@ -1,20 +1,22 @@
 {
-   "draft" : false,
-   "date" : "2015-12-21T00:02:25",
-   "slug" : "205/2015/12/21/Modern-Perl-4th-edition--a-review",
+   "categories" : "community",
    "description" : "It gets better and better",
+   "image" : "/images/205/0EF82B78-A74E-11E5-A347-D65A815E78B2.jpeg",
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Modern Perl 4th edition, a review",
-   "image" : "/images/205/0EF82B78-A74E-11E5-A347-D65A815E78B2.jpeg",
    "tags" : [
       "cpan",
       "chromatic",
       "pragmatic_bookshelf",
       "old_site"
-   ]
+   ],
+   "title" : "Modern Perl 4th edition, a review",
+   "date" : "2015-12-21T00:02:25",
+   "slug" : "205/2015/12/21/Modern-Perl-4th-edition--a-review"
 }
+
 
 The 4th edition of [Modern Perl](https://pragprog.com/book/swperl/modern-perl-fourth-edition) by chromatic is out. I was given an advance copy to review and the book features my praise quote, so I figured it was about time I wrote my notes up into a longer review. Overall I really like the changes to the new edition; in my opinion, Modern Perl continues to provide a valuable introduction to idiomatic Perl programming.
 
@@ -67,4 +69,3 @@ As an opinionated introduction to Perl, Modern Perl is a compromise between a tu
 ### Where to get it
 
 You can read Modern Perl [online](http://modernperlbooks.com/books/modern_perl_2014/index.html) for free, and there are downloadable versions available from [Onyx Neon](http://onyxneon.com/books/modern_perl/index.html). If you want it as an ebook, I would recommend the Pragmatic Bookshelf [version](https://pragprog.com/book/swperl/modern-perl-fourth-edition) - it's beautifully styled, free, and you'll be eligible for updates to the text as/when they appear.
-

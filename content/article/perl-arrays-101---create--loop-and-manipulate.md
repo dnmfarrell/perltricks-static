@@ -1,13 +1,8 @@
 {
-   "draft" : false,
-   "date" : "2013-04-04T20:22:51",
-   "slug" : "11/2013/4/4/Perl-arrays-101---create--loop-and-manipulate",
-   "description" : "Arrays in Perl contain an ordered list of values that can be accessed using built-in functions. They are one of the most useful data structures and frequently used in Perl programming.",
-   "authors" : [
-      "David Farrell"
-   ],
-   "title" : "Perl arrays 101 - create, loop and manipulate",
    "image" : null,
+   "categories" : "development",
+   "slug" : "11/2013/4/4/Perl-arrays-101---create--loop-and-manipulate",
+   "draft" : false,
    "tags" : [
       "array",
       "syntax",
@@ -17,8 +12,15 @@
       "unshift",
       "foreach",
       "old_site"
-   ]
+   ],
+   "description" : "Arrays in Perl contain an ordered list of values that can be accessed using built-in functions. They are one of the most useful data structures and frequently used in Perl programming.",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "Perl arrays 101 - create, loop and manipulate",
+   "date" : "2013-04-04T20:22:51"
 }
+
 
 Arrays in Perl contain an ordered list of values that can be accessed using built-in functions. They are one of the most useful data structures and frequently used in Perl programming.
 
@@ -138,4 +140,3 @@ if (@empty_array) {
     # do something - will not be reached if the array has 0 elements
 }
 ```
-

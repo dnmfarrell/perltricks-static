@@ -1,12 +1,4 @@
 {
-   "description" : "How to tackle this tricky config issue",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
-   "date" : "2013-04-15T18:37:26",
-   "slug" : "19/2013/4/15/Installing-Perl-modules-with-C-library-dependencies",
-   "image" : null,
    "tags" : [
       "configuration",
       "cpan",
@@ -17,8 +9,18 @@
       "sysadmin",
       "old_site"
    ],
-   "title" : "Installing Perl modules with C library dependencies"
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "How to tackle this tricky config issue",
+   "categories" : "managing_perl",
+   "title" : "Installing Perl modules with C library dependencies",
+   "image" : null,
+   "date" : "2013-04-15T18:37:26",
+   "slug" : "19/2013/4/15/Installing-Perl-modules-with-C-library-dependencies"
 }
+
 
 Some Perl modules have specific C library dependencies that need to be met or else they won't install. These issues can be tricky to solve as CPAN is not able to automatically install or report on non-Perl dependencies and Google isn't good at returning useful results for these types of issues ([Net::SSLeay](https://metacpan.org/module/MIKEM/Net-SSLeay-1.54/lib/Net/SSLeay.pod) is a common example of a tricky module to install). Usually you will only find out about missing dependencies when trying to install the module, as the install will fail. What you need to do at this point is **identify** and **install** the missing C libraries.
 
@@ -45,4 +47,3 @@ sudo yum install openssl-perl.x86_64 perl-Net-SSLeay.x86_64 perl-Crypt-SSLeay.x8
 If you are not on Linux, try downloading the library directly from the C library's homepage - these are easy to find via Google and usually have specific Windows / OSX distributions.
 
 Once you have installed the requisite libraries, try installing the Perl module again with CPAN.
-

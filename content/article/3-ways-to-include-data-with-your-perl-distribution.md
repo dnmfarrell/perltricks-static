@@ -1,20 +1,22 @@
 {
-   "title" : "3 ways to include data with your Perl distribution",
+   "image" : "/images/66/EC3CE0E2-FF2E-11E3-8F16-5C05A68B9E16.png",
+   "description" : "TIMTOWDI",
+   "draft" : false,
+   "categories" : "data",
+   "slug" : "66/2014/2/7/3-ways-to-include-data-with-your-Perl-distribution",
    "tags" : [
       "configuration",
       "module",
       "__data__",
       "old_site"
    ],
-   "image" : "/images/66/EC3CE0E2-FF2E-11E3-8F16-5C05A68B9E16.png",
-   "slug" : "66/2014/2/7/3-ways-to-include-data-with-your-Perl-distribution",
-   "date" : "2014-02-07T04:05:13",
-   "draft" : false,
+   "title" : "3 ways to include data with your Perl distribution",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "TIMTOWDI"
+   "date" : "2014-02-07T04:05:13"
 }
+
 
 *As a module author, being able to include data in your Perl distribution is super-useful. Data can be used for things like configuration and writing data-driven tests. Here are three ways to include data in a Perl distribution.*
 
@@ -204,4 +206,3 @@ This method requires more work than the first two, but also offers a lot in retu
 The examples have focused on including YAML data, but the solutions would work for most data types. Including data with Perl distributions is not as easy as it should be. However with the three solutions described here, you should be equipped to tackle the typical scenarios.
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F66%2F2014%2F2%2F7%2F3-ways-to-include-data-with-your-Perl-distribution&text=3%20ways%20to%20include%20data%20with%20your%20Perl%20distribution&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F66%2F2014%2F2%2F7%2F3-ways-to-include-data-with-your-Perl-distribution&via=perltricks) it!
-

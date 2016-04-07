@@ -1,4 +1,5 @@
 {
+   "draft" : false,
    "tags" : [
       "perl",
       "shellshock",
@@ -11,15 +12,16 @@
       "old_site"
    ],
    "image" : "/images/115/BCF626CC-4583-11E4-951D-2D78FA3BB728.jpeg",
-   "title" : "Shellshock and Perl",
+   "categories" : "security",
+   "slug" : "115/2014/9/26/Shellshock-and-Perl",
+   "date" : "2014-09-26T13:28:54",
+   "description" : "Understanding the Shellshock bug what it means for Perl",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Understanding the Shellshock bug what it means for Perl",
-   "slug" : "115/2014/9/26/Shellshock-and-Perl",
-   "date" : "2014-09-26T13:28:54",
-   "draft" : false
+   "title" : "Shellshock and Perl"
 }
+
 
 Recently the tech media have been foaming at the mouth over a serious Bash [bug](https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/) called Shellshock. The media [hype machine](http://www.wired.com/2014/09/internet-braces-crazy-shellshock-worm/) was in full-swing, replete with the absurd doomsday-like predictions that are rolled out every time a significant security vulnerability is found (remember heartbleed the "[ultimate web nightmare](http://mashable.com/2014/04/09/heartbleed-nightmare/)"?). Whilst it's wise to ignore the hype, don't ignore the issue; Shellshock is a serious risk that allows remote code injection and execution using Bash environment variables. This is also important for Perl as Perl has several touchpoints with the system shell, from the built-in functions [exec](http://perldoc.perl.org/functions/exec.html) and [system](http://perldoc.perl.org/functions/system.html) to the `%ENV` global variable.
 
@@ -110,4 +112,3 @@ The safest way to handle Shellshock on a vulnerable system is to patch Bash to t
 **Correction:** *removed erroneous description of $SHELL as it is the current user's default login shell, not the default shell. Removed reference to .bashrc as Bash will only process .bashrc during interactive shell startup. 2014-09-27*
 
 *Cover image Ebola virus particles [©](http://creativecommons.org/licenses/by/4.0/) [NIAID](https://www.flickr.com/photos/niaid/8425030684/in/photolist-dQuu6J-o15Y5n-oq5wzY-oD1uxC-oq68Cn-8r1Hp8-oDe3A2-oDe3za-dPiDp3-ossh3B-2j1bum-jQvxq9-oq59Z4-oq5muj-omJEd1-omJzrD-4JZtfw-aronSf-8GSyC4-68Zxqv-9y7vkf-dPzNiw-5WLSVq-6hZDW8-nds12g-5Wtkeh-6hNQv2-6irCWw-6iQKwC-bS1gap-Jx5bZ-bjfWK2-bjfWiv-dQSzhC-6iUKSo-6ik4Ki-6i3YrM-cXXqXy-64vTm8-cCwK63-8LVkQh-sxxGP-dTpMUd-Dj4uW-6mhvwX-6iGBED-9rwqiP-8R5WMy-9yXaMc-6isfVm)*
-

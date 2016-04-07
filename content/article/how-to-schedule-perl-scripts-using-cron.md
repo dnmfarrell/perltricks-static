@@ -1,11 +1,14 @@
 {
+   "title" : "How to schedule Perl scripts using cron",
+   "draft" : false,
+   "slug" : "43/2013/10/11/How-to-schedule-Perl-scripts-using-cron",
+   "date" : "2013-10-11T01:54:20",
    "authors" : [
       "David Farrell"
    ],
    "description" : "Cron is a job scheduling program available on UNIX-like platforms. Most system commands can be scheduled including the execution of Perl programs. Once a job is setup, cron will run it as scheduled even if the user is not logged in, which can be a great way to automate sysadmin tasks or repetitive jobs. This article describes how to run Perl scripts with cron.",
-   "slug" : "43/2013/10/11/How-to-schedule-Perl-scripts-using-cron",
-   "draft" : false,
-   "date" : "2013-10-11T01:54:20",
+   "image" : null,
+   "categories" : "apps",
    "tags" : [
       "configuration",
       "linux",
@@ -14,10 +17,9 @@
       "mac",
       "config",
       "old_site"
-   ],
-   "image" : null,
-   "title" : "How to schedule Perl scripts using cron"
+   ]
 }
+
 
 Cron is a job scheduling program available on UNIX-like platforms. Most system commands can be scheduled including the execution of Perl programs. Once a job is setup, cron will run it as scheduled even if the user is not logged in, which can be a great way to automate sysadmin tasks or repetitive jobs. This article describes how to run Perl scripts with cron.
 
@@ -97,4 +99,3 @@ Working with cron is usually straightforward, but if you are having difficulty g
 -   If you need to run a script as root, just create a crontab for root using sudo: "sudo crontab -e"
 
 A good list of general cron tips can be found [here](http://askubuntu.com/questions/23009/reasons-why-crontab-does-not-work).
-

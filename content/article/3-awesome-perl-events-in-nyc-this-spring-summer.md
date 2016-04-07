@@ -1,4 +1,13 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "community",
+   "description" : "Quack & Hack, the NY.PM Hackathon and Mojoconf",
+   "date" : "2015-03-31T13:25:56",
+   "title" : "3 Awesome Perl Events in NYC this Spring/Summer",
+   "image" : "/images/166/EF80587C-D7A7-11E4-97B7-189F4E596431.jpeg",
+   "slug" : "166/2015/3/31/3-Awesome-Perl-Events-in-NYC-this-Spring-Summer",
    "tags" : [
       "community",
       "duckduckgo",
@@ -10,16 +19,9 @@
       "bloomberg",
       "old_site"
    ],
-   "image" : "/images/166/EF80587C-D7A7-11E4-97B7-189F4E596431.jpeg",
-   "title" : "3 Awesome Perl Events in NYC this Spring/Summer",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Quack & Hack, the NY.PM Hackathon and Mojoconf",
-   "slug" : "166/2015/3/31/3-Awesome-Perl-Events-in-NYC-this-Spring-Summer",
-   "date" : "2015-03-31T13:25:56",
    "draft" : false
 }
+
 
 Something great is happening in NYC; there are 3 special Perl events happening in the next 3 months!
 
@@ -40,4 +42,3 @@ The [NYC Perl Hackathon](https://github.com/nyperlmongers/nyperlhackathon2015/wi
 Not far from NYC, the [DC-Baltimore Perl workshop](http://dcbpw.org/dcbpw2015/) is running April 11<sup>th</sup>-12<sup>th</sup>, with a day of talks followed by a hackathon. For other events, a good list of global Perl events can be found on [Perl Weekly](http://perlweekly.com/events.html).
 
 I'm going to all 3 New York events, and looking forward to seeing everyone there. So come over and say hi! if you see me.
-

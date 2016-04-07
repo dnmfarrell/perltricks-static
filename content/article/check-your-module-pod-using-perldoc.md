@@ -1,20 +1,22 @@
 {
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Perl ships with a command-line program called perldoc that makes it easier to search and read Perl's vast documentation in the POD markup language. If perldoc is called with the -F flag, it will display the POD markup of an input file - this can be useful when your are developing a new Perl distribution and want to check the appearance of the POD in your module before it appears on CPAN for all to see.",
    "slug" : "9/2013/4/1/Check-your-module-POD-using-perldoc",
-   "draft" : false,
+   "description" : "Perl ships with a command-line program called perldoc that makes it easier to search and read Perl's vast documentation in the POD markup language. If perldoc is called with the -F flag, it will display the POD markup of an input file - this can be useful when your are developing a new Perl distribution and want to check the appearance of the POD in your module before it appears on CPAN for all to see.",
+   "title" : "Check your module POD using perldoc",
    "date" : "2013-04-01T22:45:35",
+   "image" : null,
+   "categories" : "testing",
    "tags" : [
       "debugging",
       "documentation",
       "pod",
       "old_site"
-   ],
-   "image" : null,
-   "title" : "Check your module POD using perldoc"
+   ]
 }
+
 
 Perl ships with a command-line program called perldoc that makes it easier to search and read Perl's vast documentation in the POD markup language. If perldoc is called with the -F flag, it will display the POD markup of an input file - this can be useful when your are developing a new Perl distribution and want to check the appearance of the POD in your module before it appears on CPAN for all to see.
 
@@ -55,4 +57,3 @@ METHODS
    new
        The constructor accepts an anonymous hash for two optional parameters: config_path and warning_flag. config_path is the path that ProxyManager.pm will use to create the config file when the create_config method is called. By default config_path is set to '/tmp/openvpn-config.conf'.
 ```
-

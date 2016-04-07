@@ -1,5 +1,11 @@
 {
+   "authors" : [
+      "Joel Berger"
+   ],
+   "description" : "Control access to your Mojo app with registration emails",
+   "image" : "/images/193/8BAEFFB8-5E31-11E5-8EC0-4782D27BB60F.png",
    "title" : "How to send verification emails using Mojolicious",
+   "slug" : "193/2015/9/18/How-to-send-verification-emails-using-Mojolicious",
    "tags" : [
       "mojo",
       "email",
@@ -7,15 +13,11 @@
       "automated",
       "old_site"
    ],
-   "image" : "/images/193/8BAEFFB8-5E31-11E5-8EC0-4782D27BB60F.png",
-   "slug" : "193/2015/9/18/How-to-send-verification-emails-using-Mojolicious",
-   "draft" : false,
+   "categories" : "web",
    "date" : "2015-09-18T11:46:46",
-   "authors" : [
-      "Joel Berger"
-   ],
-   "description" : "Control access to your Mojo app with registration emails"
+   "draft" : false
 }
+
 
 Everyone has signed up for a website which confirms your email address by sending you a verification email. This is a simple process: if you can respond to this email, you must have access to the email address. Yet for its simplicity, writing such a system might not seem as easy.
 
@@ -260,4 +262,3 @@ __DATA__
 <p>Welcome back <%= session 'username' %>!</p>
 <p><%= link_to 'Log out' => 'logout' %></p>
 ```
-

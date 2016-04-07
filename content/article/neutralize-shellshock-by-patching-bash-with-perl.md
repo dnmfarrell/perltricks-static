@@ -1,12 +1,10 @@
 {
-   "description" : "Unsupported Linux version? Upgrade Bash now",
+   "date" : "2014-10-05T18:13:45",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
-   "date" : "2014-10-05T18:13:45",
-   "slug" : "118/2014/10/5/Neutralize-Shellshock-by-patching-Bash-with-Perl",
    "image" : "/images/118/DF80161A-4CB5-11E4-9806-0EA0FA3BB728.png",
+   "draft" : false,
    "tags" : [
       "bash",
       "perl",
@@ -15,8 +13,12 @@
       "bashfix",
       "old_site"
    ],
-   "title" : "Neutralize Shellshock by patching Bash with Perl"
+   "description" : "Unsupported Linux version? Upgrade Bash now",
+   "categories" : "security",
+   "title" : "Neutralize Shellshock by patching Bash with Perl",
+   "slug" : "118/2014/10/5/Neutralize-Shellshock-by-patching-Bash-with-Perl"
 }
+
 
 The safest way to protect a system from Shellshock is to upgrade to a patched version of Bash. However if you're like me, you may find that a hectic Linux distro release [schedule](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle) has left your current distribution unsupported. Rather than run the risk of attack, you can patch Bash yourself. Unfortunately some versions of Bash have as many as 52 different [patches](http://ftp.gnu.org/gnu/bash/bash-4.2-patches/) that must be downloaded and applied. So I wrote a Perl called [bashfix](https://github.com/sillymoose/bashfix) to automate it.
 
@@ -59,4 +61,3 @@ Bashfix checks that you have Bash installed, and the necessary prerequisites. It
 I've tested [bashfix](https://github.com/sillymoose/bashfix) on different versions of Fedora and CentOS, and expect that it works with any RHEL flavoured distro. With other Linux distros or Unix systems, your mileage may vary. If you encounter any issues - get in touch and let me know! Check out our recent [article](http://perltricks.com/article/115/2014/9/26/Shellshock-and-Perl) on Shellshock and Perl if you'd like to know more about the exploit.
 
 Thanks to Steve Jenkins whose detailed blog [post](http://stevejenkins.com/blog/2014/09/how-to-manually-update-bash-to-patch-shellshock-bug-on-older-fedora-based-systems/) on patching Fedora Bash was the inspiration for this script.
-

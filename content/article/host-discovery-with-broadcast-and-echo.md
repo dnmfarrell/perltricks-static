@@ -1,4 +1,14 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
+   "title" : "Host discovery with broadcast and echo",
+   "categories" : "security",
+   "description" : "Implemented with core Perl only",
+   "date" : "2015-07-06T12:27:10",
+   "image" : "/images/180/90CECAB2-238C-11E5-9F7F-2EF19CAABC69.jpeg",
+   "slug" : "180/2015/7/6/Host-discovery-with-broadcast-and-echo",
    "tags" : [
       "tcp",
       "infosec",
@@ -7,17 +17,9 @@
       "ping",
       "udp",
       "old_site"
-   ],
-   "image" : "/images/180/90CECAB2-238C-11E5-9F7F-2EF19CAABC69.jpeg",
-   "title" : "Host discovery with broadcast and echo",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Implemented with core Perl only",
-   "slug" : "180/2015/7/6/Host-discovery-with-broadcast-and-echo",
-   "date" : "2015-07-06T12:27:10",
-   "draft" : false
+   ]
 }
+
 
 Network host discovery is the attempt to elicit the addresses of the hosts connected to a network. Last week I [wrote](http://perltricks.com/article/179/2015/7/1/Basic-network-hacking-with-Perl) about a unicast approach with Perl that enumerated through every address in the network subnet, messaging each address in turn to see if any hosts respond. This week I've been working on an alternative approach using broadcast and echo.
 
@@ -114,4 +116,3 @@ Another other problem with the echo script is that because it opens a raw socket
 ### Useful resources
 
 In preparing this script I learned a lot about sockets and network programming. Lincoln Stein's [Network Programming with Perl](http://www.amazon.com/Network-Programming-Perl-Lincoln-Stein/dp/0201615711/ref=la_B000APT5P6_1_1) was an invaluable resource for understanding sockets and the arcane invocations to use with them. If you're considering working with sockets, the [IO::Socket](https://metacpan.org/pod/IO::Socket) module has a cleaner interface than the [Socket](https://metacpan.org/pod/Socket) module (and is also part of core). The source code for the excellent [NetPacket](https://metacpan.org/pod/NetPacket) distribution was useful in understanding how to parse packets.
-

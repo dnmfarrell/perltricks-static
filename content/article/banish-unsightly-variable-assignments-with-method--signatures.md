@@ -1,20 +1,22 @@
 {
-   "description" : "Add subroutine signatures to Perl",
+   "draft" : false,
+   "title" : "Banish unsightly variable assignments with Method::Signatures",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
+   "image" : null,
    "date" : "2013-09-08T22:59:38",
    "slug" : "39/2013/9/8/Banish-unsightly-variable-assignments-with-Method--Signatures",
-   "image" : null,
+   "categories" : "development",
+   "description" : "Add subroutine signatures to Perl",
    "tags" : [
       "subroutine",
       "syntax",
       "method",
       "old_site"
-   ],
-   "title" : "Banish unsightly variable assignments with Method::Signatures"
+   ]
 }
+
 
 One drawback of Perl is that its subroutines and methods do not have signatures (ignoring [prototypes](http://perldoc.perl.org/perlsub.html#Prototypes)). This means that Perl developers have to write their own code for variable assignment and type checking which leads to repetitive and verbose code. This article shows how by using the [Method::Signatures](https://metacpan.org/module/Method::Signatures) module developers can banish this boilerplate forever.
 
@@ -175,4 +177,3 @@ These results suggest that using Method::Signatures comes with only a 1% perform
 ### Additional features
 
 There is a lot more to Method::Signatures such as named and optional parameters, type checking, default values and aliases. Check out the excellent module [documentation](https://metacpan.org/module/Method::Signatures) for more details.
-

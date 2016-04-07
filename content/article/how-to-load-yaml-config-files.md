@@ -1,4 +1,10 @@
 {
+   "categories" : "data",
+   "draft" : false,
+   "image" : null,
+   "date" : "2013-09-17T03:18:10",
+   "title" : "How to Load YAML Config Files",
+   "description" : "Reading YAML config files is easy with Perl",
    "tags" : [
       "configuration",
       "config",
@@ -6,16 +12,12 @@
       "libyaml",
       "old_site"
    ],
-   "image" : null,
-   "title" : "How to Load YAML Config Files",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Reading YAML config files is easy with Perl",
-   "slug" : "29/2013/9/17/How-to-Load-YAML-Config-Files",
-   "date" : "2013-09-17T03:18:10",
-   "draft" : false
+   "slug" : "29/2013/9/17/How-to-Load-YAML-Config-Files"
 }
+
 
 Config files are used by programmers to store local variables as it's usually better to update a config file than to edit source code. [YAML](http://www.yaml.org/spec/1.2/spec.html#Introduction) is a popular data serialization language that's easy to read and can serialize the common Perl variables (scalars, arrays and hashes). This article describes how to read a YAML config file in Perl and access the config file's variables.
 
@@ -100,4 +102,3 @@ for (keys %{$config->{credentials}}) {
 ### More YAML
 
 [YAML::XS](https://metacpan.org/module/YAML::XS) uses the libyaml C library and provides strong performance and adherence to the YAML specification. However if you have difficulty installing YAML::XS, there are pure Perl alternatives available: [YAML](https://metacpan.org/module/YAML) is not actively maintained and has several bugs but excellent documentation and generally works, [YAML::Tiny](https://metacpan.org/module/YAML::Tiny) is a newer module that implements a useful subset of the YAML specification.
-

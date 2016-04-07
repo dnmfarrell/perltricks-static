@@ -1,13 +1,26 @@
+{
+   "date" : "2016-03-09T10:04:57",
+   "title" : "What is the Perl Core?",
+   "categories" : "managing_perl",
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "Unfortunately there's more than one way to package it",
+   "image" : "",
+   "draft" : false,
+   "tags" : [
+      "perl",
+      "core",
+      "standard_library",
+      "module",
+      "cpan",
+      "perldoc",
+      "osx",
+      "ubuntu",
+      "fedora"
+   ]
+}
 
-  {
-    "title" : "What is the Perl Core?",
-    "authors": ["David Farrell"],
-    "date"  : "2016-03-09T10:04:57",
-    "tags"  : ["perl", "core", "standard_library", "module", "cpan", "perldoc", "osx", "ubuntu", "fedora"],
-    "draft" : false,
-    "description" : "Unfortunately there's more than one way to package it",
-    "image" : ""
-  }
 
 When I use the term "Perl Core" I mean the standard library of modules (distributions actually) that ship with the `perl` interpreter, and I think that's what most people mean when they use that term. Knowing which modules are in the Perl Core is useful; it enables developers to build programs without external dependencies over which the developer has little control. The perldoc site has a handy alphabetized [list](http://perldoc.perl.org/index-modules-A.html) of core modules and I generally check there first to browse which modules are in core. The problem though, is that it can be wrong.
 

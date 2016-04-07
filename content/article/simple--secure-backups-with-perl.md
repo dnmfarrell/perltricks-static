@@ -1,4 +1,14 @@
 {
+   "categories" : "apps",
+   "draft" : false,
+   "slug" : "185/2015/8/27/Simple--secure-backups-with-Perl",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "Simple, secure backups with Perl",
+   "date" : "2015-08-27T13:09:11",
+   "image" : "/images/185/487F38FA-4C68-11E5-A045-6BD5FB9DDBA7.jpeg",
+   "description" : "Creating encrypted, compressed archives",
    "tags" : [
       "stasis",
       "gpg",
@@ -9,17 +19,9 @@
       "security",
       "privacy",
       "old_site"
-   ],
-   "image" : "/images/185/487F38FA-4C68-11E5-A045-6BD5FB9DDBA7.jpeg",
-   "title" : "Simple, secure backups with Perl",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Creating encrypted, compressed archives",
-   "slug" : "185/2015/8/27/Simple--secure-backups-with-Perl",
-   "draft" : false,
-   "date" : "2015-08-27T13:09:11"
+   ]
 }
+
 
 Recently I was searching for a backup solution, and ended up rolling my own. The result is [Stasis](https://github.com/dnmfarrell/Stasis) a Perl program that uses `tar` and `gpg` to compress and encrypt files.
 

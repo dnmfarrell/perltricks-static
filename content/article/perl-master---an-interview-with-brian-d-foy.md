@@ -1,19 +1,21 @@
 {
+   "image" : null,
+   "description" : "We talk to brian about Mastering Perl second edition, technical writing and his new Perl projects!",
+   "categories" : "community",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "Perl master - an interview with brian d foy",
+   "slug" : "75/2014/3/6/Perl-master---an-interview-with-brian-d-foy",
    "tags" : [
       "community",
       "interview",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Perl master - an interview with brian d foy",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "We talk to brian about Mastering Perl second edition, technical writing and his new Perl projects!",
-   "slug" : "75/2014/3/6/Perl-master---an-interview-with-brian-d-foy",
-   "draft" : false,
    "date" : "2014-03-06T03:52:17"
 }
+
 
 *brian d foy is is a prolific Perl author, programmer and trainer whose new book, the second edition of Mastering Perl was recently published by O'Reilly. We caught up with brian to discuss the new book, his thoughts on technical writing and find out what other projects he's working on.*
 
@@ -163,4 +165,3 @@ I've just done the Nerd Merit badges and I was thinking maybe something along th
 <sup>[1]</sup>Randal's quote comes from [Learning Perl, Third Edition](http://books.google.com/books?id=va1PSgaO4xIC&pg=PA3&lpg=PA3&dq=80%25+of+the+behavior+of+Perl+can+be+described+in+20%25+of+the+documentation&source=bl&ots=BOc7Eyc4YV&sig=ZEb4WZRk9eWvjk9j6PNhp_xgJOQ&hl=en&sa=X&ei=rOcXU-mTFIyekAelkICoAQ&ved=0CCgQ6AEwAA#v=onepage&q=80%25%20of%20the%20behavior%20of%20Perl%20can%20be%20described%20in%2020%25%20of%20the%20documentation&f=false)
 
 The second edition of brian's Mastering Perl is [available now](http://www.amazon.com/gp/product/144939311X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=144939311X&linkCode=as2&tag=perltrickscom-20) (affiliate link).
-

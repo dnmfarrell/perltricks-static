@@ -1,13 +1,5 @@
 {
-   "description" : "Our curated guide to last month's CPAN uploads",
-   "title" : "What's new on CPAN - January 2015",
-   "date" : "2015-02-06T13:34:40",
-   "authors" : [
-      "David Farrell"
-   ],
-   "image" : "/images/149/D54A503A-ADB2-11E4-874A-94B4DA487E9F.png",
-   "draft" : false,
-   "slug" : "149/2015/2/6/What-s-new-on-CPAN---January-2015",
+   "categories" : "cpan",
    "tags" : [
       "cpan",
       "catalyst",
@@ -19,8 +11,18 @@
       "devops",
       "diff",
       "old_site"
-   ]
+   ],
+   "image" : "/images/149/D54A503A-ADB2-11E4-874A-94B4DA487E9F.png",
+   "title" : "What's new on CPAN - January 2015",
+   "description" : "Our curated guide to last month's CPAN uploads",
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
+   "date" : "2015-02-06T13:34:40",
+   "slug" : "149/2015/2/6/What-s-new-on-CPAN---January-2015"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. This year we're running a new feature: "module of the month", where we highlight our favorite new CPAN upload. Enjoy!*
 
@@ -68,5 +70,4 @@ Module author Graham Ollis has also [blogged](http://blogs.perl.org/users/graham
 
 -   A couple of new Catalyst modules; [Catalyst::Plugin::Session::Store::Cookie](https://metacpan.org/pod/Catalyst::Plugin::Session::Store::Cookie) does what it says, and [Catalyst::Plugin::ResponseFrom](https://metacpan.org/pod/Catalyst::Plugin::ResponseFrom) which allows the request and capture of responses from external URLs.
 -   [FCGI::Buffer](https://metacpan.org/pod/FCGI::Buffer) provides a validator and cache for FCGI output
-
 

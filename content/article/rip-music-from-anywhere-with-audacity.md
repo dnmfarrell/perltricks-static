@@ -1,5 +1,14 @@
 {
+   "title" : "Rip music from anywhere with Audacity",
+   "categories" : "apps",
+   "slug" : "186/2015/7/30/Rip-music-from-anywhere-with-Audacity",
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2015-07-30T12:49:46",
    "image" : "/images/186/64E2322C-36BA-11E5-9DA9-7C7FB8BB4BA2.png",
+   "draft" : false,
+   "description" : "Open source software makes it easy",
    "tags" : [
       "youtube",
       "bandcamp",
@@ -9,16 +18,9 @@
       "portaudio",
       "mp3",
       "old_site"
-   ],
-   "title" : "Rip music from anywhere with Audacity",
-   "description" : "Open source software makes it easy",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2015-07-30T12:49:46",
-   "draft" : false,
-   "slug" : "186/2015/7/30/Rip-music-from-anywhere-with-Audacity"
+   ]
 }
+
 
 Sorry Perlers, this post contains no Perl code. Instead I want to show you how to record music with the open source tool [Audacity](http://audacityteam.org/). If you listen to music on YouTube, Soundcloud, Pandora - wherever, you can rip it and save it using Audacity. Say goodbye to the arms race of YouTube downloaders/decoders and HTTP network analysis to find the direct URL for the underlying MP3 (looking at you Bandcamp - still vulnerable at the time of writing). Instead say hello to a solution that will work as long as music plays through your computer (so - forever).
 
@@ -41,4 +43,3 @@ Finally, select the "File" menu and "Export Audio" or "Export Multiple" if you h
 ### Automating the process
 
 One downside to this method is it is highly manual. One way to automate some of it is by using an Audacity's [chains](http://manual.audacityteam.org/man/Chains_-_for_batch_processing_and_effects_automation) feature. To script an audio recording process with Perl, the [Audio::PortAudio](https://metacpan.org/pod/Audio::PortAudio) module looks promising, for the capturing and saving of audio data at least.
-

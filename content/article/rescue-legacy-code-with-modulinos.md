@@ -1,4 +1,7 @@
 {
+   "title" : "Rescue legacy code with modulinos",
+   "image" : "/images/107/A5A75EBE-1DCE-11E4-98FE-791D03099C34.png",
+   "draft" : false,
    "tags" : [
       "module",
       "package",
@@ -8,16 +11,15 @@
       "test_more",
       "old_site"
    ],
-   "image" : "/images/107/A5A75EBE-1DCE-11E4-98FE-791D03099C34.png",
-   "title" : "Rescue legacy code with modulinos",
    "authors" : [
       "brian d foy"
    ],
-   "description" : "How the modules-as-programs pattern provides a development path for scripts",
    "slug" : "107/2014/8/7/Rescue-legacy-code-with-modulinos",
-   "draft" : false,
-   "date" : "2014-08-07T12:22:42"
+   "description" : "How the modules-as-programs pattern provides a development path for scripts",
+   "date" : "2014-08-07T12:22:42",
+   "categories" : "development"
 }
+
 
 As businesses grow, they move into situations they didn't anticipate and often have problems other businesses would love to have. Under rapid growth their codebase struggles to keep up. I've seen more bad code making money than I've seen good code making money, and it's an exciting situation to fix. Modulinos have been a nice trick for me to move standalone programs toward a testable and manageable CPAN-like distribution.
 
@@ -121,4 +123,3 @@ done_testing();
 From there the path forward is more clear. I can add a package statement to the program and start to refactor the `run`, using the test best practices I know. Soon the development morphs into module maintenance and its history as a standalone program doesn't matter anymore. As I go through the process, I've also set the eventual maintainers on the right path.
 
 *Cover image [©](http://creativecommons.org/licenses/by/4.0/) [Andréia Bohner](https://www.flickr.com/photos/deia/321829326/in/photolist-ursDu-71wk9y-nYpsHQ-e3P2i9-e1TW4-32LHXt-e4bYT8-e4bYNV-e4hB2m-e4hB5Y-69pxDc-7YWXJX-cwAfvs-e1TUY-4zkBG7-dcyLpA-aj8HAk-ajbu5L-ajbuh7-94j7Df-94jsgo-d9QS9u-dcyJAE-dcyHcT-bavZfB-2nPfVE-52nPvi-RBuWd-4tpcsD-55P2hs-4WaC4T-7w6TC-9FUUPM-94jwv1-8ohTWP-94g9Ep-6ijaiB-94jpgQ-94jcQd-94gcw8-94jveU-94jy93-94g6v8-94j9nu-94jmud-dh1bAe-dcyJoM-dcyJNK-duC43R-dcyK6z), the image has been digitally altered.*
-

@@ -1,5 +1,11 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
    "title" : "Hello berrybrew, the Strawberry Perl version manager",
+   "draft" : false,
+   "slug" : "119/2014/10/10/Hello-berrybrew--the-Strawberry-Perl-version-manager",
+   "image" : "/images/119/64514578-501F-11E4-99D5-54C0636C7830.png",
    "tags" : [
       "windows",
       "perlbrew",
@@ -8,15 +14,11 @@
       "strawberry_perl",
       "old_site"
    ],
-   "image" : "/images/119/64514578-501F-11E4-99D5-54C0636C7830.png",
-   "slug" : "119/2014/10/10/Hello-berrybrew--the-Strawberry-Perl-version-manager",
-   "draft" : false,
    "date" : "2014-10-10T12:39:52",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "A fruitier perlbrew for Windows"
+   "description" : "A fruitier perlbrew for Windows",
+   "categories" : "apps"
 }
+
 
 [Perlbrew](http://perlbrew.pl/) and [plenv]() are tools for managing local Perl installations. They're useful as they let you install and use multiple versions of Perl without administrator privileges. I have a special appreciation for them as I once tried to upgrade my mac system Perl and instead wrecked it and had to reinstall OSX.
 
@@ -93,4 +95,3 @@ This updates my user `%PATH%` environment variable to point at the new Perl bina
 I plan to add a few more commands to berrybrew: `exec` to run a Perl program against every installed Perl, `uninstall` to remove a Perl and `config` to manage berrybrew's settings. Under the hood a feature I'd love to add but am not sure how, is to refresh the current shell's environment variable block, so the user doesn't have to start a new cmd.exe when switching to a new Perl version.
 
 It's early days but if you have any suggestions for new features or feedback drop me an email or fork the project on [GitHub](https://github.com/sillymoose/berrybrew).
-

@@ -1,20 +1,22 @@
-  {
-     "slug" : "201/2015/12/3/Making-the-Larry-Wall-shirt",
-     "draft" : false,
-     "date" : "2015-12-03T12:52:01",
-     "authors" : [
-        "David Farrell"
-     ],
-     "description" : "How to create your own pop art images",
-     "title" : "Making the Larry Wall shirt",
-     "tags" : [
-        "gimp",
-        "inkscape",
-        "stencil",
-        "old_site"
-     ],
-     "image" : "/images/201/A73A0F48-995A-11E5-A40D-AF14E7E91CBA.png"
-  }
+{
+   "title" : "Making the Larry Wall shirt",
+   "description" : "How to create your own pop art images",
+   "draft" : false,
+   "date" : "2015-12-03T12:52:01",
+   "slug" : "201/2015/12/3/Making-the-Larry-Wall-shirt",
+   "tags" : [
+      "gimp",
+      "inkscape",
+      "stencil",
+      "old_site"
+   ],
+   "categories" : "community",
+   "image" : "/images/201/A73A0F48-995A-11E5-A40D-AF14E7E91CBA.png",
+   "authors" : [
+      "David Farrell"
+   ]
+}
+
 
 A few months ago [brian d foy](http://www.learning-perl.com/)and I were throwing around some t-shirt ideas and we came up with a concept for series of shirts highlighting our computer heroes. This culminated in us recently launching our first [Kickstarter project](https://www.kickstarter.com/projects/1422827986/heroes-of-the-revolution-t-shirts-larry-wall) for the Larry Wall shirt (shown above). If you like the design [back it](https://www.kickstarter.com/projects/1422827986/heroes-of-the-revolution-t-shirts-larry-wall)! - we'd love to produce more designs for other famous programmers like Ritchie, Norvig et al. This article is about how to create similar pop art style images using [GIMP](http://www.gimp.org/) and [Inkscape](https://inkscape.org/en/).
 
@@ -49,4 +51,3 @@ At this stage I could put this image on any color of t-shirt. Instead I'll re-im
 ![](/images/201/0BwRnByTz2iUXeUs0WGpVdDQ1Q0E)
 
 Don't forget to back the [Kickstarter](https://www.kickstarter.com/projects/1422827986/heroes-of-the-revolution-t-shirts-larry-wall) project if you want a t-shirt. Best of all, it's Larry Wall approved ™
-

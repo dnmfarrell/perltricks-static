@@ -1,12 +1,5 @@
 {
-   "description" : "A curated look at December's new CPAN uploads",
-   "authors" : [
-      "David Farrell"
-   ],
    "date" : "2016-01-13T15:31:05",
-   "draft" : false,
-   "slug" : "209/2016/1/13/What-s-new-on-CPAN---December-2015",
-   "image" : "/images/209/EC0FEBBE-FF2E-11E3-8A2A-5C05A68B9E16.png",
    "tags" : [
       "cpan",
       "recaptcha",
@@ -18,8 +11,17 @@
       "dijkstra",
       "old_site"
    ],
-   "title" : "What's new on CPAN - December 2015"
+   "image" : "/images/209/EC0FEBBE-FF2E-11E3-8A2A-5C05A68B9E16.png",
+   "title" : "What's new on CPAN - December 2015",
+   "slug" : "209/2016/1/13/What-s-new-on-CPAN---December-2015",
+   "categories" : "cpan",
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "A curated look at December's new CPAN uploads",
+   "draft" : false
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. December was a bumper month, full of exciting new stuff. Enjoy!
 
@@ -88,5 +90,4 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 -   Great idea: use the popular HTTP::Tiny user agent with limited download/upload speed using [HTTP::Tiny::Bandwidth](https://metacpan.org/pod/HTTP::Tiny::Bandwidth)
 -   [Dancer::Plugin::Swagger](https://metacpan.org/pod/Dancer::Plugin::Swagger) creates Swagger documentation of the Dancer app's REST interface. Nice!
 -   Another wrapper for wget / curl: [HTTP::Command::Wrapper](https://metacpan.org/pod/HTTP::Command::Wrapper)
-
 

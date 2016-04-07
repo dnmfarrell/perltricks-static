@@ -1,11 +1,14 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
    "description" : "Don't waste time writing test classes, test the role directly",
    "slug" : "120/2014/10/16/How-to-test-Perl-roles-without-creating-test-classes",
    "date" : "2014-10-16T13:16:03",
+   "title" : "How to test Perl roles without creating test classes",
+   "categories" : "development",
+   "image" : null,
    "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "object",
       "test_more",
@@ -17,10 +20,9 @@
       "bless",
       "sub",
       "old_site"
-   ],
-   "image" : null,
-   "title" : "How to test Perl roles without creating test classes"
+   ]
 }
+
 
 Recently I've been working on a [game engine](https://github.com/sillymoose/March) which uses a composition pattern for its actors. I'm using [Role::Tiny](https://metacpan.org/pod/Role::Tiny) to create the roles. Role::Tiny is really convenient as it lets you use roles with native OO Perl, without committing to a whole object system like Moose. A typical role looks like this:
 
@@ -183,4 +185,3 @@ As before I bless the role in the test file and then proceed to test the `inspec
 With this project I intend to create a lot of simple roles, so this approach provides a lightweight way for me to test roles within the test file without creating test classes for every role.
 
 I really like [Role::Tiny](https://metacpan.org/pod/Role::Tiny). It's flexible: you can create minimalist trait-like behavior or go further and create mixins (roles which modify state). It has nice features like auto-enabling strict and warnings, method modifiers and good [documentation](https://metacpan.org/pod/Role::Tiny). [Role::Basic](https://metacpan.org/pod/Role::Basic) is another lightweight roles module that supports traits only (by [design](https://metacpan.org/pod/Role::Basic#DESIGN-GOALS-AND-LIMITATIONS)). I wonder if I'll come to regret using a mixin approach as I get further into development of the game engine.
-

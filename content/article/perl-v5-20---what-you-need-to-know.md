@@ -1,19 +1,21 @@
 {
-   "description" : "We review the new features, changes and enhancements of the new Perl release",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2014-05-27T12:22:52",
-   "draft" : false,
-   "slug" : "92/2014/5/27/Perl-v5-20---what-you-need-to-know",
    "image" : null,
+   "title" : "Perl v5.20 - what you need to know",
+   "categories" : "development",
    "tags" : [
       "community",
       "news",
       "old_site"
    ],
-   "title" : "Perl v5.20 - what you need to know"
+   "description" : "We review the new features, changes and enhancements of the new Perl release",
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2014-05-27T12:22:52",
+   "slug" : "92/2014/5/27/Perl-v5-20---what-you-need-to-know",
+   "draft" : false
 }
+
 
 *With a new version of Perl expected to land this week, we've pulled together a summary of the headline changes for Perl v5.20. Enjoy!*
 
@@ -106,4 +108,3 @@ Setting a non-integer reference value to the input record separator variable ("$
 There is a lot more to 5.20 than the summary items mentioned above. For a list of all the changes see [perldelta](https://github.com/Perl/perl5/blob/blead/pod/perl5200delta.pod). Perl 5.20 is the most exciting release in years. Thanks to the Perl 5 Porters team for doing an incredible job of delivering an exceptional new Perl!
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F92%2F2014%2F5%2F27%2FPerl-v5-20-what-you-need-to-know&text=Perl+v5.20+-+what+you+need+to+know&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F92%2F2014%2F5%2F27%2FPerl-v5-20-what-you-need-to-know&via=perltricks) about it!
-

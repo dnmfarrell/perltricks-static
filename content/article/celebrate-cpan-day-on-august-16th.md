@@ -1,4 +1,6 @@
 {
+   "image" : "/images/109/BBF98ECA-227F-11E4-8F73-364B03099C34.png",
+   "description" : "Give back to the community on CPAN day",
    "tags" : [
       "cpan",
       "module",
@@ -9,16 +11,16 @@
       "celebration",
       "old_site"
    ],
-   "image" : "/images/109/BBF98ECA-227F-11E4-8F73-364B03099C34.png",
-   "title" : "Celebrate CPAN day on August 16th",
+   "slug" : "109/2014/8/13/Celebrate-CPAN-day-on-August-16th",
+   "categories" : "community",
+   "date" : "2014-08-13T12:43:17",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Give back to the community on CPAN day",
-   "slug" : "109/2014/8/13/Celebrate-CPAN-day-on-August-16th",
    "draft" : false,
-   "date" : "2014-08-13T12:43:17"
+   "title" : "Celebrate CPAN day on August 16th"
 }
+
 
 Back in 1995 CPAN was a visionary concept that propelled Perl to the height of its popularity during the dotcom boom. For the first time there was a single, integrated online system for Perl programmers to distribute software. Today CPAN continues to go from [strength to strength](http://neilb.org/cpan-report/) as Perl's "killer feature". CPAN Day is August the 16th - the day of the first ever upload to CPAN, and a fantastic opportunity to celebrate our wonderful tool and give back to the Perl community.
 
@@ -50,4 +52,3 @@ So how will you celebrate CPAN Day? Even if you did just one of the above sugges
 ### Thanks
 
 Thanks to Neil Bowers for contributing additional detail in support of this article.
-

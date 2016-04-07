@@ -1,6 +1,11 @@
 {
-   "title" : "Hello perldoc, productivity booster",
    "image" : null,
+   "slug" : "155/2015/2/26/Hello-perldoc--productivity-booster",
+   "description" : "Get to know perldoc to find Perl answers faster",
+   "categories" : "apps",
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "cpan",
       "documentation",
@@ -11,14 +16,11 @@
       "productivity",
       "old_site"
    ],
-   "draft" : false,
+   "title" : "Hello perldoc, productivity booster",
    "date" : "2015-02-26T13:42:57",
-   "slug" : "155/2015/2/26/Hello-perldoc--productivity-booster",
-   "description" : "Get to know perldoc to find Perl answers faster",
-   "authors" : [
-      "David Farrell"
-   ]
+   "draft" : false
 }
+
 
 Imagine this scenario: you're using the DateTime module but you can't remember the exact name of a function it provides. What do you do? You could open your browser, go to [MetaCPAN](https://metacpan.org/), search for DateTime and look up the answer in the module's documentation. A faster way would be to switch to the command line, and type `perldoc DateTime` to display the module's documentation right there in the terminal.
 
@@ -170,4 +172,3 @@ Keep in mind that as you get more proficient with perldoc, you'll need the onlin
     Help
     ----
     man perldoc     List of all perldoc options
-

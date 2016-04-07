@@ -1,5 +1,4 @@
 {
-   "title" : "Find the index of the last element in an array",
    "tags" : [
       "array",
       "dereference",
@@ -7,14 +6,17 @@
       "old_site"
    ],
    "image" : null,
-   "slug" : "6/2013/3/28/Find-the-index-of-the-last-element-in-an-array",
-   "date" : "2013-03-28T23:30:33",
-   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Most Perl programmers know that to find the size of an array, the array must called in a scalar context like this:"
+   "slug" : "6/2013/3/28/Find-the-index-of-the-last-element-in-an-array",
+   "date" : "2013-03-28T23:30:33",
+   "description" : "Most Perl programmers know that to find the size of an array, the array must called in a scalar context like this:",
+   "title" : "Find the index of the last element in an array",
+   "categories" : "development",
+   "draft" : false
 }
+
 
 Most Perl programmers know that to find the size of an array, the array must called in a scalar context like this:
 
@@ -67,4 +69,3 @@ print $cakes[0];  # victoria_sponge
 print $cakes[1];  # chocolate_gateau
 print $cakes[2];  # carrot
 ```
-

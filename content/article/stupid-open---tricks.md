@@ -1,20 +1,22 @@
 {
+   "slug" : "182/2015/7/15/Stupid-open---tricks",
    "authors" : [
       "brian d foy"
    ],
-   "description" : "Everyone tells you to use a three-argument open(), but there's a lot more you can do ...",
-   "slug" : "182/2015/7/15/Stupid-open---tricks",
-   "draft" : false,
    "date" : "2015-07-15T12:19:04",
+   "draft" : false,
+   "categories" : "development",
+   "image" : "/images/182/4C2E55EC-2AEB-11E5-A78E-67FC9CAABC69.jpeg",
+   "title" : "Stupid open() tricks",
    "tags" : [
       "filehandle",
       "ipc",
       "perlio",
       "old_site"
    ],
-   "image" : "/images/182/4C2E55EC-2AEB-11E5-A78E-67FC9CAABC69.jpeg",
-   "title" : "Stupid open() tricks"
+   "description" : "Everyone tells you to use a three-argument open(), but there's a lot more you can do ..."
 }
+
 
 The `open` function can do much more than you probably realize. If you read enough about Perl, you'll start to notice the theme that everyone expects you to use the three-argument `open`. There's much more that the `open` can do. Some of these "stupid open() tricks" may be useful, but they may also be dangerous. These tricks were performed on a closed course by a professional driver. Do not attempt at home. Or work. And, to focus on `open`, I've left off all of the error checking.
 
@@ -188,4 +190,3 @@ say STDOUT  'Going to STDOUT. fileno ' . fileno($fh);
 ```
 
 All of these print to STDOUT.
-

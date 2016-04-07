@@ -1,5 +1,12 @@
 {
-   "title" : "Perl web application security - HTTP headers",
+   "date" : "2014-03-31T12:27:39",
+   "description" : "Instantly upgrade your web application security with these headers",
+   "image" : "/images/81/ECAB3C5E-FF2E-11E3-B4AE-5C05A68B9E16.jpeg",
+   "slug" : "81/2014/3/31/Perl-web-application-security---HTTP-headers",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "security",
    "tags" : [
       "catalyst",
       "dancer",
@@ -7,15 +14,10 @@
       "mvc",
       "old_site"
    ],
-   "image" : "/images/81/ECAB3C5E-FF2E-11E3-B4AE-5C05A68B9E16.jpeg",
-   "slug" : "81/2014/3/31/Perl-web-application-security---HTTP-headers",
    "draft" : false,
-   "date" : "2014-03-31T12:27:39",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Instantly upgrade your web application security with these headers"
+   "title" : "Perl web application security - HTTP headers"
 }
+
 
 *HTTP headers are included in every HTTP response from a web server. Setting the appropriate HTTP headers can reduce the risk of man-in-the-middle and cross-site-scripting attacks on a web application. You can also reduce information leaks about the web application configuration - vital data that gives a would-be attacker clues about potential vulnerabilities. Read on to find out how to set the appropriate headers in your Perl web application.*
 
@@ -212,4 +214,3 @@ Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet
 *Cover photo © [Andy Wright](http://www.flickr.com/photos/rightee/259084010/in/photostream/)*
 
 *Updates: Mojolicious application header corrected. Web frameworks server header added. (31/3/2014)*
-

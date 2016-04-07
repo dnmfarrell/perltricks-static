@@ -1,6 +1,12 @@
 {
-   "title" : "What's new on CPAN - October 2015",
    "image" : "/images/199/D54A503A-ADB2-11E4-874A-94B4DA487E9F.png",
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "199/2015/11/3/What-s-new-on-CPAN---October-2015",
+   "title" : "What's new on CPAN - October 2015",
+   "categories" : "cpan",
+   "draft" : false,
    "tags" : [
       "cpan",
       "airbrake",
@@ -10,14 +16,10 @@
       "linkedin",
       "old_site"
    ],
-   "draft" : false,
    "date" : "2015-11-03T15:24:04",
-   "slug" : "199/2015/11/3/What-s-new-on-CPAN---October-2015",
-   "description" : "A curated look at October's new CPAN uploads",
-   "authors" : [
-      "David Farrell"
-   ]
+   "description" : "A curated look at October's new CPAN uploads"
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -95,5 +97,4 @@ It's early days but module author John Napiorkowski has already written enough [
 -   Interesting, [Dancer2::Plugin::ProbabilityRoute](https://metacpan.org/pod/Dancer2::Plugin::ProbabilityRoute) is a plugin to define behavior with probability matching rules
 -   Gracefully shutdown your Dancer2 application using [Dancer2::Plugin::Shutdown](https://metacpan.org/pod/Dancer2::Plugin::Shutdown)
 -   Use SQLite as a backend for a Minion job queue with [Minion::Backend::SQLite](https://metacpan.org/pod/Minion::Backend::SQLite)
-
 

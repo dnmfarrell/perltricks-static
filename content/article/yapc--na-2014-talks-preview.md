@@ -1,19 +1,21 @@
 {
-   "title" : "YAPC::NA 2014 Talks Preview",
    "image" : null,
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "YAPC::NA 2014 Talks Preview",
+   "categories" : "community",
+   "draft" : false,
    "tags" : [
       "community",
       "news",
       "old_site"
    ],
-   "draft" : false,
-   "date" : "2014-06-23T11:55:41",
    "slug" : "99/2014/6/23/YAPC--NA-2014-Talks-Preview",
    "description" : "We pick out some of the most promising talks in the schedule",
-   "authors" : [
-      "David Farrell"
-   ]
+   "date" : "2014-06-23T11:55:41"
 }
+
 
 *YAPC::NA 2014 Orlando starts today with a fantastic line up of talks. I've reviewed the schedule and picked out some gems for anyone unsure about which talks to attend. Hope to you see you there!*
 
@@ -60,4 +62,3 @@ Sawyer X, John Anderson and more lightning talks should bring the conference tal
 **Don't miss** - Curtis Jewell's web framework comparison. Curtis' has developed the same application in all three frameworks and it will be fascinating to see the pros and cons of each framework.
 
 Detailed [Wednesday schedule](http://www.yapcna.org/yn2014/schedule?day=2014-06-25)
-

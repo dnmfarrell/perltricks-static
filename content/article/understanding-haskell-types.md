@@ -1,12 +1,14 @@
 {
    "slug" : "198/2015/10/14/Understanding-Haskell-types",
-   "date" : "2015-10-14T12:47:18",
    "draft" : false,
+   "description" : "The basics",
+   "image" : "/images/198/2812558A-6F58-11E5-9A38-7E733498AD2D.png",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "The basics",
+   "date" : "2015-10-14T12:47:18",
    "title" : "Understanding Haskell types",
+   "categories" : "development",
    "tags" : [
       "types",
       "oreilly",
@@ -14,9 +16,9 @@
       "lyas",
       "ghci",
       "old_site"
-   ],
-   "image" : "/images/198/2812558A-6F58-11E5-9A38-7E733498AD2D.png"
+   ]
 }
+
 
 I recently took a break from Perl work to study at the [Recurse Center](http://recurse.com). I'm learning Haskell, and it's been an interesting adventure so far. I'd heard good things about Haskell's type system and started with an introductory book [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/). The book is filled with cartoonish humor - "how hard can this be?" I asked myself. The answer was "hard". I found Haskell's type system to be counter-intuitive, so this article lays out my understanding of Haskell types. If you're a programmer with an imperative programming background, you might find this useful.
 
@@ -162,4 +164,3 @@ instance Ord Person where
 ### Learn Haskell the Hard Way
 
 Despite its childish demeanor, [Learn You a Haskell](http://learnyouahaskell.com/) goes deep into the Haskell type system and can be a bit long-winded at times. My current learning method involves reading the book, and typing out every code example, and studying Penn State's [cis194 course](https://www.cis.upenn.edu/~cis194/spring13/lectures.html). Both are free. O'Reilly's [Real World Haskell](http://book.realworldhaskell.org/read/) is also available for free online, and emphasizes more immediate practical uses of Haskell. It's good for when you're tired of coding binary search trees and sorting algorithms. If you find yourself needing to lookup a Haskell term, DuckDuckGo has the `!h` bang, which searches [Hoogle](https://www.haskell.org/hoogle/) automatically.
-

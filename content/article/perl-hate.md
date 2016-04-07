@@ -1,19 +1,21 @@
 {
+   "date" : "2014-04-07T04:28:21",
    "title" : "Perl hate",
-   "image" : "/images/83/ECB8F812-FF2E-11E3-A6C7-5C05A68B9E16.jpeg",
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "83/2014/4/7/Perl-hate",
+   "draft" : false,
+   "description" : "A collection of anti-Perl quotes, memes and images",
+   "categories" : "community",
    "tags" : [
       "community",
       "other",
       "old_site"
    ],
-   "date" : "2014-04-07T04:28:21",
-   "draft" : false,
-   "slug" : "83/2014/4/7/Perl-hate",
-   "description" : "A collection of anti-Perl quotes, memes and images",
-   "authors" : [
-      "David Farrell"
-   ]
+   "image" : "/images/83/ECB8F812-FF2E-11E3-A6C7-5C05A68B9E16.jpeg"
 }
+
 
 *Perl certainly picks up its fair share of criticism. We've collected of some of the best (worst?) Perl jokes / critiques, as what's the point of laughing if you can't laugh at yourself?*
 
@@ -72,4 +74,3 @@ This is a common meme. You don't go from being the number 1 web programming lang
 Perl catches all kinds of flak. It [summons daemons](http://www.quickmeme.com/img/87/874c939233c387ca1a1aa84b727178c7585f1a8afbf385ed8484428695fa95ba.jpg), it's [not cool](http://cdn.memegenerator.net/instances/250x250/47140545.jpg) and [it will kick you in the balls](https://lh6.googleusercontent.com/-lnPMdjxpfJo/UIpNj3jviTI/AAAAAAAALNE/nG_sATcqE0E/w750-h600-no/Perl+Script+-+Stroll+in+the+park.jpeg). But at least we're being talked about.
 
 *Original image [©](https://creativecommons.org/licenses/by/2.0/) [John Lemieux](https://www.flickr.com/photos/newdimensionfilms/4024985562), image has been digitally altered.*
-

@@ -1,19 +1,21 @@
 {
-   "draft" : false,
-   "date" : "2015-05-19T12:55:00",
    "slug" : "173/2015/5/19/Defend-your-code-with-Guard",
-   "description" : "Guard helps you protect against unexpected changes to values",
+   "image" : "/images/173/B0D682F6-FDC5-11E4-92B6-0F24103B7DD2.jpeg",
+   "categories" : "development",
+   "draft" : false,
    "authors" : [
       "brian d foy"
    ],
-   "title" : "Defend your code with Guard",
-   "image" : "/images/173/B0D682F6-FDC5-11E4-92B6-0F24103B7DD2.jpeg",
    "tags" : [
       "guard",
       "safety",
       "old_site"
-   ]
+   ],
+   "title" : "Defend your code with Guard",
+   "description" : "Guard helps you protect against unexpected changes to values",
+   "date" : "2015-05-19T12:55:00"
 }
+
 
 I can't always trust my subroutines to leave the world in the same way that they found it. Perl has some features to help with this, but the [Guard](https://metacpan.org/pod/Guard) module goes much further.
 
@@ -155,4 +157,3 @@ my $guard = make_guard();
 There are other tricks I can employ with M. I can define multiple `scope_guard`s. In that case, they execute in reverse order of their definition (like `END` blocks). With a guard object, I can cancel the guard if I decide I don't want it any longer.
 
 *Cover image [©](http://creativecommons.org/licenses/by/4.0/) [Kenny Loule](https://www.flickr.com/photos/kwl/4229954645/in/photolist-7rMC9v-pWeFtB-dyGDSJ-4MTKCZ-9KGfvt-2Vmh2z-isiLE-a8wfzo-a8wdRy-nP4HU4-pMmELA-ebn2Yf-fR1AiY-6pwAvQ-oZC6iQ-eiAHKH-KaYMr-7ur9cv-eex2Ee-aJRH8P-nAD84h-nB5gYR-fFiErQ-6Y7HDp-dzKZh2-7xKM96-63dow9-6YbKFs-6nwuvh-6jFGwT-gDJYEc-bvwwma-7dKehm-8s7yHZ-8s7yjr-hNorq7-66hCWL-cLiZjq-7dKeYQ-9f4UgQ-nB5fP6-c6w6dU-7VSAhE-nAkYD2-gDKEpJ-iegmK-fFiE61-dd5mRC-64joJH-64CuGq)*
-

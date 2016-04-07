@@ -1,6 +1,14 @@
 {
-   "title" : "Script-fu: how to raise 641 request tracker tickets",
+   "draft" : false,
    "image" : null,
+   "slug" : "174/2015/5/12/Script-fu--how-to-raise-641-request-tracker-tickets",
+   "title" : "Script-fu: how to raise 641 request tracker tickets",
+   "date" : "2015-05-12T12:54:26",
+   "description" : "NYC Perl hackathon fun",
+   "categories" : "community",
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "rakudo",
       "perl_6",
@@ -8,15 +16,9 @@
       "hackathon",
       "rt",
       "old_site"
-   ],
-   "date" : "2015-05-12T12:54:26",
-   "draft" : false,
-   "slug" : "174/2015/5/12/Script-fu--how-to-raise-641-request-tracker-tickets",
-   "description" : "NYC Perl hackathon fun",
-   "authors" : [
-      "David Farrell"
    ]
 }
+
 
 I spent most of the NYC Perl Hackathon (thanks Bloomberg!) hacking on Perl 6 stuff. Led by Will "Coke" Coleda, one of the tasks for the group was to find skip/todo directives that were missing Request Tracker (RT) ticket numbers in the Perl 6 test suite.
 
@@ -199,4 +201,3 @@ In the end I raised 641 tickets across 236 test files in roast, for about 2 hour
 Thanks to Will "Coke" Coleda, Tobias Leich (FROGGS) and Christian Bartolomäus (usev6) for reviewing the pull request and doing the work of merging it. If you're interested in supporting Perl 6, the Rakudo team have a [page](http://rakudo.org/how-to-help/) explaining way to contribute. I'd also recommend looking at the Perl 6 community [page](http://perl6.org/community/).
 
 If you're based in New York or in the North-East of America, I'll be at the [Miniconf](http://mini-conf.com) hackathon on June 6th, leading a team to convert Perl 5 modules to Perl 6. Hope to see everyone there!
-

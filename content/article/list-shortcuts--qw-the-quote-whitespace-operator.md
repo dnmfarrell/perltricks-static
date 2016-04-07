@@ -1,12 +1,4 @@
 {
-   "description" : "A popular way to build a list of literal quotes in Perl is to use the quote whitespace operator (qw). It's terse, versatile and elegant. To see why, let's look at a typical statement using a list of strings:",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2013-04-09T00:02:11",
-   "draft" : false,
-   "slug" : "15/2013/4/9/List-shortcuts--qw-the-quote-whitespace-operator",
-   "image" : null,
    "tags" : [
       "operator",
       "string",
@@ -14,8 +6,18 @@
       "syntax",
       "old_site"
    ],
-   "title" : "List shortcuts: qw the quote whitespace operator"
+   "slug" : "15/2013/4/9/List-shortcuts--qw-the-quote-whitespace-operator",
+   "title" : "List shortcuts: qw the quote whitespace operator",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "A popular way to build a list of literal quotes in Perl is to use the quote whitespace operator (qw). It's terse, versatile and elegant. To see why, let's look at a typical statement using a list of strings:",
+   "categories" : "development",
+   "date" : "2013-04-09T00:02:11",
+   "image" : null
 }
+
 
 A popular way to build a list of literal quotes in Perl is to use the quote whitespace operator (qw). It's terse, versatile and elegant. To see why, let's look at a typical statement using a list of strings:
 
@@ -57,4 +59,3 @@ foreach (@colours) {
 ```
 
 Using the quote whitespace operator often results in a cleaner, simpler syntax that reduces the risk of error when working with lists.
-

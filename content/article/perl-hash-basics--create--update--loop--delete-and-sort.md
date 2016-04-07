@@ -1,4 +1,8 @@
 {
+   "image" : null,
+   "date" : "2013-06-16T21:32:18",
+   "slug" : "27/2013/6/16/Perl-hash-basics--create--update--loop--delete-and-sort",
+   "description" : "Hashes are one of Perl's core data types. This article describes the main functions and syntax rules for for working with hashes in Perl.",
    "tags" : [
       "loop",
       "variable",
@@ -13,16 +17,14 @@
       "size",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Perl hash basics: create, update, loop, delete and sort",
+   "categories" : "development",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Hashes are one of Perl's core data types. This article describes the main functions and syntax rules for for working with hashes in Perl.",
-   "slug" : "27/2013/6/16/Perl-hash-basics--create--update--loop--delete-and-sort",
-   "date" : "2013-06-16T21:32:18",
+   "title" : "Perl hash basics: create, update, loop, delete and sort",
    "draft" : false
 }
+
 
 Hashes are one of Perl's core data types. This article describes the main functions and syntax rules for for working with hashes in Perl.
 
@@ -295,4 +297,3 @@ my $count =  keys %common_word_count;
 print "$count\n";
 #3
 ```
-

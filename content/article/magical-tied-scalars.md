@@ -1,19 +1,21 @@
-  {
-     "tags" : [
-       "tie",
-       "scalar",
-       "callback",
-       "cycle",
-       "mastering_perl"
-     ],
-     "title" : "Magical tied scalars",
-     "description" : "Subvert and simplify code with tied scalars",
-     "authors" : [
-        "brian d foy"
-     ],
-     "date" : "2016-02-16T09:50:00",
-     "draft" : false
-  }
+{
+   "categories" : "development",
+   "date" : "2016-02-16T09:50:00",
+   "authors" : [
+      "brian d foy"
+   ],
+   "description" : "Subvert and simplify code with tied scalars",
+   "draft" : false,
+   "title" : "Magical tied scalars",
+   "tags" : [
+      "tie",
+      "scalar",
+      "callback",
+      "cycle",
+      "mastering_perl"
+   ]
+}
+
 
 Perl's `tie` mechanism allows me to create something that looks like a scalar but does anything I want it to do. I can change how the familiar scalar interface of simple access and assignment actually work. I've found this so useful at times that I devoted an entire chapter of [Mastering Perl](http://www.masteringperl.org/) to it.
 

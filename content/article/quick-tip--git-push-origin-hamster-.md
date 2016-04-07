@@ -1,11 +1,13 @@
 {
+   "slug" : "206/2015/12/24/Quick-tip--git-push-origin-hamster-",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Making git do you what mean with symbolic references",
-   "slug" : "206/2015/12/24/Quick-tip--git-push-origin-hamster-",
    "date" : "2015-12-24T17:20:05",
    "draft" : false,
+   "image" : "/images/206/7CC46A3A-AA60-11E5-B179-9189815E78B2.jpeg",
+   "description" : "Making git do you what mean with symbolic references",
+   "title" : "Quick tip: git push origin hamster?",
    "tags" : [
       "git",
       "symbolic",
@@ -14,9 +16,9 @@
       "branch",
       "old_site"
    ],
-   "image" : "/images/206/7CC46A3A-AA60-11E5-B179-9189815E78B2.jpeg",
-   "title" : "Quick tip: git push origin hamster?"
+   "categories" : "apps"
 }
+
 
 My typing is horrible. I make mistakes all the time. I'm an avid [Vim](http://www.vim.org/) user but I still use the arrow keys. I'm one of those people who need technology that does what they meant, not what they asked for. So if you're a coder like me, you probably see this a lot:
 
@@ -45,4 +47,3 @@ To git@github.com:user/SomeProject.git
 ```
 
 Because it's a symbolic reference, anytime I mean to type `master` but actually type `amster`, Git will do the right thing. Try it!
-

@@ -1,20 +1,22 @@
 {
    "draft" : false,
-   "date" : "2015-03-27T12:48:28",
-   "slug" : "162/2015/3/27/Gzipping-data-directly-from-Perl",
    "description" : "TIMTOWDI",
-   "authors" : [
-      "brian d foy"
-   ],
-   "title" : "Gzipping data directly from Perl",
+   "date" : "2015-03-27T12:48:28",
+   "categories" : "data",
    "image" : null,
    "tags" : [
       "perl",
       "gzip",
       "compression",
       "old_site"
-   ]
+   ],
+   "title" : "Gzipping data directly from Perl",
+   "authors" : [
+      "brian d foy"
+   ],
+   "slug" : "162/2015/3/27/Gzipping-data-directly-from-Perl"
 }
+
 
 Perl can read and write gzipped streams through its IO layers. [Nicholas Clark](https://metacpan.org/author/NWCLARK) recently updated [PerlIO::gzip](https://metacpan.org/pod/PerlIO::gzip) (with patches from [Zefram](https://metacpan.org/author/ZEFRAM)), after nine years since the last release. Now it works with Perl v5.20 and the upcoming v5.22, although it still has problems on Windows. But as we are used to, there is more then one way to do it.
 
@@ -143,4 +145,3 @@ This sort of thing is quite handy for rotated logs when I want to read them all 
 If you want to know more about the gzip compression, [Julia Evans created a nice animation of gzip working in real time on *The Raven*](http://jvns.ca/blog/2013/10/24/day-16-gzip-plus-poetry-equals-awesome/%0A).
 
 You can see a bit more abstract [animation](http://www.data-compression.com/lempelziv.html%0A) at www.data-compression.com. You can see how this single-pass method works and how it can work from a possibly infinite stream like I provide in this article.
-

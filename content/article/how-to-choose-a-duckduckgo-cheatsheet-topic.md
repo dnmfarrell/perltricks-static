@@ -1,4 +1,7 @@
 {
+   "draft" : false,
+   "categories" : "community",
+   "date" : "2015-08-29T09:46:29",
    "title" : "How to choose a DuckDuckGo cheatsheet topic",
    "tags" : [
       "seo",
@@ -7,14 +10,13 @@
       "old_site"
    ],
    "image" : "/images/191/5E030C7A-E6E1-11E4-9A7F-886D1846911D.jpeg",
-   "slug" : "191/2015/8/29/How-to-choose-a-DuckDuckGo-cheatsheet-topic",
-   "draft" : false,
-   "date" : "2015-08-29T09:46:29",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Some sources of inspiration"
+   "description" : "Some sources of inspiration",
+   "slug" : "191/2015/8/29/How-to-choose-a-DuckDuckGo-cheatsheet-topic"
 }
+
 
 If you want to develop a [DuckDuckGo cheatsheet](http://perltricks.com/article/189/2015/8/22/Writing-DuckDuckGo-plugins-just-got-easier) and you've got the technicals down, the next task is to choose a cheatsheet topic. As with [naming things](http://martinfowler.com/bliki/TwoHardThings.html), this can be harder than it sounds.
 
@@ -92,4 +94,3 @@ If nothing in this list appeals, try searching against similar terms like "cheat
 Developing cheatsheets should be fun. If you're wrestling with a potential cheatsheet topic remember that there is a large developer community waiting to help you. The [DuckDuckHack site](http://duckduckhack.com/) is a good source of information. It has a [FAQ](https://duck.co/duckduckhack/faq#goodie), a [guide](https://duck.co/duckduckhack/determine_your_instant_answer_type) to picking the right plugin type for your idea and information on how to join the DuckDuckGo Slack site. Useful information can also be found in the [quack and hack cheatsheet](https://duckduckgo.com/?q=quack+hack+help&ia=cheatsheet)!
 
 Once you've drafted your cheatsheet, consider using my [cheatsheet checker tool](http://perltricks.com/article/190/2015/8/28/Check-your-DuckDuckGo-cheatsheets-with-Perl). It finds common syntax and data errors which can make developing a cheatsheet easier.
-

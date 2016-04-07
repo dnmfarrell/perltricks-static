@@ -1,4 +1,13 @@
 {
+   "draft" : false,
+   "description" : "A curated look at September's new CPAN uploads",
+   "slug" : "196/2015/10/1/What-s-new-on-CPAN---September-2015",
+   "title" : "What's new on CPAN - September 2015",
+   "image" : "/images/196/FA370A74-683C-11E5-9273-385046321329.png",
+   "categories" : "cpan",
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "cpan",
       "json",
@@ -10,16 +19,9 @@
       "neovim",
       "old_site"
    ],
-   "image" : "/images/196/FA370A74-683C-11E5-9273-385046321329.png",
-   "title" : "What's new on CPAN - September 2015",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "A curated look at September's new CPAN uploads",
-   "slug" : "196/2015/10/1/What-s-new-on-CPAN---September-2015",
-   "draft" : false,
    "date" : "2015-10-01T13:49:32"
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -86,5 +88,4 @@ Module author Yanick Champoux has [blogged](http://techblog.babyl.ca/entry/neovi
 -   [Future::Mojo](https://metacpan.org/pod/Future::Mojo) let's you use futures with Mojo::IOLoop. Very cool!
 -   The arms-race for faster continues! Replace HTTP::Headers and HTTP::Headers::Fast with [HTTP::XSHeaders](https://metacpan.org/pod/HTTP::XSHeaders)
 -   [Mercury](https://metacpan.org/pod/Mercury) is an application broker class
-
 

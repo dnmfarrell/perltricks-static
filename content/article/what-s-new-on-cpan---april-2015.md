@@ -1,6 +1,4 @@
 {
-   "title" : "What's new on CPAN - April 2015",
-   "image" : "/images/172/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
    "tags" : [
       "cpan",
       "json",
@@ -14,14 +12,18 @@
       "minecraft",
       "old_site"
    ],
-   "draft" : false,
-   "date" : "2015-05-07T11:47:25",
-   "slug" : "172/2015/5/7/What-s-new-on-CPAN---April-2015",
-   "description" : "Our curated guide to last month's new CPAN uploads",
    "authors" : [
       "David Farrell"
-   ]
+   ],
+   "categories" : "cpan",
+   "image" : "/images/172/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
+   "title" : "What's new on CPAN - April 2015",
+   "draft" : false,
+   "description" : "Our curated guide to last month's new CPAN uploads",
+   "slug" : "172/2015/5/7/What-s-new-on-CPAN---April-2015",
+   "date" : "2015-05-07T11:47:25"
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -76,5 +78,4 @@ Two new BusPirate modules from Paul Evans:
 -   Great new Catalyst feature: [Catalyst::Plugin::MapComponentDependencies](https://metacpan.org/pod/Catalyst::Plugin::MapComponentDependencies) provides dependency handling for Catalyst components
 -   [Mojo::JWT](https://metacpan.org/pod/Mojo::JWT) provides JSON web tokens for Mojolicious
 -   Send messages to users of your Dancer2 web app using [Dancer2::Plugin::Growler](https://metacpan.org/pod/Dancer2::Plugin::Growler)
-
 

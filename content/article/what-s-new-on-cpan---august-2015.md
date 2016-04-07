@@ -1,5 +1,11 @@
 {
+   "date" : "2015-09-03T13:19:15",
+   "draft" : false,
+   "slug" : "192/2015/9/3/What-s-new-on-CPAN---August-2015",
+   "categories" : "cpan",
    "image" : "/images/192/AF57B300-5234-11E5-B481-F86745487EAA.png",
+   "title" : "What's new on CPAN - August 2015",
+   "description" : "A curated look at August's new CPAN uploads",
    "tags" : [
       "cpan",
       "hadoop",
@@ -10,15 +16,11 @@
       "php",
       "old_site"
    ],
-   "title" : "What's new on CPAN - August 2015",
-   "description" : "A curated look at August's new CPAN uploads",
    "authors" : [
       "David Farrell"
-   ],
-   "date" : "2015-09-03T13:19:15",
-   "draft" : false,
-   "slug" : "192/2015/9/3/What-s-new-on-CPAN---August-2015"
+   ]
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -101,5 +103,4 @@ Module author Bart Busschots has provided rich documentation which includes the 
 -   [Catalyst::TraitFor::Request::QueryFromJSONY](https://metacpan.org/pod/Catalyst::TraitFor::Request::QueryFromJSONY) supports JSONY query parameters
 -   Get even faster HTTP headers using [HTTP::Headers::Fast::XS](https://metacpan.org/pod/HTTP::Headers::Fast::XS)
 -   Build swat tests from Mojo routes with [Mojolicious::Command::swat](https://metacpan.org/pod/Mojolicious::Command::swat)
-
 

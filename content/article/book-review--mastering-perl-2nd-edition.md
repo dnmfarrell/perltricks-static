@@ -1,17 +1,19 @@
 {
-   "tags" : [
-      "old_site"
-   ],
-   "image" : "/images/67/EC46C580-FF2E-11E3-A987-5C05A68B9E16.png",
    "title" : "Book review: Mastering Perl 2nd edition",
+   "image" : "/images/67/EC46C580-FF2E-11E3-A987-5C05A68B9E16.png",
+   "description" : "Learn how to bend Perl to your will with brian d foy's Mastering Perl",
+   "slug" : "67/2014/2/10/Book-review--Mastering-Perl-2nd-edition",
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Learn how to bend Perl to your will with brian d foy's Mastering Perl",
-   "slug" : "67/2014/2/10/Book-review--Mastering-Perl-2nd-edition",
+   "tags" : [
+      "old_site"
+   ],
    "date" : "2014-02-10T05:24:44",
-   "draft" : false
+   "categories" : "community"
 }
+
 
 *The second edition of Mastering Perl by brian d foy has just been published by O'Reilly. We took a look at the new version to see what's changed and to find out what it really means to become a Perl master.*
 
@@ -56,4 +58,3 @@ Mastering Perl is enjoyable, informative and a worthy successor to Intermediate 
 The second edition of Mastering Perl is available to buy now from [O'Reilly](http://shop.oreilly.com/product/0636920012702.do?intcmp=il-prog-books-videos-cat-intsrch_perl_ct) and [Amazon](http://www.amazon.com/gp/product/144939311X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=144939311X&linkCode=as2&tag=perltrickscom-20) (affiliate link).
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F67%2F2014%2F2%2F10%2FBook-review-Mastering-Perl-2nd-edition&text=Book%20review%3A%20Mastering%20Perl%202nd%20edition&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F67%2F2014%2F2%2F10%2FBook-review-Mastering-Perl-2nd-edition&via=perltricks) it!
-

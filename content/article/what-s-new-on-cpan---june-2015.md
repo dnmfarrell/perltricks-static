@@ -1,13 +1,8 @@
 {
-   "date" : "2015-07-09T13:17:10",
-   "draft" : false,
-   "slug" : "181/2015/7/9/What-s-new-on-CPAN---June-2015",
-   "description" : "Our monthly curated guide to CPAN's newest modules",
-   "authors" : [
-      "David Farrell"
-   ],
-   "title" : "What's new on CPAN - June 2015",
+   "categories" : "cpan",
    "image" : "/images/181/88AAA022-2639-11E5-B854-07139DAABC69.png",
+   "slug" : "181/2015/7/9/What-s-new-on-CPAN---June-2015",
+   "date" : "2015-07-09T13:17:10",
    "tags" : [
       "cpan",
       "catalyst",
@@ -22,8 +17,15 @@
       "bonusly",
       "zendesk",
       "old_site"
+   ],
+   "title" : "What's new on CPAN - June 2015",
+   "description" : "Our monthly curated guide to CPAN's newest modules",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
    ]
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -90,4 +92,3 @@ Module author Peter Valdemar Mørch has pulled together excellent documentation.
 -   Rapidly expand shortened URLs with [WWW::Expand::More](https://metacpan.org/pod/WWW::Expand::More). Cool!
 
 Updated to include other example serializer modules and deserialization warning - 2015-07-09
-

@@ -1,5 +1,13 @@
 {
+   "categories" : "hardware",
+   "title" : "GPS and Perl",
+   "description" : "How to find your way with Perl",
+   "slug" : "158/2015/3/10/GPS-and-Perl",
    "image" : "/images/158/B8A4CA2A-C697-11E4-B99B-AB6E0EA848F6.jpeg",
+   "draft" : false,
+   "authors" : [
+      "Timm Murray"
+   ],
    "tags" : [
       "raspberry_pi",
       "hardware",
@@ -8,15 +16,9 @@
       "rs232",
       "old_site"
    ],
-   "title" : "GPS and Perl",
-   "description" : "How to find your way with Perl",
-   "authors" : [
-      "Timm Murray"
-   ],
-   "draft" : false,
-   "date" : "2015-03-10T12:43:30",
-   "slug" : "158/2015/3/10/GPS-and-Perl"
+   "date" : "2015-03-10T12:43:30"
 }
+
 
 Since the beginning of the human race, people have needed to know where they are. If you're dragging a dead antelope back to the rest of the tribe, knowing where you are and where you're going is very important. At some point, one of them must have said "I sure hope my ancestors put a bunch of satellites into orbit to make this easier". That person probably should have focused on inventing the wheel, forging metal, and combining chocolate with peanut butter, but let's face it: some of humanity's best inventions came from people who tend to get ahead of themselves from time to time. Which means that today, we have just such a satellite system in orbit to help you get around.
 
@@ -91,4 +93,3 @@ This will continuously print out the location data coming from the GPS receiver:
 I don't know how people got around before GPS. Rather poorly, in all likelihood. I'm glad that Perl can help do it today.
 
 **Updated:** *Arcminutes to degrees conversion added. Thanks to Jonathan Coop for pointing this out. 2015-04-04*
-

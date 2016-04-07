@@ -8,14 +8,16 @@
    ],
    "image" : "/images/147/AB4B476C-A5BA-11E4-B4C4-D3B19EE10EC8.jpeg",
    "title" : "Support the 2015 QA Hackathon",
-   "authors" : [
-      "David Farrell"
-   ],
    "description" : "Can you help?",
+   "date" : "2015-01-28T14:23:41",
    "slug" : "147/2015/1/28/Support-the-2015-QA-Hackathon",
    "draft" : false,
-   "date" : "2015-01-28T14:23:41"
+   "categories" : "community",
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 The Perl QA Hackathon is an annual event where the key authors of the Perl CPAN toolchain collaborate on the development of the next versions of tools. This year's QA Hackathon is being held in Berlin, on April 16-19, and they're looking for sponsors.
 
@@ -30,4 +32,3 @@ In fact, only key toolchain contributors are invited to the event to keep the nu
 So if you work for a company that uses Perl or sponsors Perl events, consider asking them to support this year's [QA Hackathon](http://act.qa-hackathon.org/qa2015/sponsors.html). The event itself is free; sponsorship goes towards the supporting the travel and accommodation costs of attendees. The organizers are also accepting individual [donations](http://act.qa-hackathon.org/qa2015/donate.html)
 
 *Cover image © [David Golden](http://www.dagolden.com/)*
-

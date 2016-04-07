@@ -1,4 +1,11 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2014-05-09T03:14:01",
+   "categories" : "data",
+   "description" : "So simple a llama could do it",
+   "image" : "/images/87/ECE462D6-FF2E-11E3-A828-5C05A68B9E16.jpeg",
    "tags" : [
       "cpan",
       "xml",
@@ -6,16 +13,11 @@
       "parse",
       "old_site"
    ],
-   "image" : "/images/87/ECE462D6-FF2E-11E3-A828-5C05A68B9E16.jpeg",
    "title" : "Parsing data couldn't be easier with XML::Dataset",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "So simple a llama could do it",
    "slug" : "87/2014/5/9/Parsing-data-couldn-t-be-easier-with-XML--Dataset",
-   "date" : "2014-05-09T03:14:01",
    "draft" : false
 }
+
 
 *It's hard to believe that when it comes to XML parsing CPAN hasn't already got you covered, but [XML::Dataset](https://metacpan.org/pod/XML::Dataset) is a new module that fills a useful void. XML::Dataset let's you declare a plaintext data collection schema, and then goes and extracts the data for you, super fast. Read on to see how it works.*
 
@@ -188,4 +190,3 @@ XML::Dataset is fantastic for extracting fixed data schemas from XML. The plaint
 *Do you have a much-loved CPAN module that you'd like us to cover? Drop us an [email](mailto:perltricks.com@gmail.com)*
 
 *Cover image [©](https://creativecommons.org/licenses/by/2.0/) [Duncun Hull](https://www.flickr.com/photos/dullhunk/3948166814/in/photolist-71TorC-5RcLVC-5RcLk1-5R8vpe-5RcMC9-5R8w7D-5R8v7e-5RcM9Q-5RcLeL-5R8upk-5RcMso-5RcL7J-72QCEU-7KoKym-72QCsE-6FtTJ-6m6pyB-5AJCpY-6FvjN-6FuLy-6FtQL-6Fv4J-5BHeXd-6FuUe-6FtXH-6Fu9t-6FuAs-5AJCs3-5AJCsd-5AJCro-tS2dS-6kzkkD-6kDvjQ-6kDAtY-6kDvzS-6kD45L-6kzqYM-6kDvsE-6kDuys-6kDvcE-6m6prT-6kDupU-6kDuWw-6kDv6j-6kzkd2-6kDALo-5AJCsA-CJhVy-5AJCrN-5MzAkw)*
-

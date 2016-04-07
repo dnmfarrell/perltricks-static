@@ -1,11 +1,6 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Our curated guide to June's new CPAN uploads",
    "slug" : "100/2014/7/3/What-s-new-on-CPAN---June-2014",
    "date" : "2014-07-03T14:00:46",
-   "draft" : false,
    "tags" : [
       "cpan",
       "module",
@@ -24,9 +19,16 @@
       "jenkins",
       "old_site"
    ],
+   "description" : "Our curated guide to June's new CPAN uploads",
    "image" : "/images/100/0EFC8AF6-0259-11E4-9DBD-A8FCA58B9E16.png",
-   "title" : "What's new on CPAN - June 2014"
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
+   "title" : "What's new on CPAN - June 2014",
+   "categories" : "cpan"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -99,5 +101,4 @@ New Mojolicious modules:
 -   [Mojolicious::Plugin::NetsPayment](https://metacpan.org/pod/Mojolicious::Plugin::NetsPayment) is an experimental module for making payments using Nets
 -   [Mojolicious::Plugin::PayPal](https://metacpan.org/pod/Mojolicious::Plugin::PayPal) is an experimental module for making payments using PayPal
 -   [MojoX::GlobalEvents](https://metacpan.org/pod/MojoX::GlobalEvents) is an event handler
-
 

@@ -1,5 +1,8 @@
 {
-   "title" : "What's new on CPAN - November 2015",
+   "description" : "A curated look at November's new CPAN uploads",
+   "categories" : "cpan",
+   "slug" : "202/2015/12/8/What-s-new-on-CPAN---November-2015",
+   "draft" : false,
    "image" : "/images/202/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
    "tags" : [
       "cpan",
@@ -13,13 +16,12 @@
       "old_site"
    ],
    "date" : "2015-12-08T04:34:15",
-   "draft" : false,
-   "slug" : "202/2015/12/8/What-s-new-on-CPAN---November-2015",
-   "description" : "A curated look at November's new CPAN uploads",
    "authors" : [
       "David Farrell"
-   ]
+   ],
+   "title" : "What's new on CPAN - November 2015"
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -85,5 +87,4 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 -   Read and write PhantomJS cookies file using [HTTP::Cookies::PhantomJS](https://metacpan.org/pod/HTTP::Cookies::PhantomJS)
 -   [Mojolicious::Plugin::ErrorsAndWarnings](https://metacpan.org/pod/Mojolicious::Plugin::ErrorsAndWarnings) stores errors and warnings during a request for powerful introspection
 -   Run a consul server for testing using [Test::Consul](https://metacpan.org/pod/Test::Consul)
-
 

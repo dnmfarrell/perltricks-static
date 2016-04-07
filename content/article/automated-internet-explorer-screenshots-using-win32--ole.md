@@ -1,6 +1,14 @@
 {
-   "title" : "Automated Internet Explorer screenshots using Win32::OLE",
+   "draft" : false,
    "image" : "/images/139/31233122-80D8-11E4-8F6A-124BB3613736.png",
+   "authors" : [
+      "Sinan Unur"
+   ],
+   "date" : "2014-12-11T14:44:25",
+   "categories" : "web",
+   "slug" : "139/2014/12/11/Automated-Internet-Explorer-screenshots-using-Win32--OLE",
+   "title" : "Automated Internet Explorer screenshots using Win32::OLE",
+   "description" : "With Perl it is always easier than you think",
    "tags" : [
       "windows",
       "perl",
@@ -9,15 +17,9 @@
       "internet_explorer",
       "win32",
       "old_site"
-   ],
-   "draft" : false,
-   "date" : "2014-12-11T14:44:25",
-   "slug" : "139/2014/12/11/Automated-Internet-Explorer-screenshots-using-Win32--OLE",
-   "description" : "With Perl it is always easier than you think",
-   "authors" : [
-      "Sinan Unur"
    ]
 }
+
 
 ### Background
 
@@ -172,4 +174,3 @@ The [WebDriver API](http://msdn.microsoft.com/en-us/library/ie/dn725045%28v=vs.8
 ### Conclusion
 
 Using [Win32::OLE](https:/metacpan.org/pod/Win32::OLE) to drive Internet Explorer has been very helpful to me in the past. Taking a screenshot is just a simple, proof-of-concept exercise. The beauty of using Perl is that once you reach a page containing the information you want, you can use Perl's excellent HTML parsing modules to get exactly what you want out of it, and then, say, save it to an Excel worksheet, generate PDF document, or just stuff it in a database somewhere.
-

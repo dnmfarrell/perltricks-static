@@ -1,5 +1,10 @@
 {
+   "slug" : "54/2013/12/18/An-interview-with-Peteris-Krumins",
+   "authors" : [
+      "David Farrell"
+   ],
    "title" : "An interview with Peteris Krumins",
+   "categories" : "community",
    "tags" : [
       "powershell",
       "bash",
@@ -7,15 +12,12 @@
       "one_liner",
       "old_site"
    ],
-   "image" : "/images/54/EBF9E79C-FF2E-11E3-A3E3-5C05A68B9E16.jpeg",
-   "slug" : "54/2013/12/18/An-interview-with-Peteris-Krumins",
    "draft" : false,
+   "image" : "/images/54/EBF9E79C-FF2E-11E3-A3E3-5C05A68B9E16.jpeg",
    "date" : "2013-12-18T03:47:38",
-   "authors" : [
-      "David Farrell"
-   ],
    "description" : "We talk about his favourite Perl one liners, publishing books and Perl on Windows!"
 }
+
 
 *Peteris Krumins is a Perl author, start-up founder and all-around hacker. He also runs the popular blog CatOnMat.*
 
@@ -93,4 +95,3 @@ Talking about tools I also like [rxrx](https://metacpan.org/pod/Regexp::Debugger
 
 **And one last final question - what is it that you're doing in your profile picture? Making a cigarette?**
  Haha, no! I'm actually holding a piece of scotch tape. I was making a raft that day from empty bottles so I was taping them together. It turned out to be a really good raft and it worked. [Here's a photo.](%0Ahttp://www.flickr.com/photos/pkrumins/11391256906/)
-

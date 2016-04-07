@@ -1,12 +1,10 @@
 {
+   "image" : "/images/104/49B63AE6-16BF-11E4-B121-52952D77B041.png",
    "description" : "Why Disqus is not the commenting system you're looking for",
+   "categories" : "community",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
-   "date" : "2014-07-29T11:46:55",
-   "slug" : "104/2014/7/29/Your-users-deserve-better-than-Disqus",
-   "image" : "/images/104/49B63AE6-16BF-11E4-B121-52952D77B041.png",
    "tags" : [
       "security",
       "disqus",
@@ -14,8 +12,12 @@
       "privacy",
       "old_site"
    ],
-   "title" : "Your users deserve better than Disqus"
+   "date" : "2014-07-29T11:46:55",
+   "title" : "Your users deserve better than Disqus",
+   "draft" : false,
+   "slug" : "104/2014/7/29/Your-users-deserve-better-than-Disqus"
 }
+
 
 *Occasionally readers of this site will contact us to lament our lack of a commenting system. The message usually goes like this: "I love the site but I wish you had a comments section". Some readers even recommend a solution: "you should get Disqus" they say. We are considering adding a comments system to PerlTricks.com, but it probably won't be Disqus. This article explains why.*
 
@@ -36,4 +38,3 @@ Most of the features that Disqus provides are easily obtainable elsewhere; need 
 As a technologist, I see many parallels between Disqus and PHP; they're both so easy to set up but deep-down you know that using them will cost you later. History [shows](http://www.psychologytoday.com/blog/the-inertia-trap/201302/why-are-people-bad-evaluating-risks) that humans consistently underestimate risk and in that regard, Disqus is no different. Site owners, don't let the short-term convenience of Disqus get the better of you, your users deserve better. But what do you think? Let us know in the comments section below\*.
 
 \*J/k let us know on [Reddit](http://www.reddit.com/r/programming/comments/2c19of/your_users_deserve_better_than_disqus/) or [Twitter](https://twitter.com/PerlTricks) instead.
-

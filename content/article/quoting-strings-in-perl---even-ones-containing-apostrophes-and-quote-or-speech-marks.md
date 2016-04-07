@@ -1,20 +1,22 @@
 {
-   "draft" : false,
-   "date" : "2013-03-30T18:49:41",
-   "slug" : "7/2013/3/30/Quoting-strings-in-Perl---even-ones-containing-apostrophes-and-quote-or-speech-marks",
-   "description" : "Broadly speaking Perl has two types of strings: quotes that are interpolated at runtime and literal quotes that are not interpolated. Let's review each of these in turn.",
-   "authors" : [
-      "David Farrell"
-   ],
    "title" : "Quoting strings in Perl - even ones containing apostrophes and quote or speech marks",
-   "image" : null,
+   "description" : "Broadly speaking Perl has two types of strings: quotes that are interpolated at runtime and literal quotes that are not interpolated. Let's review each of these in turn.",
+   "draft" : false,
    "tags" : [
       "operator",
       "string",
       "variable",
       "old_site"
-   ]
+   ],
+   "categories" : "development",
+   "date" : "2013-03-30T18:49:41",
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : null,
+   "slug" : "7/2013/3/30/Quoting-strings-in-Perl---even-ones-containing-apostrophes-and-quote-or-speech-marks"
 }
+
 
 Broadly speaking Perl has two types of strings: quotes that are interpolated at runtime and literal quotes that are not interpolated. Let's review each of these in turn.
 
@@ -73,4 +75,3 @@ Whilst you are are here, you can "do as they do in Rome" and enjoy yourself
 ```
 
 Although the example above used curly braces ({,}) to encapsulate the string, Perl will accept most symbol characters such as those on the top of your keyboard(!@£$%^&\*-+). Contrary to popular belief, Perl **will not accept any character** as the delimiter - the letters of the alphabet (a-z) do not work for example.
-

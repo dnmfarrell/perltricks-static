@@ -1,20 +1,22 @@
 {
+   "image" : null,
+   "categories" : "managing_perl",
+   "date" : "2013-04-07T18:52:11",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "A quick way to list all non-core modules installed via CPAN using the command line:",
-   "slug" : "14/2013/4/7/List-all-Perl-modules-installed-via-CPAN",
-   "date" : "2013-04-07T18:52:11",
-   "draft" : false,
    "tags" : [
       "cpan",
       "module",
       "sysadmin",
       "old_site"
    ],
-   "image" : null,
-   "title" : "List all Perl modules installed via CPAN"
+   "slug" : "14/2013/4/7/List-all-Perl-modules-installed-via-CPAN",
+   "draft" : false,
+   "title" : "List all Perl modules installed via CPAN",
+   "description" : "A quick way to list all non-core modules installed via CPAN using the command line:"
 }
+
 
 A quick way to list all non-core modules installed via CPAN using the command line:
 
@@ -29,4 +31,3 @@ no documentation found for "perllocal"
 ```
 
 This means that no non-core Perl modules have been installed via CPAN. Try installing a module via CPAN, and then retry the perllocal command.
-

@@ -1,5 +1,12 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/108/52AEDC46-1CA2-11E4-81FD-87E12D77B041.png",
+   "slug" : "108/2014/8/5/Parse-Excel-with-ease-using-Perl",
+   "date" : "2014-08-05T13:41:48",
    "title" : "Parse Excel with ease using Perl",
+   "description" : "Spreadsheet::Read makes parsing spreadsheets too easy",
    "tags" : [
       "cpan",
       "excel",
@@ -12,15 +19,10 @@
       "spreadsheet_read",
       "old_site"
    ],
-   "image" : "/images/108/52AEDC46-1CA2-11E4-81FD-87E12D77B041.png",
-   "slug" : "108/2014/8/5/Parse-Excel-with-ease-using-Perl",
-   "date" : "2014-08-05T13:41:48",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Spreadsheet::Read makes parsing spreadsheets too easy"
+   "categories" : "data",
+   "draft" : false
 }
+
 
 In the business world, it seems like Excel spreadsheets are everywhere. Recently I had to parse several hundred spreadsheets under a tight deadline for a client. To make matters worse, the spreadsheets were in a mix of Excel 2003 (xls) and 2007 (xlsx) formats. Fortunately I know Perl, and using the Spreadsheet::Read module, it was easy. This article will show you how to use Spreadsheet::Read to parse Excel spreadsheets.
 
@@ -131,4 +133,3 @@ There are some data points which Spreadsheet::Read does not provide: you cannot 
 ### Conclusion
 
 Spreadsheet::Read isn't just great for command line apps, it has many uses. Unlike the Microsoft .Net interop library, Perl's Excel interfaces are not single threaded and do not require Excel to be installed to work. Instead Spreadsheet::Read directly parses the Excel file. That makes it possible to process large computing tasks in parallel. Another possible use case is for a spreadsheet upload interface on a web application; Spreadsheet::Read also supports the Libre / Open Office formats as well as CSV text files.
-

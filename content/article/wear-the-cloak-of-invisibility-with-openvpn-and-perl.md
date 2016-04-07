@@ -1,21 +1,23 @@
 {
+   "slug" : "50/2013/12/2/Wear-the-cloak-of-invisibility-with-OpenVPN-and-Perl",
+   "description" : "How to covertly screen-scrape behind an encrypted connection and masked identity",
    "image" : "/images/50/EBF04796-FF2E-11E3-B1C6-5C05A68B9E16.png",
+   "date" : "2013-12-02T04:38:11",
+   "title" : "Wear the cloak of invisibility with OpenVPN and Perl",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "security",
    "tags" : [
       "linux",
       "useragent",
       "openvpn",
       "screen_scraping",
       "old_site"
-   ],
-   "title" : "Wear the cloak of invisibility with OpenVPN and Perl",
-   "description" : "How to covertly screen-scrape behind an encrypted connection and masked identity",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
-   "date" : "2013-12-02T04:38:11",
-   "slug" : "50/2013/12/2/Wear-the-cloak-of-invisibility-with-OpenVPN-and-Perl"
+   ]
 }
+
 
 *Screen-scraping useragents can be identified by several characteristics including their IP address and useragent string. This article shows how with the VPN service of [HideMyAss.com](http://hidemyass.com/vpn/r14824/) and the Perl module [Net::OpenVPN::Agent](https://metacpan.org/pod/Net::OpenVPN::Agent) you can obfuscate these data points and make your useragent harder to detect and monitor.*
 
@@ -111,4 +113,3 @@ The ability to anonymously scrape websites is a powerful but potentially harmful
 ### Disclosure
 
 As a customer of [HideMyAss.com](http://hidemyass.com/vpn/r14824/) I receive an affiliate payment for the successful referrals from the links on this page.
-

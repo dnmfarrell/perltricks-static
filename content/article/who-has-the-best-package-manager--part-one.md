@@ -1,12 +1,4 @@
 {
-   "description" : "Who has the best package manager and what we can we learn from all of them",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
-   "date" : "2014-08-21T13:03:03",
-   "slug" : "110/2014/8/21/Who-has-the-best-package-manager--Part-one",
-   "image" : "/images/110/27B53D22-28C9-11E4-BF47-7C15C254CEE0.png",
    "tags" : [
       "cpan",
       "metacpan",
@@ -16,8 +8,18 @@
       "package_manager",
       "old_site"
    ],
-   "title" : "Who has the best package manager? Part one"
+   "image" : "/images/110/27B53D22-28C9-11E4-BF47-7C15C254CEE0.png",
+   "date" : "2014-08-21T13:03:03",
+   "categories" : "cpan",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "Who has the best package manager? Part one",
+   "slug" : "110/2014/8/21/Who-has-the-best-package-manager--Part-one",
+   "description" : "Who has the best package manager and what we can we learn from all of them"
 }
+
 
 Every major language has thousands of libraries which enable programmers to reach higher, further and faster than before. Package managers (the online systems for sharing code) are key to a language's success; Perl, PHP, Python, Ruby and Node.js all have strong offerings. But which one is the best and what can we learn from each of them? This article is the first in a two-part series where I review each package manager. Part one focuses on searching and using packages and part two will look at how easy it is to upload and share packages.
 
@@ -248,4 +250,3 @@ The results are subjective but I hope they're approximately representative. Choo
 ### Thanks
 
 Thanks to Neil Bowers for providing the initial idea and feedback on this article. All errors are my own.
-

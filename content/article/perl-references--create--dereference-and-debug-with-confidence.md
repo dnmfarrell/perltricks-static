@@ -1,11 +1,10 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Learn enough to be dangerous with one of Perl's most powerful features",
-   "slug" : "80/2014/3/27/Perl-references--create--dereference-and-debug-with-confidence",
+   "image" : null,
+   "title" : "Perl references: create, dereference and debug with confidence",
    "draft" : false,
-   "date" : "2014-03-27T18:03:49",
+   "slug" : "80/2014/3/27/Perl-references--create--dereference-and-debug-with-confidence",
+   "description" : "Learn enough to be dangerous with one of Perl's most powerful features",
+   "categories" : "development",
    "tags" : [
       "variable",
       "scalar",
@@ -14,9 +13,12 @@
       "reference",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Perl references: create, dereference and debug with confidence"
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2014-03-27T18:03:49"
 }
+
 
 *Learning Perl's references is a rite-of-passage for Perl programmers. Until you "get" references, large parts of the language will remain alien to you. References have their own special syntax and rules, which can make them seem strange and hard to understand. The good news is that the core features of references are easy to learn and use. This article describes the main ways to use references and some handy tools to get you out of trouble if you run into it. So even if you're not completely comfortable with references, you'll be able to write code that works.*
 
@@ -239,4 +241,3 @@ Example 2's main drawback is that by starting with a reference, Perl has to dere
 If references were a mystery to you before, hopefully this article helps to kickstart you into using them with confidence. Are you thirsty for more references? There's a lot more to them than described here. Check out Perl's official documentation, perldoc which has a [tutorial](http://perldoc.perl.org/perlreftut.html) and more [detailed guide](http://perldoc.perl.org/perlref.html). [Intermediate Perl](http://www.amazon.com/gp/product/1449393098/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1449393098&linkCode=as2&tag=perltrickscom-20) is fantastic book that has over 100 pages on references (affiliate link).
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F80%2F2014%2F3%2F27%2FPerl-references-create-dereference-and-debug-with-confidence&text=Perl+references%3A+create%2C+dereference+and+debug+with+confidence&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F80%2F2014%2F3%2F27%2FPerl-references-create-dereference-and-debug-with-confidence&via=perltricks) it!
-

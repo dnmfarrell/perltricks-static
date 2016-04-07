@@ -1,20 +1,22 @@
 {
-   "title" : "An interview with Steven Haryanto",
-   "image" : "/images/62/EC2865E0-FF2E-11E3-811B-5C05A68B9E16.png",
    "tags" : [
       "community",
       "cpan",
       "interview",
       "old_site"
    ],
+   "description" : "We catch up with the prolific CPAN module author",
    "date" : "2014-01-24T03:17:09",
    "draft" : false,
-   "slug" : "62/2014/1/24/An-interview-with-Steven-Haryanto",
-   "description" : "We catch up with the prolific CPAN module author",
+   "title" : "An interview with Steven Haryanto",
+   "categories" : "community",
    "authors" : [
       "David Farrell"
-   ]
+   ],
+   "image" : "/images/62/EC2865E0-FF2E-11E3-811B-5C05A68B9E16.png",
+   "slug" : "62/2014/1/24/An-interview-with-Steven-Haryanto"
 }
+
 
 *Steven Haryanto is a Perl programmer and [prolific CPAN author](https://metacpan.org/author/SHARYANTO). We recently caught up with him to discuss his development approach and the tools he uses to be be so productive. (Steven tells us that the photo above is representative of his hometown, Bandung).*
 
@@ -79,4 +81,3 @@ One project in the works is [cpanlists.org](http://cpanlists.org/) (not up yet),
 People will be able to maintain a list of their favorite modules. This is already possible with ++ in MetaCPAN, but with MetaCPAN I can't add notes for each module or rate each module. To rate modules one must use a separate service ([CPAN Ratings](http://cpanratings.perl.org/)). Also I want to create multiple lists aside from a single favorites list, for example: list of recommended modules to do X (e.g. logging or convert Markdown to POD), list of modules to avoid because of X (e.g. heavy startup overhead, high number of bugs), and so on.
 
 When lots of people create their lists, this will help users evaluate and choose the right CPAN modules for their needs.
-

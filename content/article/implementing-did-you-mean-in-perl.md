@@ -1,5 +1,8 @@
 {
+   "categories" : "development",
    "title" : "Implementing Did You Mean in Perl",
+   "date" : "2014-10-31T15:31:18",
+   "slug" : "122/2014/10/31/Implementing-Did-You-Mean-in-Perl",
    "tags" : [
       "autoload",
       "mastering_perl",
@@ -8,15 +11,14 @@
       "did_you_mean",
       "old_site"
    ],
-   "image" : "/images/122/530C022E-6110-11E4-91D8-E5A395E830D2.png",
-   "slug" : "122/2014/10/31/Implementing-Did-You-Mean-in-Perl",
-   "draft" : false,
-   "date" : "2014-10-31T15:31:18",
+   "description" : "Catching and handling undefined subroutine exceptions",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Catching and handling undefined subroutine exceptions"
+   "image" : "/images/122/530C022E-6110-11E4-91D8-E5A395E830D2.png",
+   "draft" : false
 }
+
 
 A couple of weeks ago Yuki Nishijima released a clever Ruby [gem](http://www.yukinishijima.net/2014/10/21/did-you-mean-experience-in-ruby.html) called "Did You Mean", that intercepts failed method calls and suggests the closest matching (correct) method in the exception message. I wanted to create an equivalent module in Perl, and so armed with a limited appreciation of `AUTOLOAD` I set about creating [Devel::DidYouMean](https://metacpan.org/pod/Devel::DidYouMean).
 
@@ -79,4 +81,3 @@ The code for the autoloaded [subroutine](https://github.com/sillymoose/Devel-Did
 Although the module "works", it feels heavy-handed to export a subroutine to every namespace in memory. An alternative approach that I considered but couldn't get to work would be to define the code in an `END` block, and then check if the program is ending with an "unknown subroutine" error. This challenge with this is that in the end phase, Perl has already nullified the error variable `$!` so it's hard to know why the program is ending (tieing `$!` might get around this). If you're interested in tackling this challenge, the repo is hosted on [GitHub](https://github.com/sillymoose/Devel-DidYouMean), pull requests are welcome :) The module [documentation](https://metacpan.org/pod/Devel::DidYouMean) has more examples of Devel::DidYouMean in action.
 
 **Update:***Devel::DidYouMean now uses a signal handling approach and avoids AUTOLOAD altogether 2014-11-09*
-

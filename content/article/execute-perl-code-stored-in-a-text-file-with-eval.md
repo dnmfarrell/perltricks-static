@@ -1,11 +1,4 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Runtime abitrary code execution",
-   "slug" : "26/2013/5/28/Execute-Perl-code-stored-in-a-text-file-with-eval",
-   "draft" : false,
-   "date" : "2013-05-28T12:25:15",
    "tags" : [
       "filehandle",
       "string",
@@ -14,9 +7,18 @@
       "eval",
       "old_site"
    ],
+   "categories" : "development",
+   "title" : "Execute Perl code stored in a text file with eval",
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
    "image" : null,
-   "title" : "Execute Perl code stored in a text file with eval"
+   "slug" : "26/2013/5/28/Execute-Perl-code-stored-in-a-text-file-with-eval",
+   "description" : "Runtime abitrary code execution",
+   "date" : "2013-05-28T12:25:15"
 }
+
 
 The Perl [eval function](http://perldoc.perl.org/functions/eval.html) will execute any Perl code contained in a string that is passed to it. This article shows how eval can be used to execute Perl code stored in text files.
 
@@ -73,4 +75,3 @@ We injected this message
 ```
 
 Although it is a cool feature, any technique which allows the execution of arbitrary code stored in text files is rife with risk. So exercise the proper caution and checks before employing this method!
-

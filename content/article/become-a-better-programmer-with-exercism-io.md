@@ -1,11 +1,13 @@
 {
-   "slug" : "90/2014/5/19/Become-a-better-programmer-with-exercism-io",
-   "draft" : false,
-   "date" : "2014-05-19T01:15:07",
+   "categories" : "community",
    "authors" : [
       "David Farrell"
    ],
    "description" : "The open source programming puzzler that will level-up your Perl programming",
+   "date" : "2014-05-19T01:15:07",
+   "slug" : "90/2014/5/19/Become-a-better-programmer-with-exercism-io",
+   "image" : "/images/90/ECF71624-FF2E-11E3-A119-5C05A68B9E16.png",
+   "draft" : false,
    "title" : "Become a better programmer with exercism.io",
    "tags" : [
       "community",
@@ -13,9 +15,9 @@
       "app",
       "open_source",
       "old_site"
-   ],
-   "image" : "/images/90/ECF71624-FF2E-11E3-A119-5C05A68B9E16.png"
+   ]
 }
+
 
 *For the past week I've been trying out [exercism.io](http://exercism.io/) the programming exercises app. I heard about it back in December when Gabor [blogged](http://blogs.perl.org/users/gabor_szabo/2013/12/perl-exercism.html) about it, but didn't try it until now. I wish I hadn't waited so long, as exercism is a lot of fun.*
 
@@ -136,4 +138,3 @@ It only take about 30 minutes to port one exercise: if 2% of the readers of this
 Playing with exercism has been loads of fun and I've learned a few Perl tricks (hah!) along the way. The source is MIT licensed and the committers are friendly. It would be great to see more Perlers participating or porting an exercise or too. Feel free to clone or or stencil the [quest](https://questhub.io/realm/perl/quest/53795a10bbd0be180400014f). Let's show people what our language can do!
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F90%2F2014%2F5%2F18%2FBecome-a-better-programmer-with-exercism-io&text=Become+a+better+programmer+with+exercism.io&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F90%2F2014%2F5%2F18%2FBecome-a-better-programmer-with-exercism-io&via=perltricks) about it!
-

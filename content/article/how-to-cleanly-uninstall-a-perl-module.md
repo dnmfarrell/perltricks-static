@@ -1,4 +1,10 @@
 {
+   "description" : "How to write your own uninstall modules script",
+   "slug" : "3/2013/3/27/How-to-cleanly-uninstall-a-Perl-module",
+   "categories" : "managing_perl",
+   "date" : "2013-03-27T00:00:17",
+   "title" : "How to cleanly uninstall a Perl module",
+   "image" : null,
    "tags" : [
       "configuration",
       "cpan",
@@ -8,16 +14,12 @@
       "cpanminus",
       "old_site"
    ],
-   "image" : null,
-   "title" : "How to cleanly uninstall a Perl module",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "How to write your own uninstall modules script",
-   "slug" : "3/2013/3/27/How-to-cleanly-uninstall-a-Perl-module",
-   "draft" : false,
-   "date" : "2013-03-27T00:00:17"
+   "draft" : false
 }
+
 
 CPAN makes installing Perl modules easy but when it comes to removing Perl modules, you have to roll your own solution\*. Fortunately the Perl core includes the ExtUtils modules that can help. The script below accepts the Module::Name as an argument, and will delete all files and empty directories associated with that module.
 
@@ -78,4 +80,3 @@ $ cpanm --uninstall Acme::Dot
 App::cpanminus has loads of other great features, to see them, just run `cpanm --help`.
 
 **Updated:** added cpanm example and clarified directory removal process. 2015-02-21**
-

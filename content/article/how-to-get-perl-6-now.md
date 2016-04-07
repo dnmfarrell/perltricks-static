@@ -1,12 +1,8 @@
 {
-   "slug" : "207/2015/12/31/How-to-get-Perl-6-now",
-   "draft" : false,
-   "date" : "2015-12-31T19:08:59",
-   "authors" : [
-      "David Farrell"
-   ],
    "description" : "Installation instructions for Linux, OSX and Windows",
-   "title" : "How to get Perl 6 now",
+   "image" : null,
+   "date" : "2015-12-31T19:08:59",
+   "draft" : false,
    "tags" : [
       "linux",
       "windows",
@@ -15,8 +11,14 @@
       "panda",
       "old_site"
    ],
-   "image" : null
+   "slug" : "207/2015/12/31/How-to-get-Perl-6-now",
+   "title" : "How to get Perl 6 now",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "perl6"
 }
+
 
 Great news, Perl 6 was [released](https://perl6advent.wordpress.com/2015/12/25/christmas-is-here/) on Christmas Day; finally us geeks got something we wanted for Christmas. Send the books back Grandma! (unless you got [Modern Perl](http://perltricks.com/article/205/2015/12/21/Modern-Perl-4th-edition--a-review)).
 
@@ -58,4 +60,3 @@ Here at PerlTricks.com, we've got several Perl 6 articles that may be of interes
 -   [Activate Perl 6 syntax highlighting in Vim](http://perltricks.com/article/194/2015/9/22/Activating-Perl-6-syntax-highlighting-in-Vim)
 
 **Update** - Visual Studio article now includes instructions for VS2015. Added link to nu42.com. 2016-01-04
-

@@ -1,20 +1,22 @@
 {
-   "description" : "Enter for a chance to win an exclusive Perl Nerd Merit Badge",
+   "slug" : "64/2014/1/29/Announcing--the-Perl-Nerd-Merit-Badge-contest",
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
-   "date" : "2014-01-29T02:48:28",
-   "slug" : "64/2014/1/29/Announcing--the-Perl-Nerd-Merit-Badge-contest",
-   "image" : "/images/64/EC35647A-FF2E-11E3-96EE-5C05A68B9E16.png",
    "tags" : [
       "community",
       "contest",
       "velociraptor",
       "old_site"
    ],
-   "title" : "Announcing: the Perl Nerd Merit Badge contest"
+   "description" : "Enter for a chance to win an exclusive Perl Nerd Merit Badge",
+   "title" : "Announcing: the Perl Nerd Merit Badge contest",
+   "image" : "/images/64/EC35647A-FF2E-11E3-96EE-5C05A68B9E16.png",
+   "date" : "2014-01-29T02:48:28",
+   "categories" : "community"
 }
+
 
 *It all started late last year with brian d foy's successful [Crowdtilt campaign](https://www.crowdtilt.com/campaigns/make-perl-nerd-merit-badges). Now we've got our hands on three exclusive, not-available-to-buy anywhere else, bona fide Perl Nerd Merit Badges. What do you have to do for a chance to win a badge and the envy and respect of your perly peers? Read on ...*
 
@@ -44,4 +46,3 @@ Mark Keating [wrote](http://mdk.per.ly/2011/03/02/evolution-of-the-velociraptor/
 10. The contest is subject to US law.
 
 **Enter the contest today, [email us](mailto:perltricks.com@gmail.com?subject=Nerd%20Merit%20Badge%20Contest) your Perl trick!**
-

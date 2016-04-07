@@ -1,20 +1,22 @@
 {
-   "slug" : "150/2015/2/18/Why-I-Started-Geekuni",
    "date" : "2015-02-18T13:46:33",
-   "draft" : false,
+   "slug" : "150/2015/2/18/Why-I-Started-Geekuni",
    "authors" : [
       "Andrew Solomon"
    ],
    "description" : "Learn more about Geekuni, the online learning environment",
-   "title" : "Why I Started Geekuni",
    "tags" : [
       "geekuni",
       "moodle",
       "online_learning",
       "old_site"
    ],
-   "image" : "/images/150/B86DC024-B658-11E4-8BDD-633BD495B04B.png"
+   "image" : "/images/150/B86DC024-B658-11E4-8BDD-633BD495B04B.png",
+   "title" : "Why I Started Geekuni",
+   "categories" : "community",
+   "draft" : false
 }
+
 
 [Geekuni](https://www.geekuni.com) is an online learning environment I created to help people learn Perl programming. Geekuni is different from many other online learning courses because the student's work is evaluated by a Tutor-bot, giving them instant feedback. The focus is on learning by doing rather than theory.
 
@@ -39,4 +41,3 @@ Each student's AWS instance is called an "eBox". I manage them using [Net::Amazo
 ### Looking forwards
 
 My former employer NET-A-PORTER has used the course material from Geekuni for their internal Perl training courses. I'd love to help other organizations and individuals use Geekuni for their own training. Much of my current focus is on solving practical day-to-day issues - as an academic I used to study the Travelling Salesman Problem, and now I'm working the on the "Tutor-bot Scaling problem"!
-

@@ -1,4 +1,6 @@
 {
+   "slug" : "36/2013/8/10/Run-local-Perl-as-root",
+   "title" : "Run local Perl as root",
    "tags" : [
       "configuration",
       "linux",
@@ -8,16 +10,16 @@
       "perlbrew",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Run local Perl as root",
+   "date" : "2013-08-10T14:33:18",
+   "categories" : "managing_perl",
    "authors" : [
       "David Farrell"
    ],
    "description" : "This is a simple trick for conveniently running local Perl as a root user on UNIX-based systems.",
-   "slug" : "36/2013/8/10/Run-local-Perl-as-root",
    "draft" : false,
-   "date" : "2013-08-10T14:33:18"
+   "image" : null
 }
+
 
 This is a simple trick for conveniently running local Perl as a root user on UNIX-based systems.
 
@@ -45,4 +47,3 @@ sudo which perl
 sudo echo $(which perl)
 /home/sillymoose/perl5/perlbrew/perls/perl-5.16.3/bin/perl
 ```
-

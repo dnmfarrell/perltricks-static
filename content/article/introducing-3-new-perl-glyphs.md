@@ -1,4 +1,12 @@
 {
+   "categories" : "community",
+   "draft" : false,
+   "description" : "What will you use them for?",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "Introducing 3 new Perl Glyphs",
+   "date" : "2015-01-23T13:55:03",
    "image" : "/images/146/62C9158A-A2B0-11E4-8BBD-CE8C9EE10EC8.png",
    "tags" : [
       "icomoon",
@@ -10,15 +18,9 @@
       "font",
       "old_site"
    ],
-   "title" : "Introducing 3 new Perl Glyphs",
-   "description" : "What will you use them for?",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
-   "date" : "2015-01-23T13:55:03",
    "slug" : "146/2015/1/23/Introducing-3-new-Perl-Glyphs"
 }
+
 
 Recently I changed our site's menu links from bitmap images to glyphs. A glyph (or "font icon") is an svg file which can be packaged in a font file. Glyphs hold several advantages over bitmaps as icons: they look smooth at any resolution, can be colored and aligned just like text, and usually occupy less disk space than a regular bitmap.
 
@@ -63,4 +65,3 @@ If you want lower-level access to font files, check out [FontForge](http://sourc
 I've released these files under the FreeBSD license, but keep in mind that there may be additional restrictions on use, which is out of my hands. Check out the repo [README](https://github.com/dnmfarrell/Perl-Icons/blob/master/README.pod) for the specifics.
 
 **Update** *I've added a fourth glyph to the repo, the Perl 5 Raptor! Thanks to Marcus Smith for the suggestion. 2015-01-23*
-

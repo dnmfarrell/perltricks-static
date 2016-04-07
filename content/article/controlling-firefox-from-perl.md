@@ -1,20 +1,22 @@
 {
    "date" : "2014-12-08T14:13:27",
-   "draft" : false,
    "slug" : "138/2014/12/8/Controlling-Firefox-from-Perl",
-   "description" : "Form submission, scraping, JavaScript execution are all possible",
-   "authors" : [
-      "brian d foy"
-   ],
-   "title" : "Controlling Firefox from Perl",
-   "image" : "/images/138/589C58AA-7EE4-11E4-9429-0240B3613736.png",
    "tags" : [
       "javascript",
       "firefox",
       "mechanize",
       "old_site"
-   ]
+   ],
+   "image" : "/images/138/589C58AA-7EE4-11E4-9429-0240B3613736.png",
+   "authors" : [
+      "brian d foy"
+   ],
+   "title" : "Controlling Firefox from Perl",
+   "description" : "Form submission, scraping, JavaScript execution are all possible",
+   "categories" : "web",
+   "draft" : false
 }
+
 
 I've been playing with [WWW::Mechanize::Firefox](http://www.metacpan.org/module/WWW::Mechanize::Firefox). It's like the LWP-backended [WWW::Mechanize](http://www.metacpan.org/module/WWW::Mechanize), but with a browser doing all the work. Instead of doing it all in Perl, I can use it as the glue language that it is.
 
@@ -109,4 +111,3 @@ The [WWW::Mechanize::Firefox](http://www.metacpan.org/module/WWW::Mechanize::Fir
 *Join the discussion on the Perl [subreddit](http://www.reddit.com/r/perl/comments/2onaz4/controlling_firefox_from_perl_by_brian_d_foy/) about this article!*
 
 **Update:** *last paragraph updated to include Selenium reference. 2014-12-09*
-

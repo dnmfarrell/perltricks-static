@@ -1,12 +1,11 @@
 {
-   "slug" : "69/2014/2/17/Is-PearlBee-Perl-s-next-great-blogging-platform-",
-   "date" : "2014-02-17T04:09:21",
    "draft" : false,
+   "image" : "/images/69/EC51073E-FF2E-11E3-94AE-5C05A68B9E16.png",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "We review the new open source blogging platform",
-   "title" : "Is PearlBee Perl's next great blogging platform?",
+   "slug" : "69/2014/2/17/Is-PearlBee-Perl-s-next-great-blogging-platform-",
+   "categories" : "apps",
    "tags" : [
       "community",
       "blog",
@@ -16,8 +15,11 @@
       "open_source",
       "old_site"
    ],
-   "image" : "/images/69/EC51073E-FF2E-11E3-94AE-5C05A68B9E16.png"
+   "date" : "2014-02-17T04:09:21",
+   "description" : "We review the new open source blogging platform",
+   "title" : "Is PearlBee Perl's next great blogging platform?"
 }
+
 
 *Last year the Perl-based Movable Type blogging platform turned closed-source and left Perl without a major open source blogging platform. The wait is over; PearlBee is a new open source blogging platform written in Perl and developed by Evozon. But is it any good? We took it for a spin to find out.*
 
@@ -102,4 +104,3 @@ PearlBee requires a local SMTP server to send emails (such as the new user welco
 PearlBee is a promising platform that is still in development. It looks good, has a solid data model and runs fast on the Dancer2 framework with DBIx::Class. In my interactions with the development team they were responsive and helpful. It feels about 80% complete - the core functionality is in place but there are some rough edges. PearlBee needs better security, SEO integration and to be more configurable. If the development team can resolve these issues in time for the first major release of PearlBee, it could be a milestone Perl development for what has been a barren couple of years in blogging technology.
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F69%2F2014%2F2%2F17%2FIs-PearlBee-Perl-s-next-great-blogging-platform-&text=Is+PearlBee+Perl%27s+next+great+blogging+platform%3F&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F69%2F2014%2F2%2F17%2FIs-PearlBee-Perl-s-next-great-blogging-platform-&via=perltricks) it!
-

@@ -1,19 +1,21 @@
 {
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "debugging",
       "module",
       "old_site"
    ],
-   "image" : "/images/89/ECED30D2-FF2E-11E3-9A57-5C05A68B9E16.jpeg",
-   "title" : "Debunk Perl's magic with B::Deparse",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "We show you how to peak behind the curtain and inspect Perl code",
+   "categories" : "development",
    "slug" : "89/2014/5/15/Debunk-Perl-s-magic-with-B--Deparse",
    "date" : "2014-05-15T12:19:51",
-   "draft" : false
+   "title" : "Debunk Perl's magic with B::Deparse",
+   "image" : "/images/89/ECED30D2-FF2E-11E3-9A57-5C05A68B9E16.jpeg",
+   "description" : "We show you how to peak behind the curtain and inspect Perl code"
 }
+
 
 *The [B::Deparse](https://metacpan.org/pod/B::Deparse) module compiles a Perl program and then deparses it, producing the internally generated source code. What's the point of that you say? Well it let's you look behind the curtain and inspect how Perl is structuring the program code which can help you debug it, among other things.*
 
@@ -69,4 +71,3 @@ PerlMonks has an [interesting](http://www.perlmonks.org/?node_id=804232) entry f
 Thanks again to Perl Pumpking and [teflon](http://www.youtube.com/watch?v=Sp102BECq8s) man Ricardo Signes who put me on to using B::Deparse on subroutine signatures.
 
 *Cover image [©](https://creativecommons.org/licenses/by/2.0/) [bark](https://www.flickr.com/photos/barkbud/4165385634) image has been digitaly altered*
-

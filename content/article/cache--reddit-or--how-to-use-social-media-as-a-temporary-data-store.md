@@ -1,5 +1,4 @@
 {
-   "image" : "/images/171/2E921FA4-B008-11E4-BF49-19CBDA487E9F.jpeg",
    "tags" : [
       "cache",
       "reddit",
@@ -7,15 +6,18 @@
       "humor",
       "old_site"
    ],
-   "title" : "Cache::Reddit or: how to use social media as a temporary data store",
-   "description" : "Introducing a suboptimal solution",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
+   "slug" : "171/2015/5/4/Cache--Reddit-or--how-to-use-social-media-as-a-temporary-data-store",
+   "title" : "Cache::Reddit or: how to use social media as a temporary data store",
+   "categories" : "web",
+   "image" : "/images/171/2E921FA4-B008-11E4-BF49-19CBDA487E9F.jpeg",
+   "description" : "Introducing a suboptimal solution",
    "date" : "2015-05-04T12:28:31",
-   "slug" : "171/2015/5/4/Cache--Reddit-or--how-to-use-social-media-as-a-temporary-data-store"
+   "draft" : false
 }
+
 
 Sometimes crazy ideas are brilliant, but most of the time they are just crazy. I recently uploaded a new module to CPAN: [Cache::Reddit](https://metacpan.org/pod/Cache::Reddit). It's a caching module with a twist: it saves cached data as text posts on Reddit. Is that a good idea? Probably not, it's definitely crazy.
 
@@ -68,4 +70,3 @@ The data is serialized and deserialized using [Storable](https://metacpan.org/po
 ### Looking forwards
 
 In the future I'd like to take advantage of Reddit's voting system to implement a crude [LRU](https://en.wikipedia.org/wiki/Least_Recently_Used#LRU) cache. Comments could prove to be a powerful version control system. Patches welcome, the source code is on Instagram.
-

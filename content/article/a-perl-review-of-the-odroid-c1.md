@@ -1,5 +1,9 @@
 {
+   "draft" : false,
+   "date" : "2015-02-11T13:53:33",
    "image" : "/images/152/4BE8EC88-B1F5-11E4-9EED-41DCDA487E9F.jpeg",
+   "description" : "This little board shows a lot of promise for Perl-based hardware projects",
+   "title" : "A Perl Review of the ODROID-C1",
    "tags" : [
       "dancer",
       "hardware",
@@ -8,15 +12,13 @@
       "device_webio",
       "old_site"
    ],
-   "title" : "A Perl Review of the ODROID-C1",
-   "description" : "This little board shows a lot of promise for Perl-based hardware projects",
+   "slug" : "152/2015/2/11/A-Perl-Review-of-the-ODROID-C1",
    "authors" : [
       "Timm Murray"
    ],
-   "date" : "2015-02-11T13:53:33",
-   "draft" : false,
-   "slug" : "152/2015/2/11/A-Perl-Review-of-the-ODROID-C1"
+   "categories" : "hardware"
 }
+
 
 The success of the Raspberry Pi has opened up a whole new market of System on a Chip devices, where a single chip integrates most of the basic functions of a computer. Many of these systems run some kind of Linux distribution. Naturally, Perl comes along for the ride.
 
@@ -71,4 +73,3 @@ This is perl 5, version 18, subversion 2 (v5.18.2) built for arm-linux-gnueabihf
 This is more up to date than the 5.14 that comes on Raspbian images. Note the enabling of threads and 64-bit integers on this build, which is also the case on Raspbian. No doubt this is because perls built for a default system installation need to be compatible with every Perl script in existence (or as much as possible, anyway). Most Linux-based Perl applications don't use threads, and can usually get away with native 32-bit integers. Threads, in particular, give a noticeable slowdown to every execution, even in apps that don't use them. If you need to get a little extra speed out of your app, go for a custom Perl compile without these features.
 
 So far, I'm liking this little board. Once past the screen resolution issues, setup is a breeze. It's nice and fast, with a reasonably up to date Perl. On the downside, the community is smaller, and so you'll often be on your own to figure things out. Recommended for any trailblazers in the Perl community.
-

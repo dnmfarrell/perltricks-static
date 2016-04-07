@@ -1,5 +1,14 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "cpan",
+   "description" : "Some modules you may have missed last year",
+   "date" : "2015-01-15T14:44:40",
+   "image" : "/images/145/9F324420-9CC4-11E4-8F7D-457B20B41B38.png",
    "title" : "The best of what's new on CPAN 2014",
+   "draft" : false,
+   "slug" : "145/2015/1/15/The-best-of-what-s-new-on-CPAN-2014",
    "tags" : [
       "cpan",
       "ffi",
@@ -15,16 +24,9 @@
       "phantomjs",
       "pic",
       "old_site"
-   ],
-   "image" : "/images/145/9F324420-9CC4-11E4-8F7D-457B20B41B38.png",
-   "slug" : "145/2015/1/15/The-best-of-what-s-new-on-CPAN-2014",
-   "date" : "2015-01-15T14:44:40",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Some modules you may have missed last year"
+   ]
 }
+
 
 2014 has come and gone, which means that we've completed 12 editions of "What's New on CPAN". This seems like an appropriate moment to take stock and reflect on the past year of new CPAN uploads. I've compiled a shortlist of modules by using the scientific approach of "stuff that I remember". Have a think about what would be on your "best of" list, and maybe let the author know, or better, write about it and let the World know.
 
@@ -79,4 +81,3 @@ Masahiro Nagano created [Gazelle](https://metacpan.org/pod/Gazelle), a highly op
 2014 also brought the usual flood of plugins for the major web frameworks. Big news for Mojo fans was the announcement of the platform moving away from MongoDB support and embracing a Postgres backend instead with [Mojo::Pg](https://metacpan.org/pod/Mojo::Pg).
 
 Web scrapers and QA testers did well: [WWW::Mechanize::PhantomJS](https://metacpan.org/pod/WWW::Mechanize::PhantomJS) implements a headless, JavaScript enabled browser with the typical friendly mechanize interface. [Selenium::Screenshot](https://metacpan.org/pod/Selenium::Screenshot) combines Selenium's screenshot ability with [Image::Compare](https://metacpan.org/pod/Image::Compare) to detect changes in web pages.
-

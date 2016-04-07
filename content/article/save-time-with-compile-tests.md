@@ -1,20 +1,22 @@
 {
-   "title" : "Save time with compile tests",
-   "image" : null,
    "tags" : [
       "module",
       "require",
       "class_load",
       "old_site"
    ],
+   "title" : "Save time with compile tests",
    "draft" : false,
-   "date" : "2016-01-05T14:32:45",
-   "slug" : "208/2016/1/5/Save-time-with-compile-tests",
-   "description" : "Checking everything compiles should be the first test",
    "authors" : [
       "David Farrell"
-   ]
+   ],
+   "description" : "Checking everything compiles should be the first test",
+   "image" : null,
+   "date" : "2016-01-05T14:32:45",
+   "categories" : "testing",
+   "slug" : "208/2016/1/5/Save-time-with-compile-tests"
 }
+
 
 Over the past year I've been working on several large Perl projects, sometimes as part of a team and sometimes alone. As the codebase grows, testing becomes increasingly important and one test in particular that pays dividends is the compile test. That is, before running any other tests, simply check if that every module in the codebase compiles.
 
@@ -136,4 +138,3 @@ If you ever need to suppress a particular warning, in newer versions of Perl the
 ``` prettyprint
 $ perldoc warnings
 ```
-

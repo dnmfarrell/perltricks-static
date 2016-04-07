@@ -1,5 +1,10 @@
 {
-   "image" : "/images/133/8CD1623C-68E1-11E4-99FF-327195E830D2.jpeg",
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "An easy trick that saves you time",
+   "categories" : "testing",
+   "draft" : false,
    "tags" : [
       "perl",
       "compile",
@@ -12,14 +17,11 @@
       "old_site"
    ],
    "title" : "Boost your Perl productivity with auto-compile checking",
-   "description" : "An easy trick that saves you time",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2014-11-10T14:01:51",
-   "draft" : false,
-   "slug" : "133/2014/11/10/Boost-your-Perl-productivity-with-auto-compile-checking"
+   "slug" : "133/2014/11/10/Boost-your-Perl-productivity-with-auto-compile-checking",
+   "image" : "/images/133/8CD1623C-68E1-11E4-99FF-327195E830D2.jpeg",
+   "date" : "2014-11-10T14:01:51"
 }
+
 
 The Perl command line option `-c` causes Perl to check the syntax of the program, but not execute it (apart from code in BEGIN, CHECK and UNITCHECK blocks - watch out for those). For example:
 
@@ -91,4 +93,3 @@ This will run Perl's syntax checks checks on the current buffer. Vim reads the o
 *Vim autocmd example updated to handle filepaths containing spaces. Thanks to Henry An for the suggestion. 2015-01-22*
 
 *Cover image [©](http://creativecommons.org/licenses/by/4.0/) [Alan Kotok](https://www.flickr.com/photos/runneralan/10092757714/in/photolist--88qSeT-88u7R1-dqTSLE-atoyrp-bD3QaN-93yNyq-8QYfKX-diG9h4-bD3NV9-88u847-gnS2f3-55QWyu-dqTHcF-9AJTkV-88qSdr-7h39AP-7nPgCT-88qSfv-5MyRfE-bRXxYv-bD3PXU-88u7pC-imjBX2-8xz38b-32eo27-a8YVvZ-8WJgFA-93ySDG-57KLMs-oYUnQ1-88qRL4-fturhH-88qRMx-cUx3nS-4GMFL2-88qSrv-5RhqjZ-ftuqAr-ehAoHf-ftJLsq-88u7fU-5R22Pk-5CNDM-bv2wve-9vnwcd-6dyA62-ejP2nf-329MpH-88u7ds) image has been digitally altered*
-

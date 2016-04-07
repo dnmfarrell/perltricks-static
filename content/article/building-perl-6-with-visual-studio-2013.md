@@ -1,4 +1,5 @@
 {
+   "title" : "Building Perl 6 with Visual Studio 2013",
    "tags" : [
       "windows",
       "perl6",
@@ -8,16 +9,17 @@
       "visual_studio_2015",
       "old_site"
    ],
-   "image" : "/images/135/A8E8819E-6EC2-11E4-9A80-FF7CA241EDA8.png",
-   "title" : "Building Perl 6 with Visual Studio 2013",
+   "draft" : false,
+   "date" : "2014-11-18T13:34:36",
    "authors" : [
       "Sinan Unur"
    ],
-   "description" : "Compiling Rakudo on Windows is easier than you think",
+   "categories" : "perl6",
    "slug" : "135/2014/11/18/Building-Perl-6-with-Visual-Studio-2013",
-   "date" : "2014-11-18T13:34:36",
-   "draft" : false
+   "description" : "Compiling Rakudo on Windows is easier than you think",
+   "image" : "/images/135/A8E8819E-6EC2-11E4-9A80-FF7CA241EDA8.png"
 }
+
 
 I think the last time I tried playing around with anything related to Perl 6 was at least two years ago. Recently, [an understated entry](https://fosdem.org/2015/schedule/event/get_ready_to_party/) in Fosdem '15 schedule caught the Perl community's attention:
 
@@ -96,4 +98,3 @@ Perl 6, just like Perl 5, has a module system. You can find contributed modules 
 I am not sure if these indicate problems with the underlying library, or problems with the way tests are written. I suspect the latter, but that will have to wait. In the mean time, I will [explore the basic language](http://perl6.org/documentation/) to get a better feel for Perl 6.
 
 **Update** - added VS2015 instructions. 2016-01-04
-

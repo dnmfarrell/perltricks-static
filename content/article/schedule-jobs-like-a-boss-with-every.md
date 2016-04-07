@@ -1,12 +1,14 @@
 {
+   "draft" : false,
+   "categories" : "apps",
    "description" : "Introducing every, the cron scheduling app written in Perl",
+   "title" : "Schedule jobs like a boss with every",
+   "image" : null,
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
-   "date" : "2013-12-22T15:08:51",
    "slug" : "55/2013/12/22/Schedule-jobs-like-a-boss-with-every",
-   "image" : null,
+   "date" : "2013-12-22T15:08:51",
    "tags" : [
       "linux",
       "sysadmin",
@@ -14,9 +16,9 @@
       "osx",
       "cron",
       "old_site"
-   ],
-   "title" : "Schedule jobs like a boss with every"
+   ]
 }
+
 
 Scheduling jobs on cron is often a trial-and-error process but every, a command line app written in Perl makes it a lot easier.
 
@@ -79,4 +81,3 @@ $ every @reboot script.sh
 every has more options than described above. Run "every --help" to see the full panoply of options.
 
 every was written in Perl by [Rebecca](http://re-becca.org/). She is also on twitter ([@ReBeccaOrg](https://twitter.com/ReBeccaOrg)). So if you use every and find it useful, maybe reach out and say thank you.
-

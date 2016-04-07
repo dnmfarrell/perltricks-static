@@ -1,12 +1,6 @@
 {
-   "slug" : "76/2014/3/11/Simple-web-framework-FastCGI-caching-with-nginx---part-1",
-   "date" : "2014-03-11T03:18:00",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
    "description" : "How to cache responses from fastcgi apps and how to clear the cache",
-   "title" : "Simple web framework FastCGI caching with nginx - part 1",
+   "draft" : false,
    "tags" : [
       "nginx",
       "catalyst",
@@ -15,8 +9,16 @@
       "cache",
       "old_site"
    ],
-   "image" : "/images/76/EC83FACC-FF2E-11E3-BBAC-5C05A68B9E16.jpeg"
+   "image" : "/images/76/EC83FACC-FF2E-11E3-BBAC-5C05A68B9E16.jpeg",
+   "date" : "2014-03-11T03:18:00",
+   "categories" : "web",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "Simple web framework FastCGI caching with nginx - part 1",
+   "slug" : "76/2014/3/11/Simple-web-framework-FastCGI-caching-with-nginx---part-1"
 }
+
 
 *Fastcgi server caching is a wonderful technique for improving response times and reducing load on a web application. In part 1 of this series we look at how to cache responses with Catalyst, Dancer and Mojolocious and how to clear the cache on-demand when using the nginx web server. Before you know it, your web application will be faster than a racing llama!*
 
@@ -114,4 +116,3 @@ All of the major Perl web frameworks support FastCGI server caching. It's easy t
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F76%2F2014%2F3%2F11%2FSimple-web-framework-FastCGI-caching-with-nginx-part-1&text=Simple+web+framework+FastCGI+caching+with+nginx+-+part+1&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F76%2F2014%2F3%2F11%2FSimple-web-framework-FastCGI-caching-with-nginx-part-1&via=perltricks) it!
 
 *Cover picture © David Hoshor licensed via [Creative Commons](http://creativecommons.org/licenses/by/2.0/). The picture has been digitally enhanced.*
-

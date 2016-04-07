@@ -1,12 +1,9 @@
 {
-   "description" : "Unit tests should be self-contained, even database ones",
-   "authors" : [
-      "David Farrell"
-   ],
    "date" : "2015-04-15T03:05:00",
-   "draft" : false,
-   "slug" : "167/2015/4/15/Unit-test-your-code-on-an-in-memory-database",
+   "title" : "Unit test your code on an in-memory database",
+   "categories" : "testing",
    "image" : "/images/167/10195802-E312-11E4-8CF6-FC456037288D.png",
+   "slug" : "167/2015/4/15/Unit-test-your-code-on-an-in-memory-database",
    "tags" : [
       "database",
       "dbix_class",
@@ -15,8 +12,13 @@
       "sqlite",
       "old_site"
    ],
-   "title" : "Unit test your code on an in-memory database"
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "Unit tests should be self-contained, even database ones",
+   "draft" : false
 }
+
 
 Unit test scripts should be independent, stateless and free from side-effects. These ideals are not always achievable but by using tools like mock objects we can often get close. Some functionality is harder to test than others though; for example how do you test database interface code? Databases have state - even if you reset the data after you've tested it, there's no guarantee the data is the same, or that other code hasn't accessed the database during the test execution.
 
@@ -74,4 +76,3 @@ I'm using an example app, called `SomeApp` to demonstrate. First the `connection
 ### Not just for testing
 
 The in-memory feature of SQLite is provided by [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite), the DBI driver. It's a cool feature, and could be used for more than just unit testing. Anytime you have a need for a temporary relational datastore, consider this; it's fast, is portable and automatically cleans itself up when the program ends.
-

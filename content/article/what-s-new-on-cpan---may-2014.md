@@ -1,19 +1,21 @@
 {
+   "draft" : false,
    "title" : "What's new on CPAN - May 2014",
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "A curated look at May's new CPAN uploads",
+   "slug" : "93/2014/6/2/What-s-new-on-CPAN---May-2014",
    "image" : "/images/93/ED019F40-FF2E-11E3-8843-5C05A68B9E16.png",
+   "categories" : "cpan",
+   "date" : "2014-06-02T12:31:35",
    "tags" : [
       "cpan",
       "news",
       "old_site"
-   ],
-   "draft" : false,
-   "date" : "2014-06-02T12:31:35",
-   "slug" : "93/2014/6/2/What-s-new-on-CPAN---May-2014",
-   "description" : "A curated look at May's new CPAN uploads",
-   "authors" : [
-      "David Farrell"
    ]
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -119,4 +121,3 @@ New Mojolicious toys!:
 -   [TimeAgo](https://metacpan.org/pod/Mojolicious::Plugin::TimeAgo) elegantly convert dates to human-readable dates
 
 [Plack::App::HostMap](https://metacpan.org/pod/Plack::App::HostMap) can dispatch requests to applications based on host names, in constant time
-

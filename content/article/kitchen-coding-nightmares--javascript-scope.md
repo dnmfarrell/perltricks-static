@@ -1,4 +1,10 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "204/2015/12/17/Kitchen-coding-nightmares--JavaScript-scope",
+   "categories" : "development",
+   "image" : "/images/204/60B8AF26-A444-11E5-A7E3-5B35815E78B2.png",
    "tags" : [
       "perl",
       "var",
@@ -8,16 +14,12 @@
       "jshint",
       "old_site"
    ],
-   "image" : "/images/204/60B8AF26-A444-11E5-A7E3-5B35815E78B2.png",
-   "title" : "Kitchen coding nightmares: JavaScript scope",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Some JavaScript gotchas and solutions",
-   "slug" : "204/2015/12/17/Kitchen-coding-nightmares--JavaScript-scope",
    "draft" : false,
-   "date" : "2015-12-17T14:13:13"
+   "title" : "Kitchen coding nightmares: JavaScript scope",
+   "date" : "2015-12-17T14:13:13",
+   "description" : "Some JavaScript gotchas and solutions"
 }
+
 
 Lately at the [Recurse Center](https://www.recurse.com/) I've been developing a JavaScript client for my [Settlers game](https://github.com/dnmfarrell/Settlers-Game). As a Perl developer working with JavaScript, it has been a fun experience. JavaScript feels very perly - both share a flexible syntax, first class functions and objects as hashes. And both languages have a lax interpreter which should have been put in strict mode in the first place (ha-ha!). One way in which JavaScript is very different from Perl is its scoping rules. I was burned by these more than once, and so if you're new to JavaScript, you might find the following summary and recommendations useful.
 
@@ -183,4 +185,3 @@ Browsers do not throw enough exceptions when processing JavaScript. Instead they
 <sup>1</sup> Introduced in ES5 JavaScript - which is supported by all modern browsers. For solutions for older JavaScript versions, use `call` or `apply`.
 
 <sup>2</sup> It's probably a bad thing for users too - the overhead in processing syntactically wrong code degrades performance and worse, encourages more incorrect code to be written.
-

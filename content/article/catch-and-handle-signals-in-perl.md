@@ -1,12 +1,5 @@
 {
-   "description" : "We show you how to listen for signals and handle them gracefully",
-   "authors" : [
-      "David Farrell"
-   ],
    "draft" : false,
-   "date" : "2013-08-18T18:48:51",
-   "slug" : "37/2013/8/18/Catch-and-Handle-Signals-in-Perl",
-   "image" : null,
    "tags" : [
       "linux",
       "windows",
@@ -18,8 +11,17 @@
       "sigint",
       "old_site"
    ],
-   "title" : "Catch and Handle Signals in Perl"
+   "categories" : "development",
+   "slug" : "37/2013/8/18/Catch-and-Handle-Signals-in-Perl",
+   "image" : null,
+   "date" : "2013-08-18T18:48:51",
+   "description" : "We show you how to listen for signals and handle them gracefully",
+   "title" : "Catch and Handle Signals in Perl",
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 Signals are types of messages sent by an operating system to a process such as a Perl program. Signals provide a method for communicating with a process, for example when running a command line program pressing control-c will send the interrupt signal ('SIGINT') to the program by default terminating it. Signals are often unexpected and if not handled can leave your Perl program or data in an unfinished state. This article describes some useful Perl programming tools for gracefully handling signals.
 
@@ -125,4 +127,3 @@ perl -e 'foreach (keys %SIG) { print "$_\n" }'
 ### Windows signals
 
 Windows implements a subset of the standard POSIX signals. These signals can still be handled using the techniques described above. Microsoft have provided a list of these signals on [here](http://msdn.microsoft.com/en-us/library/ms811896#ucmgch09_topic3)
-

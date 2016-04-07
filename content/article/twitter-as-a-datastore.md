@@ -1,20 +1,22 @@
 {
+   "description" : "Using social media platforms for computing applications",
    "image" : "/images/210/B6ABE53E-C045-11E5-B2C3-641B7A54B0AF.png",
+   "authors" : [
+      "brian d foy"
+   ],
+   "categories" : "web",
    "tags" : [
       "math",
       "social_media",
       "net_twitter",
       "old_site"
    ],
-   "title" : "Twitter as a datastore",
-   "description" : "Using social media platforms for computing applications",
-   "authors" : [
-      "brian d foy"
-   ],
    "date" : "2016-01-21T13:52:14",
+   "title" : "Twitter as a datastore",
    "draft" : false,
    "slug" : "210/2016/1/21/Twitter-as-a-datastore"
 }
+
 
 Why doesn't anyone talk about Twitter as a data store? It's a free account, they mostly have uptime, and you can easily control who can see the information. If you can do it in 140 characters (and [soon to be 10,000](http://www.theverge.com/2015/8/12/9134175/twitter-direct-message-character-limit)), it's an easy way to store data.
 
@@ -117,4 +119,3 @@ NUMBER: foreach my $number ( sort { $a <=> $b } keys %numbers ) {
 This used to be part of the program that found the excellent numbers, but I switched to C for a huge performance bump. I still wanted to tweet from Perl, which is easy. Perl's become the glue holding together lots of different things.
 
 Once I can read from, post to, and delete from twitter, other applications (or even real people) can follow it. It can be public or private. It's not sophisticated. It's uptime isn't going to win any awards. But it's free and easy for my small task.
-

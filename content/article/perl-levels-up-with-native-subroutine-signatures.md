@@ -6,15 +6,17 @@
       "old_site"
    ],
    "image" : null,
+   "date" : "2014-02-24T03:55:52",
    "title" : "Perl levels up with native subroutine signatures",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "The syntax, the benefits and what's coming next",
    "slug" : "72/2014/2/24/Perl-levels-up-with-native-subroutine-signatures",
-   "draft" : false,
-   "date" : "2014-02-24T03:55:52"
+   "categories" : "development",
+   "description" : "The syntax, the benefits and what's coming next",
+   "draft" : false
 }
+
 
 *It's been a long time coming, but subroutine signatures have just been added to Perl. Although Perl version 5.20 is not due until the Spring, you can use subroutine signatures with the latest Perl development release now.*
 
@@ -189,4 +191,3 @@ Subroutine signatures is a leap-forward for Perl technically and a boost for the
 *2014-02-24: article updated to correct the error checking implementation, Perl code example and clarify Peter Martini's role in the Perl core signatures development.*
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F72%2F2014%2F2%2F24%2FPerl-levels-up-with-native-subroutine-signatures&text=Perl+levels+up+with+native+subroutine+signatures&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F72%2F2014%2F2%2F24%2FPerl-levels-up-with-native-subroutine-signatures&via=perltricks) it!
-

@@ -1,6 +1,10 @@
 {
-   "title" : "Get a weather report at the terminal with Perl",
+   "categories" : "development",
    "image" : "/images/114/41950882-3961-11E4-B399-BB21EAFEB715.jpeg",
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
    "tags" : [
       "api",
       "weather",
@@ -10,14 +14,12 @@
       "command_line",
       "old_site"
    ],
-   "date" : "2014-09-11T12:36:33",
-   "draft" : false,
-   "slug" : "114/2014/9/11/Get-a-weather-report-at-the-terminal-with-Perl",
    "description" : "WWW::Wunderground::API makes it easy to pull weather data for your area",
-   "authors" : [
-      "David Farrell"
-   ]
+   "slug" : "114/2014/9/11/Get-a-weather-report-at-the-terminal-with-Perl",
+   "title" : "Get a weather report at the terminal with Perl",
+   "date" : "2014-09-11T12:36:33"
 }
+
 
 Getting a weather forecast can be a chore; you have to navigate to the right website, close the banner ad, type in your location, click the right link, and *maybe* then you can see a forecast. I wanted a more convenient way and found one using [WWW::Wunderground::API](https://metacpan.org/pod/WWW::Wunderground::API). As the name suggests, the module provides a Perl interface to the Wunderground.com API. In this article I'll show you how to use it.
 
@@ -230,4 +232,3 @@ That's probably enough to get started, however there is more that could be done 
 The Wunderground API provides a lot more than just a 24 hour forecast. Check out their API [documentation](http://www.wunderground.com/weather/api/d/docs).
 
 *Cover image [©](http://creativecommons.org/licenses/by/4.0/) [NASA Goddard Space Flight Center](https://www.flickr.com/photos/gsfc/5598148465/in/photolist-9wFYv8-kYwXMt-bsoJ2F-epZCJW-51zsz5-4xqurW-dQW1WX-ntLbig-47NhYw-8ha98x-gKjXSn-iGqBL8-fkVu7f-3bs6Hv-9C5Gp9-dfRRoo-ab4NaA-5nNgKY-hkfRe6-hSmCX2-97fCju-8fqUzR-e6xj8j-943upK-CaRbr-5sSeXx-6yuU9E-4adC2H-9YWWVQ-dK9bTn-piUN9-8NP9b5-8hdo8u-8xGTYN-mG2TTk-bmH4rF-7A8s15-97GPeg-fxsEhK-a1cDq-nMWvny-7xTFh6-ow6uvp-i7yjhS-82v13J-6DmEYb-c6BXa-5eCgsS-bo1p2k-nytJYo/)*
-

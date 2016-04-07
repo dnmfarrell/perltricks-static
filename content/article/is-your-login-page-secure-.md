@@ -1,12 +1,13 @@
 {
-   "description" : "A bumper article on secure web application logins with Catalyst",
+   "categories" : "security",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
+   "title" : "Is your login page secure?",
    "date" : "2014-04-28T03:14:13",
-   "slug" : "84/2014/4/28/Is-your-login-page-secure-",
+   "description" : "A bumper article on secure web application logins with Catalyst",
    "image" : "/images/84/ECC1012E-FF2E-11E3-B566-5C05A68B9E16.jpeg",
+   "slug" : "84/2014/4/28/Is-your-login-page-secure-",
    "tags" : [
       "catalyst",
       "mvc",
@@ -14,8 +15,9 @@
       "authentication",
       "old_site"
    ],
-   "title" : "Is your login page secure?"
+   "draft" : false
 }
+
 
 How many criteria do you think there are for a web application to securely login its users? [The Web Application Hacker's Handbook](http://www.amazon.com/gp/product/1118026470/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118026470&linkCode=as2&tag=perltrickscom-20) (affiliate link) lists 5:
 
@@ -264,4 +266,3 @@ Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?o
 ***Updated:** corrected hashing algorithm name and description 04/28/2014*
 
 *Cover image [©](https://creativecommons.org/licenses/by/2.0/) [motograf](https://www.flickr.com/photos/motograf/1269439152/in/photolist-2Wbd2W-9VxeqP-8v6WhC-8v3ToK-8v6W4h-fcDhWQ-6boP72-LNv8s-4pkUnM-aj6wD3-4rL1UA-9Ziy7V-jP5Sc-51f4ck-4ppX9S-dWGQed-dWGuMs-dQRyD-b9SUT-9cBRYL-5UB8BE-8BFgnW-6boNpR-6bsWUQ-6bsX9C-FXJTL-8AuQei-8AuRVc-8AuSzH-6gA6Lx-8v5M9x-91rH7R-dWsFmy-ZQRR-jP6a9-4HKkvg-4HPzk1-5eWG8T-8v8Q6d-8v8Q7N-4HKmZ6-kJrvqx-fcp9cZ-4rsdJ3-aFebHa-4HPALy-7HrEuY-6Pk9RC-hX3MVF-7xoEF6)*
-

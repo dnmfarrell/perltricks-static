@@ -1,19 +1,21 @@
 {
+   "date" : "2014-12-15T14:00:45",
+   "categories" : "community",
+   "description" : "Find your niche",
    "title" : "The Whitespace in the Perl community",
-   "image" : "/images/141/7EEFA988-8EAE-11E4-A6C2-215DA59D04B1.jpeg",
+   "authors" : [
+      "brian d foy"
+   ],
+   "draft" : false,
+   "slug" : "141/2014/12/15/The-Whitespace-in-the-Perl-community",
    "tags" : [
       "community",
       "opportunity",
       "old_site"
    ],
-   "draft" : false,
-   "date" : "2014-12-15T14:00:45",
-   "slug" : "141/2014/12/15/The-Whitespace-in-the-Perl-community",
-   "description" : "Find your niche",
-   "authors" : [
-      "brian d foy"
-   ]
+   "image" : "/images/141/7EEFA988-8EAE-11E4-A6C2-215DA59D04B1.jpeg"
 }
+
 
 One night over pastrami sandwiches, David Farrell and I came up with the idea of *the whitespace in the Perl community*. Between all the code, projects, user groups, and events we already enjoy, there's much more that people who want to make names for themselves can do. The trick is picking what to do.
 
@@ -88,4 +90,3 @@ This doesn't be something you distribute. Free service hosting services like [Di
 ### Final thoughts
 
 Our advice is simple. Find something that you want to spend time working on, get advice before you start, and plan on doing most of the work yourself. Once you get going, settle in for the long term. You don't need anyone's permission for any of this.
-

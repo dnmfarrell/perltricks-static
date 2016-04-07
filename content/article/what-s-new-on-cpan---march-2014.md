@@ -1,20 +1,22 @@
 {
-   "title" : "What's new on CPAN - March 2014",
    "tags" : [
       "cpan",
       "module",
       "news",
       "old_site"
    ],
+   "description" : "A curated look at March's new CPAN uploads",
    "image" : null,
+   "date" : "2014-04-04T03:20:11",
    "slug" : "82/2014/4/4/What-s-new-on-CPAN---March-2014",
    "draft" : false,
-   "date" : "2014-04-04T03:20:11",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "A curated look at March's new CPAN uploads"
+   "title" : "What's new on CPAN - March 2014",
+   "categories" : "cpan"
 }
+
 
 *Welcome to "What's new on CPAN" - a curated look at last month's new CPAN uploads for your reading and programming pleasure. March was a bumper month for CPAN uploads - a veritable treasure trove of new modules for you to try out. Enjoy!*
 
@@ -88,4 +90,3 @@
 -   [WWW::Mechanize::PhantomJS](https://metacpan.org/pod/WWW::Mechanize::PhantomJS) provides a Mechanize-style object of the PhantomJS headless browser ... JavaScript enabled!
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F82%2F2014%2F4%2F3%2FWhat-s-new-on-CPAN-March-2014&text=What%27s+new+on+CPAN+-+March+2014&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F82%2F2014%2F4%2F3%2FWhat-s-new-on-CPAN-March-2014&via=perltricks) it!
-

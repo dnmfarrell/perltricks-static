@@ -1,5 +1,12 @@
 {
-   "title" : "Perl's versatile split function",
+   "image" : null,
+   "description" : "Write elegant, simple code with split",
+   "categories" : "development",
+   "slug" : "121/2014/10/24/Perl-s-versatile-split-function",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "array",
       "split",
@@ -11,15 +18,10 @@
       "join",
       "old_site"
    ],
-   "image" : null,
-   "slug" : "121/2014/10/24/Perl-s-versatile-split-function",
    "date" : "2014-10-24T12:42:52",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Write elegant, simple code with split"
+   "title" : "Perl's versatile split function"
 }
+
 
 I love Perl's [split](http://perldoc.perl.org/functions/split.html) function. Far more powerful than its feeble cousin [join](http://perldoc.perl.org/functions/join.html), split has some wonderful features that should make it a regular feature of any Perl programmer's toolbox. Let's look at some examples.
 
@@ -112,4 +114,3 @@ for (@full_names)
 ### Conclusion
 
 These are just a few examples of Perl's versatile `split` function. Check out the official documentation [online](http://perldoc.perl.org/functions/split.html) or via the terminal with `$ perldoc -f split`.
-

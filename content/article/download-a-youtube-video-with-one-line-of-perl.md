@@ -1,19 +1,21 @@
 {
+   "image" : "/images/63/EC2F7326-FF2E-11E3-B942-5C05A68B9E16.png",
+   "draft" : false,
    "tags" : [
       "one_liner",
       "youtube",
       "old_site"
    ],
-   "image" : "/images/63/EC2F7326-FF2E-11E3-B942-5C05A68B9E16.png",
-   "title" : "Download a YouTube video with one line of Perl",
+   "description" : "... and a lot of of help from WWW::YouTube::Download",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "... and a lot of of help from WWW::YouTube::Download",
    "slug" : "63/2014/1/26/Download-a-YouTube-video-with-one-line-of-Perl",
-   "draft" : false,
-   "date" : "2014-01-26T22:41:17"
+   "categories" : "web",
+   "date" : "2014-01-26T22:41:17",
+   "title" : "Download a YouTube video with one line of Perl"
 }
+
 
 *Downloading YouTube videos with Perl is easy when you're packing the right module. That module is [WWW::YouTube::Download](https://metacpan.org/pod/WWW::YouTube::Download). Here's how you can download a video in one line of Perl.*
 
@@ -107,4 +109,3 @@ $ chmod 755 download.pl
 WWW::YouTube::Download is easy to use, fast and just works. The module's [documentation](https://metacpan.org/pod/WWW::YouTube::Download) is easy to follow. Thanks to Yuji Shimada for writing it!
 
 There is more to WWW::YouTube::Download than shown here - one interesting feature is that you can specify the video format (if more than one is available). By default the module downloads the highest quality video available.
-

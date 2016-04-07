@@ -1,20 +1,22 @@
 {
-   "title" : "How to benchmark Perl code for speed",
+   "date" : "2013-09-29T19:12:54",
+   "slug" : "40/2013/9/29/How-to-benchmark-Perl-code-for-speed",
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "Benchmarking is easy with the Benchmark module",
+   "image" : null,
    "tags" : [
       "benchmarking",
       "module",
       "core",
       "old_site"
    ],
-   "image" : null,
-   "slug" : "40/2013/9/29/How-to-benchmark-Perl-code-for-speed",
-   "date" : "2013-09-29T19:12:54",
    "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Benchmarking is easy with the Benchmark module"
+   "categories" : "development",
+   "title" : "How to benchmark Perl code for speed"
 }
+
 
 Benchmarking Perl code speed is easy with the [Benchmark](https://metacpan.org/module/Benchmark) module. This article discusses benchmarking in general and how to use the [Benchmark](https://metacpan.org/module/Benchmark) module.
 
@@ -107,4 +109,3 @@ The results above are ordered from slowest to fastest (as seen by the rate/s mea
 ### Sources
 
 This article drew on information from a few sources in particular: brian d foy's [Benchmarking Perl](http://www252.pair.com/comdog/Talks/benchmarking_perl.pdf) talk notes and David Golden's [Adventures in Benchmarking](http://www.dagolden.com/index.php/1849/adventures-in-benchmarking-part-1/) post.
-

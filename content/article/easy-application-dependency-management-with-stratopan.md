@@ -1,5 +1,5 @@
 {
-   "title" : "Easy application dependency management with Stratopan",
+   "slug" : "71/2014/2/20/Easy-application-dependency-management-with-Stratopan",
    "tags" : [
       "community",
       "sysadmin",
@@ -8,15 +8,17 @@
       "cloud",
       "old_site"
    ],
+   "categories" : "managing_perl",
    "image" : "/images/71/EC623B08-FF2E-11E3-92DE-5C05A68B9E16.png",
-   "slug" : "71/2014/2/20/Easy-application-dependency-management-with-Stratopan",
-   "date" : "2014-02-20T03:55:29",
    "draft" : false,
+   "date" : "2014-02-20T03:55:29",
+   "title" : "Easy application dependency management with Stratopan",
+   "description" : "Get the right modules and versions everytime",
    "authors" : [
       "David Farrell"
-   ],
-   "description" : "Get the right modules and versions everytime"
+   ]
 }
+
 
 *Good Perl authors write modular code and leverage CPAN as much as possible. The downside of this approach is that Perl applications accumulate hundreds of CPAN module dependencies. Fortunately for Perl, Stratopan makes it simple to manage your application dependencies and quickly deploy it to new environments.*
 
@@ -47,4 +49,3 @@ Without Stratopan and cpanm, deploying the PerlTricks application to a new serve
 Want to get started with Stratopan? Check out our [quick start user guide](http://perltricks.com/article/48/2013/11/15/A-Stratopan-quick-start-user-guide).
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F71%2F2014%2F2%2F20%2FEasy-application-dependency-management-with-Stratopan&text=Easy+application+dependency+management+with+Stratopan&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F71%2F2014%2F2%2F20%2FEasy-application-dependency-management-with-Stratopan&via=perltricks) it!
-

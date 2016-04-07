@@ -1,13 +1,6 @@
 {
-   "draft" : false,
    "date" : "2014-09-02T12:36:04",
-   "slug" : "113/2014/9/2/What-s-new-on-CPAN-August-2014",
-   "description" : "A curated look at August's new CPAN uploads",
-   "authors" : [
-      "David Farrell"
-   ],
    "title" : "What's new on CPAN August 2014",
-   "image" : "/images/113/84802C58-3245-11E4-A076-27047BB45C3F.png",
    "tags" : [
       "cpan",
       "dist_zilla",
@@ -22,8 +15,17 @@
       "raspberry_pi",
       "unicode",
       "old_site"
-   ]
+   ],
+   "slug" : "113/2014/9/2/What-s-new-on-CPAN-August-2014",
+   "description" : "A curated look at August's new CPAN uploads",
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/113/84802C58-3245-11E4-A076-27047BB45C3F.png",
+   "draft" : false,
+   "categories" : "cpan"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -89,4 +91,3 @@
 -   Throw structured exception objects with the cleverly-named [Throw::Back](https://metacpan.org/pod/Throw::Back)
 
 *Update: reference to App::multiwhich updated following correspondence from the author. 2014-09-05*
-

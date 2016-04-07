@@ -1,11 +1,6 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
+   "title" : "Analyzing GitHub with the search API",
    "description" : "Net::GitHub makes it easy to search GitHub",
-   "slug" : "112/2014/9/5/Analyzing-GitHub-with-the-search-API",
-   "draft" : false,
-   "date" : "2014-09-05T12:11:51",
    "tags" : [
       "github",
       "git",
@@ -15,9 +10,16 @@
       "net_github",
       "old_site"
    ],
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
    "image" : "/images/112/87727BBA-34A1-11E4-B2A5-54317BB45C3F.png",
-   "title" : "Analyzing GitHub with the search API"
+   "slug" : "112/2014/9/5/Analyzing-GitHub-with-the-search-API",
+   "date" : "2014-09-05T12:11:51",
+   "categories" : "data"
 }
+
 
 The Net::GitHub module provides a perly interface to GitHub's feature-rich API. You can do everything with it, from creating new repos to managing issues and initiating pull requests. Today I'm going to focus on search.
 
@@ -162,4 +164,3 @@ GitHub's search API supports more than just repo search. You can search issues, 
 [Net::GitHub](https://metacpan.org/pod/Net::GitHub) provides an interface for far more than just search though. It's a full-featured API - you can literally manage your GitHub account via Perl code with Net::GitHub. The developer Fayland Lam has provided loads of documentation, and I found him helpful responsive to enquiries. Thanks Fayland!
 
 If you're looking for more than just search, you may also want to look at Ingy döt Net's awesome [git-hub](https://github.com/ingydotnet/git-hub), which provides the full power of GitHub at the command line.
-

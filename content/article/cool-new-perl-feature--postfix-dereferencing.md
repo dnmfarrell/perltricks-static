@@ -1,12 +1,13 @@
 {
-   "slug" : "68/2014/2/13/Cool-new-Perl-feature--postfix-dereferencing",
-   "date" : "2014-02-13T05:00:02",
-   "draft" : false,
+   "image" : null,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "A sneak peak at Perl v5.20's most interesting change",
    "title" : "Cool new Perl feature: postfix dereferencing",
+   "date" : "2014-02-13T05:00:02",
+   "draft" : false,
+   "slug" : "68/2014/2/13/Cool-new-Perl-feature--postfix-dereferencing",
+   "description" : "A sneak peak at Perl v5.20's most interesting change",
    "tags" : [
       "modernperl",
       "reference",
@@ -14,8 +15,9 @@
       "postfix",
       "old_site"
    ],
-   "image" : null
+   "categories" : "development"
 }
+
 
 *Postfix dereferencing is a cool new feature coming in the next major Perl release. Although Perl version 5.20 is not due until the Spring, you can use the postfix dereferencing feature with the Perl developer release now.*
 
@@ -110,4 +112,3 @@ Postfix dereferencing syntax is cleaner and easier to follow than circumfix. If 
 For more postfix dereferencing examples, take a look at the Perl [source test file](https://github.com/Perl/perl5/blob/blead/t/op/postfixderef.t) and the new [perlref](http://search.cpan.org/~shay/perl-5.19.5/pod/perlref.pod#Postfix_Dereference_Syntax).
 
 Enjoyed this article? Help us out and [retweet it!](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F68%2F2014%2F2%2F13%2FCool-new-Perl-feature-postfix-dereferencing&text=Cool%20new%20Perl%20feature%3A%20postfix%20dereferencing&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F68%2F2014%2F2%2F13%2FCool-new-Perl-feature-postfix-dereferencing&via=perltricks)
-

@@ -1,20 +1,22 @@
 {
+   "authors" : [
+      "brian d foy"
+   ],
+   "title" : "A preview of Perl 5.22",
+   "slug" : "165/2015/4/10/A-preview-of-Perl-5-22",
+   "image" : null,
+   "categories" : "managing_perl",
    "tags" : [
       "5",
       "22",
       "features",
       "old_site"
    ],
-   "image" : null,
-   "title" : "A preview of Perl 5.22",
-   "authors" : [
-      "brian d foy"
-   ],
-   "description" : "New features, deprecations become fatal, and cleaner syntax",
-   "slug" : "165/2015/4/10/A-preview-of-Perl-5-22",
+   "draft" : false,
    "date" : "2015-04-10T14:29:14",
-   "draft" : false
+   "description" : "New features, deprecations become fatal, and cleaner syntax"
 }
+
 
 Perl v5.22 is bringing myriad new features and ways of doing things, making its *perldelta* file much more interesting than most releases. While I normally wait until after the first stable release to go through these features over at [The Effective Perler](http://www.effectiveperlprogramming.com), here's a preview of some of the big news.
 
@@ -118,5 +120,4 @@ We also get many smaller fixes I think are worth a shout out. Many of these are 
 -   `defined(@array)` and `defined(%hash)` are now fatal. They've been deprecated for a long time, and now they are gone. This does not apply to assignments, though, such as `defined(@array = ...)`.
 -   Using a named array or hash in a place where Perl expects a reference is now fatal.
 -   Omitting % and @ on hash and array names is no longer permitted. No more `my %hash = (...); my @keys = keys hash` where Perl treats the bareword `hash` as `%hash`. This is a Perl 4 feature that is no longer.
-
 

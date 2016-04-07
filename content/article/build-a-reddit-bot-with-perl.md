@@ -1,5 +1,13 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/151/2E921FA4-B008-11E4-BF49-19CBDA487E9F.jpeg",
+   "description" : "It's easy and fast to do",
+   "categories" : "web",
+   "slug" : "151/2015/2/9/Build-a-Reddit-bot-with-Perl",
    "title" : "Build a Reddit bot with Perl",
+   "draft" : false,
    "tags" : [
       "xml",
       "perl",
@@ -10,15 +18,9 @@
       "bot",
       "old_site"
    ],
-   "image" : "/images/151/2E921FA4-B008-11E4-BF49-19CBDA487E9F.jpeg",
-   "slug" : "151/2015/2/9/Build-a-Reddit-bot-with-Perl",
-   "draft" : false,
-   "date" : "2015-02-09T13:41:04",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "It's easy and fast to do"
+   "date" : "2015-02-09T13:41:04"
 }
+
 
 One of my goals for this year was to post more links to the Perl [subreddit](http://www.reddit.com/r/perl). I'm usually good at linking to PerlTricks articles, but not so good at linking to other content. And that's a shame because there are a lot of active Perl blogs out there (I know of at least 25-30).
 
@@ -266,4 +268,3 @@ sub check_feed
 When run, this script will check blogs.perl.org for new posts, and submit them to /r/perl.
 
 There's a lot more that could be done with this script: for instance it only supports atom feeds, but many blog feeds use RSS. The URLs to check must be hard coded into the script - it would be better to take them from a configurable list. Finally, there is no URL caching, so running this script twice in 24 hours will lead to it attempting to post the same links to Reddit twice. For an extended example that addresses these issues and more, check out my Perly-Bot GitHub [repo](https://github.com/dnmfarrell/Perly-Bot).
-

@@ -1,5 +1,9 @@
 {
-   "image" : null,
+   "description" : "Something not working? Whip up a one liner and find out why",
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
    "tags" : [
       "one_liner",
       "terminal",
@@ -7,15 +11,13 @@
       "testing",
       "old_site"
    ],
+   "categories" : "testing",
    "title" : "Quickly Debug your Perl code at the command line",
-   "description" : "Something not working? Whip up a one liner and find out why",
-   "authors" : [
-      "David Farrell"
-   ],
+   "slug" : "160/2015/3/13/Quickly-Debug-your-Perl-code-at-the-command-line",
    "date" : "2015-03-13T13:34:06",
-   "draft" : false,
-   "slug" : "160/2015/3/13/Quickly-Debug-your-Perl-code-at-the-command-line"
+   "image" : null
 }
+
 
 I remember when I first started programming in Perl, whenever something wasn't working as I expected it to, I would write a quick script to isolate the problem and test it. I didn't give the scripts good names; they were throwaway, and soon I had hundreds of useless Perl scripts littered all over my hard drive.
 
@@ -147,4 +149,3 @@ If you ever need to check the one liner syntax, just run `perl -h` to get a summ
 This article has covered the most common command line switches used for debugging code but a whole book could be written about Perl one liners. In fact, one has: [Perl One-Liners](http://www.catonmat.net/blog/perl-one-liners-no-starch-press/) by Peteris Krummins. In the book Peteris describes the various command line switches with example programs. It also has an excellent "how to" for running one liners on Windows.
 
 Finally, Perl 6 also has excellent one liner support and the switches are mostly the same as Perl 5. If you're interested, check out our article [Get started with Perl 6 one liners](http://perltricks.com/article/136/2014/11/20/Get-started-with-Perl-6-one-liners).
-

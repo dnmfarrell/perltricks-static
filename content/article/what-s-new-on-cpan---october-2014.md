@@ -1,4 +1,13 @@
 {
+   "image" : "/images/132/825394D0-6628-11E4-B19F-5C5395E830D2.png",
+   "categories" : "cpan",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "What's new on CPAN - October 2014",
+   "date" : "2014-11-07T13:22:17",
+   "description" : "A curated look at the latest CPAN uploads",
+   "slug" : "132/2014/11/7/What-s-new-on-CPAN---October-2014",
    "tags" : [
       "cpan",
       "dancer",
@@ -14,16 +23,9 @@
       "sitemap",
       "old_site"
    ],
-   "image" : "/images/132/825394D0-6628-11E4-B19F-5C5395E830D2.png",
-   "title" : "What's new on CPAN - October 2014",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "A curated look at the latest CPAN uploads",
-   "slug" : "132/2014/11/7/What-s-new-on-CPAN---October-2014",
-   "draft" : false,
-   "date" : "2014-11-07T13:22:17"
+   "draft" : false
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -81,4 +83,3 @@
 **Help us** make "What's new on CPAN" better! Add your suggestions to the r/perl [post](http://www.reddit.com/r/perl/comments/2lkrq7/whats_new_on_cpan_october/) for this article.
 
 **Updates**: *additional web modules added to article 2014-11-08.*
-

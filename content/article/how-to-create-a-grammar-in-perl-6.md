@@ -1,20 +1,22 @@
 {
-   "image" : null,
+   "categories" : "perl6",
+   "title" : "How to create a grammar in Perl 6",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2015-01-13T15:45:36",
    "tags" : [
       "perl_6",
       "grammar",
       "pegex",
       "old_site"
    ],
-   "title" : "How to create a grammar in Perl 6",
+   "image" : null,
    "description" : "They're powerful and easy to whip up",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2015-01-13T15:45:36",
-   "draft" : false,
    "slug" : "144/2015/1/13/How-to-create-a-grammar-in-Perl-6"
 }
+
 
 In programming, a grammar is a set of rules for parsing text. They're incredibly useful, for instance you can use a grammar to check if a text string conforms to a specific standard or not. Perl 6 has native support for grammars - they're so easy to write that once you start using them, you'll find yourself using them everywhere.
 
@@ -164,4 +166,3 @@ You can also write grammars in Perl 5. For a solution similar to the Perl 6 impl
 \* This isn't strictly correct - the entire name (colons included) is the identifier.
 
 **Update:** *added link to Regexp::Grammars. 2015-01-13*
-

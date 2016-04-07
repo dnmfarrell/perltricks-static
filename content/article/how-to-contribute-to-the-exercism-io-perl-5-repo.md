@@ -1,4 +1,12 @@
 {
+   "image" : null,
+   "description" : "A step by step guide to porting exercises",
+   "categories" : "community",
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
+   "title" : "How to contribute to the exercism.io Perl 5 repo",
    "tags" : [
       "community",
       "github",
@@ -8,16 +16,10 @@
       "exercism_io",
       "old_site"
    ],
-   "image" : null,
-   "title" : "How to contribute to the exercism.io Perl 5 repo",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "A step by step guide to porting exercises",
-   "slug" : "91/2014/5/22/How-to-contribute-to-the-exercism-io-Perl-5-repo",
-   "draft" : false,
-   "date" : "2014-05-22T15:09:13"
+   "date" : "2014-05-22T15:09:13",
+   "slug" : "91/2014/5/22/How-to-contribute-to-the-exercism-io-Perl-5-repo"
 }
+
 
 *Earlier this week I rounded off our exercism.io article with a call to action to help port exercises into the Perl 5 repo. Today I'm going to walk through the porting process step-by-step and show you how easy it is to contribute.*
 
@@ -223,4 +225,3 @@ Clicking the "new pull request" button will create the pull request form, GitHub
 Clicking the "Send pull request" button submits the pull request and we're done! The exercism repo committers usually respond within a couple of hours. So now you've seen how easy it is to port an exercise, be warned it can be addictive ...
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F91%2F2014%2F5%2F21%2FHow-to-contribute-to-the-exercism-io-Perl-5-repo&text=How+to+contribute+to+the+exercism.io+Perl+5+repo&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F91%2F2014%2F5%2F21%2FHow-to-contribute-to-the-exercism-io-Perl-5-repo&via=perltricks) about it!
-

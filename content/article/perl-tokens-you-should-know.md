@@ -1,4 +1,14 @@
 {
+   "image" : null,
+   "description" : "A brief review of some useful special literals",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "development",
+   "title" : "Perl tokens you should know",
+   "draft" : false,
+   "date" : "2013-05-11T11:17:52",
+   "slug" : "24/2013/5/11/Perl-tokens-you-should-know",
    "tags" : [
       "variable",
       "token",
@@ -7,17 +17,9 @@
       "__end__",
       "__data__",
       "old_site"
-   ],
-   "image" : null,
-   "title" : "Perl tokens you should know",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "A brief review of some useful special literals",
-   "slug" : "24/2013/5/11/Perl-tokens-you-should-know",
-   "draft" : false,
-   "date" : "2013-05-11T11:17:52"
+   ]
 }
+
 
 *Perl has many global variables, a few of which are stored in a special literal format as: \_\_NAME\_\_. It's good to be aware of these special literals, (aka tokens) as they appear frequently in Perl code and provide useful functionality.*
 
@@ -52,4 +54,3 @@ The \_\_LINE\_\_ token returns the value of the current line number. \_\_FILE\_\
 \_\_SUB\_\_ returns a reference to the current subroutine. It's available in Perl 5.16 and higher via the 'use feature' pragma.
 
 *This article was updated on 15th May 2013 including corrections to information relating to \_\_SUB\_\_. Thanks to **Jochen Hayek** for the correction.*
-

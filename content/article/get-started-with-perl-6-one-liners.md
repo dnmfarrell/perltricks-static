@@ -1,12 +1,14 @@
 {
+   "title" : "Get started with Perl 6 one liners",
+   "categories" : "perl6",
+   "image" : "/images/136/76F864F4-70BD-11E4-97E0-E519A241EDA8.png",
+   "description" : "One liners in Perl are better than ever",
    "slug" : "136/2014/11/20/Get-started-with-Perl-6-one-liners",
    "date" : "2014-11-20T14:04:56",
-   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "One liners in Perl are better than ever",
-   "title" : "Get started with Perl 6 one liners",
+   "draft" : false,
    "tags" : [
       "windows",
       "one_liner",
@@ -16,9 +18,9 @@
       "perl6",
       "rakudo",
       "old_site"
-   ],
-   "image" : "/images/136/76F864F4-70BD-11E4-97E0-E519A241EDA8.png"
+   ]
 }
+
 
 One thing that sets Perl apart from other languages is the ability to write small programs in a single line of code, known as a "one liner". It's often faster to type a program directly into the terminal than to write a throwaway script. And one liners are powerful too; they're complete Perl programs that can load external libraries but also integrate into the terminal. You can pipe data in or out of a one liner.
 
@@ -149,4 +151,3 @@ This will print:
 ### Conclusion
 
 This article was adapted from my open source [book](https://github.com/sillymoose/Perl6-One-Liners), which has lots of example Perl 6 one liners, many of which were contributed by the Perl 6 community. If you're interested in learning more Perl 6, I'd recommend visiting the official [website](http://perl6.org/), which has links to the IRC channel and official documentation.
-

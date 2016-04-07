@@ -1,20 +1,22 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "apps",
+   "title" : "Get GNOME 3 popup alerts for IRC",
+   "slug" : "95/2014/6/9/Get-GNOME-3-popup-alerts-for-IRC",
+   "description" : "Don't miss your IRC chats and messages",
+   "draft" : false,
+   "date" : "2014-06-09T12:34:25",
    "tags" : [
       "irssi",
       "irc",
       "gnome3",
       "old_site"
    ],
-   "image" : "/images/95/ED13777E-FF2E-11E3-8E65-5C05A68B9E16.png",
-   "title" : "Get GNOME 3 popup alerts for IRC",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Don't miss your IRC chats and messages",
-   "slug" : "95/2014/6/9/Get-GNOME-3-popup-alerts-for-IRC",
-   "date" : "2014-06-09T12:34:25",
-   "draft" : false
+   "image" : "/images/95/ED13777E-FF2E-11E3-8E65-5C05A68B9E16.png"
 }
+
 
 *IRC is a great medium but chats are often intermittent and it's easy to miss messages if your focus is elsewhere. Lately I've been using [Irssi](http://irssi.org/) which is extendible with Perl and I wrote a quick script to create a desktop popup alert any time my IRC username is mentioned in chat, or I receive a private message.*
 
@@ -67,4 +69,3 @@ At the bottom of the screen you can see the popup alert.
 Apart from desktop alerts, there are myriad ways to send IRC alerts: sounds, email and sms. A more sophisticated solution would be to write a script that uses a cloud-based notification service that could then transmit the alerts across all of these channels to the end user.
 
 What types of IRC alerts do you use? Let us know on [Reddit](http://www.reddit.com/r/perl/comments/27ox3d/get_gnome_3_popup_alerts_for_irc/).
-

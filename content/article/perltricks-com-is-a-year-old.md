@@ -1,11 +1,10 @@
 {
+   "categories" : "community",
    "description" : "PerlTricks.com launched a year ago. Happy Birthday us!",
+   "title" : "PerlTricks.com is a year old",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
-   "date" : "2014-03-21T13:02:04",
-   "slug" : "78/2014/3/21/PerlTricks-com-is-a-year-old",
    "image" : "/images/78/EC9ABC80-FF2E-11E3-B5EC-5C05A68B9E16.jpeg",
    "tags" : [
       "community",
@@ -13,8 +12,11 @@
       "perltricks",
       "old_site"
    ],
-   "title" : "PerlTricks.com is a year old"
+   "slug" : "78/2014/3/21/PerlTricks-com-is-a-year-old",
+   "draft" : false,
+   "date" : "2014-03-21T13:02:04"
 }
+
 
 *PerlTricks.com launched a year ago. So how are we doing? Read on to find out.*
 
@@ -72,4 +74,3 @@ Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet
 **
 
 Cover image © [Katie Bordner](http://www.flickr.com/photos/24956043@N00/4146448330/in/photolist-7jpCCs-5VK6RQ-5UFrrB-5VGE3r-Lui9q-e3j3Vu-6Y97YT-6YFoaA-6YBmAe-6YFody-vZ6Ty-3mrMDN-7PCJYM-6YdauQ-8ZfsdB-7PCK6e-dvZhLb-5U9Ns9-3KqevR-7ii4Z-8YY3Lh)
-

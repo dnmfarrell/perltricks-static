@@ -1,11 +1,9 @@
 {
+   "categories" : "development",
+   "title" : "Make your code run faster with Perl's secret turbo module",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Multi-core programming is a breeze with MCE",
-   "slug" : "61/2014/1/21/Make-your-code-run-faster-with-Perl-s-secret-turbo-module",
-   "draft" : false,
-   "date" : "2014-01-21T03:22:40",
    "tags" : [
       "module",
       "multicore",
@@ -13,9 +11,13 @@
       "multithreading",
       "old_site"
    ],
+   "date" : "2014-01-21T03:22:40",
    "image" : "/images/61/EC20EEA0-FF2E-11E3-9D6C-5C05A68B9E16.png",
-   "title" : "Make your code run faster with Perl's secret turbo module"
+   "description" : "Multi-core programming is a breeze with MCE",
+   "slug" : "61/2014/1/21/Make-your-code-run-faster-with-Perl-s-secret-turbo-module",
+   "draft" : false
 }
+
 
 *Most modern processors are multi-core, yet Perl programs will typically run single-threaded on only one core at a time. Enter the [Many Core Engine](https://metacpan.org/pod/MCE) module - it makes it easy to run your existing Perl code in parallel across every core on your platform, and get a huge speed boost along the way.*
 
@@ -150,4 +152,3 @@ MCE's author, Mario Roy has done wonderful job of providing a simple API and fan
 Thanks to Jeff Thalhammer ([Stratopan](https://stratopan.com/)) for championing this module.
 
 Do you know a module that you'd like us to cover? If so, we'd love to hear from you! Email us at: perltricks.com@gmail.com.
-

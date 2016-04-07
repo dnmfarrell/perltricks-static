@@ -1,5 +1,13 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "51/2013/12/5/-An-interview-with-Jeffrey-Ryan-Thalhammer",
+   "draft" : false,
+   "date" : "2013-12-05T04:55:00",
+   "description" : "Learn about the tools Jeffrey uses to code in Perl, upcoming Stratopan features and more!",
    "title" : " An interview with Jeffrey Ryan Thalhammer",
+   "categories" : "community",
    "image" : null,
    "tags" : [
       "community",
@@ -9,15 +17,9 @@
       "saas",
       "interview",
       "old_site"
-   ],
-   "draft" : false,
-   "date" : "2013-12-05T04:55:00",
-   "slug" : "51/2013/12/5/-An-interview-with-Jeffrey-Ryan-Thalhammer",
-   "description" : "Learn about the tools Jeffrey uses to code in Perl, upcoming Stratopan features and more!",
-   "authors" : [
-      "David Farrell"
    ]
 }
+
 
 *Jeffrey Ryan Thalhammer is the creator of [Perl::Critic](https://metacpan.org/pod/Perl::Critic), [Pinto](https://metacpan.org/pod/release/THALJEF/Pinto-0.092/bin/pinto) and now [Stratopan](https://stratopan.com/) - a cloud based service that securely hosts custom repositories of Perl modules. We caught up with Jeffrey to get the latest Stratopan news and learn the tools, tricks and techniques he uses to code in Perl.*
 
@@ -97,5 +99,4 @@
 -   brian d foy's modulino concept is covered in his book [Mastering Perl](http://chimera.labs.oreilly.com/books/1234000001527/ch18.html) (O'Reilly preview of the upcoming second edition).
 -   Larry shows up at the end of Mike Friedman's excellent MongoDB talk at Craiglist ([video](https://archive.org/details/mikefriedmanbuildingyourfirstappwithmongodbandperl)).
 -   You can find out more about Perl 6 at their [official website](http://perl6.org/).
-
 

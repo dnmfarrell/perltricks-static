@@ -1,12 +1,8 @@
 {
    "slug" : "48/2013/11/15/A-Stratopan-quick-start-user-guide",
-   "date" : "2013-11-15T04:23:53",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Learn how to manage your Perl modules in the cloud with Stratopan",
    "title" : "A Stratopan quick start user guide",
+   "categories" : "managing_perl",
+   "draft" : false,
    "tags" : [
       "sysadmin",
       "config",
@@ -15,8 +11,14 @@
       "saas",
       "old_site"
    ],
-   "image" : "/images/48/EBD9AC70-FF2E-11E3-AD4C-5C05A68B9E16.png"
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/48/EBD9AC70-FF2E-11E3-AD4C-5C05A68B9E16.png",
+   "date" : "2013-11-15T04:23:53",
+   "description" : "Learn how to manage your Perl modules in the cloud with Stratopan"
 }
+
 
 *[Stratopan](https://stratopan.com/) is a cloud-based Perl module repository service. Users can create repositories of modules in the cloud and use them to manage their local installations of Perl modules. This makes it easy to configure a network of machines to have exactly the same modules (and versions), deploy Perl applications quickly and cleanly and host private (i.e. non CPAN) Perl software in a secure, central location. The [Stratopan](https://stratopan.com/) beta has officially started and so there has never been a better time to check out this amazing service. Read on for an unofficial quick start guide to Stratopan!*
 
@@ -97,4 +99,3 @@ Successfully installed WWW-CheckHTML-0.04
 ### Conclusion
 
 [Stratopan](https://stratopan.com) is an awesome new service which can hugely simplify the configuration of your Perl platforms. Hopefully this guide has given you a better idea of how to get started with it!
-

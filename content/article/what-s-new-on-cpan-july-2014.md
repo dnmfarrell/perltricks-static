@@ -1,13 +1,5 @@
 {
-   "draft" : false,
-   "date" : "2014-08-01T12:38:59",
-   "slug" : "106/2014/8/1/What-s-new-on-CPAN-July-2014",
-   "description" : "Our curated guide to July's new CPAN uploads",
-   "authors" : [
-      "David Farrell"
-   ],
    "title" : "What's new on CPAN July 2014",
-   "image" : "/images/106/BFE732AE-1978-11E4-8AC9-F1C02D77B041.png",
    "tags" : [
       "cpan",
       "mojolicious",
@@ -20,8 +12,18 @@
       "docker",
       "duckduckgo",
       "old_site"
-   ]
+   ],
+   "slug" : "106/2014/8/1/What-s-new-on-CPAN-July-2014",
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/106/BFE732AE-1978-11E4-8AC9-F1C02D77B041.png",
+   "date" : "2014-08-01T12:38:59",
+   "categories" : "cpan",
+   "description" : "Our curated guide to July's new CPAN uploads",
+   "draft" : false
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -85,5 +87,4 @@
 -   Reuse your Kelp routes with [KelpX::AppBuilder](https://metacpan.org/pod/KelpX::AppBuilder) (Kelp is a Plack based web micro-framework)
 -   [Plack::App::CGIBin::Streaming](https://metacpan.org/pod/Plack::App::CGIBin::Streaming) enables CGI applcaitions to use the Palck streaming protocol
 -   Tie variables to DuckDuckGo search using [Tie::DuckDuckGo](https://metacpan.org/pod/Tie::DuckDuckGo)
-
 

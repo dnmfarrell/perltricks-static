@@ -1,20 +1,22 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : null,
+   "categories" : "cpan",
+   "title" : "Upload to CPAN from the command line",
+   "draft" : false,
    "tags" : [
       "configuration",
       "cpan",
       "sysadmin",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Upload to CPAN from the command line",
-   "authors" : [
-      "David Farrell"
-   ],
    "description" : "It's super easy with CPAN::Uploader",
-   "slug" : "31/2013/6/30/Upload-to-CPAN-from-the-command-line",
-   "draft" : false,
-   "date" : "2013-06-30T03:44:12"
+   "date" : "2013-06-30T03:44:12",
+   "slug" : "31/2013/6/30/Upload-to-CPAN-from-the-command-line"
 }
+
 
 The Perl module [CPAN::Uploader](https://metacpan.org/module/CPAN::Uploader) comes with a neat command line application called [cpan-upload](https://metacpan.org/module/RJBS/CPAN-Uploader-0.103004/bin/cpan-upload) which allows Perl module authors to upload to CPAN from the command line. This article describes how to install cpan-upload and use it.
 
@@ -73,4 +75,3 @@ PAUSE add message sent ok [200]
 ```
 
 **Warning:** cpan-upload transmits your credentials via HTTPS (encrypted) to the PAUSE server, but with the 1 step method you do have to type your password in plaintext. which is a security risk as many operating systems will store them in logs, and/or process details. Simply searching through the Terminal history will reveal your PAUSE password. Additionally, someone could read your password as it's typed in. The 2 step method reduces this risk as the password is not logged in the terminal, but goes directly into the Perl program, and the password is not visible on the screen when typed. That said, the password can still be extracted from the computer by a stack trace or system call search. cpan-upload does have the ability to read the credentials from a .pause file in your home directory, which is a slightly more secure method than the 1 step method (although storing passwords in plaintext files raises its own security vulnerabilities). Of these three options the 2 step method seems to be the most secure.
-

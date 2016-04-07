@@ -1,6 +1,8 @@
 {
-   "title" : "How to test for exceptions in Perl",
-   "image" : "/images/157/95B8DF42-C33B-11E4-8714-11450EA848F6.jpeg",
+   "date" : "2015-03-05T13:27:17",
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "test_more",
       "test",
@@ -9,14 +11,14 @@
       "tap",
       "old_site"
    ],
-   "date" : "2015-03-05T13:27:17",
-   "draft" : false,
    "slug" : "157/2015/3/5/How-to-test-for-exceptions-in-Perl",
+   "title" : "How to test for exceptions in Perl",
+   "categories" : "testing",
    "description" : "Does your code blow up the way you expect it to?",
-   "authors" : [
-      "David Farrell"
-   ]
+   "draft" : false,
+   "image" : "/images/157/95B8DF42-C33B-11E4-8714-11450EA848F6.jpeg"
 }
+
 
 Most Perl programmers are familiar with [Test::More](https://metacpan.org/pod/Test::More); it's the go-to library for writing unit tests in Perl. But Test::More doesn't provide functions for testing exceptions. For that you'll need [Test::Exception](https://metacpan.org/pod/Test::Exception). And good code throws exceptions - Paul Fenwick [once](http://perltraining.com.au/tips/2008-08-20.html) summed this approach nicely:
 
@@ -135,4 +137,3 @@ ok 11 - nine nine nine doubled is one nine nine eight
 All the tests pass. [Test::Exception](https://metacpan.org/pod/Test::Exception) has great documentation and is easy to use, so add exception testing to your code today!
 
 **Updated:** *Added Test::Fatal reference 2015-03-10*
-

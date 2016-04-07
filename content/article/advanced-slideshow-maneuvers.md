@@ -1,5 +1,12 @@
 {
+   "date" : "2014-11-13T13:38:30",
    "title" : "Advanced slideshow maneuvers",
+   "slug" : "134/2014/11/13/Advanced-slideshow-maneuvers",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "apps",
+   "image" : "/images/134/4DCE5ABA-6826-11E4-80A8-F16A95E830D2.png",
    "tags" : [
       "revealjs",
       "app_revealup",
@@ -7,15 +14,10 @@
       "markdown",
       "old_site"
    ],
-   "image" : "/images/134/4DCE5ABA-6826-11E4-80A8-F16A95E830D2.png",
-   "slug" : "134/2014/11/13/Advanced-slideshow-maneuvers",
-   "draft" : false,
-   "date" : "2014-11-13T13:38:30",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Get the most out of your markdown-driven presentations"
+   "description" : "Get the most out of your markdown-driven presentations",
+   "draft" : false
 }
+
 
 Back in June I wrote an [overview](http://perltricks.com/article/94/2014/6/6/Create-professional-slideshows-in-seconds-with-App--revealup) of [App::revealup](https://metacpan.org/pod/App::revealup), a Perl app that enables markdown-driven presentations with [reveal.js](https://github.com/hakimel/reveal.js). Today I want to share some of the advanced features that I've found useful, but are not always intuitive to include when working with reveal.js and markdown.
 
@@ -91,4 +93,3 @@ Presentations can be saved as PDF but you must be using Google Chrome for this t
 Hopefully these tips are useful. Combined with the previous [article](http://perltricks.com/article/94/2014/6/6/Create-professional-slideshows-in-seconds-with-App--revealup), you should have everything you need to craft an awesome markdown-driven presentation. Try [App::revealup](https://metacpan.org/pod/App::revealup) out at your local Perl Mongers!
 
 **Updated: *added slide transition command line option 2014-12-19***
-

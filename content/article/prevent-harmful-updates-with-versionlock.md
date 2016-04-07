@@ -1,13 +1,24 @@
+{
+   "draft" : false,
+   "tags" : [
+      "fedora",
+      "yum",
+      "dnf",
+      "linux",
+      "versionlock",
+      "ubuntu",
+      "debian"
+   ],
+   "categories" : "apps",
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2016-03-21T20:46:17",
+   "title" : "Prevent harmful Linux updates with versionlock",
+   "description" : "How to avoid breaking software updates",
+   "image" : "/images/prevent-harmful-updates-with-versionlock/software padlock.jpg"
+}
 
-  {
-    "title"  : "Prevent harmful Linux updates with versionlock",
-    "authors": ["David Farrell"],
-    "date"   : "2016-03-21T20:46:17",
-    "tags"   : ["fedora", "yum", "dnf", "linux", "versionlock", "ubuntu", "debian"],
-    "draft"  : false,
-    "image"  : "/images/prevent-harmful-updates-with-versionlock/software padlock.jpg",
-    "description" : "How to avoid breaking software updates"
-  }
 
 On my home machine I run Fedora, a Linux distro famous for being at the cutting-edge of Linux development. My laptop is the [Dell XPS 13](http://perltricks.com/article/187/2015/8/18/Laptop-review--Dell-XPS-13-2015/) which uses some fairly advanced hardware. In Open Source this can be dangerous combination: older Linux kernels can't handle my machine's hardware, and brand new kernels often break it too. Every time I do a software update, I'm walking a tightrope.
 

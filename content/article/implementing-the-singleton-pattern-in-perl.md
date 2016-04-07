@@ -1,5 +1,4 @@
 {
-   "image" : null,
    "tags" : [
       "object_oriented",
       "object",
@@ -7,15 +6,18 @@
       "gof",
       "old_site"
    ],
-   "title" : "Implementing the singleton pattern in Perl",
    "description" : "Learn when and how to use this classic \"gang of four\" code pattern",
+   "date" : "2013-12-11T04:33:35",
+   "slug" : "52/2013/12/11/Implementing-the-singleton-pattern-in-Perl",
    "authors" : [
       "David Farrell"
    ],
-   "date" : "2013-12-11T04:33:35",
+   "title" : "Implementing the singleton pattern in Perl",
+   "image" : null,
    "draft" : false,
-   "slug" : "52/2013/12/11/Implementing-the-singleton-pattern-in-Perl"
+   "categories" : "development"
 }
+
 
 *The Singleton is a well-known object oriented design pattern that allows only one object of a class to be created. It's often cited as the most popular design pattern from the original "gang of four" book. But when should you use it in Perl and how?*
 
@@ -69,5 +71,4 @@ This script constructs a new object using "get\_instance" and assigns it to a va
 -   [Wikpedia's Singleton entry](https://en.wikipedia.org/wiki/Singleton_pattern) has useful background and discussion on the pattern.
 -   [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/gp/product/B000SEIBB8/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B000SEIBB8&linkCode=as2&tag=perltrickscom-20) - The classic "gang of four" book that popularized the concept of Design Patterns, including the Singleton (affiliate link).
 -   The Perl Design Patterns site has a [Singleton entry](http://perldesignpatterns.com/?SingletonPattern), with alternative implementations.
-
 

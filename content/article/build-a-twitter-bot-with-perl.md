@@ -1,11 +1,11 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Automating tweets can win you more followers!",
-   "slug" : "154/2015/2/23/Build-a-Twitter-bot-with-Perl",
-   "draft" : false,
+   "image" : "/images/154/91EE4478-B617-11E4-A56B-890CDB487E9F.png",
    "date" : "2015-02-23T14:12:06",
+   "title" : "Build a Twitter bot with Perl",
+   "categories" : "web",
+   "slug" : "154/2015/2/23/Build-a-Twitter-bot-with-Perl",
+   "description" : "Automating tweets can win you more followers!",
+   "draft" : false,
    "tags" : [
       "perl",
       "reddit",
@@ -15,9 +15,11 @@
       "tweet",
       "old_site"
    ],
-   "image" : "/images/154/91EE4478-B617-11E4-A56B-890CDB487E9F.png",
-   "title" : "Build a Twitter bot with Perl"
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 Following on from last week's Reddit bot [article](http://perltricks.com/article/151/2015/2/9/Build-a-Reddit-bot-with-Perl), let's look at how to build a Twitter bot using Perl. As you'd expect, Perl makes it easy to do, but before we get to the code, let's talk about advantages.
 
@@ -203,4 +205,3 @@ sub tweet
 Twitter treats urls as having a length of 12 characters. Now the code checks the length of our arguments, truncating `$text` if necessary. The hashtag will be included only if there is enough space.
 
 This code works for me, but you may want to do things a little differently. The Twitter credentials could be stored in a [configuration](http://perltricks.com/article/29/2013/9/17/How-to-Load-YAML-Config-Files) file, instead of environment variables. The `$hashtag` argument could be an arrayref of hashtags, that are incrementally added to the tweet text, instead of a single text string which restricts it to an all-or-nothing basis.
-

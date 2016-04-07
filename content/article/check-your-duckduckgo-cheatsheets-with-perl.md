@@ -1,20 +1,22 @@
 {
-   "title" : "Check your DuckDuckGo cheatsheets with Perl",
    "image" : "/images/190/9AD864D4-E6E0-11E4-B559-8B6D1846911D.jpeg",
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "190/2015/8/28/Check-your-DuckDuckGo-cheatsheets-with-Perl",
+   "draft" : false,
    "tags" : [
       "syntax",
       "json",
       "cheatsheet",
       "old_site"
    ],
-   "draft" : false,
-   "date" : "2015-08-28T02:10:48",
-   "slug" : "190/2015/8/28/Check-your-DuckDuckGo-cheatsheets-with-Perl",
+   "title" : "Check your DuckDuckGo cheatsheets with Perl",
    "description" : "Zero-in on any defects with this Perl script",
-   "authors" : [
-      "David Farrell"
-   ]
+   "categories" : "testing",
+   "date" : "2015-08-28T02:10:48"
 }
+
 
 With DuckDuckGo's global [Quack & Hack](https://duck.co/blog) just around the corner, I've pulled together a [script](https://github.com/dnmfarrell/DDG-cheatsheet-check) for checking [cheatsheets](http://perltricks.com/article/189/2015/8/22/Writing-DuckDuckGo-plugins-just-got-easier). The script checks the cheatsheet is valid JSON and has the required entries and values.
 
@@ -119,4 +121,3 @@ This will run over 20 different tests against the cheatsheet. The script checks 
 Remember, even if the cheatsheet passes all the tests, you still need to check it looks right in the browser. [App::DuckPAN](https://metacpan.org/pod/App::DuckPAN) can help with that. This Saturday I'll be hanging out at the NYC Quack & Hack at [Orbital](http://www.meetup.com/Quack-Hack-New-York-City/events/224567174/). I look forward to seeing everyone there!
 
 **Update:** added HTTP::Tiny dependency. 2015-08-28
-

@@ -1,4 +1,8 @@
 {
+   "draft" : false,
+   "date" : "2015-06-09T12:59:02",
+   "description" : "The ubiquitous test runner is a powerful tool for your arsenal",
+   "slug" : "177/2015/6/9/Get-to-grips-with-Prove--Perl-s-test-workhorse",
    "tags" : [
       "perl6",
       "test",
@@ -6,16 +10,14 @@
       "cheet_sheet",
       "old_site"
    ],
-   "image" : null,
+   "categories" : "testing",
    "title" : "Get to grips with Prove, Perl's test workhorse",
+   "image" : null,
    "authors" : [
       "David Farrell"
-   ],
-   "description" : "The ubiquitous test runner is a powerful tool for your arsenal",
-   "slug" : "177/2015/6/9/Get-to-grips-with-Prove--Perl-s-test-workhorse",
-   "draft" : false,
-   "date" : "2015-06-09T12:59:02"
+   ]
 }
+
 
 Prove is a test running tool that ships with Perl. It has a ton of options, which can make it confusing for a beginner to use. If you have never used prove, or are not confident using it, do not despair! This article will get you up to speed with prove and it's most common options.
 
@@ -128,4 +130,3 @@ Perldoc is another useful Perl tool, if you'd like to know more about it, have a
     v       Verbose test output
     h       Help, summary of options
     exec    Exec tests in another program: --exec perl6
-

@@ -1,12 +1,7 @@
 {
-   "description" : "Things move quickly with Perl. Use accelerometers to find out just how quickly.",
-   "authors" : [
-      "Timm Murray"
-   ],
-   "draft" : false,
-   "date" : "2015-03-16T10:04:29",
+   "title" : "Accelerating Perl",
+   "categories" : "hardware",
    "slug" : "159/2015/3/16/Accelerating-Perl",
-   "image" : "/images/159/66B64C42-C698-11E4-ACD6-AD6E0EA848F6.jpeg",
    "tags" : [
       "raspberry",
       "pi",
@@ -14,8 +9,15 @@
       "accelerometer",
       "old_site"
    ],
-   "title" : "Accelerating Perl"
+   "description" : "Things move quickly with Perl. Use accelerometers to find out just how quickly.",
+   "draft" : false,
+   "image" : "/images/159/66B64C42-C698-11E4-ACD6-AD6E0EA848F6.jpeg",
+   "date" : "2015-03-16T10:04:29",
+   "authors" : [
+      "Timm Murray"
+   ]
 }
+
 
 Accelerometers have exploded in popularity since the introduction of the Nintendo Wii's motion controls. They're also common in cars and smartphones. Until recently, Perl has not been in places where interfacing directly with accelerometers made sense. With the Raspberry Pi and other SoC (System on a Chip) devices, it's now time to fix this oversight.
 
@@ -64,4 +66,3 @@ This will repeatedly dump the acceleration vector to STDOUT:
 With the flat side of an LSM303 chip on the table, you should see the Z output be approximately 1g, or maybe -1g if you turn it upside down. The other outputs should be about zero. Pick it up and turn it around, and you should see the Z output head towards zero, with the X and Y outputs adding up the 1g vector towards the center of the Earth (plus or minus some shakiness from your hand).
 
 Accelerometers are one of those things that once you start using them, you find a million fun things to do with them. So go forth and have fun!
-

@@ -1,20 +1,22 @@
 {
+   "image" : null,
    "title" : "Perl string functions - concatenate substring and split",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "development",
+   "draft" : false,
    "tags" : [
       "operator",
       "string",
       "syntax",
       "old_site"
    ],
-   "image" : null,
    "slug" : "8/2013/3/31/Perl-string-functions---concatenate-substring-and-split",
-   "date" : "2013-03-31T23:04:34",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Perl has many string functions, let's take a look at a some of the most common ones: concatenate, substring and split."
+   "description" : "Perl has many string functions, let's take a look at a some of the most common ones: concatenate, substring and split.",
+   "date" : "2013-03-31T23:04:34"
 }
+
 
 Perl has many string functions, let's take a look at a some of the most common ones: concatenate, substring and split.
 
@@ -67,4 +69,3 @@ my $fullname       = 'Mr Stephen Doyle';
 # Limit the split to two fields
 my @title_and_name = split(' ', $fullname, 2); # Mr,Stephen Doyle
 ```
-

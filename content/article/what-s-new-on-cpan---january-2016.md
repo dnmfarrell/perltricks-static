@@ -1,6 +1,6 @@
 {
-   "title" : "What's new on CPAN - January 2016",
-   "image" : "/images/213/AF57B300-5234-11E5-B481-F86745487EAA.png",
+   "slug" : "213/2016/2/10/What-s-new-on-CPAN---January-2015",
+   "categories" : "cpan",
    "tags" : [
       "cpan",
       "github",
@@ -9,14 +9,16 @@
       "sdcard",
       "old_site"
    ],
-   "draft" : false,
-   "date" : "2016-02-10T15:02:35",
-   "slug" : "213/2016/2/10/What-s-new-on-CPAN---January-2015",
    "description" : "A curated look at January's new CPAN uploads",
+   "title" : "What's new on CPAN - January 2016",
+   "image" : "/images/213/AF57B300-5234-11E5-B481-F86745487EAA.png",
+   "date" : "2016-02-10T15:02:35",
    "authors" : [
       "David Farrell"
-   ]
+   ],
+   "draft" : false
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -69,5 +71,4 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 
 -   Create CGI (yes!) GitHub webhooks with[CGI::Github::Webhook](https://metacpan.org/pod/CGI::Github::Webhook)
 -   Curious: [Lemplate](https://metacpan.org/pod/Lemplate) compiles TT templates to standalone Lua modules for OpenResty
-
 

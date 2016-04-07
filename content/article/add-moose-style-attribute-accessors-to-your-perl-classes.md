@@ -1,12 +1,10 @@
 {
-   "slug" : "49/2013/11/25/Add-Moose-style-attribute-accessors-to-your-Perl-classes",
-   "draft" : false,
-   "date" : "2013-11-25T03:28:00",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Writing accessors in vanilla object oriented Perl doesn't have to lead to verbose boilerplate code",
-   "title" : "Add Moose-style attribute accessors to your Perl classes",
+   "categories" : "development",
+   "date" : "2013-11-25T03:28:00",
+   "image" : null,
    "tags" : [
       "class",
       "object",
@@ -15,8 +13,12 @@
       "typeglob",
       "old_site"
    ],
-   "image" : null
+   "draft" : false,
+   "title" : "Add Moose-style attribute accessors to your Perl classes",
+   "description" : "Writing accessors in vanilla object oriented Perl doesn't have to lead to verbose boilerplate code",
+   "slug" : "49/2013/11/25/Add-Moose-style-attribute-accessors-to-your-Perl-classes"
 }
+
 
 *Let's face it, writing attribute accessors for out-of-the-box Perl classes is repetitive and not much fun. Of course you could use [Moose](https://metacpan.org/pod/Moose) or even [Class::Accessor](https://metacpan.org/pod/Class::Accessor) to ease the burden but sometimes you want to roll your own solution, *sans* dependencies.*
 
@@ -98,4 +100,3 @@ Whilst this approach does offer faster extensibility and a nicer syntax than van
 ### Sources
 
 Thanks to David Golden whose awesome [HTTP::Tiny](https://metacpan.org/pod/HTTP::Tiny) source code inspired this article.
-

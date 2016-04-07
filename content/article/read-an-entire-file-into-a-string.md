@@ -1,11 +1,13 @@
 {
+   "draft" : false,
+   "slug" : "21/2013/4/21/Read-an-entire-file-into-a-string",
+   "image" : null,
+   "title" : "Read an entire file into a string",
+   "description" : "TIMTOWDI",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "TIMTOWDI",
-   "slug" : "21/2013/4/21/Read-an-entire-file-into-a-string",
-   "date" : "2013-04-21T20:54:15",
-   "draft" : false,
+   "categories" : "data",
    "tags" : [
       "file",
       "filehandle",
@@ -13,9 +15,9 @@
       "slurp",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Read an entire file into a string"
+   "date" : "2013-04-21T20:54:15"
 }
+
 
 There are several ways in Perl to read an entire file into a string, (a procedure also known as "slurping").
 
@@ -86,4 +88,3 @@ binmode ARGV, $layer;
 ```
 
 **Updated:** changed to give more examples, File::Slurp warning and include File::Slurper. 2015-06-26
-

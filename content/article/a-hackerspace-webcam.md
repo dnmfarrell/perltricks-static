@@ -1,12 +1,13 @@
 {
+   "draft" : false,
+   "title" : "A Hackerspace Webcam",
+   "image" : "/images/140/D7DE9644-813E-11E4-A6BF-AA5BB3613736.jpeg",
    "description" : "Using Raspberry Pi and Perl to operate a live camera",
+   "date" : "2014-12-15T13:58:21",
+   "categories" : "hardware",
    "authors" : [
       "Timm Murray"
    ],
-   "draft" : false,
-   "date" : "2014-12-15T13:58:21",
-   "slug" : "140/2014/12/15/A-Hackerspace-Webcam",
-   "image" : "/images/140/D7DE9644-813E-11E4-A6BF-AA5BB3613736.jpeg",
    "tags" : [
       "raspberry_pi",
       "hackerspace",
@@ -14,8 +15,9 @@
       "camera",
       "old_site"
    ],
-   "title" : "A Hackerspace Webcam"
+   "slug" : "140/2014/12/15/A-Hackerspace-Webcam"
 }
+
 
 Nearly every hackerspace has some kind of live camera on their website, and every one of them solves it in their own way. If you want to visit the shop, it's nice to know if someone else is hanging around. At [The Bodgery](http://thebodgery.org), it was decided to base one on a Raspberry Pi that would upload a picture every 30 seconds whenever an open switch is set. When a member opens the space, the switch activates one of the Pi's "General Purpose Input/Output" (GPIO) pins, which causes the Pi to start taking pictures. When shut off, a default picture is thrown up, declaring us closed.
 
@@ -93,4 +95,3 @@ unlink $tmp_filename;
 As an exercise to the reader, create a `tmpfs` (RAM disk) on your Raspberry Pi and have the temp file written there. 10MB should be enough. `File::Temp::tempfile()` can be passed a `DIR` parameter to write a file there. This avoids writing to the SD card, which is both slow and tends to wear it out prematurely.
 
 The complete code is on [GitHub](https://github.com/frezik/bodgery_cam).
-

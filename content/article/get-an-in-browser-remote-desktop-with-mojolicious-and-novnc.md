@@ -1,20 +1,22 @@
 {
-   "slug" : "212/2016/2/2/Get-an-in-browser-remote-desktop-with-Mojolicious-and-noVNC",
+   "categories" : "web",
+   "description" : "Using Mojolicious as a TCP/WebSocket Bridge",
    "draft" : false,
    "date" : "2016-02-02T13:41:18",
-   "authors" : [
-      "Joel Berger"
-   ],
-   "description" : "Using Mojolicious as a TCP/WebSocket Bridge",
-   "title" : "Get an in-browser remote desktop with Mojolicious and noVNC",
    "tags" : [
       "mojolicious",
       "websockets",
       "novnc",
       "old_site"
    ],
+   "slug" : "212/2016/2/2/Get-an-in-browser-remote-desktop-with-Mojolicious-and-noVNC",
+   "authors" : [
+      "Joel Berger"
+   ],
+   "title" : "Get an in-browser remote desktop with Mojolicious and noVNC",
    "image" : "/images/212/0156BEFE-C9B2-11E5-A2BB-E80C3AD1818C.jpeg"
 }
+
 
 While SSH is a staple of remote system administration, sometimes only a GUI will do. Perhaps the remote system doesn't have a terminal environment to connect to; perhaps the target application doesn't present an adequate command line interface; perhaps there is an existing GUI session you need to interact with. There can be all kinds of reasons.
 
@@ -108,4 +110,3 @@ Shouldn't This Be On CPAN?
 I'm hoping to wrap this TCP/WebSocket bridge logic up as a module called `Mojo::Websockify` and include the noVNC client as an example. It turns out however, that the logic which is simple to show here is remarkably hard to package in a generic, extensible way. For example, you may want to check if the TCP service is already in use via some database-locking table, or to allow remote-takeover of sessions using a message broker between clients. I'll probably just simplify things for the common case and build in some protection for the "back pressure" problem. In the meantime I hope you have enjoyed seeing how beautifully simple Mojolicious' WebSocket and TCP services are.
 
 Happy Perling!
-

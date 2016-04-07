@@ -1,11 +1,13 @@
 {
+   "description" : "Perl's flexible syntax accepts all kinds of shenanigans and hackery. This article describes one such trick to call object methods without including the referent object (sort of).",
+   "draft" : false,
+   "date" : "2013-08-03T17:56:03",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Perl's flexible syntax accepts all kinds of shenanigans and hackery. This article describes one such trick to call object methods without including the referent object (sort of).",
+   "categories" : "development",
+   "title" : "Call object methods without an object reference",
    "slug" : "35/2013/8/3/Call-object-methods-without-an-object-reference",
-   "date" : "2013-08-03T17:56:03",
-   "draft" : false,
    "tags" : [
       "object_oriented",
       "object",
@@ -13,9 +15,9 @@
       "wizardry",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Call object methods without an object reference"
+   "image" : null
 }
+
 
 Perl's flexible syntax accepts all kinds of shenanigans and hackery. This article describes one such trick to call object methods without including the referent object (sort of).
 
@@ -108,4 +110,3 @@ Boomerang->new->throw->throw->throw;
 ### What is this good for?
 
 Admittedly this style of writing method calls can lead to reduced readability and will only work on method calls that return $self. However one use of this technique was shown by Eric Johnson at YAPC::EU 2012. He developed a Selenium test class which allowed non-Perl programmers to write test cases using this method. His talk is on [youtube](http://www.youtube.com/watch?v=9eQJnyocMuQ).
-

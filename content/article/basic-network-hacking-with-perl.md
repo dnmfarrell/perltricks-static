@@ -1,12 +1,7 @@
 {
-   "slug" : "179/2015/7/1/Basic-network-hacking-with-Perl",
-   "date" : "2015-07-01T12:51:31",
-   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "A few scripts to get going",
-   "title" : "Basic network hacking with Perl",
    "tags" : [
       "infosec",
       "livehost",
@@ -15,8 +10,15 @@
       "hack",
       "old_site"
    ],
-   "image" : "/images/179/DE10A7B4-1FEF-11E5-99C3-3FFAF3FDEA84.jpeg"
+   "categories" : "security",
+   "date" : "2015-07-01T12:51:31",
+   "slug" : "179/2015/7/1/Basic-network-hacking-with-Perl",
+   "draft" : false,
+   "image" : "/images/179/DE10A7B4-1FEF-11E5-99C3-3FFAF3FDEA84.jpeg",
+   "description" : "A few scripts to get going",
+   "title" : "Basic network hacking with Perl"
 }
+
 
 Recently I've been reading [Penetration Testing With Perl](https://www.packtpub.com/networking-and-servers/penetration-testing-perl-raw) by Douglas Berdeaux. The book was released late last year, and whilst Dave Cross gave it a fairly scathing [review](http://perlhacks.com/2015/02/penetration-testing-perl/) I've found it interesting so far. I've been coding and refactoring the scripts presented in the book in a GitHub [repo](https://github.com/dnmfarrell/Penetration-Testing-With-Perl) as I go. Here is some of the stuff I've learned so far.
 
@@ -155,4 +157,3 @@ Address: 68:09:27:03:d0:35, MAC Manufacturer: Apple
 ```
 
 It's an Apple machine. With this data I can either try to fingerprint the hosts further, or I can start testing them for weaknesses, using a port scan or a known vulnerability. A good source of vulnerabilities is [exploit-db.com](http://www.exploit-db.com).
-

@@ -1,4 +1,5 @@
 {
+   "description" : "CPAN mirrors are online repositories which host or \"mirror\" the Perl module distributions on CPAN. There are hundreds of CPAN mirrors dispersed throughout the World. When the CPAN program is run for the first time on a machine, it will configure the CPAN mirror list to use for checking for new versions of modules and downloading Perl distributions.  All CPAN mirrors are not created equally though: the distribution list's age, speed and the geographic location vary from mirror to mirror and so you may want to re-configure your local CPAN mirror list to suit your needs. This article describes how to find CPAN mirrors and edit the local CPAN mirror configuration.",
    "tags" : [
       "configuration",
       "cpan",
@@ -7,16 +8,17 @@
       "config",
       "old_site"
    ],
-   "image" : null,
    "title" : "Find CPAN mirrors and configure the local CPAN mirror list",
+   "slug" : "44/2013/10/20/Find-CPAN-mirrors-and-configure-the-local-CPAN-mirror-list",
+   "categories" : "managing_perl",
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "CPAN mirrors are online repositories which host or \"mirror\" the Perl module distributions on CPAN. There are hundreds of CPAN mirrors dispersed throughout the World. When the CPAN program is run for the first time on a machine, it will configure the CPAN mirror list to use for checking for new versions of modules and downloading Perl distributions.  All CPAN mirrors are not created equally though: the distribution list's age, speed and the geographic location vary from mirror to mirror and so you may want to re-configure your local CPAN mirror list to suit your needs. This article describes how to find CPAN mirrors and edit the local CPAN mirror configuration.",
-   "slug" : "44/2013/10/20/Find-CPAN-mirrors-and-configure-the-local-CPAN-mirror-list",
-   "draft" : false,
-   "date" : "2013-10-20T19:07:00"
+   "date" : "2013-10-20T19:07:00",
+   "image" : null
 }
+
 
 CPAN mirrors are online repositories which host or "mirror" the Perl module distributions on CPAN. There are hundreds of CPAN mirrors dispersed throughout the World. When the CPAN program is run for the first time on a machine, it will configure the CPAN mirror list to use for checking for new versions of modules and downloading Perl distributions. All CPAN mirrors are not created equally though: the distribution list's age, speed and the geographic location vary from mirror to mirror and so you may want to re-configure your local CPAN mirror list to suit your needs. This article describes how to find CPAN mirrors and edit the local CPAN mirror configuration.
 
@@ -95,4 +97,3 @@ You can also edit the CPAN config file directly. For local user Perl installatio
     q[ftp://cpan.cse.msu.edu/]
 ],
 ```
-

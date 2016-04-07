@@ -1,5 +1,10 @@
 {
+   "image" : "/images/111/0D9A013A-2F12-11E4-9950-DF3A7BB45C3F.jpeg",
    "title" : "Facing the music with Perl",
+   "draft" : false,
+   "slug" : "111/2014/8/29/Facing-the-music-with-Perl",
+   "description" : "A few Perl modules make it easy",
+   "date" : "2014-08-29T15:03:09",
    "tags" : [
       "sysadmin",
       "cd",
@@ -12,15 +17,12 @@
       "digest_md5",
       "old_site"
    ],
-   "image" : "/images/111/0D9A013A-2F12-11E4-9950-DF3A7BB45C3F.jpeg",
-   "slug" : "111/2014/8/29/Facing-the-music-with-Perl",
-   "draft" : false,
-   "date" : "2014-08-29T15:03:09",
    "authors" : [
       "brian d foy"
    ],
-   "description" : "A few Perl modules make it easy"
+   "categories" : "data"
 }
+
 
 My digital music libraries were messed up. Spread across several devices and a couple of flirtations with iTunes Match and iCloud, I didn't have everything in one place—ironically. Not only that, but Apple had replaced some files with what it considered better versions. Although I don't want to perform the experiment to confirm it, I'm sure that the new files had different metadata. I needed to sort it out to start on a better system. I thought the task would be arduous, and it was until I settled on a simpler problem that a couple of Perl modules solved quickly.
 
@@ -221,4 +223,3 @@ sub make_subs {
 ```
 
 And that was it. This left behind a couple of problems, such as messed up metadata, but I wasn't going to be able to solve that programmatically anyway. Getting a complete set of files with no duplicates solved most of the problem and leaves me with the joy of flipping through physical albums that only us grey beards remember.
-

@@ -1,13 +1,13 @@
 {
-   "date" : "2015-01-05T13:50:44",
-   "draft" : false,
-   "slug" : "142/2015/1/5/What-s-new-on-CPAN---December-2014",
+   "categories" : "cpan",
+   "image" : "/images/142/C1BC7C64-948A-11E4-907D-A439A59D04B1.png",
    "description" : "A curated look at the latest CPAN uploads",
    "authors" : [
       "David Farrell"
    ],
-   "title" : "What's new on CPAN - December 2014",
-   "image" : "/images/142/C1BC7C64-948A-11E4-907D-A439A59D04B1.png",
+   "slug" : "142/2015/1/5/What-s-new-on-CPAN---December-2014",
+   "date" : "2015-01-05T13:50:44",
+   "draft" : false,
    "tags" : [
       "cpan",
       "dancer",
@@ -18,8 +18,10 @@
       "geo_code",
       "bitcoin",
       "old_site"
-   ]
+   ],
+   "title" : "What's new on CPAN - December 2014"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -65,5 +67,4 @@
 -   Add an auto-timeout to your Dancer routes with [Dancer::Plugin::TimeoutManager](https://metacpan.org/pod/Dancer::Plugin::TimeoutManager)
 -   [Lavoco::Website](https://metacpan.org/pod/Lavoco::Website) is an experimental micro web framework for hosting template toolkit templates
 -   Check if a URL is active with [URL::Exists](https://metacpan.org/pod/URL::Exists)
-
 

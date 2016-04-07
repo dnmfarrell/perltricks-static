@@ -1,20 +1,22 @@
 {
-   "title" : "Use the logical-or and defined-or operators to provide default subroutine variable behaviour",
    "image" : null,
+   "slug" : "32/2013/7/6/Use-the-logical-or-and-defined-or-operators-to-provide-default-subroutine-variable-behaviour",
+   "title" : "Use the logical-or and defined-or operators to provide default subroutine variable behaviour",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "development",
+   "date" : "2013-07-06T20:42:40",
+   "draft" : false,
+   "description" : "Perl subroutines do not have signatures so variables must be initialized and arguments assigned to them inside the subroutine code. This article describes two useful shortcuts that can simplify this process.",
    "tags" : [
       "modernperl",
       "operator",
       "subroutine",
       "old_site"
-   ],
-   "date" : "2013-07-06T20:42:40",
-   "draft" : false,
-   "slug" : "32/2013/7/6/Use-the-logical-or-and-defined-or-operators-to-provide-default-subroutine-variable-behaviour",
-   "description" : "Perl subroutines do not have signatures so variables must be initialized and arguments assigned to them inside the subroutine code. This article describes two useful shortcuts that can simplify this process.",
-   "authors" : [
-      "David Farrell"
    ]
 }
+
 
 Perl subroutines do not have signatures so variables must be initialized and arguments assigned to them inside the subroutine code. This article describes two useful shortcuts that can simplify this process.
 
@@ -82,4 +84,3 @@ sub process_quote_data {
 Now if the $sex variable is undef, the process\_quote\_data subroutine will assign 'M' as it's value.
 
 You can read more about these operators and in the [perlop section](http://perldoc.perl.org/perlop.html#Logical-Defined-Or) of the official Perl documentation.
-

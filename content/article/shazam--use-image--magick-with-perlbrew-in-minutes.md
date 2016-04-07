@@ -1,5 +1,5 @@
 {
-   "title" : "Shazam! Use Image::Magick with Perlbrew in minutes",
+   "date" : "2014-01-01T23:43:09",
    "tags" : [
       "configuration",
       "sysadmin",
@@ -7,15 +7,17 @@
       "imagemagick",
       "old_site"
    ],
-   "image" : "/images/57/EC09836E-FF2E-11E3-9F8C-5C05A68B9E16.png",
-   "slug" : "57/2014/1/1/Shazam--Use-Image--Magick-with-Perlbrew-in-minutes",
-   "draft" : false,
-   "date" : "2014-01-01T23:43:09",
+   "categories" : "managing_perl",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "How to get a local non-root install of Image::Magick working with Perlbrew"
+   "slug" : "57/2014/1/1/Shazam--Use-Image--Magick-with-Perlbrew-in-minutes",
+   "title" : "Shazam! Use Image::Magick with Perlbrew in minutes",
+   "image" : "/images/57/EC09836E-FF2E-11E3-9F8C-5C05A68B9E16.png",
+   "description" : "How to get a local non-root install of Image::Magick working with Perlbrew",
+   "draft" : false
 }
+
 
 *The open source ImageMagick software provides amazing tools for creating and manipulating images in over 100 formats. Unfortunately, installing ImageMagick's Perl module under Perlbrew can be a frustrating and time-consuming task. However it doesn't have to be this way - with the method described below you can have the module installed in minutes, no root access required!*
 
@@ -151,4 +153,3 @@ Image::Magick::Q16 version 999 required--this is only version 6.88.
 ### Sources
 
 Thanks to Jason Galea - his invaluable [GitHub notes](https://github.com/lecstor/DevNotes/wiki/Image-Magick-with-Perlbrew) formed the basis of this solution.
-

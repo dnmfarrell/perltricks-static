@@ -1,20 +1,22 @@
 {
+   "draft" : false,
+   "slug" : "175/2015/5/14/Miniconf-NYC---a-free-Perl-conference",
    "tags" : [
       "open_source",
       "nyc",
       "miniconf",
       "old_site"
    ],
+   "categories" : "community",
    "image" : "/images/175/3103D79E-F9D4-11E4-8FFE-C354103B7DD2.png",
-   "title" : "Miniconf NYC - a free Perl conference",
+   "description" : "Training, hackathon, lightning talks and swag",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Training, hackathon, lightning talks and swag",
-   "slug" : "175/2015/5/14/Miniconf-NYC---a-free-Perl-conference",
-   "date" : "2015-05-14T12:26:37",
-   "draft" : false
+   "title" : "Miniconf NYC - a free Perl conference",
+   "date" : "2015-05-14T12:26:37"
 }
+
 
 Just when you thought there couldn't be more NYC based Perl events, another comes along! I'm one of the organizers for [Miniconf](http://mini-conf.com) a free Perl conference that's running here in New York on Saturday June 6th, two days day before YAPC::NA. There's also a pre-conference social event, and you can sign up for both events on [meetup](http://www.meetup.com/The-New-York-Perl-Meetup-Group/http://www.meetup.com/The-New-York-Perl-Meetup-Group/).
 
@@ -39,4 +41,3 @@ Spread the word! We're promoting the event through social media and other outlet
 We're also looking for sponsors, if you work for a company interested in reaching New York based programmers, give them our email address, or even better send them introductory email cc'ing `admin@mini-conf.com`. With sponsors we're trying something a little bit different, we have sponsorship slots for particular aspects of the conference. So an organization can be the "pizza and soda sponsor" to make a more visible link between a sponsor's contribution and the benefits of the conference. Every sponsor gets their logo on the conference website, on the big screens during the conference, and promotion through social media. We're also running a "swag" table for sponsors to contribute merchandise, an obvious win-win, as the sponsor gets brand promotion and the attendees get free stuff!
 
 As a programmer and tech conference regular myself, I'm trying to create the kind of conference that I'd want to go to. If you have any questions or suggestions, [email us](mailto:admin@mini-conf.com). I'm looking forward to seeing everyone there!
-

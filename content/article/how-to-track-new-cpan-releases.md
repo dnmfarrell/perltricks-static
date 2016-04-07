@@ -1,12 +1,5 @@
 {
-   "slug" : "33/2013/7/29/How-to-track-new-CPAN-releases",
-   "draft" : false,
    "date" : "2013-07-29T01:11:31",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "CPAN is a fantastic Perl resource with thousands of modules and new ones being added all the time. But how do you keep track of what's being released? This article describes three techniques for keeping tabs on the latest CPAN releases. ",
-   "title" : "How to track new CPAN releases",
    "tags" : [
       "community",
       "configuration",
@@ -16,8 +9,17 @@
       "sysadmin",
       "old_site"
    ],
-   "image" : null
+   "draft" : false,
+   "title" : "How to track new CPAN releases",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "cpan",
+   "image" : null,
+   "slug" : "33/2013/7/29/How-to-track-new-CPAN-releases",
+   "description" : "CPAN is a fantastic Perl resource with thousands of modules and new ones being added all the time. But how do you keep track of what's being released? This article describes three techniques for keeping tabs on the latest CPAN releases. "
 }
+
 
 CPAN is a fantastic Perl resource with thousands of modules and new ones being added all the time. But how do you keep track of what's being released? This article describes three techniques for keeping tabs on the latest CPAN releases.
 
@@ -39,4 +41,3 @@ perl -MCPAN::Recent::Uploads -le "print for CPAN::Recent::Uploads->recent;"
 The Twitter account [CPAN New Modules](https://twitter.com/cpan_new) tweets every new CPAN release. The author Punytan has also released the source code on [github](https://t.co/K7KnELaYzk).
 
 You can subscribe to the stream by clicking this button: [Follow @cpan\_new](https://twitter.com/cpan_new)
-

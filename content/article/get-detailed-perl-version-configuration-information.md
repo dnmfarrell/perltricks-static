@@ -1,19 +1,21 @@
 {
-   "image" : null,
    "tags" : [
       "configuration",
       "version",
       "old_site"
    ],
-   "title" : "Get detailed Perl version configuration information",
+   "image" : null,
+   "draft" : false,
+   "slug" : "41/2013/9/27/Get-detailed-Perl-version-configuration-information",
    "description" : "Most Perl programmers know they can find out the current Perl version by typing \"perl -v\" as the command line:",
+   "title" : "Get detailed Perl version configuration information",
    "authors" : [
       "David Farrell"
    ],
-   "draft" : false,
-   "date" : "2013-09-27T01:25:18",
-   "slug" : "41/2013/9/27/Get-detailed-Perl-version-configuration-information"
+   "categories" : "managing_perl",
+   "date" : "2013-09-27T01:25:18"
 }
+
 
 Most Perl programmers know they can find out the current Perl version by typing "perl -v" as the command line:
 
@@ -93,4 +95,3 @@ Characteristics of this binary (from libperl):
 ```
 
 This prints detailed information on the installed Perl's configuration including: the options that Perl was compiled with, whether iThreads are enabled or not and a host of directory information.
-

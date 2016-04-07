@@ -1,12 +1,5 @@
 {
-   "slug" : "47/2013/11/11/Use-roles-in-object-oriented-Perl-with-Role--Tiny",
-   "draft" : false,
-   "date" : "2013-11-11T04:48:50",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Get roles / traits with minimal overhead",
-   "title" : "Use roles in object oriented Perl with Role::Tiny",
+   "categories" : "development",
    "tags" : [
       "module",
       "object_oriented",
@@ -14,8 +7,17 @@
       "role",
       "old_site"
    ],
+   "title" : "Use roles in object oriented Perl with Role::Tiny",
+   "date" : "2013-11-11T04:48:50",
+   "description" : "Get roles / traits with minimal overhead",
+   "authors" : [
+      "David Farrell"
+   ],
+   "draft" : false,
+   "slug" : "47/2013/11/11/Use-roles-in-object-oriented-Perl-with-Role--Tiny",
    "image" : null
 }
+
 
 Roles are a label for a set of methods that a class provides. Similar to traits in Smalltalk or an interface in Java, adding a Perl role to a class is like adding a guarantee that the class will implement that role's API. Roles are an alternative to inheritance; instead of extending a class hierarchy through subclassing, a programmer composes a class using roles for what the class does. This article describes how by using the [Role::Tiny](https://metacpan.org/pod/Role::Tiny) module you can imbue native Perl object oriented code with roles.
 
@@ -139,4 +141,3 @@ perl -MPoint -we 'my $p = Point->new(5,5); print $p->does("Shape")'
 ### Conclusion
 
 Roles are a useful alternative to inheritance - they focus on what a class does rather than what it is. Using [Role::Tiny](https://metacpan.org/pod/Role::Tiny) is a nimble way to add roles to the existing Perl object oriented syntax without using an entire object system such as Moose.
-

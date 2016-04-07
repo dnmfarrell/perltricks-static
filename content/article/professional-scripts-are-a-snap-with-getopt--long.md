@@ -5,16 +5,18 @@
       "type_check",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Professional scripts are a snap with Getopt::Long",
+   "date" : "2015-10-21T12:40:21",
+   "draft" : false,
+   "slug" : "195/2015/10/21/Professional-scripts-are-a-snap-with-Getopt--Long",
    "authors" : [
       "David Farrell"
    ],
    "description" : "This core module makes it easy to write programs",
-   "slug" : "195/2015/10/21/Professional-scripts-are-a-snap-with-Getopt--Long",
-   "draft" : false,
-   "date" : "2015-10-21T12:40:21"
+   "image" : null,
+   "title" : "Professional scripts are a snap with Getopt::Long",
+   "categories" : "development"
 }
+
 
 Scripts are practically Perl's raison d'être, and so naturally it has some great scripting tools. [Getopt::Long](http://perldoc.perl.org/Getopt/Long.html) is a module for parsing command line arguments (similar to Python's [argparse](https://docs.python.org/dev/library/argparse.html)). Using Getopt::Long, you can quickly define a standard Unix-like interface for your program. With just a few lines of code you can parse, type-check and assign the parameters passed to your program. Sounds good? Read on to find out how.
 
@@ -248,4 +250,3 @@ Usage:
 ```
 
 Not bad! `HelpMessage` takes an exit value to return to the OS. If the user passes the argument `--help` the program should print the usage and exit without error (value zero). However if they don't pass any arguments at all or if they pass any invalid arguments, the same usage text will be printed but the program will exit with 1, indicating that something went wrong.
-

@@ -1,5 +1,10 @@
 {
    "image" : null,
+   "date" : "2013-04-10T21:48:42",
+   "slug" : "16/2013/4/10/Test-if-the-user-is-root",
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "flow",
       "linux",
@@ -11,13 +16,10 @@
    ],
    "title" : "Test if the user is root",
    "description" : "When Perl is executing a program, it maintains the user id of the process owner in a global variable ($<). When a Perl program is executed by root or a user with root privileges (e.g. using the sudo command), the user id variable is always set to zero. This can be checked at the command line:",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2013-04-10T21:48:42",
-   "draft" : false,
-   "slug" : "16/2013/4/10/Test-if-the-user-is-root"
+   "categories" : "development",
+   "draft" : false
 }
+
 
 When Perl is executing a program, it maintains the user id of the process owner in a global variable ($\<). When a Perl program is executed by root or a user with root privileges (e.g. using the sudo command), the user id variable is always set to zero. This can be checked at the command line:
 
@@ -48,4 +50,3 @@ if (not Win32::IsAdminUser()) {
     croak "Error: exiting program as not executed by root\n";
 }
 ```
-

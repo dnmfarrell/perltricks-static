@@ -1,20 +1,22 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
+   "categories" : "cpan",
    "description" : "A curated look at last month's new CPAN uploads",
    "slug" : "74/2014/3/3/What-s-new-on-CPAN---February-2014",
-   "date" : "2014-03-03T04:10:36",
    "draft" : false,
+   "date" : "2014-03-03T04:10:36",
    "tags" : [
       "cpan",
       "module",
       "news",
       "old_site"
    ],
-   "image" : null,
-   "title" : "What's new on CPAN - February 2014"
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "What's new on CPAN - February 2014",
+   "image" : null
 }
+
 
 *Welcome to "What's new on CPAN" - a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!*
 
@@ -104,4 +106,3 @@ New Mojolicious modules:
 -   [Mojolicious::Plugin::VHost](https://metacpan.org/pod/Mojolicious::Plugin::VHost) adds virtual hosts to Mojolicious
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F74%2F2014%2F3%2F3%2FWhat-s-new-on-CPAN-February-2014&text=What%27s+new+on+CPAN+-+February+2014&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F74%2F2014%2F3%2F3%2FWhat-s-new-on-CPAN-February-2014&via=perltricks) it!
-

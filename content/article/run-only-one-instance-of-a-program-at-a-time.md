@@ -1,20 +1,22 @@
 {
+   "categories" : "apps",
+   "image" : null,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Lockfiles can provide race condition-free solutions",
-   "slug" : "2/2015/11/4/Run-only-one-instance-of-a-program-at-a-time",
-   "date" : "2015-11-04T13:03:49",
-   "draft" : false,
+   "title" : "Run only one instance of a program at a time",
    "tags" : [
       "lockfile",
       "process",
       "race_condition",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Run only one instance of a program at a time"
+   "slug" : "2/2015/11/4/Run-only-one-instance-of-a-program-at-a-time",
+   "date" : "2015-11-04T13:03:49",
+   "draft" : false,
+   "description" : "Lockfiles can provide race condition-free solutions"
 }
+
 
 Recently I wanted to schedule a Perl app to run every minute on a server, but if an instance of the app was already running, it should exit and do nothing. This is a common problem and I was able to solve it with a lockfile. Let's see how to use lockfiles in Perl.
 
@@ -110,4 +112,3 @@ sleep(60);
 This frees up `DATA` and has the added benefit that the code can be exported by a module (by using `our` instead of `my`). Note that the `open` arguments have been changed to use a read-only filehandle to avoid truncating the source code of the program! If you need this behavior, you can implement it yourself as shown above, or use my module [IPC::Lockfile](https://metacpan.org/pod/IPC::Lockfile), which will do it for you. If you need more refined lockfile functionality, have a look at [Sys::RunAlone](https://metacpan.org/pod/Sys::RunAlone) which uses the same trick (thanks to [BooK](https://metacpan.org/author/BOOK) for the reference). There are also plenty of other options on [CPAN](https://metacpan.org/search?size=20&q=lockfile&search_type=modules).
 
 **Update:** *added Sys::RunAlone reference - 2015-11-28.*
-

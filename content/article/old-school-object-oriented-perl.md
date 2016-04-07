@@ -1,13 +1,12 @@
 {
-   "draft" : false,
    "date" : "2013-05-20T00:11:41",
    "slug" : "25/2013/5/20/Old-School-Object-Oriented-Perl",
-   "description" : "If you need to write object oriented Perl code with no dependencies, then you need to use the old school Perl syntax. This article describes the main features of old school object oriented Perl including class declaration, constructors, destructors, methods, attributes, accessors and inheritance.",
+   "draft" : false,
+   "title" : "Old School Object Oriented Perl",
+   "image" : null,
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Old School Object Oriented Perl",
-   "image" : null,
    "tags" : [
       "object_oriented",
       "old_school_perl",
@@ -16,8 +15,11 @@
       "attribute",
       "inheritance",
       "old_site"
-   ]
+   ],
+   "description" : "If you need to write object oriented Perl code with no dependencies, then you need to use the old school Perl syntax. This article describes the main features of old school object oriented Perl including class declaration, constructors, destructors, methods, attributes, accessors and inheritance.",
+   "categories" : "development"
 }
+
 
 If you need to write object oriented Perl code with no dependencies, then you need to use the old school Perl syntax. This article describes the main features of old school object oriented Perl including class declaration, constructors, destructors, methods, attributes, accessors and inheritance.
 
@@ -489,4 +491,3 @@ say $circle->get_area;
 ### Wrap up
 
 This article has explored some of the core object oriented Perl functionality. For more information the official Perl documentation has a [tutorial](http://perldoc.perl.org/perlootut.html) and a [more detailed reference](perldoc.perl.org/perlobj.html). The definitive text on old school object oriented Perl is Damian Conway's [Object Oriented Perl](http://www.manning.com/conway/) (Manning, 1999).
-

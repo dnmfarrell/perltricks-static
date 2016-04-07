@@ -1,5 +1,12 @@
 {
-   "title" : "Simple web framework FastCGI caching with nginx - part 2",
+   "draft" : false,
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "77/2014/3/17/Simple-web-framework-FastCGI-caching-with-nginx---part-2",
+   "date" : "2014-03-17T01:54:09",
+   "categories" : "web",
+   "description" : "Safely purge individually cached upstream responses",
    "image" : "/images/77/EC900B50-FF2E-11E3-B753-5C05A68B9E16.jpeg",
    "tags" : [
       "module",
@@ -9,14 +16,9 @@
       "cache",
       "old_site"
    ],
-   "date" : "2014-03-17T01:54:09",
-   "draft" : false,
-   "slug" : "77/2014/3/17/Simple-web-framework-FastCGI-caching-with-nginx---part-2",
-   "description" : "Safely purge individually cached upstream responses",
-   "authors" : [
-      "David Farrell"
-   ]
+   "title" : "Simple web framework FastCGI caching with nginx - part 2"
 }
+
 
 *In [part 1](http://perltricks.com/article/76/2014/3/11/Simple-web-framework-FastCGI-caching-with-nginx-part-1) of this series, we covered how to cache FastCGI responses with nginx and how to purge the cache on demand. We saw how easy it is to setup caching with the main Perl web frameworks (Catalyst, Dancer and Mojolicious). In this article we'll use Nginx::FastCGI::Cache to manage our cached responses and gain some useful benefits along the way.*
 
@@ -97,4 +99,3 @@ The nginx [documentation](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.
 Whether you are using Catalyst, Dancer or Mojolicious, setting the appropriate caching headers is easy (see [part 1](http://perltricks.com/article/76/2014/3/11/Simple-web-framework-FastCGI-caching-with-nginx-part-1)). Consider using [Nginx::FastCGI::Cache](https://metacpan.org/pod/Nginx::FastCGI::Cache) with nginx to conveniently purge the cache on demand.
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F77%2F2014%2F3%2F16%2FSimple-web-framework-FastCGI-caching-with-nginx-part-2&text=Simple+web+framework+FastCGI+caching+with+nginx+-+part+2&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F77%2F2014%2F3%2F16%2FSimple-web-framework-FastCGI-caching-with-nginx-part-2&via=perltricks) it!
-

@@ -1,5 +1,6 @@
 {
-   "title" : "Perl distributions, modules, packages explained",
+   "description" : "Learn which files are in a distribution, the difference between a module and a package etc.",
+   "slug" : "96/2014/6/13/Perl-distributions--modules--packages-explained",
    "tags" : [
       "configuration",
       "cpan",
@@ -10,15 +11,16 @@
       "package",
       "old_site"
    ],
-   "image" : "/images/96/ED19E49C-FF2E-11E3-BA0A-5C05A68B9E16.png",
-   "slug" : "96/2014/6/13/Perl-distributions--modules--packages-explained",
    "date" : "2014-06-13T12:26:00",
-   "draft" : false,
+   "title" : "Perl distributions, modules, packages explained",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Learn which files are in a distribution, the difference between a module and a package etc."
+   "categories" : "managing_perl",
+   "image" : "/images/96/ED19E49C-FF2E-11E3-BA0A-5C05A68B9E16.png",
+   "draft" : false
 }
+
 
 *It can be confusing for new Perl programmers to understand the terminology used to describe Perl distributions and their accompanying files. This article explains the core concepts.*
 
@@ -70,4 +72,3 @@ These are the typical directories and files found in a Perl distribution but as 
 Once you get to grips with Perl packages, modules and distributions it's far easier to start hacking on Perl modules that don't work the way you want them to. For example, in the case of a module that won't install, you can download the distribution from CPAN (at the command line "cpan -g Module::Name"), untar it, and patch the failing tests, or examine the source code in the lib directory and resolve a bug or two. Before long you'll be releasing your own distributions to CPAN!
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F96%2F2014%2F6%2F13%2FPerl-distributions-modules-packages-explained&text=Perl+distributions%2C+modules%2C+packages+explained&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F96%2F2014%2F6%2F13%2FPerl-distributions-modules-packages-explained&via=perltricks) about it!
-

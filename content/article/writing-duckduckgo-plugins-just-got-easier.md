@@ -1,20 +1,22 @@
 {
-   "title" : "Writing DuckDuckGo plugins just got easier",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "community",
    "image" : "/images/189/7FF3F50E-48D6-11E5-B8B3-C12EFC9DDBA7.png",
+   "title" : "Writing DuckDuckGo plugins just got easier",
+   "slug" : "189/2015/8/22/Writing-DuckDuckGo-plugins-just-got-easier",
+   "draft" : false,
+   "description" : "All you need is JSON",
+   "date" : "2015-08-22T14:05:25",
    "tags" : [
       "community",
       "search",
       "json",
       "old_site"
-   ],
-   "draft" : false,
-   "date" : "2015-08-22T14:05:25",
-   "slug" : "189/2015/8/22/Writing-DuckDuckGo-plugins-just-got-easier",
-   "description" : "All you need is JSON",
-   "authors" : [
-      "David Farrell"
    ]
 }
+
 
 The developers behind DuckDuckGo, the search engine that doesn't track you, have made it easier than ever to write plugins for the site. With the first global [Quack & Hack](https://duck.co/blog/post/196/the-first-global-quack-hack) event taking place later this month, there's never been a better time to get involved.
 
@@ -96,4 +98,3 @@ You can test your instant answer using [App::DuckPAN](https://metacpan.org/pod/A
 Once you've finished an instant answer, create a pull request! The DuckDuckGo developers will review your code and give feedback. Once your instant answer is approved, it will go live within a few days.
 
 **Updated:** Changed chat details for DDG slack 2015-08-26
-

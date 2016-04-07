@@ -1,11 +1,12 @@
 {
+   "title" : "Port scanning with Perl",
+   "draft" : false,
+   "categories" : "security",
+   "description" : "Building a concurrent, randomized, capable port scanner",
+   "slug" : "183/2015/7/20/Port-scanning-with-Perl",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Building a concurrent, randomized, capable port scanner",
-   "slug" : "183/2015/7/20/Port-scanning-with-Perl",
-   "date" : "2015-07-20T13:14:57",
-   "draft" : false,
    "tags" : [
       "tcp",
       "infosec",
@@ -14,8 +15,9 @@
       "old_site"
    ],
    "image" : "/images/183/2714AD7A-2EE1-11E5-B064-7C659059EE40.jpeg",
-   "title" : "Port scanning with Perl"
+   "date" : "2015-07-20T13:14:57"
 }
+
 
 My recent infosec articles have focused on livehost discovery on a network. Inspired by Douglas Berdeaux's [Penetration Testing with Perl](https://www.packtpub.com/networking-and-servers/penetration-testing-perl-raw), I've assembled a potent [collection](https://github.com/dnmfarrell/Penetration-Testing-With-Perl) of livehost scanners including ARP, echo, SMB and Netbios. Each of these have different strengths and weaknesses. Regardless, once you've discovered a livehost and you want to probe for vulnerabilities, a port scan is the logical next step.
 
@@ -321,4 +323,3 @@ Note how the order is randomized, and we've found 4 open ports. If I run the pro
 ### Wrap-up
 
 Our basic port scanner could be improved. For one thing we only scan named ports - it would be nice to accept a range of ports to scan. The supported protocols and TCP flags could also be expanded to yield better results against different machines. The user should also be able to control the number of child processes and the packet frequency to tune the scan to the sensitivities of the target. In part two I'll show how to incorporate these changes and more into a fully-featured port scanner.
-

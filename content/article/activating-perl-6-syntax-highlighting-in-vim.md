@@ -1,21 +1,23 @@
 {
+   "description" : "Four tricks to get the highlighting you want",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Four tricks to get the highlighting you want",
-   "slug" : "194/2015/9/22/Activating-Perl-6-syntax-highlighting-in-Vim",
-   "draft" : false,
    "date" : "2015-09-22T22:16:48",
+   "draft" : false,
+   "image" : "/images/194/C75D3D7C-6197-11E5-993C-AA2FD27BB60F.png",
+   "categories" : "perl6",
+   "slug" : "194/2015/9/22/Activating-Perl-6-syntax-highlighting-in-Vim",
+   "title" : "Activating Perl 6 syntax highlighting in Vim",
    "tags" : [
       "config",
       "perl6",
       "productivity",
       "vimscript",
       "old_site"
-   ],
-   "image" : "/images/194/C75D3D7C-6197-11E5-993C-AA2FD27BB60F.png",
-   "title" : "Activating Perl 6 syntax highlighting in Vim"
+   ]
 }
+
 
 Modern versions of the Vim text editor ship with Perl 6 syntax highlighting, but automatically activating it is tricky because Perl 6 files can have ambiguous file extensions. It can get tiresome to correct the file type every time you open a Perl 6 file, so I'm going to show you a few tricks that I use to make Vim detect Perl 6 files automatically.
 
@@ -123,4 +125,3 @@ This `.vimrc` contains all the code shown above:
 ### Conclusion
 
 So that's it, four useful-but-imperfect techniques for detecting file types in Vim. I tend to use a combination of all four. This would be a nice problem not to have. I'd like the Perl 6 community to agree and encourage unambiguous file extensions like `.pm6`, `.t6` and `.pl6`. Larry Wall called this "free advertising". It's also a simple way to make Perl 6 programmers more productive. Not every text editor is as customizable as Vim.
-

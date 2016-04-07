@@ -1,10 +1,5 @@
 {
-   "description" : "Our monthly curated guide to the best new CPAN uploads",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2015-04-07T05:48:52",
-   "draft" : false,
+   "title" : "What's New on CPAN - March 2015",
    "slug" : "168/2015/4/7/What-s-New-on-CPAN---March-2015",
    "image" : "/images/168/81C6F1B4-DCE9-11E4-86D9-23646037288D.png",
    "tags" : [
@@ -20,8 +15,15 @@
       "extjs",
       "old_site"
    ],
-   "title" : "What's New on CPAN - March 2015"
+   "authors" : [
+      "David Farrell"
+   ],
+   "date" : "2015-04-07T05:48:52",
+   "draft" : false,
+   "categories" : "cpan",
+   "description" : "Our monthly curated guide to the best new CPAN uploads"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Spring is upon us, and has brought us not only warmer weather, but a bumper cache of new Perl modules. Enjoy!*
 
@@ -95,5 +97,4 @@ The Rapi::FS distribution does many things well: it performs a useful purpose, i
 -   MIME::Lite::Generator is a memory efficient implementation of MIME::Lite, for generating emails
 -   Use futures with Mojolicious using [MojoX::IOLoop::Future](https://metacpan.org/pod/MojoX::IOLoop::Future)
 -   [Plack::Util::Load](https://metacpan.org/pod/Plack::Util::Load) loads PSGI-compatible web applications from a file, URL or class
-
 

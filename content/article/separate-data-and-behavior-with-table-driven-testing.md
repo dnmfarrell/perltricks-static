@@ -1,20 +1,22 @@
 {
+   "description" : "Optimize code re-use and test coverage",
+   "draft" : false,
    "tags" : [
       "data",
       "unit_testing",
       "sprintf",
       "old_site"
    ],
-   "image" : null,
+   "date" : "2015-06-17T13:09:04",
+   "slug" : "178/2015/6/17/Separate-data-and-behavior-with-table-driven-testing",
    "title" : "Separate data and behavior with table-driven testing",
    "authors" : [
       "brian d foy"
    ],
-   "description" : "Optimize code re-use and test coverage",
-   "slug" : "178/2015/6/17/Separate-data-and-behavior-with-table-driven-testing",
-   "date" : "2015-06-17T13:09:04",
-   "draft" : false
+   "image" : null,
+   "categories" : "testing"
 }
+
 
 How can I easily run the same tests on different data without duplicating a lot of code? If I follow my usual pattern, I start off with a couple of tests where I write some code then cut-and-paste that a couple of times. I add a few more tests before I realize I have a mess. If I had the foresight to know that I would make a mess (again), I would have started with a table of data and a little bit of code that went through it.
 
@@ -185,4 +187,3 @@ while( my $row = $sth->fetchrow_arrayref ) {
 ```
 
 That's the idea. I separate the data and the tests to give myself some flexibility. How I access the data and how I test depend on my particular problems.
-

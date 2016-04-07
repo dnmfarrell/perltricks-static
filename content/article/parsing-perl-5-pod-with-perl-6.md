@@ -1,13 +1,14 @@
 {
-   "date" : "2015-04-30T13:14:23",
-   "draft" : false,
    "slug" : "170/2015/4/30/Parsing-Perl-5-pod-with-Perl-6",
-   "description" : "Grammars, action classes, code!",
    "authors" : [
       "David Farrell"
    ],
+   "draft" : false,
+   "description" : "Grammars, action classes, code!",
    "title" : "Parsing Perl 5 pod with Perl 6",
    "image" : "/images/170/AA60EE46-EF3A-11E4-98F4-3C044E9B8265.png",
+   "date" : "2015-04-30T13:14:23",
+   "categories" : "perl6",
    "tags" : [
       "pod",
       "perl6",
@@ -17,6 +18,7 @@
       "old_site"
    ]
 }
+
 
 I've just finished developing a Perl 5 pod [parser](https://github.com/dnmfarrell/Pod-Perl5) written in Perl 6. Developing the grammar was surprisingly easy, which is a testament to Perl 6 as I'm no genius coder. With help from the folks at \#perl6, I did learn some interesting things along the way, and wanted to share them. Plus, code!
 
@@ -261,4 +263,3 @@ In the first example, the format token name `link` is required. But with multi-d
 So that's what I learned; overall writing a pod parser in Perl 6 was straightforward. If you're programming in Perl 6 and have questions, I'd highly recommend the [\#perl6](http://perl6.org/community/irc) irc channel on freenode, the people there were friendly and responsive.
 
 **Update:** *Multi-dispatch example added. Thanks to Jonathan Scott Duff for providing the multi-dispatch explanation and code. 2015-05-01*
-

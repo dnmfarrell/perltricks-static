@@ -1,4 +1,9 @@
 {
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/176/2A6DE1D0-0ACE-11E5-A57F-EAC87F6D3C83.png",
+   "categories" : "cpan",
    "tags" : [
       "cpan",
       "git",
@@ -13,16 +18,13 @@
       "airbrake",
       "old_site"
    ],
-   "image" : "/images/176/2A6DE1D0-0ACE-11E5-A57F-EAC87F6D3C83.png",
-   "title" : "What's new on CPAN - May 2015",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Our curated guide to last month's new CPAN uploads",
+   "draft" : false,
    "slug" : "176/2015/6/4/What-s-new-on-CPAN---May-2015",
-   "date" : "2015-06-04T15:35:56",
-   "draft" : false
+   "title" : "What's new on CPAN - May 2015",
+   "description" : "Our curated guide to last month's new CPAN uploads",
+   "date" : "2015-06-04T15:35:56"
 }
+
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
@@ -92,5 +94,4 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 -   [HTTP::Tinyish](https://metacpan.org/pod/HTTP::Tinyish) is a wrapper for the popular Perl HTTP modules (HTTP::Tiny, LWP etc) and will fallback to using the appropriate module for the request made
 -   [IO::All::Securftp](https://metacpan.org/pod/IO::All::Securftp) implements a secure FTP handler for IO::All
 -   Interact with the JavaScript in your Mojo applications using [Mojo::Phantom](https://metacpan.org/pod/Mojo::Phantom). Cool!
-
 

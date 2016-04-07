@@ -1,20 +1,22 @@
 {
    "draft" : false,
-   "date" : "2014-02-03T13:29:44",
-   "slug" : "65/2014/2/3/What-s-new-on-CPAN---January-2014",
-   "description" : "A curated look at the last month's new CPAN uploads",
-   "authors" : [
-      "David Farrell"
-   ],
-   "title" : "What's new on CPAN - January 2014",
-   "image" : null,
    "tags" : [
       "cpan",
       "module",
       "news",
       "old_site"
-   ]
+   ],
+   "date" : "2014-02-03T13:29:44",
+   "slug" : "65/2014/2/3/What-s-new-on-CPAN---January-2014",
+   "categories" : "cpan",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "What's new on CPAN - January 2014",
+   "image" : null,
+   "description" : "A curated look at the last month's new CPAN uploads"
 }
+
 
 *Welcome to the first edition of "What's new on CPAN". Every month we aim to bring you a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!*
 
@@ -85,4 +87,3 @@
 -   Use [Mojolicious::Command::nopaste](https://metacpan.org/pod/Mojolicious::Command::nopaste) to build a pastebin (nopaste) site with Mojolicious.
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F65%2F2014%2F2%2F3%2FWhat-s-new-on-CPAN-January-2014&text=What's%20new%20on%20CPAN%20-%20January%202014&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F65%2F2014%2F2%2F3%2FWhat-s-new-on-CPAN-January-2014&via=perltricks) us!
-

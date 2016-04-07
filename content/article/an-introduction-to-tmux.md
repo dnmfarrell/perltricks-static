@@ -1,4 +1,11 @@
 {
+   "draft" : false,
+   "image" : "/images/an-introduction-to-tmux/tmux-panes.png",
+   "title" : "An introduction to Tmux",
+   "authors" : [
+      "David Farrell"
+   ],
+   "description" : "How to get started with the open source terminal multiplexer ",
    "tags" : [
       "command_line",
       "multiplexer",
@@ -8,15 +15,10 @@
       "terminator",
       "tmux"
    ],
-   "image" : "/images/an-introduction-to-tmux/tmux-panes.png",
-   "title" : "An introduction to Tmux",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "How to get started with the open source terminal multiplexer ",
-   "date" : "2016-02-24T09:29:18",
-   "draft" : false
+   "categories" : "apps",
+   "date" : "2016-02-24T09:29:18"
 }
+
 
 [Tmux](https://tmux.github.io/) is a terminal multiplexer: it's like a power-up for terminal programming. You can manage several terminals under a session, split terminal screens, detach and re-attach sessions and much more. If you do most of your programming at the command line, you'll find using a terminal multiplexer invaluable.
 

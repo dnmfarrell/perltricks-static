@@ -1,19 +1,21 @@
 {
-   "image" : null,
    "tags" : [
       "configuration",
       "syntax",
       "old_site"
    ],
-   "title" : "You don't need a shebang line",
-   "description" : "",
+   "date" : "2013-03-25T23:39:55",
+   "image" : null,
    "authors" : [
       "David Farrell"
    ],
+   "description" : "",
+   "slug" : "5/2013/3/25/You-don-t-need-a-shebang-line",
+   "categories" : "development",
    "draft" : false,
-   "date" : "2013-03-25T23:39:55",
-   "slug" : "5/2013/3/25/You-don-t-need-a-shebang-line"
+   "title" : "You don't need a shebang line"
 }
+
 
 The shebang line is the first line of code in a Perl script and usually looks like this:
 
@@ -44,4 +46,3 @@ perl myperltricks.pl #this works fine
 ```
 
 Perl being Perl, it will try to 'Do What You Mean' if a script that contains a shebang line is passed to the Perl program as an argument, the shebang line will be ignored. So write or don't write the shebang, but you don't need it.
-

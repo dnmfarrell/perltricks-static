@@ -1,12 +1,11 @@
 {
-   "slug" : "1/2013/3/24/3-quick-ways-to-find-out-the-version-number-of-an-installed-Perl-module-from-the-terminal",
-   "date" : "2013-03-24T17:30:19",
+   "title" : "3 quick ways to find out the version number of an installed Perl module from the terminal",
    "draft" : false,
+   "image" : null,
+   "categories" : "managing_perl",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Perl module features and behaviour can change from version to version and so knowing the version number of an installed Perl module can be useful in several scenarios. Below are three different command line methods for finding out the version number of an installed module that work on Bash and Windows Powershell. So fire up the terminal and get typing!",
-   "title" : "3 quick ways to find out the version number of an installed Perl module from the terminal",
    "tags" : [
       "configuration",
       "module",
@@ -15,8 +14,11 @@
       "bash",
       "old_site"
    ],
-   "image" : null
+   "date" : "2013-03-24T17:30:19",
+   "description" : "Perl module features and behaviour can change from version to version and so knowing the version number of an installed Perl module can be useful in several scenarios. Below are three different command line methods for finding out the version number of an installed module that work on Bash and Windows Powershell. So fire up the terminal and get typing!",
+   "slug" : "1/2013/3/24/3-quick-ways-to-find-out-the-version-number-of-an-installed-Perl-module-from-the-terminal"
 }
+
 
 Perl module features and behaviour can change from version to version and so knowing the version number of an installed Perl module can be useful in several scenarios. Below are three different command line methods for finding out the version number of an installed module that work on Bash and Windows Powershell. So fire up the terminal and get typing!
 
@@ -67,4 +69,3 @@ die "Class::MOP version $Moose::VERSION required--this is version $Class::MOP::V
     if $Moose::VERSION && $Class::MOP::VERSION ne $Moose::VERSION;
 =head1 VERSION
 ```
-

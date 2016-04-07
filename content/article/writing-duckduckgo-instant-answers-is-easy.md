@@ -1,11 +1,6 @@
 {
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "The privacy-focused search engine has a helpful community and great tools",
+   "title" : "Writing DuckDuckGo instant answers is easy",
    "slug" : "169/2015/4/20/Writing-DuckDuckGo-instant-answers-is-easy",
-   "draft" : false,
-   "date" : "2015-04-20T12:33:17",
    "tags" : [
       "duckduckgo",
       "perldoc",
@@ -14,8 +9,15 @@
       "old_site"
    ],
    "image" : "/images/169/5E030C7A-E6E1-11E4-9A7F-886D1846911D.jpeg",
-   "title" : "Writing DuckDuckGo instant answers is easy"
+   "categories" : "community",
+   "description" : "The privacy-focused search engine has a helpful community and great tools",
+   "draft" : false,
+   "date" : "2015-04-20T12:33:17",
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 **Editor note:** some of the information in this article is out of date, see our new DuckDuckGo [article](http://perltricks.com/article/189/2015/8/22/Writing-DuckDuckGo-plugins-just-got-easier) for details.
 
@@ -285,4 +287,3 @@ All the tests pass, so I'm ready to issue a pull request to the DuckDuckGo commu
 ### Where to go for help
 
 Whilst the DuckDuckGo tools are great, there is also good [documentation](http://duckduckhack.com/) available and a friendly community supporting development when you need it. I spent some time on the Gitter [chatroom](https://gitter.im/duckduckgo/zeroclickinfo-goodies?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) for the instant answers repo, and the people there were friendly and responsive (and more importantly, they have commit bits :).
-

@@ -1,12 +1,13 @@
 {
-   "slug" : "59/2014/1/10/Solve-almost-any-datetime-need-with-Time--Piece",
    "draft" : false,
-   "date" : "2014-01-10T04:24:25",
+   "slug" : "59/2014/1/10/Solve-almost-any-datetime-need-with-Time--Piece",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "How to parse, print, format, compare and do math with datetimes in Perl",
+   "image" : "/images/59/EC18EC78-FF2E-11E3-96D4-5C05A68B9E16.png",
    "title" : "Solve almost any datetime need with Time::Piece",
+   "categories" : "data",
+   "description" : "How to parse, print, format, compare and do math with datetimes in Perl",
    "tags" : [
       "module",
       "date",
@@ -16,8 +17,9 @@
       "strftime",
       "old_site"
    ],
-   "image" : "/images/59/EC18EC78-FF2E-11E3-96D4-5C05A68B9E16.png"
+   "date" : "2014-01-10T04:24:25"
 }
+
 
 *Datetimes come up all the time in programming, so being fluent in handling them is an essential skill. There are [many modules](https://metacpan.org/search?q=date+time) on CPAN for dealing with datetimes, but for most tasks you only need one: [Time::Piece](https://metacpan.org/pod/Time::Piece).*
 
@@ -159,4 +161,3 @@ $ perldoc Time::Piece
 ```
 
 **Updated:** *Added timezone strptime example 2015-01-28. Added timezone semicolon handling 2016-03-17.*
-

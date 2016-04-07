@@ -1,21 +1,23 @@
 {
-   "draft" : false,
-   "date" : "2015-02-02T14:04:40",
-   "slug" : "148/2015/2/2/Time--Moment-can-save-time",
-   "description" : "A useful alternative to DateTime",
-   "authors" : [
-      "brian d foy"
-   ],
    "title" : "Time::Moment can save time",
-   "image" : "/images/148/050708F8-AAE4-11E4-AC4E-C3E39EE10EC8.png",
+   "date" : "2015-02-02T14:04:40",
    "tags" : [
       "time",
       "datetime",
       "8601",
       "moment",
       "old_site"
-   ]
+   ],
+   "draft" : false,
+   "slug" : "148/2015/2/2/Time--Moment-can-save-time",
+   "description" : "A useful alternative to DateTime",
+   "authors" : [
+      "brian d foy"
+   ],
+   "image" : "/images/148/050708F8-AAE4-11E4-AC4E-C3E39EE10EC8.png",
+   "categories" : "data"
 }
+
 
 A long time ago in a galaxy far, far away, the rebel alliance ran into a slight problem when the starship carrying the princess left two hours late because its software was in the wrong time zone, running into an imperial cruiser that was patrolling an hour early for a similar reason. The bad guys unwittingly solved the rebels' problem by removing the wrong time zone when they removed that special case—a solution familiar to programmers. The rebels exploited an imperial bug when a literal hole in their defense was left open an hour late.
 
@@ -122,4 +124,3 @@ Benchmark::cmpthese( -10, {
 If my problem is within the limits of [Time::Moment](http://www.metacpan.org/module/Time::Moment) (and, who ever needs more than 640k?), I can get big wins. When that no longer applies, with a little work I can switch to [DateTime](http://www.metacpan.org/module/DateTime). Either way, you might want to wipe the memory of your droids.
 
 *Cover image [©](http://creativecommons.org/licenses/by-nc/2.5/) [XKCD](http://xkcd.com/1179/)*
-

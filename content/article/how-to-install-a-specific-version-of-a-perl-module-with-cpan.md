@@ -1,4 +1,8 @@
 {
+   "title" : "How to install a specific version of a Perl module with CPAN",
+   "date" : "2013-03-27T23:32:57",
+   "slug" : "4/2013/3/27/How-to-install-a-specific-version-of-a-Perl-module-with-CPAN",
+   "draft" : false,
    "tags" : [
       "configuration",
       "cpan",
@@ -7,15 +11,13 @@
       "old_site"
    ],
    "image" : null,
-   "title" : "How to install a specific version of a Perl module with CPAN",
+   "description" : "",
+   "categories" : "managing_perl",
    "authors" : [
       "David Farrell"
-   ],
-   "description" : "",
-   "slug" : "4/2013/3/27/How-to-install-a-specific-version-of-a-Perl-module-with-CPAN",
-   "date" : "2013-03-27T23:32:57",
-   "draft" : false
+   ]
 }
+
 
 Perl modules are usually installed via CPAN on the command line. This is invoked with the following syntax:
 
@@ -30,4 +32,3 @@ cpan SAMV/Set-Object-1.28.tar.gz
 ```
 
 You can find the distribution filename for a module by searching for the module on [CPAN](http://search.cpan.org/).
-

@@ -1,4 +1,5 @@
 {
+   "date" : "2013-10-27T17:48:34",
    "tags" : [
       "file",
       "filehandle",
@@ -9,16 +10,17 @@
       "log",
       "old_site"
    ],
-   "image" : null,
-   "title" : "How to redirect and restore STDOUT",
+   "categories" : "development",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "STDOUT is the Perl filehandle for printing standard output. Unless a filehandle is specified, all standard printed output in Perl will go to the terminal. Because STDOUT is just a global variable, it can be redirected and restored. Want to implement logging on a program without changing every print statement in the source code? Want to capture the standard output of a perl CRON job? Read on.",
+   "title" : "How to redirect and restore STDOUT",
    "slug" : "45/2013/10/27/How-to-redirect-and-restore-STDOUT",
-   "draft" : false,
-   "date" : "2013-10-27T17:48:34"
+   "image" : null,
+   "description" : "STDOUT is the Perl filehandle for printing standard output. Unless a filehandle is specified, all standard printed output in Perl will go to the terminal. Because STDOUT is just a global variable, it can be redirected and restored. Want to implement logging on a program without changing every print statement in the source code? Want to capture the standard output of a perl CRON job? Read on.",
+   "draft" : false
 }
+
 
 STDOUT is the Perl filehandle for printing standard output. Unless a filehandle is specified, all standard printed output in Perl will go to the terminal. Because STDOUT is just a global variable, it can be redirected and restored. Want to implement logging on a program without changing every print statement in the source code? Want to capture the standard output of a perl CRON job? Read on.
 
@@ -104,4 +106,3 @@ open (STDOUT, '>&', $STDOLD);
 
 say 'This should show in the terminal';
 ```
-

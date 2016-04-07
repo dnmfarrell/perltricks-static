@@ -1,20 +1,22 @@
 {
-   "date" : "2013-11-04T01:47:23",
    "draft" : false,
    "slug" : "46/2013/11/4/Understanding-the-modulo-operator",
+   "categories" : "development",
+   "title" : "Understanding the modulo operator",
    "description" : "... and implementing a remainder function",
+   "date" : "2013-11-04T01:47:23",
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Understanding the modulo operator",
-   "image" : null,
    "tags" : [
       "operator",
       "division",
       "modulo",
       "old_site"
-   ]
+   ],
+   "image" : null
 }
+
 
 *The behavior of the modulo operator (%) can catch programmers by surprise as it is often misunderstood to provide the remainder of an arithmetic division operation. This article reviews the modulo operator behavior and provides an arithmetic division solution.*
 
@@ -57,4 +59,3 @@ Alternatively looking to CPAN, the [Math::Decimal](https://metacpan.org/pod/Math
 ###### Further reading
 
 perldoc has an entry for the [modulo operator](http://perldoc.perl.org/perlop.html#Multiplicative-Operators)
-

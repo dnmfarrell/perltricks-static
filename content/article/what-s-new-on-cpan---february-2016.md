@@ -1,23 +1,25 @@
-  {
-     "image" : "/images/156/18F30D70-C0E3-11E4-AB33-E3A60EA848F6.png",
-     "tags" : [
-        "cpan",
-        "walmart",
-        "wordpress",
-        "huffman",
-        "ticketmaster",
-        "git",
-        "scientist",
-        "catalyst"
-     ],
-     "description" : "A curated look at February's new CPAN uploads",
-     "authors" : [
-        "David Farrell"
-     ],
-     "date" : "2016-03-04T09:21:32",
-     "title" : "What's new on CPAN - February 2016",
-     "draft" : false
-  }
+{
+   "image" : "/images/156/18F30D70-C0E3-11E4-AB33-E3A60EA848F6.png",
+   "categories" : "cpan",
+   "authors" : [
+      "David Farrell"
+   ],
+   "tags" : [
+      "cpan",
+      "walmart",
+      "wordpress",
+      "huffman",
+      "ticketmaster",
+      "git",
+      "scientist",
+      "catalyst"
+   ],
+   "draft" : false,
+   "title" : "What's new on CPAN - February 2016",
+   "date" : "2016-03-04T09:21:32",
+   "description" : "A curated look at February's new CPAN uploads"
+}
+
 
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
@@ -66,4 +68,3 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 * Get an alternative syntax for describing Catalyst routes with [Catalyst::ControllerRole::At](https://metacpan.org/pod/Catalyst::ControllerRole::At). This is big.
 * [Getopt::Long::CGI](https://metacpan.org/pod/Getopt::Long::CGI) is a cool idea: execute CGI scripts just like passing arguments to a command line program.
 * [Time::Progress::Stored](https://metacpan.org/pod/Time::Progress::Stored) is a progress bar implementation with an web apps.
-

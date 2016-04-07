@@ -1,12 +1,13 @@
 {
-   "slug" : "60/2014/1/13/Display-beautiful-Perl-code-in-HTML-without-JavaScript",
-   "date" : "2014-01-13T01:34:32",
+   "description" : "PPI::Prettify makes pretty-printing Perl code as HTML easy",
    "draft" : false,
+   "categories" : "web",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "PPI::Prettify makes pretty-printing Perl code as HTML easy",
    "title" : "Display beautiful Perl code in HTML without JavaScript",
+   "image" : null,
+   "date" : "2014-01-13T01:34:32",
    "tags" : [
       "module",
       "syntax",
@@ -14,8 +15,9 @@
       "javascript",
       "old_site"
    ],
-   "image" : null
+   "slug" : "60/2014/1/13/Display-beautiful-Perl-code-in-HTML-without-JavaScript"
 }
+
 
 *Would you like to display beautiful syntax-highlighted Perl code on the web without using JavaScript? Maybe you'd like to use an existing [CSS markup theme](http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html) without having to write in-line CSS in your Perl code? If yes, take a look at [PPI::Prettify](https://metacpan.org/pod/PPI::Prettify).*
 
@@ -192,4 +194,3 @@ Combined with debug mode, it should be straightforward to change the mapping of 
 ### Alternatives
 
 Consider using Adam Kennedy's [PPI::HTML](https://metacpan.org/pod/PPI::HTML) if you are happy writing inline-CSS in your Perl code, or need more detailed markup than the 10 or so classes provided by PPI::Prettify. It's a more mature module and can do line numbering too.
-

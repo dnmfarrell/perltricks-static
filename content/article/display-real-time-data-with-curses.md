@@ -1,20 +1,22 @@
 {
+   "categories" : "data",
+   "date" : "2015-10-06T13:18:48",
+   "draft" : false,
+   "description" : "How to create terminal interfaces",
    "title" : "Display real-time data with Curses",
+   "authors" : [
+      "brian d foy"
+   ],
    "image" : "/images/197/B45BD4D2-6C2C-11E5-BA94-117C46321329.png",
+   "slug" : "197/2015/10/6/Display-real-time-data-with-Curses",
    "tags" : [
       "terminal",
       "du",
       "filesystem",
       "old_site"
-   ],
-   "date" : "2015-10-06T13:18:48",
-   "draft" : false,
-   "slug" : "197/2015/10/6/Display-real-time-data-with-Curses",
-   "description" : "How to create terminal interfaces",
-   "authors" : [
-      "brian d foy"
    ]
 }
+
 
 Sometimes a terminal interface is the easiest way to get an answer, and when it is, I like to use Curses to make the experience pleasant. In this article, I'll rewrite a Curses program I've written many times, mostly because I forget where I had put it the last time I created it (and this time I found that I'd posted it to [Perlmonks](http://www.perlmonks.org/index.pl/jacques?node_id=388218)).
 
@@ -106,4 +108,3 @@ sub draw ($self) {
 Now I have a little script that makes some fancy output to the screen as I sort the list of largest files in real time. Here's a run against my [MiniCPAN](https://metacpan.org/pod/CPAN::Mini) directory:
 
 The way I've written it, I have to run it from the directory I want to check. I can avoid all sorts of nonsense with taint-checking and weird directory names that way. You could easily make it work otherwise. You could even adapt this program to list something else. The list management stuff is already there and it doesn't really care about the particular problem. The full code is on [GitHub](https://github.com/PerlTricks/du-curses/blob/master/curses.pl).
-

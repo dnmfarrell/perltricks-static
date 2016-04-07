@@ -1,4 +1,6 @@
 {
+   "categories" : "data",
+   "draft" : false,
    "image" : "/images/98/ED2BDE36-FF2E-11E3-B3B4-5C05A68B9E16.jpeg",
    "tags" : [
       "file",
@@ -10,15 +12,15 @@
       "web",
       "old_site"
    ],
+   "date" : "2014-06-30T12:17:25",
    "title" : "Managing files is a breeze with this DBIx::Class plugin",
+   "slug" : "98/2014/6/30/Managing-files-is-a-breeze-with-this-DBIx--Class-plugin",
    "description" : "Read about how DBIx::Class::InflateColumn::FS can simplify file management in your application",
    "authors" : [
       "David Farrell"
-   ],
-   "draft" : false,
-   "date" : "2014-06-30T12:17:25",
-   "slug" : "98/2014/6/30/Managing-files-is-a-breeze-with-this-DBIx--Class-plugin"
+   ]
 }
+
 
 *Managing application file uploads is challenging: storage, de-duplication, retrieval and permissions all need to be handled. DBIx::Class::InflateColumn::FS simplifies the challenge by handling the backend storage of files so the programmer can focus on application development. Let's take a closer look at how it works.*
 
@@ -177,4 +179,3 @@ Thanks to Devin Austin whose Catalyst advent calendar [article](http://www.catal
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F98%2F2014%2F6%2F30%2FManaging-files-is-a-breeze-with-this-DBIx--Class-plugin&text=Managing+files+is+a+breeze+with+this+DBIx%3A%3AClass+plugin&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F98%2F2014%2F6%2F30%2FManaging-files-is-a-breeze-with-this-DBIx--Class-plugin&via=perltricks) about it!
 
 *Cover image [©](https://creativecommons.org/licenses/by/2.0/) [Cas](https://www.flickr.com/photos/brightmeadow/3748310435/in/photolist-6He56Z-bDdcmL-5Jp3Z-aZWgk-aaGbZM-aZWfK-5uGDfb-63MA6m-88qSJK-6B33mX-76En59-6N6eHG-5UFiwj-3rXHK-aZWiH-4CmaD2-6vWgnX-3bai1p-c3CSTq-3PChVM-7hdnBS-2iYPPt-8Vx4Eo-4Cmav8-6P8qMy-jfddWn-4RoQjt-5ZrohQ-eQikQL-dGWiLV-4C7epr-dH2HeL-4C7eve-bnpqbW-4CmavB-8Nvnmc-8SfZR6-3ppzd-7PEzCG-FLPq-9gXmeE-dGWi5t-8Sg3sF-7h9qon-8EWHyq-dGWhC6-buGn9s-c1AukG-7VSc8B-dRCTcZ)*
-

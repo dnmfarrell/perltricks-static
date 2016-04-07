@@ -1,20 +1,22 @@
 {
-   "date" : "2014-05-01T12:20:07",
    "draft" : false,
-   "slug" : "86/2014/5/1/What-s-new-on-CPAN---April-2014",
-   "description" : "A curated look at April's new CPAN uploads",
    "authors" : [
       "David Farrell"
    ],
+   "date" : "2014-05-01T12:20:07",
    "title" : "What's new on CPAN - April 2014",
-   "image" : "/images/86/ECD84E74-FF2E-11E3-9FEB-5C05A68B9E16.png",
+   "categories" : "cpan",
    "tags" : [
       "cpan",
       "module",
       "news",
       "old_site"
-   ]
+   ],
+   "image" : "/images/86/ECD84E74-FF2E-11E3-9FEB-5C05A68B9E16.png",
+   "slug" : "86/2014/5/1/What-s-new-on-CPAN---April-2014",
+   "description" : "A curated look at April's new CPAN uploads"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. April was a mix but there were a few gems amongst the dust. Think "Atari landfill excavation" and enjoy!*
 
@@ -71,4 +73,3 @@
 -   Enable plaintext route definitions in Mojo with [Mojolicious::Plugin::PlainRoutes](https://metacpan.org/pod/Mojolicious::Plugin::PlainRoutes)
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F86%2F2014%2F5%2F1%2FWhat-s-new-on-CPAN-April-2014&text=What%27s+new+on+CPAN+-+April+2014&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F86%2F2014%2F5%2F1%2FWhat-s-new-on-CPAN-April-2014&via=perltricks) about it!
-

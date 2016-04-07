@@ -1,13 +1,20 @@
+{
+   "title" : "Perl Jam VI: The Return of the Camel",
+   "date" : "2016-04-01T08:32:57",
+   "image" : "",
+   "description" : "Perl's ignored security problems",
+   "authors" : [
+      "brian d foy"
+   ],
+   "draft" : false,
+   "categories" : "community",
+   "tags" : [
+      "perl",
+      "core",
+      "security"
+   ]
+}
 
-  {
-    "title" : "Perl Jam VI: The Return of the Camel",
-    "authors": ["brian d foy"],
-    "date"  : "2016-04-01T08:32:57",
-    "tags"  : ["perl", "core", "security"],
-    "draft" : false,
-    "description" : "Perl's ignored security problems",
-    "image" : ""
-  }
 
 A couple of recent presentations about Perl's security have focused on the [CGI module](http://www.metacpan.org/module/CGI) and [Bugzilla](https://www.bugzilla.org). David Farrell responded to these in [Netanel Rubin's Perl Jam circus](http://perltricks.com/article/netanel-rubins-perljam-circus/). There are much worse problems with Perl that we should think about.
 

@@ -1,21 +1,23 @@
 {
-   "draft" : false,
-   "date" : "2014-06-06T12:59:56",
-   "slug" : "94/2014/6/6/Create-professional-slideshows-in-seconds-with-App--revealup",
-   "description" : "App::revealup converts markdown to slick HTML slide shows",
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Create professional slideshows in seconds with App::revealup",
    "image" : "/images/94/ED0BC132-FF2E-11E3-B6DA-5C05A68B9E16.png",
+   "description" : "App::revealup converts markdown to slick HTML slide shows",
+   "date" : "2014-06-06T12:59:56",
+   "slug" : "94/2014/6/6/Create-professional-slideshows-in-seconds-with-App--revealup",
+   "title" : "Create professional slideshows in seconds with App::revealup",
+   "categories" : "apps",
    "tags" : [
       "app",
       "javascript",
       "github",
       "reveal_js",
       "old_site"
-   ]
+   ],
+   "draft" : false
 }
+
 
 *[App::revealup](https://metacpan.org/pod/App::revealup) is a command line app that creates slide shows from markdown documents. We listed it in this this month's "What's new on CPAN", but the app is so much fun I thought it was worth a separate feature.*
 
@@ -128,4 +130,3 @@ App::revealup is great example of Perl as a glue language - pulling together use
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F94%2F2014%2F6%2F6%2FCreate-professional-slideshows-in-seconds-with-App-revealup&text=Create+professional+slideshows+in+seconds+with+App%3A%3Arevealup&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F94%2F2014%2F6%2F6%2FCreate-professional-slideshows-in-seconds-with-App-revealup&via=perltricks) about it!
 
 *Update: command changed to match v0.10 (see [changelog](https://metacpan.org/changes/distribution/App-revealup)) 2014-08-24.*
-

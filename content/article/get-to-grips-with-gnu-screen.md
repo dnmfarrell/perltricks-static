@@ -1,13 +1,7 @@
 {
-   "draft" : false,
-   "date" : "2015-02-16T14:15:50",
-   "slug" : "153/2015/2/16/Get-to-grips-with-GNU-Screen",
-   "description" : "Once you start using a multiplexer, you'll never go back",
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Get to grips with GNU Screen",
-   "image" : "/images/153/A8652C2A-B58C-11E4-ADDC-6A05DB487E9F.png",
    "tags" : [
       "command_line",
       "multiplexer",
@@ -17,8 +11,16 @@
       "terminal",
       "terminator",
       "tmux"
-   ]
+   ],
+   "draft" : false,
+   "date" : "2015-02-16T14:15:50",
+   "categories" : "apps",
+   "slug" : "153/2015/2/16/Get-to-grips-with-GNU-Screen",
+   "title" : "Get to grips with GNU Screen",
+   "description" : "Once you start using a multiplexer, you'll never go back",
+   "image" : "/images/153/A8652C2A-B58C-11E4-ADDC-6A05DB487E9F.png"
 }
+
 
 GNU Screen is a terminal multiplexer, a program that manages terminal windows. It's been around for 28 years, which makes it older than Perl 5. So if you thought Perl had some archaic conventions, you ain't seen nothing yet. But despite it's age Screen is a powerful tool for managing terminals; if you often find yourself using more than one terminal, you owe it to yourself to start using a multiplexer for major productivity gains. Screen is the most widely used multiplexer, another popular option is [tmux](http://tmux.sourceforge.net/), but this article is about Screen.
 
@@ -169,4 +171,3 @@ There are loads more options to choose from. Screen has a huge online [manual](h
     Named session:     screen -S <name>
     List sessions:     screen -ls
     Re-attach session: screen -r [name]
-

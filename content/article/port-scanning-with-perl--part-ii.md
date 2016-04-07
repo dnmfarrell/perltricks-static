@@ -1,12 +1,4 @@
 {
-   "slug" : "188/2015/8/15/Port-scanning-with-Perl--Part-II",
-   "draft" : false,
-   "date" : "2015-08-15T15:05:31",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Towards building a professional tool",
-   "title" : "Port scanning with Perl, Part II",
    "tags" : [
       "tcp",
       "icmp",
@@ -14,8 +6,18 @@
       "nmap",
       "old_site"
    ],
-   "image" : "/images/188/2714AD7A-2EE1-11E5-B064-7C659059EE40.jpeg"
+   "slug" : "188/2015/8/15/Port-scanning-with-Perl--Part-II",
+   "image" : "/images/188/2714AD7A-2EE1-11E5-B064-7C659059EE40.jpeg",
+   "draft" : false,
+   "date" : "2015-08-15T15:05:31",
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "security",
+   "description" : "Towards building a professional tool",
+   "title" : "Port scanning with Perl, Part II"
 }
+
 
 In [part I](http://perltricks.com/article/183/2015/7/20/Port-scanning-with-Perl) of this article, I showed how to develop a basic forking [port scanner](https://gist.github.com/dnmfarrell/3db321fc11b0d85f729d) with Perl. In this article, I'll add some enhancements to make this a truly useful tool.
 
@@ -299,4 +301,3 @@ $ sudo $(which perl) -i 192.168.1.5- f fin -f psh -f urg
 ### Conclusion
 
 We've built something that's beginning to resemble a professional tool: a customizable, high performance TCP/UDP port scanner with useful reporting. By developing our own solution and not relying on tools like nmap, we can achieve a deeper understanding of how networking works and the skills required to scan a host.
-

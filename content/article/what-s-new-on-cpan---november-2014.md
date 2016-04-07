@@ -1,5 +1,7 @@
 {
-   "image" : "/images/137/98701E0A-7A2D-11E4-99A4-350AB3613736.png",
+   "draft" : false,
+   "categories" : "cpan",
+   "slug" : "137/2014/12/2/What-s-new-on-CPAN---November-2014",
    "tags" : [
       "cpan",
       "git",
@@ -13,15 +15,15 @@
       "bitbucket",
       "old_site"
    ],
-   "title" : "What's new on CPAN - November 2014",
    "description" : "A curated look at the latest CPAN uploads",
+   "date" : "2014-12-02T14:15:16",
+   "title" : "What's new on CPAN - November 2014",
+   "image" : "/images/137/98701E0A-7A2D-11E4-99A4-350AB3613736.png",
    "authors" : [
       "David Farrell"
-   ],
-   "date" : "2014-12-02T14:15:16",
-   "draft" : false,
-   "slug" : "137/2014/12/2/What-s-new-on-CPAN---November-2014"
+   ]
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Lot's of cool new stuff on CPAN in November, including: a new take on fatpacking Perl programs, TiVo for LWP and a lightning-fast Plack handler.*
 
@@ -70,5 +72,4 @@
 -   [Test::JSON::RPC::Autodoc](https://metacpan.org/pod/Test::JSON::RPC::Autodoc) generates markdown documentation for JSON RPC Web applications
 -   What a great idea: [Selenium::Screenshot](https://metacpan.org/pod/Selenium::Screenshot) lets you compare and contrast Selenium screenshots to detect UI changes.
 -   [Gazelle](https://metacpan.org/pod/Gazelle) is an XS-based, preforking Plack handler, for, (to quote the docs) "performance freaks". Let's see some benchmarks!
-
 

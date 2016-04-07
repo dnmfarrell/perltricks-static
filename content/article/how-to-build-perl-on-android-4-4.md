@@ -1,12 +1,13 @@
 {
+   "categories" : "managing_perl",
+   "description" : "A step by step guide to installing Perl 5.20 on Android KitKat",
    "slug" : "97/2014/6/16/How-to-build-Perl-on-Android-4-4",
+   "title" : "How to build Perl on Android 4.4",
    "date" : "2014-06-16T12:57:21",
-   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
-   "description" : "A step by step guide to installing Perl 5.20 on Android KitKat",
-   "title" : "How to build Perl on Android 4.4",
+   "image" : "/images/97/ED232AE8-FF2E-11E3-9ABD-5C05A68B9E16.png",
    "tags" : [
       "configuration",
       "sysadmin",
@@ -14,8 +15,9 @@
       "kitkat",
       "old_site"
    ],
-   "image" : "/images/97/ED232AE8-FF2E-11E3-9ABD-5C05A68B9E16.png"
+   "draft" : false
 }
+
 
 *The recent release of Perl 5.20 came with the exciting news that Perl was now installable on Android, Google's mobile operating system. But before you get grand visions of flying phone-controlled drones via [UAV::Pilot](https://metacpan.org/pod/UAV::Pilot), know that right now, how to get a working Perl binary is just about all that's documented. This article shows you how to get that far - solving the rest is left for the pioneers!*
 
@@ -184,4 +186,3 @@ $ perldoc android
 Thanks Brian!
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F97%2F2014%2F6%2F16%2FHow-to-build-Perl-on-Android-4-4&text=How+to+build+Perl+on+Android+4.4&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F97%2F2014%2F6%2F16%2FHow-to-build-Perl-on-Android-4-4&via=perltricks) about it!
-

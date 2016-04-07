@@ -1,20 +1,22 @@
 {
+   "image" : "/images/79/ECA2D780-FF2E-11E3-9F75-5C05A68B9E16.jpeg",
    "draft" : false,
-   "date" : "2014-03-24T13:00:38",
-   "slug" : "79/2014/3/24/Secure-your-passwords-with-KeePass-and-Perl",
-   "description" : "File::KeePass makes it easy to work with KeePass database files",
+   "title" : "Secure your passwords with KeePass and Perl",
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Secure your passwords with KeePass and Perl",
-   "image" : "/images/79/ECA2D780-FF2E-11E3-9F75-5C05A68B9E16.jpeg",
    "tags" : [
       "database",
       "module",
       "password_manager",
       "old_site"
-   ]
+   ],
+   "date" : "2014-03-24T13:00:38",
+   "categories" : "apps",
+   "slug" : "79/2014/3/24/Secure-your-passwords-with-KeePass-and-Perl",
+   "description" : "File::KeePass makes it easy to work with KeePass database files"
 }
+
 
 *These days password managers are an [essential](http://arstechnica.com/information-technology/2013/06/the-secret-to-online-safety-lies-random-characters-and-a-password-manager/) part of online security. The module File::KeePass provides an easy-to-use Perl API for the KeePass password manager and opens up a world-of-possibilities for programmatically creating, reading and updating passwords securely.*
 
@@ -133,4 +135,3 @@ File::KeePass has a simple API that works great and comes with comprehensive [do
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F79%2F2014%2F3%2F24%2FSecure-your-passwords-with-KeePass-and-Perl&text=Secure+your+passwords+with+KeePass+and+Perl&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F79%2F2014%2F3%2F24%2FSecure-your-passwords-with-KeePass-and-Perl&via=perltricks) it!
 
 Cover image © [DanielSTL](http://www.flickr.com/photos/danielsphotography/466435567/sizes/o/)
-

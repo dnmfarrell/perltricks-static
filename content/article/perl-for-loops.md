@@ -1,5 +1,13 @@
 {
+   "draft" : false,
+   "description" : "Perl's for loops are a powerful feature that, like the rest of Perl can be as concise, flexible and versatile required. This article covers the core features for Perl's for loops.",
+   "date" : "2013-04-12T10:03:44",
    "title" : "Perl for loops",
+   "categories" : "development",
+   "authors" : [
+      "David Farrell"
+   ],
+   "slug" : "17/2013/4/12/Perl-for-loops",
    "tags" : [
       "loop",
       "array",
@@ -7,15 +15,9 @@
       "for",
       "old_site"
    ],
-   "image" : null,
-   "slug" : "17/2013/4/12/Perl-for-loops",
-   "date" : "2013-04-12T10:03:44",
-   "draft" : false,
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Perl's for loops are a powerful feature that, like the rest of Perl can be as concise, flexible and versatile required. This article covers the core features for Perl's for loops."
+   "image" : null
 }
+
 
 Perl's for loops are a powerful feature that, like the rest of Perl can be as concise, flexible and versatile required. This article covers the core features for Perl's for loops.
 
@@ -165,4 +167,3 @@ foreach (@perlvariable_regexes ){
 ```
 
 For further detail on Perl's for loops, check out the [official Perl documentation](http://perldoc.perl.org/perlsyn.html#For-Loops)
-

@@ -1,20 +1,22 @@
 {
-   "description" : "We review native subroutine signatures speed and show you how to make them faster",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
-   "date" : "2014-05-12T13:19:16",
-   "slug" : "88/2014/5/12/Benchmarking-subroutine-signatures",
-   "image" : null,
+   "title" : "Benchmarking subroutine signatures",
    "tags" : [
       "subroutine",
       "method",
       "optimization",
       "old_site"
    ],
-   "title" : "Benchmarking subroutine signatures"
+   "date" : "2014-05-12T13:19:16",
+   "image" : null,
+   "draft" : false,
+   "categories" : "development",
+   "description" : "We review native subroutine signatures speed and show you how to make them faster",
+   "slug" : "88/2014/5/12/Benchmarking-subroutine-signatures",
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 *Subroutine signatures will be released to the Perl core in just a few days. But how do they performance compared with traditional methods like direct variable assignment and the [Method::Signatures](https://metacpan.org/pod/Method::Signatures) module? I benchmarked all three with interesting results.*
 
@@ -187,4 +189,3 @@ Thanks to Perl pumpking Ricardo Signes for providing detail on the subroutine si
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F88%2F2014%2F5%2F12%2FBenchmarking-subroutine-signatures&text=Benchmarking+subroutine+signatures&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F88%2F2014%2F5%2F12%2FBenchmarking-subroutine-signatures&via=perltricks) about it!
 
 ***Edit:** article code and benchmarks corrected for single variable assignment on 2014/05/12*
-

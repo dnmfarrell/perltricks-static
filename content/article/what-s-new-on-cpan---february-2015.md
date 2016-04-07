@@ -1,6 +1,14 @@
 {
-   "title" : "What's new on CPAN - February 2015",
    "image" : "/images/156/18F30D70-C0E3-11E4-AB33-E3A60EA848F6.png",
+   "slug" : "156/2015/3/2/What-s-new-on-CPAN---February-2015",
+   "title" : "What's new on CPAN - February 2015",
+   "categories" : "cpan",
+   "date" : "2015-03-02T13:52:10",
+   "draft" : false,
+   "description" : "Our curated guide to last month's CPAN uploads",
+   "authors" : [
+      "David Farrell"
+   ],
    "tags" : [
       "cpan",
       "yaml",
@@ -14,15 +22,9 @@
       "haskell",
       "toml",
       "old_site"
-   ],
-   "draft" : false,
-   "date" : "2015-03-02T13:52:10",
-   "slug" : "156/2015/3/2/What-s-new-on-CPAN---February-2015",
-   "description" : "Our curated guide to last month's CPAN uploads",
-   "authors" : [
-      "David Farrell"
    ]
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. February's uploads were a goldmine of new toys. Enjoy!*
 
@@ -83,5 +85,4 @@ Several Amazon AWS goodies:
 -   [Articulate](https://metacpan.org/pod/Articulate) is a lightweight CMS plugin for Dancer
 -   Lithium::WebDriver is an awesome, full featured library that can create and control webdriver instances in both Selenium and Phantomjs sessions. Module seems more up to date on [GitHub](https://github.com/GrayTShirt/Lithium-WebDriver). Also see [Test::Lithium](https://metacpan.org/pod/Test::Lithium)
 -   [Pulp](https://metacpan.org/pod/Pulp) provides syntactic sugar for the Kelp web framework
-
 

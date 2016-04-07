@@ -1,12 +1,11 @@
 {
-   "description" : "Automate the boring stuff, help others",
-   "authors" : [
-      "David Farrell"
-   ],
    "date" : "2015-12-09T13:46:17",
-   "draft" : false,
-   "slug" : "203/2015/12/9/Create-GitHub-files-automatically-with-Dist--Zilla",
+   "categories" : "development",
    "image" : "/images/203/081F6A04-9E7B-11E5-B6F6-9162ABEC0845.jpeg",
+   "slug" : "203/2015/12/9/Create-GitHub-files-automatically-with-Dist--Zilla",
+   "description" : "Automate the boring stuff, help others",
+   "title" : "Create GitHub files automatically with Dist::Zilla",
+   "draft" : false,
    "tags" : [
       "cpan",
       "module",
@@ -15,8 +14,11 @@
       "dzil",
       "old_site"
    ],
-   "title" : "Create GitHub files automatically with Dist::Zilla"
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 I use [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla) to release my code to CPAN. I really like it as with a single command I can build, package and ship a distribution. But most of my code lives on GitHub. In fact, a quick check shows that I have 90 [repos](https://github.com/dnmfarrell), but only 13 distributions on [CPAN](https://metacpan.org/author/DFARRELL). So only 14% of my code makes it to CPAN.
 
@@ -136,4 +138,3 @@ $ cpan Dist::Zilla::Plugin::Clean \
 Ok it's not *all* gravy. The copy file method has one downside: it overwrites the copied files every time they're generated. This isn't an issue for me; the commit diff only shows the changed lines, but some people may not like it.
 
 For more information on Dist::Zilla, check out the official [documentation](http://dzil.org/tutorial/contents.html). For a completely different approach to releasing code to CPAN, you may like[Module::Release](https://metacpan.org/pod/%20Module::Release). Oh and if you find yourself in a new development environment, needing to install dependencies for a local module, David Golden has a useful [post](http://www.dagolden.com/index.php/1528/five-ways-to-install-modules-prereqs-by-hand/) that includes five different ways to do it.
-

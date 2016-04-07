@@ -1,5 +1,6 @@
 {
    "title" : "HTML pro-parsing tips",
+   "slug" : "101/2014/7/10/HTML-pro-parsing-tips",
    "tags" : [
       "html",
       "xml",
@@ -11,14 +12,15 @@
       "old_site"
    ],
    "image" : null,
-   "slug" : "101/2014/7/10/HTML-pro-parsing-tips",
-   "draft" : false,
    "date" : "2014-07-10T12:33:45",
+   "categories" : "data",
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
    "description" : "A few tips for parsing HTML with XML::LibXML"
 }
+
 
 *Perl has some fantastic modules for parsing HTML and one of the best is XML::LibXML. It's an interface to the libxml2 C library; super fast but also super-picky. I've often found XML::LibXML croaking on relatively simple - but incorrectly formed HTML. If you find this, do not give up! This article shares 3 simple techniques for overcoming malformed HTML when parsing with XML::LibXML.*
 
@@ -74,4 +76,3 @@ Note the use of the "s" modifier in the regex to match multiline. Many HTML page
 Hopefully these tips will make parsing HTML with XML::LibXML easier. My GitHub account has a web scraper [script](https://gist.github.com/sillymoose/998b9199007589199dce#file-get_swift_code-pl-L42) that uses some of these tips. If you're looking for an entirely different approach to parsing HTML, check out [XML::Rabbit](https://metacpan.org/pod/XML::Rabbit) and [HTML::TreeBuilder](https://metacpan.org/pod/HTML::TreeBuilder).
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F101%2F2014%2F7%2F10%2FHTML-pro-parsing-tips&text=HTML+pro-parsing+tips&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F101%2F2014%2F7%2F10%2FHTML-pro-parsing-tips&via=perltricks) about it!
-

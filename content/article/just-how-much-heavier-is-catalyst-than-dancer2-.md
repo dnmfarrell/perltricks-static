@@ -1,20 +1,22 @@
 {
-   "description" : "We compare the two web frameworks dependencies and test suites",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
    "date" : "2014-05-05T12:29:09",
    "slug" : "85/2014/5/5/Just-how-much-heavier-is-Catalyst-than-Dancer2-",
-   "image" : "/images/85/ECCE3D08-FF2E-11E3-8D5F-5C05A68B9E16.png",
    "tags" : [
       "catalyst",
       "dancer",
       "mvc",
       "old_site"
    ],
-   "title" : "Just how much heavier is Catalyst than Dancer2?"
+   "categories" : "web",
+   "image" : "/images/85/ECCE3D08-FF2E-11E3-8D5F-5C05A68B9E16.png",
+   "title" : "Just how much heavier is Catalyst than Dancer2?",
+   "draft" : false,
+   "description" : "We compare the two web frameworks dependencies and test suites",
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 *Within the Perl community it is received wisdom that Catalyst is a heavyweight web framework with many dependencies and that Dancer2 is a micro web framework that's more agile than a Cirque du Soleil acrobat. But is it true?*
 
@@ -104,4 +106,3 @@ What would explain this discrepancy? Perhaps Dancer2 has more trivial tests that
 So is Catalyst's "heavyweight" reputation deserved? Whilst it does not have a significantly greater number of dependencies than Dancer2, during installation Dancer2's test suite runs far faster than Catalyst's and with a similar code coverage. This doesn't mean Dancer2's test suite is better than Catalyst's (Catalyst's test suite could have higher cyclomatic complexity). But it does show that Dancer2's simpler micro-framework approach offers benefits beyond fast startups and application development time. As a Catalyst user, I've found Catalyst to be plenty fast for my needs (like PerlTricks.com), however its startup time is noticeably slow and during installation tests the Catalyst test application is started and stopped multiple times. I expect that contributes more to discrepancy in installation times between Dancer2 and Catalyst than anything else.
 
 Enjoyed this article? Help us out and [tweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F85%2F2014%2F5%2F5%2FJust-how-much-heavier-is-Catalyst-than-Dancer2-&text=Just+how+much+heavier+is+Catalyst+than+Dancer2%3F&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F85%2F2014%2F5%2F5%2FJust-how-much-heavier-is-Catalyst-than-Dancer2-&via=perltricks) about it!
-

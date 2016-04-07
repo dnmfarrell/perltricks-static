@@ -1,4 +1,6 @@
 {
+   "slug" : "117/2014/10/3/What-s-new-on-CPAN---September-2014",
+   "description" : "Our curated guide to September's new CPAN uploads",
    "tags" : [
       "cpan",
       "weather",
@@ -11,16 +13,16 @@
       "rex",
       "old_site"
    ],
+   "draft" : false,
+   "date" : "2014-10-03T12:06:35",
    "image" : "/images/117/5B528E4E-4AAE-11E4-B995-45A0FA3BB728.png",
-   "title" : "What's new on CPAN - September 2014",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Our curated guide to September's new CPAN uploads",
-   "slug" : "117/2014/10/3/What-s-new-on-CPAN---September-2014",
-   "date" : "2014-10-03T12:06:35",
-   "draft" : false
+   "title" : "What's new on CPAN - September 2014",
+   "categories" : "cpan"
 }
+
 
 *Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure.*
 
@@ -82,5 +84,4 @@
 ### Testing & Exceptions
 
 -   [Test::NoOverride](https://metacpan.org/pod/Test::NoOverride) is very cool - it implements a test for overridden methods, with some sensible defaults
-
 

@@ -1,20 +1,22 @@
 {
+   "draft" : false,
+   "slug" : "187/2015/8/18/Laptop-review--Dell-XPS-13-2015",
+   "title" : "Laptop review: Dell XPS 13 2015",
+   "categories" : "hardware",
+   "description" : "An excellent machine",
+   "image" : "/images/187/E8C99470-454E-11E5-847C-220CFC9DDBA7.jpeg",
+   "date" : "2015-08-18T12:34:12",
    "tags" : [
       "hardware",
       "review",
       "laptop",
       "old_site"
    ],
-   "image" : "/images/187/E8C99470-454E-11E5-847C-220CFC9DDBA7.jpeg",
-   "title" : "Laptop review: Dell XPS 13 2015",
    "authors" : [
       "David Farrell"
-   ],
-   "description" : "An excellent machine",
-   "slug" : "187/2015/8/18/Laptop-review--Dell-XPS-13-2015",
-   "date" : "2015-08-18T12:34:12",
-   "draft" : false
+   ]
 }
+
 
 Earlier this year, Dell released the new XPS 13 to critical [acclaim](http://www.dell.com/us/p/xps-13-9343-laptop/pd#AnchorZone5). My review is based on the non-touch screen, i5 model with 8GB RAM running Fedora 21 & 22. I've been using the machine for the past 6 months and really like it, but there's room for improvement.
 
@@ -49,4 +51,3 @@ When I first got the machine in March, Linux support for it was mixed: the exter
 ### Conclusion
 
 I really like the XPS 13. I think Dell got the size right: it's small enough to use it on an economy class flight with the seat in front fully reclined; yet it doesn't feel compromised. The keyboard is a good size and I can lift the machine by its side without pressing the keys (unlike the [MacBook](https://www.apple.com/macbook/)). Check out the Ars Technica [pictures](http://arstechnica.com/gadgets/2015/02/review-the-dell-xps-13-is-the-pc-laptop-to-beat/); it's gorgeous and performs well. I still can't believe it's a Dell.
-

@@ -13,13 +13,15 @@
    ],
    "image" : "/images/172/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
    "date" : "2016-04-06T09:12:09",
-   "title" : "What's new on CPAN - March 2016",
-   "description" : "A curated look at March's new CPAN uploads",
    "draft" : false,
+   "categories" : "cpan",
+   "description" : "A curated look at March's new CPAN uploads",
+   "title" : "What's new on CPAN - March 2016",
    "authors" : [
       "David Farrell"
    ]
 }
+
 
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Everything old was new again in March. Apart from smatterings of cool new toys, CPAN got several new loggers, plugin loaders, templates, and configuration management tools.

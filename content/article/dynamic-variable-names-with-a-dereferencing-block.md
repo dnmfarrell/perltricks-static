@@ -1,13 +1,14 @@
 {
-   "date" : "2013-05-02T20:16:55",
-   "draft" : false,
-   "slug" : "23/2013/5/2/Dynamic-variable-names-with-a-dereferencing-block",
+   "title" : "Dynamic variable names with a dereferencing block",
    "description" : "Perl is remarkably flexible and allows you to achieve all kinds of wizardry with the language. One example of this is using a dereferencing block to use a scalar value as a variable name. This allows you to use variables with dynamic names.",
    "authors" : [
       "David Farrell"
    ],
-   "title" : "Dynamic variable names with a dereferencing block",
+   "categories" : "development",
    "image" : null,
+   "slug" : "23/2013/5/2/Dynamic-variable-names-with-a-dereferencing-block",
+   "draft" : false,
+   "date" : "2013-05-02T20:16:55",
    "tags" : [
       "regex",
       "variable",
@@ -16,6 +17,7 @@
       "old_site"
    ]
 }
+
 
 Perl is remarkably flexible and allows you to achieve all kinds of wizardry with the language. One example of this is using a dereferencing block to use a scalar value as a variable name. This allows you to use variables with dynamic names.
 
@@ -52,4 +54,3 @@ if ( $log_string =~ m/^($ip)\s-\s (.*?)\s         \[(.*?)\]\s  "(.*?)"\s  (\d+)\
 What this code does is match $log\_string against a regex - if the match is successful, it iterates through the regex capture global variables ($1-$8), using the values of @field\_list as the key values for the captures. The dynamic variable name is stored in $c.
 
 Using dynamic variable names can provide useful shortcuts when used in the right context. Dynamic variables can also increase the risk of error (note that strict 'refs' had to be disabled for this code to work). What's nice about this example is using the regex match in the if statement provides the assurance that every capture was successful, hence in this context it should be ok to turn strict refs off briefly.
-

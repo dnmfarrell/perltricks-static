@@ -1,21 +1,23 @@
 {
+   "date" : "2015-01-08T14:01:42",
+   "categories" : "data",
+   "title" : "Extracting from HTML with Mojo::DOM",
+   "slug" : "143/2015/1/8/Extracting-from-HTML-with-Mojo--DOM",
+   "draft" : false,
+   "description" : "No HTML or regexes necessary",
+   "image" : "/images/143/BD58A4DE-973E-11E4-8923-CF4520B41B38.png",
+   "authors" : [
+      "brian d foy"
+   ],
    "tags" : [
       "html",
       "mojolicious",
       "parse",
       "dom",
       "old_site"
-   ],
-   "image" : "/images/143/BD58A4DE-973E-11E4-8923-CF4520B41B38.png",
-   "title" : "Extracting from HTML with Mojo::DOM",
-   "authors" : [
-      "brian d foy"
-   ],
-   "description" : "No HTML or regexes necessary",
-   "slug" : "143/2015/1/8/Extracting-from-HTML-with-Mojo--DOM",
-   "draft" : false,
-   "date" : "2015-01-08T14:01:42"
+   ]
 }
+
 
 Everyone wants to parse HTML, and many people reach for a regular expression to do that. Although you can [use a regex to parse HTML](http://stackoverflow.com/a/4234491/2766176), it's not as fun as my latest favorite way: [Mojo::DOM](http://www.metacpan.org/module/Mojo::DOM) with CSS3 selectors. I find this much easier than trying to remember XPATH and I get to play with Mojo.
 
@@ -232,4 +234,3 @@ The `grep` selects each element of the collection for which the subroutine retur
 ```
 
 That's the process. No HTML shows up in my code. The rest is figuring out how to select the particular element that I want.
-

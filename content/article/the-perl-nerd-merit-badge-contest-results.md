@@ -1,17 +1,19 @@
 {
-   "image" : "/images/73/EC75761E-FF2E-11E3-BD48-5C05A68B9E16.png",
-   "tags" : [
-      "old_site"
-   ],
-   "title" : "The Perl Nerd Merit Badge Contest results",
-   "description" : "Three winners, three awesome Perl tricks. Read on to find out more...",
+   "categories" : "community",
+   "slug" : "73/2014/2/28/The-Perl-Nerd-Merit-Badge-Contest-results",
    "authors" : [
       "David Farrell"
    ],
+   "title" : "The Perl Nerd Merit Badge Contest results",
+   "tags" : [
+      "old_site"
+   ],
+   "description" : "Three winners, three awesome Perl tricks. Read on to find out more...",
+   "image" : "/images/73/EC75761E-FF2E-11E3-BD48-5C05A68B9E16.png",
    "date" : "2014-02-28T13:57:22",
-   "draft" : false,
-   "slug" : "73/2014/2/28/The-Perl-Nerd-Merit-Badge-Contest-results"
+   "draft" : false
 }
+
 
 *Four weeks ago we [announced](http://perltricks.com/article/64/2014/1/29/Announcing-the-Perl-Nerd-Merit-Badge-contest)the Perl Nerd Merit Badge Contest, inviting readers to send us their favourite Perl code tricks large and small. After much deliberation, the winners have been chosen. Read on to find out about our winning entries ...*
 
@@ -150,4 +152,3 @@ The app will start and point your browser at http://localhost:3000 to see the ap
 Thank you very much to everyone who entered the contest and congratulations to our winners. An exclusive Perl Nerd Merit Badge is on its way to them. Thanks also to brian d foy, for running the crowdtilt campaign, and making all of this possible.
 
 Enjoyed this article? Help us out and [retweet](https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fperltricks.com%2Farticle%2F73%2F2014%2F2%2F28%2FThe-Perl-Nerd-Merit-Badge-Contest-results&text=The+Perl+Nerd+Merit+Badge+Contest+results&tw_p=tweetbutton&url=http%3A%2F%2Fperltricks.com%2Farticle%2F73%2F2014%2F2%2F28%2FThe-Perl-Nerd-Merit-Badge-Contest-results&via=perltricks) it!
-

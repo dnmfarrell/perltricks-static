@@ -1,4 +1,13 @@
 {
+   "description" : "A typical way to print every element of an array in Perl is using a foreach loop:",
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : null,
+   "categories" : "development",
+   "title" : "Upgrade your list printing using field separator variables",
+   "draft" : false,
+   "slug" : "12/2013/4/3/Upgrade-your-list-printing-using-field-separator-variables",
    "tags" : [
       "string",
       "variable",
@@ -7,16 +16,9 @@
       "syntax",
       "old_site"
    ],
-   "image" : null,
-   "title" : "Upgrade your list printing using field separator variables",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "A typical way to print every element of an array in Perl is using a foreach loop:",
-   "slug" : "12/2013/4/3/Upgrade-your-list-printing-using-field-separator-variables",
-   "draft" : false,
    "date" : "2013-04-03T22:24:28"
 }
+
 
 A typical way to print every element of an array in Perl is using a foreach loop:
 
@@ -79,4 +81,3 @@ print $separated_list_string;
 One additional difference: despite its name, the list separator variable ($") does not work on lists whilst the output field separator ($,) does (in Perl 5.16.3).
 
 Finally if you have set both $, and $" and print an interpolated array, $" will be injected and $, will be ignored.
-

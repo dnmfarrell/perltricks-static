@@ -1,20 +1,22 @@
-  {
-     "image" : "/images/netanel-rubins-perljam-circus/cover.jpg",
-     "tags" : [
-        "chaos_communication_congress",
-        "ccc",
-        "black_hat",
-        "netanel_rubin",
-        "infosec"
-     ],
-     "title" : "Netanel Rubin's Perl Jam circus",
-     "description" : "Responding to a misguided attack on Perl",
-     "authors" : [
-        "David Farrell"
-     ],
-     "date" : "2016-03-01T08:57:00",
-     "draft" : false
-  }
+{
+   "draft" : false,
+   "description" : "Responding to a misguided attack on Perl",
+   "authors" : [
+      "David Farrell"
+   ],
+   "image" : "/images/netanel-rubins-perljam-circus/cover.jpg",
+   "title" : "Netanel Rubin's Perl Jam circus",
+   "categories" : "security",
+   "tags" : [
+      "chaos_communication_congress",
+      "ccc",
+      "black_hat",
+      "netanel_rubin",
+      "infosec"
+   ],
+   "date" : "2016-03-01T08:57:00"
+}
+
 
 I've just watched Netanel Rubin's Perl Jam 2 [talk](https://www.youtube.com/watch?v=eH_u3C2WwQ0) from this year's Chaos Communication Congress. As he's due to give the same talk at [Black Hat Asia](https://www.blackhat.com/asia-16/), I thought it would be good to set the record straight concerning his claims about Perl ([others](https://gist.github.com/preaction/978ce941f05769b064f4) have already done so). He makes 3 major claims:
 
@@ -125,4 +127,3 @@ As someone who has years of experience writing professional Perl code, and worki
 Is the Ruby language to blame for a vulnerability in [Ruby-on-Rails](http://arstechnica.com/business/2012/03/hacker-commandeers-github-to-prove-vuln-in-ruby/)? Is PHP insecure because over 950 [exploits](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=wordpress) were found for WordPress? This isn't a dynamic language issue either; in [Static vs. dynamic languages: a literature review](http://danluu.com/empirical-pl) author Dan Luu found little evidence that statically typed languages were safer than dynamic ones.
 
 Anytime you fail to adequately parse untrusted input you're going to have a bad day. Blaming Perl for developers' bad code is like blaming the Alphabet for being turned into 50 Shades of Grey.
-

@@ -1,12 +1,9 @@
 {
-   "description" : "The WWW::curlmyip module is an API for curlmyip.com",
-   "authors" : [
-      "David Farrell"
-   ],
-   "draft" : false,
    "date" : "2014-09-18T12:22:54",
+   "title" : "Easily check your IP address with Perl",
+   "draft" : false,
+   "categories" : "web",
    "slug" : "116/2014/9/18/Easily-check-your-IP-address-with-Perl",
-   "image" : null,
    "tags" : [
       "ip",
       "address",
@@ -17,8 +14,13 @@
       "maxmind",
       "old_site"
    ],
-   "title" : "Easily check your IP address with Perl"
+   "image" : null,
+   "description" : "The WWW::curlmyip module is an API for curlmyip.com",
+   "authors" : [
+      "David Farrell"
+   ]
 }
+
 
 Every now and then I'll run into a problem where I need to programmatically check my IP address. Each time I've hand-crafted a solution, which is fine, but good programming is DRY programming, and so I finally wrote a module to do it. The module is called [WWW::curlmyip](https://metacpan.org/pod/WWW::curlmyip) because it uses the [curlmyip.com](http://curlmyip.com) service. I find the module useful and you might too.
 
@@ -80,4 +82,3 @@ The geolocation data could also be used an an input to last week's weather [scri
 ### Conclusion
 
 It's a simple task but hopefully WWW::curlmyip makes obtaining your IP address a little easier. If your interested in Geo::IP, check out Gabor Szabo's recent [guide](http://perlmaven.com/using-travis-ci-and-installing-geo-ip-on-linux#h2) on how to install it. Finally, if you want to get your IP address and location in a single request, take a look at my other new module, [WWW::ipinfo](https://metacpan.org/pod/WWW::ipinfo).
-

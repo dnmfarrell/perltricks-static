@@ -1,20 +1,22 @@
 {
    "image" : null,
+   "authors" : [
+      "David Farrell"
+   ],
+   "categories" : "development",
+   "date" : "2013-07-17T03:10:55",
    "tags" : [
       "functional",
       "subroutine",
       "sysadmin",
       "old_site"
    ],
-   "title" : "Re-use code with Perl's anonymous functions",
+   "slug" : "34/2013/7/17/Re-use-code-with-Perl-s-anonymous-functions",
    "description" : "An anonymous function in Perl is an unnamed subroutine. But what are they good for? This article shows how through using anonymous functions it's possible to write more generic, re-usable Perl code.",
-   "authors" : [
-      "David Farrell"
-   ],
-   "date" : "2013-07-17T03:10:55",
-   "draft" : false,
-   "slug" : "34/2013/7/17/Re-use-code-with-Perl-s-anonymous-functions"
+   "title" : "Re-use code with Perl's anonymous functions",
+   "draft" : false
 }
+
 
 An anonymous function in Perl is an unnamed subroutine. But what are they good for? This article shows how through using anonymous functions it's possible to write more generic, re-usable Perl code.
 
@@ -104,4 +106,3 @@ walkDir($ARGV[0],
 In fact we could quickly create a whole library of useful sysadmin scripts with this approach. We could even put the "walkDir" subroutine code into a module to augment further re-use. Hopefully these examples show how by using anonymous functions, Perl let's you re-use useful code.
 
 This article was inspired by [Higher Order Perl](http://hop.perl.plover.com/) by Mark Jason Dominus. Higher Order Perl explores anonymous functions and other functional programming techniques like recursion, currying and laziness. It's free to read online and in ebook format.
-

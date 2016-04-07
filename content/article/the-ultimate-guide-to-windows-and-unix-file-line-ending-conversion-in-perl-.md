@@ -1,4 +1,14 @@
 {
+   "description" : "Think you know how to fix CRLF in one line of Perl? There might be more to it than you think ...",
+   "slug" : "53/2013/12/14/The-ultimate-guide-to-Windows-and-Unix-file-line-ending-conversion-in-Perl-",
+   "categories" : "development",
+   "authors" : [
+      "David Farrell"
+   ],
+   "title" : "The ultimate guide to Windows and Unix file line ending conversion in Perl ",
+   "draft" : false,
+   "image" : null,
+   "date" : "2013-12-14T21:13:28",
    "tags" : [
       "file",
       "linux",
@@ -8,17 +18,9 @@
       "crlf",
       "osx",
       "old_site"
-   ],
-   "image" : null,
-   "title" : "The ultimate guide to Windows and Unix file line ending conversion in Perl ",
-   "authors" : [
-      "David Farrell"
-   ],
-   "description" : "Think you know how to fix CRLF in one line of Perl? There might be more to it than you think ...",
-   "slug" : "53/2013/12/14/The-ultimate-guide-to-Windows-and-Unix-file-line-ending-conversion-in-Perl-",
-   "date" : "2013-12-14T21:13:28",
-   "draft" : false
+   ]
 }
+
 
 *Most programmers know that the file line endings used by Windows and Unix-based systems are different. Windows uses CRLF and the Unix-based systems use LF. So fixing this is in Perl requires a simple substitution regex right? Not so fast ...*
 
@@ -81,4 +83,3 @@ We also had to use the quoting operator ("q()") to quote our content instead of 
 Perl's offical documentation "perlrun" entry has a lot of detail on Perl's command line switches. Access it [online](http://perldoc.perl.org/perlrun.html) or at the command line by typing: "perldoc perlrun"
 
 Peteris Krummins' [website](http://www.catonmat.net/) provides loads of Perl one liners. His new book [Perl One-Liners: 130 Programs That Get Things Done](http://www.amazon.com/gp/product/159327520X/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=159327520X&linkCode=as2&tag=perltrickscom-20) has just been published (affiliate link). It contains many useful one liners, but also 9 pages of detailed guidance on running one liners on Windows - highly recommended!
-

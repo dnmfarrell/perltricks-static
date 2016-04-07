@@ -1,19 +1,21 @@
 {
-   "title" : "The easy way to build stand-alone Perl apps",
    "tags" : [
       "configuration",
       "app",
       "old_site"
    ],
-   "image" : "/images/58/EC0FEBBE-FF2E-11E3-8A2A-5C05A68B9E16.png",
+   "title" : "The easy way to build stand-alone Perl apps",
+   "categories" : "apps",
    "slug" : "58/2014/1/5/The-easy-way-to-build-stand-alone-Perl-apps",
-   "date" : "2014-01-05T23:21:55",
-   "draft" : false,
+   "image" : "/images/58/EC0FEBBE-FF2E-11E3-8A2A-5C05A68B9E16.png",
    "authors" : [
       "David Farrell"
    ],
-   "description" : "Making dependency-free Perl applications is simple with App::FatPacker"
+   "description" : "Making dependency-free Perl applications is simple with App::FatPacker",
+   "date" : "2014-01-05T23:21:55",
+   "draft" : false
 }
+
 
 The Perl toolchain has such a large install base it's tempting to just upload your app to PAUSE and let users install it via CPAN. [Many authors](https://metacpan.org/search?q=App%3A%3A) have taken this approach and it makes sense in most cases to reuse the power of the CPAN in providing a common install, dependency management and update mechanism. Sometimes however you want to distribute a dependency-free Perl app in a single executable file, and for these cases you'll want to look at [App::FatPacker](https://metacpan.org/pod/App::FatPacker).
 
@@ -109,4 +111,3 @@ For an example of a real-world Perl app created with App::FatPacker, check out o
 [PP](https://metacpan.org/pod/pp) is another Perl tool that can create stand-alone Perl apps. It also supports XS module dependencies (unlike App::FatPacker).
 
 Of course you can also distribute an application via CPAN, where you have the flexibility of including the dependent modules in your application's inc directory, or include the modules as dependencies in the makefile, and let CPAN install them for you - this is also more disk space efficient. Perl applications on CPAN place the app in the application's bin directory and use "EXE\_FILES" directive in the makefile to install the app to the Perl bin directory. If you're interested in this approach, check out the [Module::Starter source](https://metacpan.org/source/XSAWYERX/Module-Starter-1.62) as a good example to copy from.
-
