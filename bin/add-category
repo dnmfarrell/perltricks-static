@@ -7,12 +7,14 @@ use JSON qw/decode_json/;
 my $filename = shift or die "provide filename\n";
 my $category = shift or die "provide category\n";
 
-open my $fh, '<', $filename;
-my $text = do { local($/);<$fh> };
+open my $ro, '<', $filename;
+my $text = do { local($/);<$ro> };
+$text = eval { add_category($text, $category) };
+die "$@ $filename\n" if $@;
+close $ro;
 
-$text = add_category($text, $category);
-
-print $text;
+open my $wr, '>', $filename;
+print $wr $text;
 
 sub add_category {
   my ($text, $category) = @_;

@@ -5,3 +5,4 @@ paginate = 30
 [taxonomies]
 author = "authors"
 tag = "tags"
+category = "categories"
