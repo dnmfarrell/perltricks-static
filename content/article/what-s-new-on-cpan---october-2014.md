@@ -9,7 +9,6 @@
    "description" : "A curated look at the latest CPAN uploads",
    "slug" : "132/2014/11/7/What-s-new-on-CPAN---October-2014",
    "tags" : [
-      "cpan",
       "dancer",
       "urandom",
       "ffi",

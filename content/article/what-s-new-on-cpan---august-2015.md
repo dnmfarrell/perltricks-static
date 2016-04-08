@@ -7,7 +7,6 @@
    "title" : "What's new on CPAN - August 2015",
    "description" : "A curated look at August's new CPAN uploads",
    "tags" : [
-      "cpan",
       "hadoop",
       "webmaster_tools",
       "cloudfront",

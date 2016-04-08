@@ -10,7 +10,6 @@
       "David Farrell"
    ],
    "tags" : [
-      "cpan",
       "yaml",
       "git",
       "aws",

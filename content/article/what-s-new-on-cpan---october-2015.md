@@ -8,7 +8,6 @@
    "categories" : "cpan",
    "draft" : false,
    "tags" : [
-      "cpan",
       "airbrake",
       "slack",
       "jira",

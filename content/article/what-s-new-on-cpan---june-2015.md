@@ -4,7 +4,6 @@
    "slug" : "181/2015/7/9/What-s-new-on-CPAN---June-2015",
    "date" : "2015-07-09T13:17:10",
    "tags" : [
-      "cpan",
       "catalyst",
       "dancer",
       "mojo",

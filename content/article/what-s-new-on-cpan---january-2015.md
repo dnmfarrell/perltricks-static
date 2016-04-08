@@ -1,7 +1,6 @@
 {
    "categories" : "cpan",
    "tags" : [
-      "cpan",
       "catalyst",
       "dist_zilla",
       "platypus",

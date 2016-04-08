@@ -14,7 +14,8 @@
       "description": "Parsing IR remote codes",
       "authors" : [
           "Timm Murray"
-      ]
+      ],
+      "categories": "hardware"
   }
 
 

@@ -5,7 +5,6 @@
    "draft" : false,
    "date" : "2014-03-03T04:10:36",
    "tags" : [
-      "cpan",
       "module",
       "news",
       "old_site"

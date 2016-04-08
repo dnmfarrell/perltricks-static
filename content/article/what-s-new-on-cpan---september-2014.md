@@ -2,7 +2,6 @@
    "slug" : "117/2014/10/3/What-s-new-on-CPAN---September-2014",
    "description" : "Our curated guide to September's new CPAN uploads",
    "tags" : [
-      "cpan",
       "weather",
       "hmac",
       "pirate_bus",

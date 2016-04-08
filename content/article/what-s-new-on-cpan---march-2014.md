@@ -1,6 +1,5 @@
 {
    "tags" : [
-      "cpan",
       "module",
       "news",
       "old_site"

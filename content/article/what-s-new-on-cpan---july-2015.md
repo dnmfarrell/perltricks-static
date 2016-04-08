@@ -6,7 +6,6 @@
    "categories" : "cpan",
    "draft" : false,
    "tags" : [
-      "cpan",
       "mojo",
       "pingen",
       "topological",

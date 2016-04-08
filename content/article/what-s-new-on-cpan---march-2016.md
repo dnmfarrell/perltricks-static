@@ -1,6 +1,5 @@
 {
    "tags" : [
-      "cpan",
       "robinhood",
       "log",
       "acme",

@@ -9,7 +9,6 @@
    "date" : "2015-01-05T13:50:44",
    "draft" : false,
    "tags" : [
-      "cpan",
       "dancer",
       "tcp",
       "tesco",

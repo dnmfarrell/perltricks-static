@@ -1,7 +1,6 @@
 {
    "date" : "2016-01-13T15:31:05",
    "tags" : [
-      "cpan",
       "recaptcha",
       "lets_encrypt",
       "frundis",

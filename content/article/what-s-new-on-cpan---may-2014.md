@@ -10,7 +10,6 @@
    "categories" : "cpan",
    "date" : "2014-06-02T12:31:35",
    "tags" : [
-      "cpan",
       "news",
       "old_site"
    ]

@@ -2,7 +2,6 @@
    "date" : "2014-09-02T12:36:04",
    "title" : "What's new on CPAN August 2014",
    "tags" : [
-      "cpan",
       "dist_zilla",
       "pcduino",
       "appium",

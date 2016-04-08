@@ -3,7 +3,6 @@
    "categories" : "cpan",
    "slug" : "137/2014/12/2/What-s-new-on-CPAN---November-2014",
    "tags" : [
-      "cpan",
       "git",
       "aws",
       "selenium",

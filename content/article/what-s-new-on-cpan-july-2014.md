@@ -1,7 +1,6 @@
 {
    "title" : "What's new on CPAN July 2014",
    "tags" : [
-      "cpan",
       "mojolicious",
       "amazon",
       "hbase",

@@ -5,7 +5,6 @@
    "image" : "/images/176/2A6DE1D0-0ACE-11E5-A57F-EAC87F6D3C83.png",
    "categories" : "cpan",
    "tags" : [
-      "cpan",
       "git",
       "gps",
       "marvel",

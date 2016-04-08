@@ -7,7 +7,6 @@
    "title" : "What's new on CPAN - April 2014",
    "categories" : "cpan",
    "tags" : [
-      "cpan",
       "module",
       "news",
       "old_site"

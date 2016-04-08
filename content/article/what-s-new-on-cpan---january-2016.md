@@ -2,7 +2,6 @@
    "slug" : "213/2016/2/10/What-s-new-on-CPAN---January-2015",
    "categories" : "cpan",
    "tags" : [
-      "cpan",
       "github",
       "lua",
       "rpm",

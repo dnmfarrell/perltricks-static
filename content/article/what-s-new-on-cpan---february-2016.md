@@ -5,7 +5,6 @@
       "David Farrell"
    ],
    "tags" : [
-      "cpan",
       "walmart",
       "wordpress",
       "huffman",

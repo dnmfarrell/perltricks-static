@@ -2,7 +2,6 @@
    "slug" : "100/2014/7/3/What-s-new-on-CPAN---June-2014",
    "date" : "2014-07-03T14:00:46",
    "tags" : [
-      "cpan",
       "module",
       "stratopan",
       "dancer",

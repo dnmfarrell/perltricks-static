@@ -3,7 +3,6 @@
    "slug" : "168/2015/4/7/What-s-New-on-CPAN---March-2015",
    "image" : "/images/168/81C6F1B4-DCE9-11E4-86D9-23646037288D.png",
    "tags" : [
-      "cpan",
       "gs1",
       "postgres",
       "mailmap",

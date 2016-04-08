@@ -10,7 +10,6 @@
    "draft" : false,
    "slug" : "145/2015/1/15/The-best-of-what-s-new-on-CPAN-2014",
    "tags" : [
-      "cpan",
       "ffi",
       "mojo",
       "best_of",

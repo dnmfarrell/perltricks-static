@@ -1,6 +1,5 @@
 {
    "tags" : [
-      "cpan",
       "json",
       "jasmine",
       "jboss",
