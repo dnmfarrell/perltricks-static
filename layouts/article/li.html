@@ -11,6 +11,7 @@
     </a>
     <p>by <a href="/authors/{{ index .Params.authors 0 | urlize }}">{{ index .Params.authors 0 }}</a></p>
     <div class="tags">
+      <div class="category"><a href="/categories/{{ .Params.categories }}">{{ .Params.categories }}</a></div>
       {{ range .Params.tags}}
       <div class="tag"><a href="/tags/{{ . }}">{{ . }}</a></div>
       {{ end }}

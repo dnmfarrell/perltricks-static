@@ -16,6 +16,7 @@
               </article>
               <p><strong>Tags</strong></p>
               <div class="tags">
+                <div class="category"><a href="/categoriess/{{ .Params.categories }}">{{ .Params.categories }}</a></div>
                 {{ range .Params.tags}}
                   <div class="tag"><a href="/tags/{{ . }}">{{ . }}</a></div>
                 {{ end }}

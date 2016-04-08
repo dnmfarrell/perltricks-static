@@ -97,7 +97,6 @@ p {
   margin: 2px 3px;
   padding: 1px 4px;
   background-color: rgb(214, 214,  214);
-  color: rgb(41, 41, 41);
   font-size: 0.8em;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -105,6 +104,23 @@ p {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
+}
+.category {
+  display: inline-block;
+  margin: 2px 3px;
+  padding: 1px 4px;
+  background-color: #6acdb2;
+  border-color: #6acdb2;
+  font-size: 0.8em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+.category a {
+  color: #fff;
 }
 /* squares, crops and circular borders an img */
 div.circle-avatar{
