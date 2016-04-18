@@ -40,7 +40,8 @@ print $fh qq(
     "tags"   : [],
     "draft"  : true,
     "image"  : "",
-    "description" : "$description"
+    "description" : "$description",
+    "categories": "$category"
   }
 
 The article body goes here. Use [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) to write the article body. Don't forget to delete this line!
