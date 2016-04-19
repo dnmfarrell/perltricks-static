@@ -4,7 +4,7 @@
     "authors": ["David Farrell"],
     "date"   : "2016-04-18T19:56:47",
     "tags"   : [ "binary","unpack", "png", "tzfile", "olsen", "zoneinfo"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/how-to-parse-binary-data-with-perl/hackers_internet.jpg",
     "description" : "Parsing binary data is easy with unpack",
     "categories": "data"
