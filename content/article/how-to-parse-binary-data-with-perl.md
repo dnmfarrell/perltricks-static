@@ -47,7 +47,7 @@ Now comes the fun part. I've got to split out the data in `$bytes` into separate
 >
 > <cite>Tzfile manual</cite>
 
-The `unpack` function takes a template of the binary data to read (this is defined in the pack [documentation](http://perldoc.perl.org/functions/pack.html) and returns Perl variables. I'm going to match up the header description with the template codes to design the template.
+The `unpack` function takes a template of the binary data to read (this is defined in the pack [documentation](http://perldoc.perl.org/functions/pack.html)) and returns Perl variables. I'm going to match up the header description with the template codes to design the template.
 
 
 | Description  |   Example  | Type       | Length | Template Code|
