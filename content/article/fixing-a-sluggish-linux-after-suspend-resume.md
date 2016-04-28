@@ -1,10 +1,10 @@
 
   {
-    "title"  : "How to fix a sluggish Linux after suspend-resume",
+    "title"  : "Fixing a sluggish Linux after suspend-resume",
     "authors": ["David Farrell"],
     "date"   : "2016-04-26T20:42:41",
-    "tags"   : ["linux", "cpupower", "suspend", "sleep", "resume", "governor"],
-    "draft"  : true,
+    "tags"   : ["linux", "cpupower", "pstate", "suspend", "sleep", "resume", "governor"],
+    "draft"  : false,
     "image"  : "",
     "description" : "The cpupower program can resolve throttled machines",
     "categories": "apps"
@@ -12,7 +12,7 @@
 
 Occasionally when I suspend my Linux laptop (sleep mode) and later resume working the machine is sluggish. Perceptible pauses occur every time I change applications, scrolling is fractured and text edits are delayed. Monitoring tools like [htop](http://hisham.hm/htop/) and [iotop](http://guichaz.free.fr/iotop/) give no indication of system resources being under heavy load. I can close all applications and the sluggishness persists.
 
-The cause is that the CPU frequency has been scaled to power-saving mode. When the machine is resumed, it should switch back to "performance" mode, but it doesn't always do that. The good news is that it's an easy fix with the `cpupower` utility.
+Apparently this is a bug where the CPU frequency has been pinned to a very low level. Linux uses CPU frequency scaling to save power; when the machine is resumed, it should start increasing the CPU frequency to meet the demands of the system, but it doesn't always do that. A reboot fixes the problem, but who has time for that? The good news is that it's an easy fix with the `cpupower` utility.
 
 ### Get the cpupower utility
 
@@ -20,25 +20,25 @@ You may have `cpupower` already installed, but if not it's easy to get with via 
 
     $ sudo apt-get install linux-tools-common
 
-On RHEL based distributions like Fedora and CentOS, `cpupower` is bundled with the `kernel-tools` package. On CentOS and older Fedora's you can install it with:
+On RHEL based distributions like Fedora and CentOS, `cpupower` is bundled with the `kernel-tools` package. On CentOS and older Fedoras you can install it with:
 
     $ sudo yum install kernel-tools
 
-On newer Fedora's you can use `dnf` to install it:
+On newer Fedoras you can use `dnf` to install it:
 
     $ sudo dnf install kernel-tools
 
 ### Switch back to performance mode
 
-CPU frequency scaling for modern Intel CPUs is provided by the `intel_pstate` driver. It supports two modes (called "governors") of operation: performance and powersave. Performance mode is not necessarily "all guns blazing" performance. It's an intelligent governor that responds to system loads by scaling the CPU frequency.
+CPU frequency scaling for modern Intel CPUs is provided by the [intel_pstate driver](https://www.kernel.org/doc/Documentation/cpu-freq/intel-pstate.txt). It supports two modes (called "governors") of operation: performance and powersave. Performance mode is not necessarily "all guns blazing" performance. Likewise, powersave doesn't cripple your system either. Both are intelligent governors that responds to system loads by scaling the CPU frequency. I've found that switching governors immediately resolves my sluggish system issue.
 
-To confirm which governors are available on your system, use `cpupower`:
+To confirm which governors are available, I use `cpupower`:
 
     $ cpupower frequency-info --governors
     analyzing CPU 0:
     performance powersave
 
-To switch to the performance governor, use the following command:
+Here you can see my system printed both "performance" and "powersave" as expected. To switch to the performance governor, I can use the following command:
 
     $ sudo cpupower frequency-set --governor performance
     Setting cpu: 0
@@ -46,7 +46,7 @@ To switch to the performance governor, use the following command:
     Setting cpu: 2
     Setting cpu: 3
 
-If you ever want to check which governor is active, just use the `frequency-info` subcommand:
+The `frequency-info` subcommand will show me which governor is active:
 
     $ cpupower frequency-info
     analyzing CPU 0:
