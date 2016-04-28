@@ -44,11 +44,11 @@ There's more than one way to round a number. Most want to get to the nearest num
 
 If you use the GNU C compiler (or something based on it), you round half to even as the default. Perl relies on this behavior.
 
-  $ perl -e 'printf "%.0f\n", shift' 1.5
-  2
+	$ perl -e 'printf "%.0f\n", shift' 1.5
+	2
 
-  $ perl -e 'printf "%.0f\n", shift' 2.5
-  2
+	$ perl -e 'printf "%.0f\n", shift' 2.5
+	2
 
 Every time you try this you get the same answer (so, no stochastic or alternate rounding). The GNU C compiler can also use floor, ceiling, or truncate, but those have similar problems.
 
@@ -59,7 +59,7 @@ As you are rounding, you are going to get more even numbers than odd numbers. If
 Among the heated technical debates, such as vi or emacs, tabs or spaces, or Star Wars or Star Trek (the first answer in each is the right one), the ones that matter, such as the correct value of modulo addition with negative numbers, are overlooked.
 
 > Binary "%" is the modulo operator, which computes the division remainder of its first argument with respect to its second argument. Given integer operands $m and $n : If $n is positive, then $m % $n is $m minus the largest multiple of $n less than or equal to $m. If $n is negative, then $m % $n is $m minus the smallest multiple of $n that is not less than $m (that is, the result will be less than or equal to zero).
-> 
+>
 > -- <cite>The perldoc documentation for the % operators</cite>
 
 The modulo operators take two numbers and does something to them. For `$m % $n`, you have:
@@ -146,7 +146,7 @@ But it's even worse, because those numbers aren't what the documentation says th
 
 Perl has a [rand](http://perldoc.perl.org/functions/rand.html) function. It claims to return "a random fractional number greater than or equal to 0", but it doesn't. It's not random. It's fake random in a way that might work if you only want to use one of them to complete a homework assignment in a beginning programming course in middle school. Although the documentation includes a footnote saying "You should not rely on it in security-sensitive situations", it does not say "Don't ever use this." like it should. Try this program:
 
-  $ perl -le 'srand(137); print rand for 1 .. 10'
+	$ perl -le 'srand(137); print rand for 1 .. 10'
 
 It outputs some numbers, which might look like this:
 
@@ -180,7 +180,7 @@ That's not the only problem with these fake random numbers (which, again, Perl's
 
 There are a variety of ways this can screw up if you use it in an application that keeps going and going. Eventually you come back to the beginning of the sequence, perhaps colliding with existing customer data.
 
-### Perl's lets anyone program
+### Perl lets anyone program
 
 Perhaps the biggest problem with Perl is that anyone with a text editor can write a program and upload it to the internet. It's a feature that Perl allows someone to get their work done, but the problem shows up when someone tries to generalize that to other people's work. Projects such as [Not Matt's Scripts](http://nms-cgi.sourceforge.net/) try to mitigate this by fixing the problem one script at a time. There are simply too many scripts to get to in the lifetime of the Universe.
 
