@@ -1,0 +1,54 @@
+#!/usr/bin/env perl
+use 5.16.3;
+use warnings;
+use Time::Piece;
+use Time::Seconds;
+use CPAN::Recent::Uploads;
+use MetaCPAN::API::Tiny;
+use Getopt::Long 'GetOptions';
+
+GetOptions(
+  'start=s' => \my $start,
+  'end=s'   => \my $end,
+) or die "error parsing options $@\n";
+
+print_usage() unless 2 == grep { $_ && /^\d\d\d\d-\d\d-\d\d$/ }
+  $start, $end;
+
+my $start_date = Time::Piece->new->strptime($start, '%Y-%m-%d');
+my $end_date = Time::Piece->strptime($end,'%Y-%m-%d');
+my $mcpan = MetaCPAN::API::Tiny->new;
+my @uploads = CPAN::Recent::Uploads->recent($start_date->epoch);
+my @releases = ();
+binmode STDOUT, ':utf8';
+
+foreach (@uploads) {
+    my @parts = split /\//;
+    my $release_name = $parts[3] =~ s/(?:\.tar\.gz|\.tgz)$//r;
+
+    unless (grep /$release_name/, @releases) {
+        push @releases, $release_name;
+        my $release = eval { $mcpan->release(author => $parts[2], release => $release_name) };
+        unless ($@ or not $release) {
+            my $upload_date = Time::Piece->strptime($release->{date}, '%Y-%m-%dT%H:%M:%S');
+            next unless $upload_date <= $end_date and $release->{first};
+
+            my $line = (($release->{distribution} || '')
+                . '|' . ($release->{version} || '')
+                . '|' . ($release->{abstract} || '')
+                . '|' . ($release->{date} || '')
+                . '|' . ($release->{status} || '')
+                . '|' . ($release->{metadata}->{author}->[0] || '')
+                . '|' . ($release->{tests}->{pass} || '')
+                . '|' . ($release->{tests}->{fail} || '')
+            );
+            say $line =~ s/\n|\r//gr;
+        }
+    }
+}
+
+sub print_usage {
+  say "\nget-cpan-uploads --start YYYY-MM-DD --end YYYY-MM-DD\n";
+  exit 0;
+}
+
