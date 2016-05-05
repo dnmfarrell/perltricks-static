@@ -1,25 +1,28 @@
 {
    "title" : "Perl Jam VI: April Trolls",
-   "date" : "2016-05-01T08:32:57",
+   "date" : "2016-05-04T20:37:57",
    "image" : "",
    "description" : "Perl's ignored security problems, j/k but srsly this time",
    "authors" : [
       "brian d foy"
    ],
-   "draft" : true,
+   "draft" : false,
    "categories" : "community",
    "tags" : [
       "perl",
       "core",
+      "random",
+      "modulus",
+      "libc",
       "security"
    ]
 }
 
-For an April Fool's joke, I pitched an idea to Perltricks's publisher David Farrell about a security article about real issues but with ignorant perspectives. I wanted to parody the [Perl Jam circus](http://perltricks.com/article/netanel-rubins-perljam-circus/) where the author has an idea that something is wrong but gets the explanation half-wrong. I wrote [Perl Jam VI: The Return of the Camel](http://perltricks.com/article/perl-jam-iv-return-of-the-camel/).
+For an April Fool's joke, I wanted to parody the [Perl Jam circus](http://perltricks.com/article/netanel-rubins-perljam-circus/) where the author has an idea that something is wrong but gets the explanation half-wrong. I wrote [Perl Jam VI: The Return of the Camel](http://perltricks.com/article/perl-jam-iv-return-of-the-camel/).
 
 I thought I'd catch some people out if I was clever enough with the first example and increasingly lazy. I might have been too clever, but I also think that April Fool's is probably over. Not only that, I still felt guilty about not doing the work to explain things properly or giving you proper pointers where to look for good solutions.
 
-### Perl's rounding problem
+#### Perl's rounding problem
 
 Rounding is a problem for people who really care about numbers and where slight biases in numeric functions can skew results. Most people will probably never care about this because they don't have to care. However, I used to work with scads of data from nuclear physics experiments where it could have mattered.
 
@@ -27,7 +30,7 @@ Perl's particular issue is its reliance on someone else making the decision. Whe
 
 There is plenty of literature out there on different methods, and there are more than several methods. Just that fact shows that people don't agree on how it should work. If rounding might impact your results, you should be aware that you have many ways to deal with it. The [Math::Round](http://www.metacpan.org/module/Math::Round) handles most of them.
 
-### The modulus of negative numbers
+#### The modulus of negative numbers
 
 The modulus operator was a bit more interesting since it actually has some problems and undefined behavior. I presented the table of operand combinations and noted which ones are defined in Perl. Some of the situations don't have defined behavior.
 
@@ -39,9 +42,9 @@ The StackOverflow question [Perl: understanding modulo operation on negative num
 
 If this matters for your application, you can implement your own modulo operation (perhaps in [Inline::C](http://www.metacpan.org/module/Inline::C)?) to do it exactly how you like to get the results you expect no matter where you run your program.
 
-### Fake random numbers
+#### Fake random numbers
 
-When we say "random numbers", experienced programmers generally understand that they aren't actually using numbers that are random. They are [pseudo-random](https://www.random.org/randomness/), although that's a too much to say over and over again. We shorten it to "random" to keep the sentences short. If you are seeding the a random number generator, you're using the fake kind.
+When we say "random numbers", experienced programmers generally understand that they aren't actually using numbers that are random. They are [pseudo-random](https://www.random.org/randomness/), although that's too much to say over and over again. We shorten it to "random" to keep the sentences short. If you are seeding a random number generator, you're using the fake kind.
 
 For the odd homework assignment or selecting a unique value you haven't used yet, Perl's [rand](http://perldoc.perl.org/functions/rand.html) may be fine. If you are doing something where you want real randomness, you don't want something deterministic. You want "true" random numbers.
 
@@ -57,7 +60,7 @@ Several modules provide an interface to better sources:
 
 As with most everything else, there's no answer that covers every use. That you discover other sources is a rite of passage for a programmer.
 
-### Perl lets anyone program
+#### Perl lets anyone program
 
 I joked that Perl's real problem was that it existed, essentially, and that people could use it. It's a variation on the joke about the world's most secure computer is one that's turned off, encased in concrete, and dropped to the bottom of the ocean. And, we're not even sure even then.
 
