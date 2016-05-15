@@ -1,7 +1,8 @@
 (function() {
   "use strict";
-  var url = "http://perltricks.com/perlybot/links.json";
-  var httpRequest, response, ul, i, div, css_link, head;
+  var httpRequest, response, url, ul, i, div, css_link, head, url_parts, hostDomain, linkDomain, links, linkCount;
+  url = "http://perltricks.com/perlybot/links.json";
+  linkCount = 10;
 
   if (window.XMLHttpRequest) {
       httpRequest = new XMLHttpRequest();
@@ -12,17 +13,25 @@
 
   function buildLinksList() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
-      if (httpRequest.status === 200) {
+      if (httpRequest.status === 200 || httpRewquest.status === 304) {
         response = JSON.parse(httpRequest.responseText);
-        ul = '<ul>';
-        for (i=0; i < 10; i++){
-          ul += '<li><a href="' + response[i].url + '">' + response[i].title + '</a><br/>' + extractDomain(response[i].url) + '</li>';
-        }
-        ul += '</ul>';
-        var div = document.getElementById("toplinks");
-        div.innerHTML = '<div class="toplinksheader">LATEST COMMUNITY ARTICLES</div>' + ul;
+        hostDomain = extractDomain(window.location.href);
 
-        // now append css
+        // build list of html links
+        ul = '<ul>';
+        links = [];
+        for (i=0; i < 10; i++){
+          linkDomain = extractDomain(response[i].url);
+          // skip links to articles on the host's own website
+          if (linkDomain === hostDomain) {
+            continue;
+          }
+          links.push('<li><a href="' + response[i].url + '">' + response[i].title + '</a><br/>' + linkDomain + '</li>');
+        }
+        var div = document.getElementById("toplinks");
+        div.innerHTML = '<div class="toplinksheader">LATEST COMMUNITY ARTICLES</div>' + ul + links.join('') + '</ul>';
+
+        // inject css
         head = document.getElementsByTagName('head')[0];
         css_link = document.createElement('link');
         css_link.setAttribute('rel','stylesheet');
@@ -36,18 +45,6 @@
     }
   }
   function extractDomain(url) {
-    var domain;
-    //find & remove protocol (http, ftp, etc.) and get domain
-    if (url.indexOf("://") > -1) {
-        domain = url.split('/')[2];
-    }
-    else {
-        domain = url.split('/')[0];
-    }
-
-    //find & remove port number
-    domain = domain.split(':')[0];
-
-    return domain;
+    return url.split("/")[2];
   }
 })();
