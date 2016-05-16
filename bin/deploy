@@ -13,4 +13,6 @@ hugo
 cd public
 git add *
 git commit -m 'Generate site'
+git fetch -p
+git rebase origin master
 git push origin master
