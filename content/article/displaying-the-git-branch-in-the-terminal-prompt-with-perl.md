@@ -4,7 +4,7 @@
     "authors": ["David Farrell"],
     "date"   : "2016-05-13T07:57:42",
     "tags"   : ["git", "branch", "terminal", "perl", "prompt", "bash", "sed"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/displaying-the-git-branch-in-the-terminal-prompt-with-perl/Git-Logo-1788C.png",
     "description" : "Where am I again? No more typing \"git branch\"",
     "categories": "development"
