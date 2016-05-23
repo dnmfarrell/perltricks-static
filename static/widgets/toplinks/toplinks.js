@@ -1,7 +1,7 @@
 (function() {
   "use strict";
   var httpRequest, response, url, ul, i, div, css_link, head, url_parts, hostDomain, linkDomain, links, linkCount;
-  url = "http://perltricks.com/perlybot/links.json";
+  url = "https://perltricks.com/perlybot/links.json";
   linkCount = 10;
 
   if (window.XMLHttpRequest) {
