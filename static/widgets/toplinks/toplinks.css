@@ -15,8 +15,8 @@
   src: url('https:/perltricks.com/fonts/antonio-bold-webfont.eot');
   src: url('https:/perltricks.com/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
        url('https:/perltricks.com/fonts/opensans-regular-webfont.woff') format('woff'),
-       url(https:/perltricks.com'/fonts/opensans-regular-webfont.ttf') format('truetype'),
-       url(https:/perltricks.com'/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+       url('https:/perltricks.com/fonts/opensans-regular-webfont.ttf') format('truetype'),
+       url('https:/perltricks.com/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
 }
 div#toplinks {
   width: 100%;
