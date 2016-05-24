@@ -36,7 +36,7 @@
         css_link = document.createElement('link');
         css_link.setAttribute('rel','stylesheet');
         css_link.setAttribute('type','text/css');
-        css_link.setAttribute('href','https://perltricks.com/widgets/toplinks/toplinks.css');
+        css_link.setAttribute('href','toplinks.css');
         head.appendChild(css_link);
       }
       else {
