@@ -3,25 +3,25 @@
     "title"  : "The road to a 55x speedup with XS",
     "authors": ["David Farrell"],
     "date"   : "2016-06-14T20:54:51",
-    "tags"   : [],
-    "draft"  : true,
-    "image"  : "",
+    "tags"   : ["xs", "c", "uri_encode_xs", "uri_escape", "percent_encoding", "optimization", "benchmark"],
+    "draft"  : false,
+    "image" : "/images/61/EC20EEA0-FF2E-11E3-9D6C-5C05A68B9E16.png",
     "description" : "The power of C with the pleasure of Perl",
     "categories": "development"
   }
 
-Lately my client has been concerned with improving their application speed, so naturally I started to think about XS, Perl's C macro language. With XS you can write C code and call it from Perl. 
+Lately my client has been concerned with improving their application speed, so naturally I started to think about XS, Perl's C macro language. With XS you can write C code and call it from Perl.
 
-To test the waters I wrote a simple URI encoder/decoder in C and with some trial-and-error managed to make [URI::Encode::XS](https://metacpan.org/pod/URI::Encode::XS), a module that used it. This is easy! I thought and excitedly typed out a benchmarking script. I benchmarked my module against [URI::Escape](https://metacpan.org/pod/URI::Escape) a venerable but rather slow *pure-Perl* URI encoder/decoder. You can imagine how crestfallen I was when I read the benchmark results to find that all of my effort only netted a 20% speedup. I wondered if Perl's string routines are so fast they're hard to improve upon.
+To test the waters I wrote a simple URI encoder/decoder in C and with some trial-and-error managed to make [URI::Encode::XS](https://metacpan.org/pod/URI::Encode::XS), a module that used it. "This is easy!" I thought and excitedly typed out a benchmarking [script](https://github.com/dnmfarrell/URI-Encode-XS/blob/master/bench). I benchmarked my module against [URI::Escape](https://metacpan.org/pod/URI::Escape) a venerable but rather slow *pure-Perl* URI encoder/decoder. You can imagine how crestfallen I was when I read the benchmark results to find that all of my effort only netted a 20% speedup. I wondered if Perl's string routines are so fast they're hard to improve upon.
 
 ### Renewed hope
 
-Enter [URI::XSEscape](https://metacpan.org), a "quick and dirty" (the authors' words) XS implementation of URI::Escape. It was uploaded to CPAN last month. You can see the authors' [benchmarks](https://metacpan.org/pod/URI::XSEscape#BENCHMARKS) for yourself, but in my testing it appeared to be about 18.5 times faster than URI::Escape. That's not a misprint - on my laptop it encoded 2.75m strings per second, compared to 118k for URI::Escape. So how did they do it?
+Enter [URI::XSEscape](https://metacpan.org), a "quick and dirty" (the authors' words) XS implementation of URI::Escape. It was uploaded to CPAN last month. You can see the authors' [benchmarks](https://metacpan.org/pod/URI::XSEscape#BENCHMARKS) for yourself, but in my testing it appeared to be about 18.5 times faster than URI::Escape. That's not a misprint - on my laptop it encoded 2.75m strings per second, compared to 138k for URI::Escape. So how did they do it?
 
 First let's look at my naive C encode implementation:
 
 ``` prettyprint
-char *uri_encode (char *uri, const char *special_chars, char *buffer)
+void *uri_encode (char *uri, const char *special_chars, char *buffer)
 {
   int i = 0;
   /* \0 is null, end of the string */
@@ -54,11 +54,10 @@ char *uri_encode (char *uri, const char *special_chars, char *buffer)
     }
     i++;
   }
-  return buffer;
 }
 ```
 
-Basically what this does is loop through the `uri` string, looking characters that are in the `special_chars` string, and if it finds a match, it percent encodes the character with `sprintf` else it just concatenates the character with `buffer` which is the encoded string result. Compare this with the encode function from `URI::XSEscape` (I've simplified it slightly):
+Basically what this does is loop through the `uri` string, looking characters that are in the `special_chars` string, and if it finds a match, it percent encodes the character with `sprintf` and appends the result to `buffer` which is the encoded string. Compare this with the encode function from `URI::XSEscape` (I've simplified it slightly):
 
 ``` prettyprint
 Buffer* uri_encode(Buffer* src, int length,
@@ -102,13 +101,13 @@ This code also avoid a subtle bug with my implementation: Perl strings can conta
 
 ### Going faster
 
-At this point I updated the encode/decode functions in URI::Encode::XS to be table based like URI::XSEscape and saw huge gains in performance, making URI::Encode::XS about 25 times faster than URI::Escape. I thought this was as good as it got, and was about done with the module, when I was contacted by Christian Hansen (author of Time::Moment, among other things). Christian overhauled my simple XS code to make it safer and faster. you can see the xsub code [here](https://github.com/dnmfarrell/URI-Encode-XS/blob/df8009e9d7af4cf243fa29ca8aaa23982feeba58/XS.xs#L143) but this is what became of the `uri_encode` C function:
+At this point I updated the encode/decode functions in URI::Encode::XS to be table based like URI::XSEscape and saw huge gains in performance, making URI::Encode::XS about 25 times faster than URI::Escape (URI::Encode::XS doesn't support user-defined escape values, so it's simpler than URI::XSEscape). I thought a 25x improvement was as good as it got, and was about done with the module, when I was contacted by [Christian Hansen](https://metacpan.org/author/CHANSEN) (author of [Time::Moment](https://metacpan.org/release/Time-Moment)). Christian overhauled my simple XS code to make it safer and faster. This is what became of the `uri_encode` C function:
 
 ``` prettyprint
 size_t uri_encode (const char *src, const size_t len, char *dst)
 {
   size_t i = 0, j = 0;
-  while (i < len)
+  while (i < len
   {
     const char * code = uri_encode_tbl[ (unsigned char)src[i] ];
     if (code)
@@ -128,7 +127,19 @@ size_t uri_encode (const char *src, const size_t len, char *dst)
 }
 ```
 
-This version looks up the character value in a pre-computed table and then uses `memcpy` to append it to the output string (avoided 3 separate assignments). It also returns the length of encoded string, instead of my versions' redundant return pointer (it's passed as an argument, so the caller doesn't need it back). Christan's optimizations made URI::Encode::XS encoding function 55 times faster than URI::Escape. On my laptop that translates to 7.5m encoded strings per second!
+This version looks up the character value in a pre-computed table and then uses `memcpy` to append it to the output string (avoiding 3 separate assignments). It also returns the length of encoded string, which is useful. After Christian's optimizations, my benchmarking [script](https://github.com/dnmfarrell/URI-Encode-XS/blob/master/bench) showed URI::Encode::XS's encoding function to be 55 times faster than URI::Escape (about 8m encoded strings per second). Much of the gains came from optimizing the [xsub](https://github.com/dnmfarrell/URI-Encode-XS/blob/df8009e9d7af4cf243fa29ca8aaa23982feeba58/XS.xs#L143).
+
+### The power of C, the pleasure of Perl
+
+To me the most magical thing about XS code is you call it from Perl:
+
+``` prettyprint
+use URI::Encode::XS 'uri_encode';
+
+my $encoding = uri_encode($some_string); # super fast
+```
+
+So the user has the convenience of writing Perl code, but the benefit of the faster implementation. Perl is already pretty fast, but there are certain operations that are expensive. If you work on a Perl application, how much faster would it be if you could make all of the bottlenecks 55 times faster?
 
 ### Learning XS
 
@@ -136,8 +147,20 @@ If you'd like to learn more about XS, I'd strongly recommend this [series](http:
 
 [XS is Fun](https://github.com/xsawyerx/xs-fun) is a more modern introduction to XS programming that takes you through the steps of writing an XS module and importing a C library.
 
-[Advanced Perl Programming]() and [Extending and Embedding Perl]() have lot's of useful material on XS. Both are a bit dated but I found them worth reading.
+Chapter 18 "Extending Perl: A First Course" in [Advanced Perl Programming](http://shop.oreilly.com/product/9781565922204.do) first edition has a good introduction to XS. It covers the most common macros for scalars, arrays and hashes which is useful (the second edition doesn't cover XS). [Extending and Embedding Perl](https://www.manning.com/books/extending-and-embedding-perl) goes further, with several tutorials on the different ways to call and receive data from XS. Both books are a bit dated but I found them valuable and an easier read than the official docs.
 
-The official Perl documentation has useful reference sources: perlxs, perlapi and perlguts (but I would skip perlxstut in favor of the above resources).
+The official Perl documentation has useful reference sources: [perlxs](http://perldoc.perl.org/perlxs.html), [perlapi](http://perldoc.perl.org/perlapi.html) and [perlguts](http://perldoc.perl.org/perlxs.html). There is also [perlxstut](http://perldoc.perl.org/perlxs.html) but I would skip that in favor of the above resources.
 
-Several times I've found XS macros used in Perl code that is not explained in any documentation (e.g. `dXSTARG`). In those cases it pays to have a copy of the Perl source code - just grep the source and you'll find its definition with a comment (typically in `pp.h`).
+Several times I've found XS macros used in Perl code that are not explained in any documentation (e.g. `dXSTARG`). In those cases it pays to have a copy of the Perl [source code](https://www.perl.org/get.html) - just grep the source and you'll find its definition with a comment (typically in `pp.h`).
+
+### A note on the benchmarks
+
+The benchmarks in this article were all run on my laptop, a Dell XPS 13 with 8GB RAM running Fedora 23. Different hardware will yield different results (Christian's benchmark showed URI::Encode::XS to be 90x (!) faster than URI::Escape).
+
+The [script](https://github.com/dnmfarrell/URI-Encode-XS/blob/master/bench) counts how many times each module can encode a string per second. But a string of a different length, or with a different number of reserved characters will yield a different benchmark. For example benchmarking an empty string shows URI::Encode::XS to be just 9x times faster on my laptop.
+
+The module versions were URI::Encode::XS v0.08 and URI::Escape v3.31. The Perl version was 5.22.
+
+### Thanks
+
+A big thank you to Christian Hansen and Jesse DuMond for your help with URI::Encode::XS. The module would not be half of what it is without your contributions.
