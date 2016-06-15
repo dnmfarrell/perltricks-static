@@ -7,6 +7,8 @@
    "image" : "/images/204/60B8AF26-A444-11E5-A7E3-5B35815E78B2.png",
    "tags" : [
       "perl",
+      "javascript",
+      "js",
       "var",
       "es6",
       "strict",
