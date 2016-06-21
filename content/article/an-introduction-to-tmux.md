@@ -142,6 +142,11 @@ To copy, position the cursor where you want to start copying. Press `Ctrl-space`
 
 **Shortcut** You can jump into scroll mode and page up in one fell swoop with `Ctrl-b PgUp` (thanks to Ludovic Tolhurst for the tip).
 
+#### Bonus feature - search
+If you took the time to learn scroll mode, you deserve something extra, something special. Here is your prize: you can search the Tmux buffer! Just enter scroll mode with `Ctrl-b [` and then press `Ctrl-r`. Type your search text and press enter. Tmux will jump to the last match it finds. You can press `n` to jump to the next match or `Shift-n` to jump back one match.
+
+There is also `Ctrl-s` to search down the buffer, but I hardly ever use it.
+
 ### Session control
 Sessions are one of the most useful features of Tmux. They let you group multiple terminal processes into a single Tmux session which can be worked on (attached), put into the background (detached) and discarded as you see fit. Programmers will often have different sessions for different projects. Because Tmux operates under a client-server architecture, even if the original terminal that started Tmux dies or your desktop GUI crashes, the Tmux session will be preserved, along with all of the terminal sessions in it.
 
