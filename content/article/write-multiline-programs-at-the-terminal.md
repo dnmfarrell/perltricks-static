@@ -2,9 +2,9 @@
   {
     "title"  : "Write multiline programs at the terminal",
     "authors": ["David Farrell"],
-    "date"   : "2016-07-01T11:18:55",
+    "date"   : "2016-07-05T11:18:55",
     "tags"   : ["here-doc","perl","terminal","bash","less","man","http-tiny"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "",
     "description" : "Using the shell here-doc for throwaway programs",
     "categories": "development"
