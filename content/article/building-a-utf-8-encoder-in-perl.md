@@ -77,7 +77,7 @@ The process for three byte and four byte encoding follows the same approach, wit
 If I wanted to get UTF-8 encoded bytes for the [Television](http://www.fileformat.info/info/unicode/char/1f4fa/fontsupport.htm) codepoint (U+1F4FA) I could use the code like so:
 
 ``` prettyprint
-my @bytes = codepoint_to_bytes(0x1F4FA);
+my $bytes = codepoint_to_bytes(0x1F4FA);
 ```
 
 ### Decoding UTF-8
