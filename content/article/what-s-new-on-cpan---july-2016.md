@@ -62,7 +62,7 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 
 
 ### Web
-* [Parse::WWWAuthenticate](https://metacpan.org/pod/Parse::WWWAuthenticate) parses the WWW-Authenticate HTTP header; not sure if this is better than using a general purpose parser like [HTTP::Headers::Fast::XS](https://metacpan.org/pod/HTTP::Headers::Fast::XS)
+* [Parse::WWWAuthenticate](https://metacpan.org/pod/Parse::WWWAuthenticate) parses the WWW-Authenticate HTTP header; not sure if this is better than using a general purpose parser like [HTTP::XSHeaders](https://metacpan.org/pod/HTTP::XSHeaders)
 * [PEF::Front](https://metacpan.org/pod/PEF::Front) is a new web framework
 * [Plift](https://metacpan.org/pod/Plift) is a new templating module
 * Implement a mock HTTP server for testing using [Test::HTTP::MockServer](https://metacpan.org/pod/Test::HTTP::MockServer)
