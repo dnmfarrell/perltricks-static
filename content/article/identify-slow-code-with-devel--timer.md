@@ -2,9 +2,9 @@
   {
     "title"  : "Identify slow code with Devel::Timer",
     "authors": ["David Farrell"],
-    "date"   : "2016-08-14T16:38:50",
+    "date"   : "2016-08-17T08:38:50",
     "tags"   : ["devel-timer", "benchmark", "refactor", "optimize", "speed"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/identify-slow-code-with-devel--timer/stopwatch.png",
     "description" : "How timing statements can help you pinpoint bottlenecks",
     "categories": "development"
