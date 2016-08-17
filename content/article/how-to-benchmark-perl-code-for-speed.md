@@ -34,7 +34,7 @@ One thing to keep in mind with benchmarks is that they are affected by the envir
 
 ### Timing Perl Code
 
-Benchmarks are most interesting when comparing performance of code - so we're going to focus on methods that do that. Benchmark provides a "timethese" subroutine which continuously executes sets of Perl code for a number of CPU seconds and then prints out the results. Let's compare the speed difference of two common Perl operations: array assignment using the shift built in function and direct array assignment using equals:
+Benchmarks are most interesting when comparing performance of code - so we're going to focus on methods that do that. Benchmark provides a `timethese` subroutine which continuously executes sets of Perl code for a number of CPU seconds and then prints out the results. Let's compare the speed difference of two common Perl operations: array assignment using the shift built in function and direct array assignment using equals:
 
 ``` prettyprint
 use strict;
@@ -67,7 +67,7 @@ The key metric to focus on is the rate per CPU second. This shows that the shift
 
 ### Comparing Perl Code
 
-The "cmpthese" subroutine provided the Benchmark module accepts the same arguments and "timethese" shown above, but prints out a useful comparison grid of the results to show which code block was faster by %. Helpfully it also includes the rate per CPU second.
+The `cmpthese` subroutine provided the Benchmark module accepts the same arguments and `timethese` shown above, but prints out a useful comparison grid of the results to show which code block was faster by %. Helpfully it also includes the rate per CPU second.
 
 ``` prettyprint
 use strict;
@@ -96,12 +96,12 @@ shiftAssign  142529/s           --          -4%
 equalsAssign 148159/s           4%           --
 ```
 
-The results above are ordered from slowest to fastest (as seen by the rate/s measurement). This benchmark shows that the equalsAssign code block was on average 4% faster than the shiftAssign code block.
+The results above are ordered from slowest to fastest (as seen by the rate/s measurement). This benchmark shows that the equalsAssign code block was 4% faster than the shiftAssign code block.
 
 ### Additional Tips
 
 -   Try to use the minimum set of code required for the behavior required - this will increase the accuracy of the benchmark pertaining to operations being benchmarked.
--   Use a negative number as the CPU seconds count for "timethese" or "cmpthese". This specifies the minimum number of CPU seconds to run. [Some sources](http://www.perlmonks.org/?node_id=8745) recommend at least -5 seconds to avoid inaccurate benchmarks.
+-   Use a negative number as the CPU seconds count for `timethese` or `cmpthese`. This specifies the minimum number of CPU seconds to run. [Some sources](http://www.perlmonks.org/?node_id=8745) recommend at least -5 seconds to avoid inaccurate benchmarks.
 -   Sanity check your results: if you're not sure try comparing two code blocks with one obviously slower than the other to check that Benchmark is returning sensible results.
 -   Compare code examples rather than time individual ones: the actual execution time of a block of code is usually not that important; knowing which set of code is faster than the other however is useful as this will generally be a repeatable occurrence.
 -   If you require more in depth benchmarking consider using [Devel::NYTProf](https://metacpan.org/module/Devel::NYTProf).
