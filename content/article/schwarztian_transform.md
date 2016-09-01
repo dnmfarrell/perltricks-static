@@ -60,7 +60,19 @@ In 1995 Tom Christainsen wrote [Far More Than Everything You've Ever Wanted to K
 
 Tom refers to _Learning Perl Objects, References, Objects, and Modules_, which wouldn't show up until 2003 (it's now [Intermediate Perl](http://www.intermediateperl.com)). Curiously, in that same year [Text Processing in Python](https://books.google.com/books?id=GxKWdn7u4w8C&pg=PA113&dq=schwartzian+transform&hl=en&sa=X&ved=0ahUKEwir89e-krvNAhXMdz4KHW4uAqQQ6AEILjAC#v=onepage&q=schwartzian%20transform&f=false) (Google Books) mentioned it.
 
-A month after his usenet posting, Randal wrote about his decorate-sort-undecorate idiom in his _Unix Review_ [column for January 1996](http://www.stonehenge.com/merlyn/UnixReview/col06.html), but he hadn't labeled the technique either.
+In August 1995, [Bennett Todd answers a sorting question](https://groups.google.com/forum/?hl=en#!topic/comp.lang.perl.misc/fLo0RNV8oW8) with a "Schwartz transformation":
+
+	Or for possibly more efficiency, ensure that the calls only happen once per
+	record, rather than approximately NlogN times, with the Schwartz
+	transformation:-)
+
+		@keys = map { $_->[0] }
+				sort { $a->[1] <=> $b->[1] or $a cmp $b }
+				map { [ $_, datexform($foo{$_}) ] } keys %foo;
+
+People have seen and understood the technique and it has the start of a name, but it's not quite an idiom yet. It also hasn't settled on a name.
+
+A year after his usenet posting, Randal wrote about his decorate-sort-undecorate idiom in his _Unix Review_ [column for January 1996](http://www.stonehenge.com/merlyn/UnixReview/col06.html), but he hadn't labeled the technique either.
 
 Tom Christainsen's April 1996 post in _comp.lang.perl.misc_ for [Read directory in timestamp order?](https://groups.google.com/d/msg/comp.lang.perl.misc/pw-Hl4byLnc/yzejRnku3RoJ) showed some benchmarks for sorting methods. He labeled one "Schwartzian XFrom". This is the first instance I could find where Randal's last name was attached to the technique.
 
@@ -89,11 +101,11 @@ Also, around that time, Joseph was working with Randal at Stonehenge Consulting 
 In 1998 the transform also showed up in the first edition of <a href="https://books.google.com/books?id=7q5QAAAAMAAJ&q=schwartzian+transform+%22programming+perl%22&dq=schwartzian+transform+%22programming+perl%22&hl=en&sa=X&ved=0ahUKEwjplePak7vNAhWSZj4KHYK9AtUQ6AEINDAD">The Perl Cookbook</a>, where Tom called it the Schwartzian Transform. I don't know who first typed it into a manuscript, so perhaps it's a tie. Tom and Joseph might have to figure that out between them.
 
 
-[Mastering Perl Algorithms (Google Books)](https://books.google.com/books?id=4ju67sMPwEkC&pg=PA111&dq=schwartzian+transform&hl=en&sa=X&ved=0ahUKEwir89e-krvNAhXMdz4KHW4uAqQQ6AEIOjAE#v=onepage&q=schwartzian%20transform&f=false) covered the transform in 1999 and [CGI Programming in Perl (Google Books)](https://books.google.com/books?id=gGNQ-O1WWQAC&pg=PA310&dq=schwartzian+transform&hl=en&sa=X&ved=0ahUKEwjo79KEk7vNAhWBMj4KHcBFDEY4ChDoAQhNMAg#v=onepage&q=schwartzian%20transform&f=false)</a> mentioned it in 2000. After that, the term "Schwartzian Transform" turns up quite a bit, even in some Ruby, Python, the Jython books.
+[Mastering Algorithms with Perl (Google Books)](https://books.google.com/books?id=4ju67sMPwEkC&pg=PA111&dq=schwartzian+transform&hl=en&sa=X&ved=0ahUKEwir89e-krvNAhXMdz4KHW4uAqQQ6AEIOjAE#v=onepage&q=schwartzian%20transform&f=false) covered the transform in 1999 and [CGI Programming in Perl (Google Books)](https://books.google.com/books?id=gGNQ-O1WWQAC&pg=PA310&dq=schwartzian+transform&hl=en&sa=X&ved=0ahUKEwjo79KEk7vNAhWBMj4KHcBFDEY4ChDoAQhNMAg#v=onepage&q=schwartzian%20transform&f=false)</a> mentioned it in 2000. After that, the term "Schwartzian Transform" turns up quite a bit, even in some Ruby, Python, the Jython books.
 
-Some other interesting quotes from that long thread, which seem quaint twenty years later. My favorite was prophetic.
+Some other interesting quotes from that long thread, which seem quaint twenty years later. My favorite was prophetic:
 
-><A href="">[I wonder if this chunk of code will haunt us forever.](https://groups.google.com/d/msg/comp.lang.perl.misc/fPx42DB2jd8/CTRmyWyJW6MJ) - Eric Arnold
+[I wonder if this chunk of code will haunt us forever.](https://groups.google.com/d/msg/comp.lang.perl.misc/fPx42DB2jd8/CTRmyWyJW6MJ) - Eric Arnold
 
 Indeed, it has haunted us since then, but that's not the end of the story.
 
