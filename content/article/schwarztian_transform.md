@@ -13,7 +13,7 @@
 
 The history of the Schwartzian Transform is fascinating, full of intrigue, competing philosophies, and cross-language reluctant cooperation. he Wikipedia entry is so horrendously written and banalized to make it seem obscure and uninteresting. It's not worth the hassle or effort to make a Wikipedia edit, have it reverted, and later be banned.
 
-The Schwartzian Transform is the name applied to a particular implementation of a cached-key sorting algorithm. The first public appearance is probably <a href="https://groups.google.com/d/msg/comp.unix.shell/MdqXDOuzDG0/gcmc1IG9GckJ">Randal Schwartz's crosspost to comp.lang.unix and comp.lang.perl</a> on December 16, 1994 (two days shy of Perl's birthday):
+The Schwartzian Transform is the name applied to a particular implementation of a cached-key sorting algorithm. The first public appearance is probably [Randal Schwartz's crosspost to comp.lang.unix and comp.lang.perl](https://groups.google.com/d/msg/comp.unix.shell/MdqXDOuzDG0/gcmc1IG9GckJ) on December 16, 1994 (two days shy of Perl's birthday):
 
 	#!/usr/bin/perl
 	require 5; # new features, new bugs!
@@ -122,7 +122,7 @@ Joseph uses a hash to store the potentially expensive sort value. If that key do
 
 For what it's worth, you'll find plenty of _Lord of the Rings_ references in the _perl_ source.
 
-
+Thanks to the [Alpine Perl Workshop 2016](http://act.yapc.eu/alpineperl2016/) in Innsbruck for sponsoring the accompanying talk on this history. You can find [the slides for that talk on Slideshare](http://bit.ly/2bHNNx4).
 
 
 
