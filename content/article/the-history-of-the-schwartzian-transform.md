@@ -4,7 +4,7 @@
     "authors": ["brian d foy"],
     "date"   : "2016-09-02T11:18:55",
     "tags"   : ["perl","lisp", "randal-schwartz","schwartzian-transform", "alpine-perl-workshop"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : null,
     "description" : "A complex sort with a complex history",
     "categories": "community"
@@ -31,7 +31,7 @@ print
   <>;
 ```
 
-Randal didn't name it. He wrote the code and essentially dropped the mic. He says that he was on a break from teaching a Perl class, so his response was brief and unexplicated. I don't think he expected it to be as troublesome as it turned out to be, but, as an experienced Usenet denizen (he said that he was there when you could read all of Usenet in a half hour).
+Randal didn't name it. He wrote the code and essentially dropped the mic. He says that he was on a break from teaching a Perl class, so his response was brief and unexplicated - typical for an experienced Usenet denizen (he said that he was there when you could read all of Usenet in a half hour). I don't think he expected it to be as troublesome as it turned out to be.
 
 His code isn't that complex. It's a big statement, but when I teach it in Perl classes, I tell people to read it from the end toward the beginning (a handy technique for any list pipeline):
 
@@ -78,9 +78,11 @@ A month after his Usenet posting, Randal wrote about his decorate-sort-undecorat
 
 In August 1995, [Bennett Todd answers a sorting question](https://groups.google.com/forum/?hl=en#!topic/comp.lang.perl.misc/fLo0RNV8oW8) with a "Schwartz transformation":
 
-  Or for possibly more efficiency, ensure that the calls only happen once per
-  record, rather than approximately NlogN times, with the Schwartz
-  transformation:-)
+> Or for possibly more efficiency, ensure that the calls only happen once per
+> record, rather than approximately NlogN times, with the Schwartz
+> transformation:-)
+>
+> *Bennett Todd*
 
     @keys = map { $_->[0] }
         sort { $a->[1] <=> $b->[1] or $a cmp $b }
@@ -96,7 +98,7 @@ In October, Tom posted [an expanded draft of perllol](https://groups.google.com/
 
 ### Gaining notoriety
 
-> [I'm still pissed at Randal for having posted it, especially the way he did.](https://groups.google.com/d/msg/comp.lang.perl.misc/fPx42DB2jd8/cC_6osV70mMJ)
+> [I'm still pissed at Randal for having posted it](https://groups.google.com/d/msg/comp.lang.perl.misc/fPx42DB2jd8/cC_6osV70mMJ)
 >
 > *Tom Christiansen*
 
@@ -130,7 +132,7 @@ Indeed it has haunted us since then, but that's not the end of the story.
 
 ### Variations
 
-Randal's use of the anonymous array is interesting, but it's not the only way to decorate the original value. You could compute the values and store them in a hash. Joseph Hall came up with something called the Orcish Maneuver - a clever pun on [Orc](http://lotr.wikia.com/wiki/Orcs) (perhaps) and "OR Cache". This doesn't use `map` or references:
+Randal's use of the anonymous array is interesting, but it's not the only way to decorate the original value. You could compute the values and store them in a hash. Joseph Hall came up with something called the Orcish Maneuver - a clever pun on [Orc](http://lotr.wikia.com/wiki/Orcs) (perhaps) and "OR Cache". This doesn't use the [map](http://perldoc.perl.org/functions/map.html) function  or references:
 
 ``` prettyprint
 my @sorted = sort {
