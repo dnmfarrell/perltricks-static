@@ -3,10 +3,10 @@
     "title"  : "Using bit arrays with large integers",
     "authors": ["David Farrell"],
     "date"   : "2016-09-15T17:40:12",
-    "tags"   : [],
-    "draft"  : true,
+    "tags"   : ["bigint","bit-array","bitmask","integer","memory"],
+    "draft"  : false,
     "image"  : "",
-    "description" : "Turns out that bigint works fine",
+    "description" : "Testing huge bit arrays with Perl",
     "categories": "data"
   }
 
