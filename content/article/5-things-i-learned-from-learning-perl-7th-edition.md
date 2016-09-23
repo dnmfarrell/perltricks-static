@@ -2,9 +2,9 @@
   {
     "title"  : "5 things I learned from Learning Perl 7th Edition",
     "authors": ["David Farrell"],
-    "date"   : "2016-09-22T08:28:54",
+    "date"   : "2016-09-23T08:12:54",
     "tags"   : ["learning-perl", "oreilly", "brian-d-foy"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/5-things-i-learned-from-learning-perl-7th-ed/learning-perl-7-front.jpg",
     "description" : "A surprisingly in-depth book for beginners",
     "categories": "community"
@@ -40,7 +40,7 @@ Learning Perl has a lot of anecdotes about Perl history in it. You might have us
 my @json_files = glob '*.json';
 ```
 
-This returns all file names ending in `,json` in the current directory. Glob takes a string of patterns separated by whitespace, so you can provide multiple patterns:
+This returns all file names ending in `.json` in the current working directory. Glob takes a string of patterns separated by whitespace, so you can provide multiple patterns:
 
 ``` prettyprint
   my @config_files = glob '*.json *.toml *.ini';
@@ -52,7 +52,7 @@ Instead of using the word `glob` you can use angle brackets:
   my @json_files = <*.json>;
 ```
 
-These angle brackets treat the text between them like a double-quoted string. One thing I learned was that ancient versions of Perl (pre 5.6) simply called `/bin/csh` every time they encountered glob! This made globbing slow, and directory handles were preferred.
+These angle brackets treat the text between them like a double-quoted string. One thing I learned was that ancient versions of Perl (pre 5.6) simply called `/bin/csh` every time they encountered `glob`! This made globbing slow, and directory handles were preferred over `glob`.
 
 ### 3. Perl supports inline binary notation
 
@@ -105,6 +105,8 @@ These days we have so many advanced Perl package installers like [cpanm](https:/
           CPAN:      1.302056  Not up to date
           Chad Granum (EXODIST)
           exodist7@gmail.com
+
+Woah, mine is pretty out of date. I should upgrade ...
 
 ### 5. Avoiding the shell for system commands
 
