@@ -10,7 +10,7 @@
     "categories": "community"
   }
 
-The 7th edition of Learning Perl is due to be released later this month. I was one of the technical reviewers of the book - I hadn't read it since the 3rd edition where it was a course text at my University (and Perl was described as a "text parsing language"!). Reviewing the book, I was struck by how much detail it contained. If you're looking for a thorough introduction to Perl, it's a great place to start. I picked up (or re-learned) a few tricks along the way, that I thought were worth sharing.
+The 7th edition of [Learning Perl](https://www.learning-perl.com/) is due to be released later this month. I was one of the technical reviewers of the book - I hadn't read it since the 3rd edition where it was a course text at my University (and Perl was described as a "text processing language"!). Reviewing the book, I was struck by how much detail it contained. If you're looking for a thorough introduction to Perl, it's a great place to start. I picked up (or re-learned) a few tricks along the way, that I thought were worth sharing.
 
 ### 1. Stacked file test operators
 
@@ -127,4 +127,4 @@ This will never invoke the shell, and avoid metacharacter interpolation.
 
 ### Pre-order Learning Perl now
 
-Learning Perl 7th Edition has nearly 400 pages describing the Perl syntax, and how to accomplish important tasks like file IO, process management and module installations. It's available for pre-order now on [Amazon](https://goo.gl/DvCB14) (that's an affiliate link for brian d foy, the author of this edition). You can also get it from the publisher, [O'Reilly](http://shop.oreilly.com/product/0636920049517.do).
+Learning Perl 7th Edition has nearly 400 pages describing the Perl syntax, and how to accomplish important tasks like file IO, process management and module installations. It's available for pre-order now on [Amazon](https://goo.gl/DvCB14) (that's an affiliate link for brian d foy, the author of this edition). You can also get it from the publisher, [O'Reilly](http://shop.oreilly.com/product/0636920049517.do). Check out the book's offical [website](https://www.learning-perl.com/) where brian has been blogging about the new edition.
