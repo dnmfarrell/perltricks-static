@@ -85,7 +85,7 @@ To understand this example in hexadecimal, you have to calculate that 4 * 16 = 6
   }
 ```
 
-In this example, you can just see that the 7th bit is flipped, and the intent of the if statement becomes obvious. If you're interested in understanding bit arrays and bitwise operators, I recently wrote an [introduction](http://perltricks.com/article/save-space-with-bit-arrays/) to them.
+In this example, you can just see that the 7th bit is flipped, and the intent of the if statement becomes obvious. If you're interested in understanding bit arrays and bitwise operators, I recently wrote an [introduction]({{< relref "save-space-with-bit-arrays.md" >}}) to them.
 
 ### 4. Check an installed module is up to date
 

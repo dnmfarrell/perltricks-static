@@ -35,13 +35,13 @@ Language
 --------
 - American English
 - 300-1,000 words per article
-- Simple English (use http://www.hemingwayapp.com/ to help)
+- Simple English (use [hemingway](http://www.hemingwayapp.com/) to help)
 - Only capitalize the first letter of a word in headings (no title case)
-- Articles can begin with an italicised introductory paragraph
+- Articles can begin with an italicized introductory paragraph
 - Prefer the first-person
 - We are "PerlTricks.com"
 - You can use "we" to refer to PerlTricks.com, the staff, our point of view etc.
-- When referring to Perl modules for the first time, provide a link to metacpan
+- When referring to Perl modules for the first time, provide a link to the module on [metacpan](https://metacpan.org/)
 
 Markup
 ------
@@ -67,7 +67,7 @@ The front matter contains the article metadata. Here's an example for a recent a
   }
 ```
 
-Older articles also have the `slug` attribute, which determines the URL of the article. This isn't necessary anymore (it's used to preserve historic URLs for articles from our old site). Instead just name the file the same as the title of the article, but in lowercase and with spaces replaced with hypens (`-`). In this example case, the filename is `content/article/magical-tied-scalars.md`.
+Older articles also have the `slug` attribute, which determines the URL of the article. This isn't necessary anymore (it's used to preserve historic URLs for articles from our old site). Instead just name the file the same as the title of the article, but in lowercase and with spaces replaced with hyphens (`-`). In this example case, the filename is `content/article/magical-tied-scalars.md`.
 
 Once `draft` is changed to `false`, the article will be listed on the website at `perltricks.com/article/magical-tied-scalars`. So when providing a pull request, keep this as `true`. The site editor will switch this to `false` once the article is ready to be published.
 
@@ -93,12 +93,19 @@ The other thing to know is article subheadings are size `h3`. So use the followi
 
 The article metadata like author, title and date are contained in the front matter and not needed in the article markdown body.
 
-See the `content/article` directory for examples of our articles.
+Internal references to other articles can be created using [relref](https://gohugo.io/extras/crossreferences/). So to link to the article "save space with bit arrays":
+
+    [save-space-with-bit-arrays]({{< relref "save-space-with-bit-arrays.md" >}})
+
+This is a standard markdown link, except that the URL part uses `relref`. To see a real example take a look at the [source code](https://raw.githubusercontent.com/dnmfarrell/perltricks-static/master/content/article/5-things-i-learned-from-learning-perl-7th-edition.md) for the article [5 things I learned from Learning Perl](http://perltricks.com/article/5-things-i-learned-from-learning-perl-7th-edition/).
+
+See the `content/article` directory for further examples of our articles.
 
 Generate Article Template
 -------------------------
-You can generate an article template with the Perl script `bin/new-article`. It requires a `--title` argument and optionally takes `--description` and `--author` arguments. It must be run from the root project directory, like this:
+You can generate an article template with the Perl script `bin/new-article`. It requires `--title`, `--category`, `--description` and `--author` arguments. It must be run from the root project directory, like this:
 
-    $ ./bin/new-article --title 'Some New Perl Article' --author 'David Farrell' --desc 'There is more than one way to do it'
+    $ ./bin/new-article --title 'Some New Perl Article' --author 'David Farrell' --desc 'There is more than one way to do it' \
+      --category 'development'
 
 &copy; PerlTricks.com
