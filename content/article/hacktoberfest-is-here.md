@@ -3,8 +3,8 @@
     "title"  : "Hacktoberfest is here",
     "authors": ["brian d foy"],
     "date"   : "2016-10-02T10:51:01",
-    "tags"   : ["perl","github", "pull-request","git"],
-    "draft"  : true,
+    "tags"   : ["perl","github", "pull-request","git", "digitalocean", "hacktoberfest", "ghojo"],
+    "draft"  : false,
     "image"  : "/images/hacktoberfest-is-here/hacktoberfest-2016.png",
     "description" : "Send those Perl GitHub pull requests!",
     "categories": "community"
