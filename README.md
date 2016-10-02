@@ -7,7 +7,7 @@ If you're interested in writing for PerlTricks.com read the guide below; you can
 
 Technology
 ----------
-The website is built with [Hugo](http://gohugo.io) and hosted on GitHub Pages.
+The website is built with [Hugo](http://gohugo.io) and hosted on GitHub Pages. You can run a local version of the site by following these [instructions](#viewing-your-draft-article).
 
 Style Guide
 ===========
@@ -107,5 +107,30 @@ You can generate an article template with the Perl script `bin/new-article`. It 
 
     $ ./bin/new-article --title 'Some New Perl Article' --author 'David Farrell' --desc 'There is more than one way to do it' \
       --category 'development'
+
+Viewing Your Draft Article
+--------------------------
+It's all well and good drafting an article in Markdown, but it only comes to life when you can see how it looks in a browser on PerlTricks.com. You can do that by running a local version of the site on your computer. To do that you'll need to install [Hugo](http://gohugo.io) and clone the repo:
+
+    $ git clone https://github.com/dnmfarrell/perltricks-static
+    $ cd perltricks-static
+
+Save your draft article in the `content/article` directory. Now you're ready to fire up a local version of the site:
+
+    $ hugo server --buildDrafts
+    1 of 1 draft rendered
+    0 future content
+    232 pages created
+    729 paginator pages created
+    11 categories created
+    6 authors created
+    680 tags created
+    in 988 ms
+    Watching for changes in /home/dfarrell/perltricks-static/{data,content,layouts,static}
+    Serving pages from memory
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
+
+Pay careful attention to the program output - if you see any errors, it probably means your draft article is not correctly formatted. Once those are fixed, with a browser navigate to the address shown in the output, and you should see a local version of PerlTricks.com running on your computer and your draft article should be at the top of the page!
 
 &copy; PerlTricks.com
