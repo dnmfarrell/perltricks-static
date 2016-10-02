@@ -16,7 +16,7 @@ VPN provider [DigitalOcean](https://www.digitalocean.com/) and [GitHub](https://
 
 The sponsors suggest that projects that want to participate label their issues with "Hacktoberfest". That's not strictly necessary, but you can [search for issues that projects think are suitable for new users](https://github.com/search?q=state%3Aopen+label%3Ahacktoberfest&type=Issues). I think all of my projects are suitable (I may be optimistic), so I wanted a way to label all of my issues across all of my projects.
 
-I found out about this as I was building some other GitHub tools. I looked at [Net::GitHub](https://www.metacpan.org/module/Net::GitHub) and [Pithub](https://www.metacpan.org/module/Pithub), but I wanted to iterate through long lists of paged results and process each item as I received them. And, even if you are re-inventing the wheel you're learning about wheels! And, the [GitHub Developer API](https://developer.github.com/v3/) is quite nice, making this a fun night of work.
+I found out about this as I was building some other GitHub tools. I looked at [Net::GitHub](https://www.metacpan.org/module/Net::GitHub), [Pithub](https://www.metacpan.org/module/Pithub), and [Marchex's github-api-tools](https://github.com/marchex/github-api-tools) but I wanted to iterate through long lists of paged results and process each item as I received them. And, even if you are re-inventing the wheel you're learning about wheels! And, the [GitHub Developer API](https://developer.github.com/v3/) is quite nice, making this a fun night of work.
 
 I had some hacky stuff I started to pull together in the [Ghojo]() module, which is still very much in its infancy (which means there's all sorts of pull request opportunities). Actually, it's a bit of a mess and everything is likely to change, but I was able to create a program that could log in, list all of my repos (there are a couple hundred), create the "Hacktoberfest" label in each, and then apply the label to each open issue. It's my [hacktoberfest.pl program](https://github.com/briandfoy/ghojo/blob/master/examples/hacktoberfest.pl) in my [ghojo](https://github.com/briandfoy/ghojo) repository.
 
@@ -86,7 +86,6 @@ my $callback = sub ( $item ) {
 
 	return $repo;
 	};
-
 
 $ghojo->repos( $repo_callback );
 ```
