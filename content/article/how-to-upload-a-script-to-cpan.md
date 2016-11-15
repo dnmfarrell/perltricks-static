@@ -2,11 +2,11 @@
   {
     "title"  : "How to upload a script to CPAN",
     "authors": ["David Farrell"],
-    "date"   : "2016-11-13T14:37:03",
-    "tags"   : [],
-    "draft"  : true,
+    "date"   : "2016-11-14T10:37:03",
+    "tags"   : ["distribution", "metacpan", "cpan-testers", "toolchain"],
+    "draft"  : false,
     "image"  : "",
-    "description" : "tbc",
+    "description" : "Share your code with others via CPAN",
     "categories": "cpan"
   }
 
@@ -333,6 +333,6 @@ Within a few minutes, I'll receive two emails from PAUSE: one confirms the uploa
 
 ### Wrap-up
 
-It may seem like a lot of work at first, but I only had to create the stub module and the Makefile.PL, both of which can be copy and pasted, and edited a little. The other files were generated. All the files described in this article are available in the GitHub [repo](https://github.com/dnmfarrell/App-foo).
+It may seem like a lot of work at first, but I only had to create the stub module and the Makefile.PL, both of which can be copied from elsewhere, and edited. The other files were generated. All the files described in this article are available in the GitHub [repo](https://github.com/dnmfarrell/App-foo).
 
-
+Chapter 12 of [Intermediate Perl](https://www.amazon.com/Intermediate-Perl-Beyond-Basics-Learning/dp/1449393098) describes how to create a Perl distribution in greater detail. [perlnewmod](http://perldoc.perl.org/perlnewmod.html) is a brief overview of how create a module and prepare it for CPAN.
