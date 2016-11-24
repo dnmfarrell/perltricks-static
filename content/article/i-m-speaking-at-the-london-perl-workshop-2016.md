@@ -4,7 +4,7 @@
     "authors": ["David Farrell"],
     "date"   : "2016-11-24T09:27:54",
     "tags"   : ["lpw", "london"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/58/onion_white_bg.png",
     "description" : "Join us for an exciting day of technical talks and fun",
     "categories": "community"
