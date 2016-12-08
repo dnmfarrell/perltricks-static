@@ -4,9 +4,9 @@
    ],
    "description" : "A curated look at November's new CPAN uploads",
    "tags" : ["azure", "swagger", "lobid", "lumberjack", "acme", "cpan-testers", "gvg", "ajpeg", "xlsx", "mattermost", "stomp", "kingpin", "mojolicious", "catalyst", "mce-hobo", "kayako"],
-   "date" : "2016-12-07T11:20:26",
+   "date" : "2016-12-08T08:45:26",
    "title" : "What's new on CPAN - November 2016",
-   "draft" : true,
+   "draft" : false,
    "image" : "/images/202/CD6B9F5C-F4AE-11E4-A230-A2654E9B8265.png",
    "categories" : "cpan"
 }
@@ -14,7 +14,7 @@
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
 ### APIs & Apps
-* Perl library for easy access to Google services via their API using [API::Google](https://metacpan.org/pod/API::Google)
+* Use Google services via their API with [API::Google](https://metacpan.org/pod/API::Google)
 * [Net::ACME](https://metacpan.org/pod/Net::ACME) provides client methods for the ACME protocol used by Let's Encrypt
 * Two new modules for interacting with Azure services: [Net::Azure::EventHubs](https://metacpan.org/pod/Net::Azure::EventHubs) and [Net::Azure::NotificationHubs](https://metacpan.org/pod/Net::Azure::NotificationHubs)
 * Parse Lumberjack protocol frames with [Net::Lumberjack](https://metacpan.org/pod/Net::Lumberjack)
@@ -22,7 +22,7 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 * Get a non-blocking STOMP client using [AnyEvent::Stomper](https://metacpan.org/pod/AnyEvent::Stomper)
 * [WebService::Freesound](https://metacpan.org/pod/WebService::Freesound) is a wrapper for the Freesound OAuth2 API
 * Get library data using the Lobid API with [WebService::Lobid::Organisation](https://metacpan.org/pod/WebService::Lobid::Organisation)
-* Perl library for working with Kayako REST API with [Kayako::RestAPI](https://metacpan.org/pod/Kayako::RestAPI)
+* [Kayako::RestAPI](https://metacpan.org/pod/Kayako::RestAPI) provides a Perly interface to the Kayako API (customer service platform)
 
 
 ### Config & Devops
@@ -57,7 +57,7 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 
 
 ### Language & International
-* Damianware! Code Perl in Latin using [Lingua::Romana::Perligata](https://metacpan.org/pod/Lingua::Romana::Perligata)
+* Damianware! Code Perl in Latin using [Lingua::Romana::Perligata](https://metacpan.org/pod/Lingua::Romana::Perligata) (not strictly a new distribution, just a new version)
 
 
 ### Web
