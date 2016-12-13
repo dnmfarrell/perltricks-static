@@ -1,0 +1,139 @@
+
+  {
+    "title"  : "Perl module names are filepaths - and that's all",
+    "authors": ["David Farrell"],
+    "date"   : "2016-12-13T10:57:48",
+    "tags"   : ["cpan", "pause", "cuckoo", "module", "package", "perlmod"],
+    "draft"  : true,
+    "image"  : "",
+    "description" : "Understand how Perl loads code",
+    "categories": "development"
+  }
+
+It's common in Perl parlance to treat the words "module" and "package" as synonyms, and in practice they almost refer to the same thing. A module name is shorthand for a filepath, but a package name refers to a namespace within the Perl symbol table. It's easy to forget this because module names and packages are written in the same colon-separated notation, and conventionally we give packages the same name as the module filepath. For example:
+
+``` prettyprint
+use Test::More; # load lib/perl5/5.22.0/Test/More.pm
+
+Test::More::ok 1; # call the ok function in the Test::More namespace
+```
+
+In this example, `Test::More` appears twice, but it really refers to two separate things; the first is a filepath, the second is a symbol namespace. They do not have to have the same name. Unfortunately [perlmod](http://perldoc.perl.org/perlmod.html) perpetuates this myth:
+
+> A module is just a set of related functions in a library file, i.e., a
+> Perl package with the same name as the file.
+>
+> *perlmod*
+
+### Demo
+
+I'll make a quick module called "ACME::Foo::Bar", `lib/ACME/Foo/Bar.pm` looks like this:
+
+``` prettyprint
+package Whatever;
+
+our $VERSION = 0.01;
+
+=head1 NAME
+
+ACME::Foo::Bar - proof that module names and packages are not intertwined
+
+=cut
+
+sub me { __PACKAGE__ }
+
+1;
+```
+
+At the terminal I can test it out:
+
+    $ perl -Ilib -MACME::Foo::Bar -E 'say Whatever::me'
+    Whatever
+
+Perl happily loads the ACME::Foo::Bar module and the `Whatever` namespace.
+
+### As a distribution
+
+By adding a makefile, I can make this an installable distribution, `Makefile.PL`:
+
+``` prettyprint
+use 5.008000;
+
+use ExtUtils::MakeMaker;
+WriteMakefile(
+  NAME           => 'ACME::Foo::Bar',
+  VERSION_FROM   => 'lib/ACME/Foo/Bar.pm',
+  ABSTRACT_FROM  => 'lib/ACME/Foo/Bar.pm',
+  AUTHOR         => 'David Farrell',
+  LICENSE        => 'perl5',
+  MIN_PERL_VERSION => "5.008000",
+);
+```
+
+Hell, I can add some tests while we're at it, `t/whatever.t`:
+
+``` prettyprint
+#!/usr/bin/perl
+use Test::More;
+
+BEGIN { use_ok 'ACME::Foo::Bar', 'import module' }
+
+is Whatever::me, 'Whatever', 'me() returns package name';
+
+done_testing;
+```
+
+Installation is easy:
+
+    $ perl Makefile.PL
+    Generating a Unix-style Makefile
+    Writing Makefile for ACME::Foo::Bar
+    Writing MYMETA.yml and MYMETA.json
+    $ make
+    cp README.pod blib/lib/ACME/Foo/README.pod
+    cp lib/ACME/Foo/Bar.pm blib/lib/ACME/Foo/Bar.pm
+    Manifying 2 pod documents
+    $ make test
+    PERL_DL_NONLAZY=1 "/home/dfarrell/.plenv/versions/5.22.0/bin/perl5.22.0" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+    t/whatever.t .. ok
+    All tests successful.
+    Files=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.01 cusr  0.00 csys =  0.02 CPU)
+    Result: PASS
+    $ make install
+    Manifying 2 pod documents
+    Installing /home/dfarrell/.plenv/versions/5.22.0/lib/perl5/site_perl/5.22.0/ACME/Foo/Bar.pm
+    Installing /home/dfarrell/.plenv/versions/5.22.0/lib/perl5/site_perl/5.22.0/ACME/Foo/README.pod
+    Installing /home/dfarrell/.plenv/versions/5.22.0/man/man3/ACME::Foo::README.3
+    Installing /home/dfarrell/.plenv/versions/5.22.0/man/man3/ACME::Foo::Bar.3
+    Appending installation info to /home/dfarrell/.plenv/versions/5.22.0/lib/perl5/5.22.0/x86_64-linux/perllocal.pod
+
+Now I can test the installed version at the terminal:
+
+    $ perl -MACME::Foo::Bar -E 'say Whatever::me'
+    Whatever
+
+Tada! Works like a charm.
+
+### Toolchain issues
+
+I've uploaded the distribution to CPAN, and you can view it on [metacpan](https://metacpan.org/pod/release/DFARRELL/ACME-Foo-Bar-0.01/lib/ACME/Foo/Bar.pm).
+
+There is one big issue though: the PAUSE indexer. PAUSE is the server which maintains CPAN data and its packages [list](https://cpan.metacpan.org/modules/02packages.details.txt) is an index mapping package names to distributions. The indexer requires that a distribution has at least one module with a matching package name in it.
+
+CPAN clients lookup the package name in the packages list to know which distribution to install, so if my `Whatever` package isn't in the list, I can't install `ACME::Foo::Bar` that way. In fact, there is already a module and package called [Whatever](https://metacpan.org/pod/Whatever).
+
+But referencing it by its distribution name works fine:
+
+    $ cpanm DFARRELL/ACME-Foo-Bar-0.01.tar.gz
+    --> Working on DFARRELL/ACME-Foo-Bar-0.01.tar.gz
+    Fetching http://www.cpan.org/authors/id/D/DF/DFARRELL/ACME-Foo-Bar-0.01.tar.gz ... OK
+    Configuring ACME-Foo-Bar-0.01 ... OK
+    Building and testing ACME-Foo-Bar-0.01 ... OK
+    Successfully installed ACME-Foo-Bar-0.01
+    1 distribution installed
+
+### Summary
+
+As conventions go, using the same package and module name is useful, and recommended. Especially if the code is going to be shared via CPAN or otherwise. Just be aware that they're not the same thing.
+
+Neil Bowers has written an excellent [glossary](http://neilb.org/2015/09/05/cpan-glossary.html#cuckoo-package) of CPAN terms. Packages with a namespace different to their module name are known as 'cuckoo' packages.
