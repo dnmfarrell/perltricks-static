@@ -2,9 +2,9 @@
   {
     "title"  : "Perl module names are filepaths - and that's all",
     "authors": ["David Farrell"],
-    "date"   : "2016-12-13T10:57:48",
+    "date"   : "2016-12-14T08:40:57",
     "tags"   : ["cpan", "pause", "cuckoo", "module", "package", "perlmod"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "",
     "description" : "Understand how Perl loads code",
     "categories": "development"
@@ -13,7 +13,7 @@
 It's common in Perl parlance to treat the words "module" and "package" as synonyms, and in practice they almost refer to the same thing. A module name is shorthand for a filepath, but a package name refers to a namespace within the Perl symbol table. It's easy to forget this because module names and packages are written in the same colon-separated notation, and conventionally we give packages the same name as the module filepath. For example:
 
 ``` prettyprint
-use Test::More; # load lib/perl5/5.22.0/Test/More.pm
+use Test::More; # load Test/More.pm
 
 Test::More::ok 1; # call the ok function in the Test::More namespace
 ```
@@ -23,7 +23,6 @@ In this example, `Test::More` appears twice, but it really refers to two separat
 > A module is just a set of related functions in a library file, i.e., a
 > Perl package with the same name as the file.
 >
-> *perlmod*
 
 ### Demo
 
@@ -36,7 +35,7 @@ our $VERSION = 0.01;
 
 =head1 NAME
 
-ACME::Foo::Bar - proof that module names and packages are not intertwined
+ACME::Foo::Bar - proof that module names and packages are not the same
 
 =cut
 
@@ -45,7 +44,7 @@ sub me { __PACKAGE__ }
 1;
 ```
 
-At the terminal I can test it out:
+Note that the package name `Whatever` is completely different to the module name `ACME::Foo::Bar`. At the terminal I can test it out:
 
     $ perl -Ilib -MACME::Foo::Bar -E 'say Whatever::me'
     Whatever
@@ -116,9 +115,9 @@ Tada! Works like a charm.
 
 ### Toolchain issues
 
-I've uploaded the distribution to CPAN, and you can view it on [metacpan](https://metacpan.org/pod/release/DFARRELL/ACME-Foo-Bar-0.01/lib/ACME/Foo/Bar.pm).
+I've uploaded the distribution to CPAN, and you can view it on [metacpan](https://metacpan.org/pod/release/DFARRELL/ACME-Foo-Bar-0.01/lib/ACME/Foo/Bar.pm), and its CPAN Testers results are looking good<sup>&#x271D;</sup> (22 passes at the time of writing).
 
-There is one big issue though: the PAUSE indexer. PAUSE is the server which maintains CPAN data and its packages [list](https://cpan.metacpan.org/modules/02packages.details.txt) is an index mapping package names to distributions. The indexer requires that a distribution has at least one module with a matching package name in it.
+There is one big issue though: the PAUSE indexer. PAUSE is the server which maintains CPAN data and its packages [list](https://cpan.metacpan.org/modules/02packages.details.txt) is an index mapping package names to distributions. The indexer requires that a distribution has a module with a matching package name in it. This makes sense as it discourages users from uploading conflicting package names into different distributions.
 
 CPAN clients lookup the package name in the packages list to know which distribution to install, so if my `Whatever` package isn't in the list, I can't install `ACME::Foo::Bar` that way. In fact, there is already a module and package called [Whatever](https://metacpan.org/pod/Whatever).
 
@@ -132,8 +131,10 @@ But referencing it by its distribution name works fine:
     Successfully installed ACME-Foo-Bar-0.01
     1 distribution installed
 
+<sup>&#x271D;</sup> unless you want to view the detailed [results](http://www.cpantesters.org/distro/A/ACME-Foo-Bar.html?oncpan=1&distmat=1&version=0.01&grade=2), in which case it doesn't work.
+
 ### Summary
 
-As conventions go, using the same package and module name is useful, and recommended. Especially if the code is going to be shared via CPAN or otherwise. Just be aware that they're not the same thing.
-
 Neil Bowers has written an excellent [glossary](http://neilb.org/2015/09/05/cpan-glossary.html#cuckoo-package) of CPAN terms. Packages with a namespace different to their module name are known as 'cuckoo' packages.
+
+As conventions go, using the same package and module name is useful and recommended. Especially if the code is going to be shared via CPAN or otherwise. But it's good to know that they're not the same thing.
