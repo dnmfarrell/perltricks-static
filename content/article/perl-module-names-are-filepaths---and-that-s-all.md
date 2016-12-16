@@ -13,7 +13,7 @@
 It's common in Perl parlance to treat the words "module" and "package" as synonyms, and in practice they almost refer to the same thing. A module name is shorthand for a filepath, but a package name refers to a namespace within the Perl symbol table. It's easy to forget this because module names and packages are written in the same colon-separated notation, and conventionally we give packages the same name as the module filepath. For example:
 
 ``` prettyprint
-use Test::More; # load Test/More.pm
+require Test::More; # load Test/More.pm
 
 Test::More::ok 1; # call the ok function in the Test::More namespace
 ```
@@ -29,7 +29,7 @@ In this example, `Test::More` appears twice, but it really refers to two separat
 I'll make a quick module called "ACME::Foo::Bar", `lib/ACME/Foo/Bar.pm` looks like this:
 
 ``` prettyprint
-package Whatever;
+package Whatever2;
 
 our $VERSION = 0.01;
 
@@ -44,12 +44,12 @@ sub me { __PACKAGE__ }
 1;
 ```
 
-Note that the package name `Whatever` is completely different to the module name `ACME::Foo::Bar`. At the terminal I can test it out:
+Note that the package name `Whatever2` is completely different to the module name `ACME::Foo::Bar`. At the terminal I can test it out:
 
-    $ perl -Ilib -MACME::Foo::Bar -E 'say Whatever::me'
-    Whatever
+    $ perl -Ilib -MACME::Foo::Bar -E 'say Whatever2::me'
+    Whatever2
 
-Perl happily loads the ACME::Foo::Bar module and the `Whatever` namespace.
+Perl happily loads the ACME::Foo::Bar module and the `Whatever2` namespace (I originally used `Whatever` as the package name, but there is another package on CPAN with that name).
 
 ### As a distribution
 
@@ -77,7 +77,7 @@ use Test::More;
 
 BEGIN { use_ok 'ACME::Foo::Bar', 'import module' }
 
-is Whatever::me, 'Whatever', 'me() returns package name';
+is Whatever2::me, 'Whatever2', 'me() returns package name';
 
 done_testing;
 ```
@@ -108,33 +108,48 @@ Installation is easy:
 
 Now I can test the installed version at the terminal:
 
-    $ perl -MACME::Foo::Bar -E 'say Whatever::me'
-    Whatever
+    $ perl -MACME::Foo::Bar -E 'say Whatever2::me'
+    Whatever2
 
 Tada! Works like a charm.
 
 ### Toolchain issues
 
-I've uploaded the distribution to CPAN, and you can view it on [metacpan](https://metacpan.org/pod/release/DFARRELL/ACME-Foo-Bar-0.01/lib/ACME/Foo/Bar.pm), and its CPAN Testers results are looking good<sup>&#x271D;</sup> (22 passes at the time of writing).
+So now I have a distribution with a module containing a different package name, how well does it work with the CPAN toolchain? I've uploaded the distribution to CPAN, and you can view it on [metacpan](https://metacpan.org/pod/release/DFARRELL/ACME-Foo-Bar-0.02/lib/ACME/Foo/Bar.pm), and its CPAN Testers [results](http://www.cpantesters.org/distro/A/ACME-Foo-Bar.html?oncpan=1&distmat=1&version=0.02&grade=2) are looking good.
 
 There is one big issue though: the PAUSE indexer. PAUSE is the server which maintains CPAN data and its packages [list](https://cpan.metacpan.org/modules/02packages.details.txt) is an index mapping package names to distributions. The indexer requires that a distribution has a module with a matching package name in it. This makes sense as it discourages users from uploading conflicting package names into different distributions.
 
-CPAN clients lookup the package name in the packages list to know which distribution to install, so if my `Whatever` package isn't in the list, I can't install `ACME::Foo::Bar` that way. In fact, there is already a module and package called [Whatever](https://metacpan.org/pod/Whatever).
+CPAN clients lookup the package name in the packages list to know which distribution to install, so if my `Whatever2` package isn't in the list, I can't install `ACME::Foo::Bar` that way:
+
+    $ cpan Whatever2
+    CPAN: Storable loaded ok (v2.53)
+    Reading '/home/dfarrell/.local/share/.cpan/Metadata'
+      Database was generated on Thu, 15 Dec 2016 13:53:43 GMT
+    Warning: Cannot install Whatever2, don't know what it is.
+    Try the command
+
+        i /Whatever2/
+
+    to find objects with matching identifiers.
 
 But referencing it by its distribution name works fine:
 
-    $ cpanm DFARRELL/ACME-Foo-Bar-0.01.tar.gz
-    --> Working on DFARRELL/ACME-Foo-Bar-0.01.tar.gz
-    Fetching http://www.cpan.org/authors/id/D/DF/DFARRELL/ACME-Foo-Bar-0.01.tar.gz ... OK
-    Configuring ACME-Foo-Bar-0.01 ... OK
-    Building and testing ACME-Foo-Bar-0.01 ... OK
-    Successfully installed ACME-Foo-Bar-0.01
+    $ cpan DFARRELL/ACME-Foo-Bar-0.02.tar.gz
+    --> Working on DFARRELL/ACME-Foo-Bar-0.02.tar.gz
+    Fetching http://www.cpan.org/authors/id/D/DF/DFARRELL/ACME-Foo-Bar-0.02.tar.gz ... OK
+    Configuring ACME-Foo-Bar-0.02 ... OK
+    Building and testing ACME-Foo-Bar-0.02 ... OK
+    Successfully installed ACME-Foo-Bar-0.02
     1 distribution installed
 
-<sup>&#x271D;</sup> unless you want to view the detailed [results](http://www.cpantesters.org/distro/A/ACME-Foo-Bar.html?oncpan=1&distmat=1&version=0.01&grade=2), in which case it doesn't work.
+One exception to this is [cpanm](https://metacpan.org/pod/App::cpanminus), which falls back on a file search of the metacpan API if it doesn't find the package in [CPAN meta DB](http://cpanmetadb.plackperl.org/). So this works:
+
+    $ cpanm Whatever2
 
 ### Summary
 
 Neil Bowers has written an excellent [glossary](http://neilb.org/2015/09/05/cpan-glossary.html#cuckoo-package) of CPAN terms. Packages with a namespace different to their module name are known as 'cuckoo' packages.
 
 As conventions go, using the same package and module name is useful and recommended. Especially if the code is going to be shared via CPAN or otherwise. But it's good to know that they're not the same thing.
+
+<br>**Updates**:*Changed example to use "require" instead of "use", as "use" calls "import()" on the namespace. Changed the package name to "Whatever2" to avoid a CPAN conflict. Thanks to Perlancar, Aristotle and Grinnz for the feedback on /r/perl. 2016-12-15*
