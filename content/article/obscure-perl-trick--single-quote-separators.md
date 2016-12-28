@@ -2,15 +2,15 @@
   {
     "title"  : "Obscure Perl trick: single-quote separators",
     "authors": ["David Farrell"],
-    "date"   : "2016-12-26T11:09:34",
-    "tags"   : [],
-    "draft"  : true,
+    "date"   : "2016-12-28T09:36:00",
+    "tags"   : ["ada","single-quote","namespace","trick"],
+    "draft"  : false,
     "image"  : "",
     "description" : "One of Perl's ancient artifacts",
     "categories": "development"
   }
 
-One of the delights of working in an old language with penchant for backwards-compatibility is discovering some of the artifacts that remain. A couple of weeks ago I was reading [perlmod]() and came across this:
+One of the delights of working in an old language with penchant for backwards-compatibility is discovering some of the artifacts that remain. A couple of weeks ago I was reading [perlmod](http://perldoc.perl.org/perlmod.html) and came across this:
 
    > The old package delimiter was a single quote ... which was there
    > to make Ada programmers feel like they knew what was going on ...
@@ -45,8 +45,9 @@ package main;
 print My'Customer'name();
 ```
 
-Running this code prints "Dobby the Sheep" as expected, but the syntax highlighting is pretty messed up on my editor.
+You can see that the single quote can replace both namespace separators in the package name, and attribute accessors in the call to `name()`. Running this code prints "Dobby the Sheep" as expected, but the syntax highlighting is pretty messed up in my editor.
 
 ### References
 
 * A detailed [account](http://archive.adaic.com/pol-hist/history/holwg-93/holwg-93.htm) of the Higher Order Language Working Group that produced Ada
+* You can read perlmod [online](http://perldoc.perl.org/perlmod.html) or at the command line by typing `perldoc perlmod`.
