@@ -3,7 +3,7 @@
    "authors" : [
       "David Farrell"
    ],
-   "draft" : true,
+   "draft" : false,
    "title" : "What's new on CPAN - December 2016",
    "date" : "2017-01-05T03:04:46",
    "image" : "/images/209/EC0FEBBE-FF2E-11E3-8A2A-5C05A68B9E16.png",
