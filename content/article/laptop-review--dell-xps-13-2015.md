@@ -7,9 +7,9 @@
    "image" : "/images/187/E8C99470-454E-11E5-847C-220CFC9DDBA7.jpeg",
    "date" : "2015-08-18T12:34:12",
    "tags" : [
-      "hardware",
-      "review",
+      "dell",
       "laptop",
+      "xps",
       "old_site"
    ],
    "authors" : [
