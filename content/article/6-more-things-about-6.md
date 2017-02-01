@@ -10,14 +10,12 @@
    ],
    "date" : "",
    "title" : "Six more things I like about 6",
-   "draft" : true,
+   "draft" : true
 }
 
-[The Perl Shop](http://www.theperlshop.com) recently sponsored me to speak about Perl 6 at a meeting of the [Boston Perl mongers](http://boston.pm.org). They had backed the Kickstarter project for [Learning Perl 6](https://www.learningperl6.com). If you'd like me to speak at your user group, get in touch!
+[The Perl Shop](http://www.theperlshop.com) recently sponsored me to speak about Perl 6 at a meeting of the [Boston Perl mongers](http://boston.pm.org). They had backed the Kickstarter project for [Learning Perl 6](https://www.learningperl6.com). As part of that, I'm giving talks to Perl mongers groups about what I like about the language. These aren't necessarily the most exciting or advanced features or the newest computer science features. They are merely things that I like.
 
-As part of that, I'm giving talks to Perl mongers groups about what I like about the language. These aren't necessarily the most exciting or advanced features or the newest computer science features. They are merely things that I like.
-
-Part of this is my long experience with Perl. Many of these features are scattered across the languages landscape, and I've long said that I'd gladly abandon Perl when I found a language I liked better. Now I'm getting some of the features I may have coveted in languages missing some of the stuff I enjoy about Perl.
+Many of these features are scattered across the languages landscape, and I've long said that I'd gladly abandon Perl when I found a language I liked better. Now I'm getting some of the features I may have coveted in languages that are missing some of the stuff I still enjoy about Perl.
 
 ### Rats
 
@@ -26,7 +24,7 @@ Perl 6 can maintain precision as long as possible by keeping rational numbers as
 	$ perl5 -le 'print 0.3 - 0.2 - 0.1'
 	-2.77555756156289e-17
 
-That's a little off, but we've come to accept that (for example, multiplying all money amounts so you only deal in integers).
+That's a little off, but we've come to accept that (for example, multiplying all money amounts so you only deal in integers). Perl 6, however, stores them exactly as long as it can:
 
 	$ perl6
 	To exit type 'exit' or '^D'
@@ -46,7 +44,7 @@ A repeating decimal is still a rational number, although Perl 6 doesn't yet have
 
 ### Soft Failures
 
-Perl 6 has [Failure]() objects, which wrap an exception. Many things may return such an object when something goes wrong. A [Failure]() is always `False` in Boolean context, but Perl 6 also marks it as handled when it's checked like that. Otherwise, if I try to use that object as if everything succeeded, it immediatley throws its exception:
+Perl 6 has [Failure](https://docs.perl6.org/type/Failure) objects, which wrap an exception. Many things may return such an object when something goes wrong. A [Failure](https://docs.perl6.org/type/Failure) is always `False` in Boolean context, but Perl 6 also marks it as handled when it's checked like that. Otherwise, if I try to use that object as if everything succeeded, it immediately throws its exception:
 
 ``` prettyprint
 my $file = 'not-there';
@@ -121,7 +119,7 @@ Not every exception can resume, but I see a lot of promise in this ability.
 
 ### Easier Interpolation
 
-My estimation of a language is mostly based on how easy it makes it to create new strings. Perl 5 was pretty good about that, but Perl 6 is even better.
+My estimation of a language is mostly based on how easy I can create new strings. Perl 5 was pretty good about that, but Perl 6 is even better.
 
 Scalars, arrays, and hashes (yes, hashes!) can interplate directly, although you need to add the subscript characters for the latter two:
 
@@ -212,5 +210,5 @@ c is 190 239
 word is BEEF
 ```
 
-There's much more that I can write about lists of lists, but this article is long enough already. I'll save some of that for later articles. You can see more of my Perl 6 stuff at [https://www.learningperl6.com](https://www.learningperl6.com).
+There's much more that I can write about lists of lists, but this article is long enough already. I'll save some of that for later articles. You can see more of my Perl 6 stuff at [https://www.learningperl6.com](https://www.learningperl6.com/).
 
