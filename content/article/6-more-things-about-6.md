@@ -6,9 +6,9 @@
    ],
    "categories" : "perl6",
    "tags" : [
-      "Perl 6",
+      "Perl 6"
    ],
-   "date" : "",
+   "date" : "2017-01-24T00:00:00",
    "title" : "Six more things I like about 6",
    "draft" : true
 }
