@@ -6,11 +6,11 @@
    ],
    "categories" : "perl6",
    "tags" : [
-      "Perl 6"
+     "rat", "return-value","perl-shop","failure","fmt"
    ],
-   "date" : "2017-01-24T00:00:00",
+   "date" : "2017-02-07T08:26:00",
    "title" : "Six more things I like about 6",
-   "draft" : true
+   "draft" : false
 }
 
 [The Perl Shop](http://www.theperlshop.com) recently sponsored me to speak about Perl 6 at a meeting of the [Boston Perl mongers](http://boston.pm.org). They had backed the Kickstarter project for [Learning Perl 6](https://www.learningperl6.com). As part of that, I'm giving talks to Perl mongers groups about what I like about the language. These aren't necessarily the most exciting or advanced features or the newest computer science features. They are merely things that I like.
@@ -24,7 +24,7 @@ Perl 6 can maintain precision as long as possible by keeping rational numbers as
 	$ perl5 -le 'print 0.3 - 0.2 - 0.1'
 	-2.77555756156289e-17
 
-That's a little off, but we've come to accept that (for example, multiplying all money amounts so you only deal in integers). Perl 6, however, stores them exactly as long as it can:
+That's a little off, but we've come to accept that (for example, multiplying all money amounts so you only deal in integers). Perl 6 however, stores them exactly as long as it can:
 
 	$ perl6
 	To exit type 'exit' or '^D'
@@ -76,7 +76,7 @@ CATCH {
 	}
 ```
 
-Now the exception takes over and the `CATCH` block handles it. There's a stracktrace that comes with that:
+Now the exception takes over and the `CATCH` block handles it. There's a strack trace that comes with that:
 
 	Caught X::AdHoc: Failed to open file not-there: no such file or directory
 	Failed to open file not-there: no such file or directory
@@ -88,11 +88,11 @@ Now the exception takes over and the `CATCH` block handles it. There's a strackt
 
 I love that this lets me decide how to check the error. I've always thought that the various syntaxes for `try` (in any language) bullied their ways into the language and took over the source code.
 
-And, I'm sufficiently besotted with this idea of object-oriented programming that I have a Perl 5 module that does a similar thing: [ReturnValue](http://www.metacpan.org/module/ReturnValue). I use that to return values where the caller can determine what happened by calling methods on the result.
+And, I'm sufficiently besotted with this idea of object-oriented programming that I have a Perl 5 module that does a similar thing: [ReturnValue](https://metacpan.org/pod/release/BDFOY/ReturnValue-0.10_01/lib/ReturnValue.pm). I use that to return values where the caller can determine what happened by calling methods on the result.
 
 ### Resumable Exceptions
 
-So, let's talk about exceptions. I haven't liked the fake ones people tried to push on me in Perl 5. If I can't actually handle it and continue the program, I don't think it's a proper exception. It's just a different way to return a value.
+So let's talk about exceptions. I haven't liked the fake ones people tried to push on me in Perl 5. If I can't actually handle it and continue the program, I don't think it's a proper exception. It's just a different way to return a value.
 
 ``` prettyprint
 CATCH {
@@ -121,7 +121,7 @@ Not every exception can resume, but I see a lot of promise in this ability.
 
 My estimation of a language is mostly based on how easy I can create new strings. Perl 5 was pretty good about that, but Perl 6 is even better.
 
-Scalars, arrays, and hashes (yes, hashes!) can interplate directly, although you need to add the subscript characters for the latter two:
+Scalars, arrays, and hashes (yes, hashes!) can interpolate directly, although you need to add the subscript characters for the latter two:
 
 ``` prettyprint
 say "This one has a $scalar";
@@ -129,7 +129,7 @@ say "The array needs braces: @array[]";
 say "The hash needs curlies: %hash{}";
 ```
 
-Better than that, though, is that I can interpolate anything by enclosing it in braces within the string. Perl 6 evalutes the code in the braces and replaces the block with the last evaluated expression:
+Better than that, though, is that I can interpolate anything by enclosing it in braces within the string. Perl 6 evaluates the code in the braces and replaces the block with the last evaluated expression:
 
 ``` prettyprint
 say "There are { $scalar.elems } elements";
@@ -139,7 +139,7 @@ say "The lowest is { @array.sort.[1] }";
 say "The lowest is { @array.min }";
 ```
 
-I could do this with `sprintf`, and sometimes I think that's more appropriate. But, I've often played reference-dereference games in strings to do what I can now do by design. I really like this (and so will Ruby programmers, I think).
+I could do this with `sprintf`, and sometimes I think that's more appropriate. But I've often played reference-dereference games in strings to do what I can now do by design. I really like this (and so will Ruby programmers, I think).
 
 ### fmt
 
@@ -211,4 +211,3 @@ word is BEEF
 ```
 
 There's much more that I can write about lists of lists, but this article is long enough already. I'll save some of that for later articles. You can see more of my Perl 6 stuff at [https://www.learningperl6.com](https://www.learningperl6.com/).
-
