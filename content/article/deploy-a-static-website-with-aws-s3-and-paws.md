@@ -128,7 +128,7 @@ Other useful options supported by the script:
 These options can be used like this:
 
 ```
-$ ./s3-upload --bucket mystaticwebsite.com --region us-east-1 --files mywebsite/static --delete-stale --force --mime-types mime.types --strip html
+$ ./s3-upload --bucket mystaticwebsite.com --region us-east-1 --files mywebsite/static --delete-stale --mime-types mime.types --strip html --max-age 31536000 --force
 static/index.html
 static/about.html
 static/news.html
