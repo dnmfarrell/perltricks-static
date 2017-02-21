@@ -89,5 +89,3 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 * Subprocesses in Mojolicious applications using [Mojolicious::Plugin::Subprocess](https://metacpan.org/pod/Mojolicious::Plugin::Subprocess)
 * [WWW::ModulrFinance](https://metacpan.org/pod/WWW::ModulrFinance) can Modulr API
 * get interwiki links from Wikipedia. using [WWW::Wikipedia::LangTitles](https://metacpan.org/pod/WWW::Wikipedia::LangTitles)
-
-
