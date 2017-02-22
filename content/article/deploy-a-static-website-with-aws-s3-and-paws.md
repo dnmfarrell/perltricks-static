@@ -28,7 +28,7 @@ aws_access_key_id = XXXXXXXXXXXX
 aws_secret_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Change the region value to the [AWS region](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) you want to use. These files are stored in a different [location](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#config-settings-and-precedence) on Windows.
+Change the region value to the [AWS region](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html) you want to use, and replace the "XXX" values with your own key id and secret key values. These files are stored in a different [location](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#config-settings-and-precedence) on Windows.
 
 ### Create an S3 bucket
 
@@ -102,7 +102,7 @@ The script will print any files uploaded to STDOUT and all other output to STDER
 
 ### More features
 
-Whilst the above script does the job, there are some features missing that are useful for static websites. Firstly, you might want to specify the MIME type of the files being uploaded. This is so when browsers fetch the files, S3 responds with the correct content type [header. Otherwise, HTML files may not be displayed as websites, images may be downloaded instead of displayed, and so on. I use  [Media::Type::Simple](https://metacpan.org/pod/Media::Type::Simple) for this:
+Whilst the above script does the job, there are some features missing that are useful for static websites. Firstly, you might want to specify the MIME type of the files being uploaded. This is so when browsers fetch the files, S3 responds with the correct content type [header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type). Otherwise, HTML files may not be displayed as websites, images may be downloaded instead of displayed, and so on. I use [Media::Type::Simple](https://metacpan.org/pod/Media::Type::Simple) for this:
 
 ``` prettyprint
 use Media::Type::Simple;
