@@ -10,7 +10,7 @@
     "categories": "cpan"
   }
 
-I created [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) as a simple tool to list the modules a program uses, and I recently added some features to make it easier to create some input I could give to [Perlmodules.net](https://www.perlmodules.net) to create a feed of changes for those modues.
+I created [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) as a simple tool to list the modules a program uses, and I recently added some features to make it easier to create some input I could give to [Perlmodules.net](https://www.perlmodules.net) to create a feed of changes for those modules.
 
 Much of my day-to-day work involves helping people turn legacy stuff into something testable, distributable, and installable (I find that special sort of drudgery quite interesting because every mess is different).  Jonathan Yu worked with my [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) to create the example program <i>examples/extract_modules</i> which I extended a bit. Here are some examples using the script on itself. The first example is for human inspection:
 
