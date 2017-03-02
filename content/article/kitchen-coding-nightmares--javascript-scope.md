@@ -23,7 +23,7 @@
 }
 
 
-Lately at the [Recurse Center](https://www.recurse.com/) I've been developing a JavaScript client for my [Settlers game](https://github.com/dnmfarrell/Settlers-Game). As a Perl developer working with JavaScript, it has been a fun experience. JavaScript feels very perly - both share a flexible syntax, first class functions and objects as hashes. And both languages have a lax interpreter which should have been put in strict mode in the first place (ha-ha!). One way in which JavaScript is very different from Perl is its scoping rules. I was burned by these more than once, and so if you're new to JavaScript, you might find the following summary and recommendations useful.
+Lately at the [Recurse Center](https://www.recurse.com/) I've been developing a JavaScript client for my Settlers game. As a Perl developer working with JavaScript, it has been a fun experience. JavaScript feels very perly - both share a flexible syntax, first class functions and objects as hashes. And both languages have a lax interpreter which should have been put in strict mode in the first place (ha-ha!). One way in which JavaScript is very different from Perl is its scoping rules. I was burned by these more than once, and so if you're new to JavaScript, you might find the following summary and recommendations useful.
 
 ### Functional scoping
 
@@ -135,7 +135,7 @@ function execute (foo)
 
 #### Use strict
 
-This is a convention all Perl programmers should be comfortable with. Enable [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) in JavaScript. Just like with Perl, JavaScript's strict mode can catch [several](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Changes_in_strict_mode)cases of variable-related bugs. Enable it globally with:
+This is a convention all Perl programmers should be comfortable with. Enable [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) in JavaScript. Just like with Perl, JavaScript's strict mode can catch [several](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#Changes_in_strict_mode) cases of variable-related bugs. Enable it globally with:
 
 ``` prettyprint
 "use strict";
