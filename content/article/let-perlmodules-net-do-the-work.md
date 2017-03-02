@@ -10,7 +10,9 @@
     "categories": "cpan"
   }
 
-Much of my work involves helping people turn legacy stuff into something testable, distributable, and installable (I find that special sort of drudgery quite interesting because every mess is different). I created [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) as a simple tool to take some programs lying around and list the modules they use. Jonathan Yu created the example program <i>examples/extract_modules</i> which I extended a bit. Here are some examples using the script on itself:
+I created [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) as a simple tool to list the modules a program uses, and I recently added some features to make it easier to create some input I could give to [Perlmodules.net](https://www.perlmodules.net) to create a feed of changes for those modues.
+
+Much of my day-to-day work involves helping people turn legacy stuff into something testable, distributable, and installable (I find that special sort of drudgery quite interesting because every mess is different).  Jonathan Yu worked with my [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) to create the example program <i>examples/extract_modules</i> which I extended a bit. Here are some examples using the script on itself. The first example is for human inspection:
 
 	# print a verbose text listing
 	$ extract_modules extract_modules
@@ -22,6 +24,8 @@ Much of my work involves helping people turn legacy stuff into something testabl
 	 - warnings (first released with Perl 5.006)
 	5 module(s) in core, 0 external module(s)
 
+I added some options to create an undecorated list of one module per line:
+
 	# print a succint list, one module per line
 	$ extract_modules -l extract_modules
 	Getopt::Std
@@ -31,10 +35,14 @@ Much of my work involves helping people turn legacy stuff into something testabl
 	strict
 	warnings
 
+And, since I like that `xargs -0` allows me to represent several lines as a single string with null octets as separators, I added a switch for that:
+
 	# print a succinct list, modules separated by null bytes
 	# you might like this with xargs -0
 	$ extract_modules -l -0 extract_modules
 	Getopt::StdModule::CoreListPod::Usageopenstrictwarnings
+
+While I'm in there, I might as well add JSON output:
 
 	# print the modules list as JSON
 	$ extract_modules -j extract_modules
@@ -47,15 +55,19 @@ Much of my work involves helping people turn legacy stuff into something testabl
 		"warnings"
 	]
 
-Note that this program can only detect explicitly declared namespaces in static `use` and `require` statements. You don't see the [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) in the output because this program uses it implicitly. That's a rare situation that doesn't bother me that much.
+If you want XML, tough. Well, I'll accept patches, actually, but maybe you could write a JSON-to-XML converter and chain some programs. Remember that Perl is a glue language!
 
-For example, I might want to install all of the dependencies from a standalone program:
+Note that this program can only detect explicitly declared namespaces in static `use` and `require` statements. You don't see the [Module::Extract::Use](https://www.metacpan.org/module/Module::Extract::Use) in the output because this program uses it implicitly. That's a rare situation that doesn't bother me that much, and it's something that I try to refactor out of code when I can.
 
-	$ extract_modules -0 some_program | xargs -0 cpan
+One of my immediate uses is to install all of the dependencies from a standalone program:
 
-This is much better than what I use to do: keep trying to run the program until it doesn't complain about missing dependencies. Sometimes that will still happen will implicit dependencies, but as I said, it's rare.
+	$ extract_modules -l -0 some_program | xargs -0 cpan
 
-There's another thing I like to do. Alexander Karelas created the website [PerlModules.net](https://www.perlmodules.net) to create feeds of changes to sets of modules. You create a feed that specifies the modules that you want to track. For each new release, he diffs the Changes file and adds that diff to your feed. If you like, you could have one feed per application. When the module changes, you'll see and entry in your feed and can read the diff without tracking down the module.
+This is much better than what I use to do: keep trying to run the program until it doesn't complain about missing dependencies. Sometimes that will still happen will implicit dependencies, but as I said, it's rare. From there, I can also use this list to construct the text I need to put into a _Makefile.PL_. I've considered writing a program for that, but I don't think it would save me that much time. I usually want to look at the list, so the no-look automation isn't as compelling.
+
+There's another thing I like to do with these module lists. Alexander Karelas created the website [PerlModules.net](https://www.perlmodules.net) to create feeds of changes to sets of modules. You create a feed that specifies the modules that you want to track. For each new release, he diffs the Changes file and adds that diff to your feed. If you like, you could have one feed per application. When the module changes, you'll see an entry in your feed and can read the diff without tracking down the module.
+
+![Personal Feeds](/images/perlmodules-net/personal-feeds.png)
 
 To get the list of modules I want to track, I can use `extract_modules` with its `-l` switch to make a one-namespace-per-line list of the dependencies. Here I use `extract_modules` on all of the modules in a project:
 
@@ -74,5 +86,9 @@ To get the list of modules I want to track, I can use `extract_modules` with its
 
 I can paste this list directly into the [PerlModules.net](https://www.perlmodules.net) feed creator (or, the motivated can automate this if they want to create many, many feeds).
 
-Once I've created the feed, I can view it in a variety of ways. Although I could visit the website to see what's changed, I can also get updates in email or as an RSS feed.
+![Upload List](/images/perlmodules-net/upload-list.png)
+
+Once I've created the feed, I can view it in a variety of ways. Although I could visit the website to see what's changed or get email when there's a change. I prefer the RSS feed though. With that feed, a motivated Perler effectively has a way to programmatically get a list of the changes by fetching and parsing that feed.
+
+![Changes List](/images/perlmodules-net/changes-list.png)
 
