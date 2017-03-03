@@ -64,7 +64,9 @@ One of my immediate uses is to install all of the dependencies from a standalone
 
 This is much better than what I use to do: keep trying to run the program until it doesn't complain about missing dependencies. Sometimes that will still happen will implicit dependencies, but as I said, it's rare. From there, I can also use this list to construct the text I need to put into a _Makefile.PL_. I've considered writing a program for that, but I don't think it would save me that much time. I usually want to look at the list, so the no-look automation isn't as compelling.
 
-There's another thing I like to do with these module lists. Alexander Karelas created the website [PerlModules.net](https://www.perlmodules.net) to create feeds of changes to sets of modules. He was kind enough to support my _Learning Perl 6_ Kickstarter campaign by sponsoring this article on PerlTricks.
+There's another thing I like to do with these module lists. Alexander Karelas created the website [PerlModules.net](https://www.perlmodules.net) to create feeds of changes to sets of modules. e was kind enough to support my _Learning Perl 6_ Kickstarter campaign by sponsoring this article on PerlTricks.
+
+From a list of modules, he figures out which distribution they are in and diff all of those _Changes_ files so he can present all of those diffs to you. You (and most people) probably don't pay attention to all the changes. Perhaps you look at the _Changes_ for one of the main modules. You might ignore those other changes because it's a bunch of work to go through all the distributions.
 
 You create a feed that specifies the modules that you want to track. For each new release, he diffs the Changes file and adds that diff to your feed. If you like, you could have one feed per application. When the module changes, you'll see an entry in your feed and can read the diff without tracking down the module.
 
@@ -93,3 +95,4 @@ Once I've created the feed, I can view it in a variety of ways. Although I could
 
 ![Changes List](/images/perlmodules-net/changes-list.png)
 
+But, now comes the hard part: Making good _Changes_ files in our distributions. That's something I'll save for a different PerlTricks article.
