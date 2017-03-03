@@ -1,4 +1,3 @@
-
   {
     "title"  : "Track Module Changes While You Sleep",
     "authors": ["brian d foy"],
