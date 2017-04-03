@@ -2,9 +2,9 @@
   {
     "title"  : "AWS Cloudfront cache invalidation with Paws",
     "authors": ["David Farrell"],
-    "date"   : "2017-03-27T09:04:14",
+    "date"   : "2017-04-03T08:12:14",
     "tags"   : ["aws", "cloudfront", "s3", "paws"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "/images/deploy-a-static-website-with-aws-s3-and-paws/aws-logo.png",
     "description" : "Another useful AWS script built with Paws",
     "categories": "development"
@@ -112,3 +112,5 @@ Alternatively, keys (filenames) can be specified as arguments:
 ```
 ./cf-invalid -d e9d4922bd9120 -r us-east-1 -k index.html -k about.html -k contact.html
 ```
+
+Both scripts are available on [Github](https://github.com/dnmfarrell/Paws-tools).
