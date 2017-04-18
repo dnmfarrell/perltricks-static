@@ -10,7 +10,7 @@
     "categories": "perl6"
   }
 
-brian d foy interviews Laurent Rosenberg's, whose new book, [Think Perl 6](http://shop.oreilly.com/product/0636920065883.do) from O'Reilly Media, comes out this summer and is available for pre-order. This book joins a series of [Think ...](http://greenteapress.com/wp/think-python/) books targeting different subjects and is provided for free under a [Creative Commons license](http://creativecommons.org/licenses/by-nc/3.0/).
+brian d foy interviews Laurent Rosenfeld's, whose new book, [Think Perl 6](http://shop.oreilly.com/product/0636920065883.do) from O'Reilly Media, comes out this summer and is available for pre-order. This book joins a series of [Think ...](http://greenteapress.com/wp/think-python/) books targeting different subjects and is provided for free under a [Creative Commons license](http://creativecommons.org/licenses/by-nc/3.0/).
 
 This article was made possible through a reward on brian's [Kickstarter project for Learning Perl 6](https://www.kickstarter.com/projects/1422827986/learning-perl-6).
 
