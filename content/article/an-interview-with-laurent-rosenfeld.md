@@ -5,7 +5,7 @@
     "date"   : "2017-04-18T06:38:17",
     "tags"   : [],
     "draft"  : true,
-    "image"  : "",
+    "image"  : "/images/laurent-rosenfeld-interview/think_perl_6_cover.jpeg",
     "description" : "An Interview with Laurent Rosenfeld",
     "categories": "perl6"
   }
