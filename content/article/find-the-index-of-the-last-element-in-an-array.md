@@ -50,7 +50,7 @@ The last index operator ($\#array\_name) also works on arrayrefs if you insert a
 ``` prettyprint
 my $arrayref = [41, 67, 13, 9, 62];
 print $#$arrayref;
-# 5
+# 4
 print $$arrayref[$#$arrayref]; 
 # 62 
 ```
