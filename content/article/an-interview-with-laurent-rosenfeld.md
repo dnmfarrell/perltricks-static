@@ -2,11 +2,11 @@
   {
     "title"  : "Thinking about Perl 6",
     "authors": ["brian d foy"],
-    "date"   : "2017-04-18T06:38:17",
+    "date"   : "2017-04-25T08:23:17",
     "tags"   : ["oreilly", "interview"],
     "draft"  : false,
     "image"  : "/images/laurent-rosenfeld-interview/think_perl_6_cover.jpeg",
-    "description" : "An Interview with Laurent Rosenfeld",
+    "description" : "An Interview with Laurent Rosenfeld, author of Think Perl 6",
     "categories": "perl6"
   }
 
