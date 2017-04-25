@@ -32,3 +32,9 @@ cpan SAMV/Set-Object-1.28.tar.gz
 ```
 
 You can find the distribution filename for a module by searching for the module on [CPAN](http://search.cpan.org/).
+
+If you are using [cpanminus](https://metacpan.org/pod/App::cpanminus) you can specify the version with this syntax:
+
+``` prettyprint
+cpanm Set::Object@1.28
+```
