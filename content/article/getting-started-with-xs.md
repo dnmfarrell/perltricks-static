@@ -3,8 +3,8 @@
     "title"  : "Getting started with XS",
     "authors": ["David Farrell"],
     "date"   : "2017-05-03T20:47:51",
-    "tags"   : [],
-    "draft"  : true,
+    "tags"   : ["xs", "extutils-makemaker", "stdlib.h", "rand", "perlapi", "xsubpp"],
+    "draft"  : false,
     "image"  : "",
     "description" : "A gentle introduction to Perl's C interface",
     "categories": "development"
