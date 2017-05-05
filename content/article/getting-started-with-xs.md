@@ -30,7 +30,7 @@ integrate any C library you choose and use it from Perl.
 
 ### Components
 
-There are three basic components needed to write an xsub. The first is a Perl
+There are a few basic components needed to write an xsub. The first is a Perl
 module that will provide the namespace for any XS functions. This is all that's
 needed:
 
