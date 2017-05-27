@@ -53,7 +53,7 @@ Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads
 * [Test::Doctest](https://metacpan.org/pod/Test::Doctest) can extract and evaluate tests from pod fragments - curious
 
 ### Hardware
-* [Linux::IRPulses](https://metacpan.org/pod/Linux::IRPulses) Parse infra-red pulse data - also see Timm's recent [article](http://localhost:1313/article/controlling-insanity-by-parsing-ir-codes-with-linux--irpulses/) on the subject
+* [Linux::IRPulses](https://metacpan.org/pod/Linux::IRPulses) Parse infra-red pulse data - also see Timm's recent [article]({{< relref "controlling-insanity-by-parsing-ir-codes-with-linux--irpulses.md" >}}) on the subject
 
 ### Language & International
 * Guess language from text using a word list with [Text::Guess::Language](https://metacpan.org/pod/Text::Guess::Language)
