@@ -4,7 +4,7 @@
    "tags" : ["pivotal", "mastodon", "hashicorp", "pixabay", "zopfli", "io-framed","hyperscan", "pcre2", "jieba", "try-tiny","fastpbkdf2"],
    "date" : "2017-05-07T15:57:28",
    "categories" : "cpan",
-   "draft" : true,
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
