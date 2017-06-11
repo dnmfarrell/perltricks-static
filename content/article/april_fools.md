@@ -52,7 +52,7 @@ Several modules provide an interface to better sources:
 
 * [Net::Random](http://www.metacpan.org/module/Net::Random) can connect to internet services that send back random numbers. You have to trust the internet though.
 
-* [Crypt::Random]((http://www.metacpan.org/module/Crypt::Random) connects to the local [/dev/random](http://man7.org/linux/man-pages/man4/random.4.html). That uses environmental noise to generate bytes. The /dev/urandom device might drop down to pseudo-randomness though. Neither is a good source for long sequences of numbers.
+* [Crypt::Random](http://www.metacpan.org/module/Crypt::Random) connects to the local [/dev/random](http://man7.org/linux/man-pages/man4/random.4.html). That uses environmental noise to generate bytes. The /dev/urandom device might drop down to pseudo-randomness though. Neither is a good source for long sequences of numbers.
 
 * An [Entropy Key](http://www.entropykey.co.uk) is a small USB device that helps the _/dev/random_ device fill up its entropy sink. This allows you to read from the device more frequently without dropping into pseudorandomness.
 
