@@ -27,7 +27,7 @@ my %categories = (
   'Other' => [],
 );
 
-my @attributes = qw/name version description release_date type author tests_passed tests_failed/;
+my @attributes = qw/name version description release_date type author/;
 
 my $total = @lines;
 my $i     = 0;
@@ -41,8 +41,9 @@ for my $release (sort @lines)
 
     my %module = map { $attributes[$_] => $release[$_] } 0..$#release;
 
+    $module{name} =~ s/-/::/g;
     # remove the module name from the desc
-    $module{description} =~ s/$module{name}//g;
+    #$module{description} =~ s/$module{name}//g;
 
     # skip prolific authors
     next if grep ($module{author} =~ /$_/i, qw/perlancar unknown spacek imrie/);
@@ -53,7 +54,7 @@ for my $release (sort @lines)
 
     # fetch pod, skip unless accepted
     my $ua = HTTP::Tiny->new;
-    my $response = $ua->get("http://api.metacpan.org/v0/pod/$module{name}?content-type=text/x-pod");
+    my $response = $ua->get("http://fastapi.metacpan.org/v1/pod/$module{name}?content-type=text/x-pod");
     next unless $response->{success};
     open my $tmp, '>:utf8', '.tmp.pod';
     print $tmp $response->{content};
