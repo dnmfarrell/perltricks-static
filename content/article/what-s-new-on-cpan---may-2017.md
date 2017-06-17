@@ -1,10 +1,10 @@
 {
-   "draft" : true,
-   "date" : "2017-06-04T18:38:09",
+   "draft" : false,
+   "date" : "2017-06-13T09:30:00",
    "categories" : "cpan",
    "description" : "A curated look at May's new CPAN uploads",
-   "image" : "",
-   "tags" : [],
+   "image" : "/images/176/2A6DE1D0-0ACE-11E5-A57F-EAC87F6D3C83.png",
+   "tags" : ["trello", "mpd", "vmware", "rpi", "aws", "clouddeploy", "sqs", "xgboost"],
    "title" : "What's new on CPAN - May 2017",
    "authors" : [
       "David Farrell"
@@ -14,47 +14,51 @@
 
 Welcome to "What's new on CPAN", a curated look at last month's new CPAN uploads for your reading and programming pleasure. Enjoy!
 
+N.B. I'll be speaking at [The Perl Conference: DC 2017](http://www.perlconference.us/tpc-2017-dc/). My talk [What's New on CPAN - Annual Edition](http://www.perlconference.us/tpc-2017-dc/talks/#what_s_new_on_cpan_annual_edition) will cover some highlights and curiosities from the past year of CPAN uploads. Come and say hi!
+
 ### APIs & Apps
-* [API::CLI](https://metacpan.org/pod/API::CLI) Generic Framework for REST API Command Line Clients
-* Aliyun Command Tools using [App::Aliyun](https://metacpan.org/pod/App::Aliyun)
-* [Net::Async::Trello](https://metacpan.org/pod/Net::Async::Trello) Interaction with the trello.com API
-* Alien-LibBigWig
-* Bio-DB-Big
-* AnyEvent-Net-MPD
-* AI-XGBoost
+* [Net::Async::Trello](https://metacpan.org/pod/Net::Async::Trello) is a low level, minimalist client for Trello
+* Get a non blocking interface to Music Player Daemon with [AnyEvent::Net::MPD](https://metacpan.org/pod/AnyEvent::Net::MPD)
+* [VMware::vCloudDirector](https://metacpan.org/pod/VMware::vCloudDirector) provides an interface to VMWare vCloud Directory REST API
 
 
 ### Config & Devops
-* A toolkit for building and managing AWS CloudFormation stacks using [CloudDeploy](https://metacpan.org/pod/CloudDeploy)
+* [CloudDeploy](https://metacpan.org/pod/CloudDeploy) is a toolkit for building and managing AWS CloudFormation stacks
+* A simple distributed cloud friendly cron for the masses using [CloudCron](https://metacpan.org/pod/CloudCron)
 
 
 ### Data
-* Generate start/end dates easily, based on type (year, month,...), using [Date::Calc::Endpoints](https://metacpan.org/pod/Date::Calc::Endpoints)
-* [Hash::Normalize](https://metacpan.org/pod/Hash::Normalize) Automatically normalize Unicode hash keys.
-* [MARC::File::XML](https://metacpan.org/pod/MARC::File::XML) convert a MARC file to XML
-* [Net::DNS::Extlang](https://metacpan.org/pod/Net::DNS::Extlang) can DNS extension language
-* Multiprotocol Label Switching layer object using [Net::Frame::Layer::MPLS](https://metacpan.org/pod/Net::Frame::Layer::MPLS)
-* File-PCAP
+* Generate color data for testing using [Data::Faker::Colour](https://metacpan.org/pod/Data::Faker::Colour)
+* [File::PCAP](https://metacpan.org/pod/File::PCAP) is a module for reading/writing PCAP files
+* Automatically normalize Unicode hash keys with [Hash::Normalize](https://metacpan.org/pod/Hash::Normalize)
+* [Net::DNS::Extlang](https://metacpan.org/pod/Net::DNS::Extlang) is a DNS extension language
 
 
 ### Development & Version Control
-* A non-blocking interface to MPD with [AnyEvent::Net::MPD](https://metacpan.org/pod/AnyEvent::Net::MPD)
-* [SQS::Worker](https://metacpan.org/pod/SQS::Worker) can A light framework for processing messages from SQS queues
+* [API::CLI](https://metacpan.org/pod/API::CLI) is a generic framework for creating REST API command line clients
+* Benchmark different parameter validation modules using [Benchmark::Featureset::ParamCheck](https://metacpan.org/pod/Benchmark::Featureset::ParamCheck)
+* [Ref::Util::XS](https://metacpan.org/pod/Ref::Util::XS) is the XS implementation of Ref::Util
+* Get a superfast router using [Router::XS](https://metacpan.org/pod/Router::XS) (disclaimer: I am the module author)
+* [SQS::Worker](https://metacpan.org/pod/SQS::Worker) is a lightweight framework for async processing of messages from SQS queues
+* Get tab completion in the Reply REPL for exported symbol names with [Reply::Plugin::Autocomplete::ExportedSymbols](https://metacpan.org/pod/Reply::Plugin::Autocomplete::ExportedSymbols)
 
 
 ### Hardware
 * Interact with the Palo Alto firewall API with [Device::PaloAlto::Firewall](https://metacpan.org/pod/Device::PaloAlto::Firewall)
+* Extract GPS data from GPS units using [GPSD::Parse](https://metacpan.org/pod/GPSD::Parse)
 * Access and manipulate Raspberry Pi GPIO pins with [RPi::Pin](https://metacpan.org/pod/RPi::Pin)
+* [Image::Sane](https://metacpan.org/pod/Image::Sane) let's you use SANE-compatible scanner devices from Perl
 
 
 ### Other
-* A worker process for CloudCron with [CloudCron::Worker](https://metacpan.org/pod/CloudCron::Worker)
-* A simple distributed cloud friendly cron for the masses using [CloudCron](https://metacpan.org/pod/CloudCron)
-* [VMware::vCloudDirector](https://metacpan.org/pod/VMware::vCloudDirector) Interface to VMWare vCloud Directory REST API
-* documentation with examples for learning Perl XS using [XS::Tutorial](https://metacpan.org/pod/XS::Tutorial)
+* [XS::Tutorial](https://metacpan.org/pod/XS::Tutorial) provides documentation for learning Perl XS (disclosure, I am the module author).
+
+### Science & Mathematics
+* [AI::XGBoost](https://metacpan.org/pod/AI::XGBoost) is a Perl wrapper for XGBoost, the gradient boosting machine learning framework
+* [Bio::DB::Big](https://metacpan.org/pod/Bio::DB::Big) provides a perly interface to BigWig and BigBed files via libBigWig
 
 
 ### Web
 * Log LWP requests as curl commands using [LWP::CurlLog](https://metacpan.org/pod/LWP::CurlLog)
-* Tab completion for exported symbol names with [Reply::Plugin::Autocomplete::ExportedSymbols](https://metacpan.org/pod/Reply::Plugin::Autocomplete::ExportedSymbols)
-* CSS selector method for WWW::Mechanize with [WWW::Mechanize::Plugin::Selector](https://metacpan.org/pod/WWW::Mechanize::Plugin::Selector)
+* [Test::HTTP::LocalServer](https://metacpan.org/pod/Test::HTTP::LocalServer) implements a tiny HTTP server for testing
+* [WWW::Mechanize::Plugin::Selector](https://metacpan.org/pod/WWW::Mechanize::Plugin::Selector) adds a CSS selector method for WWW::Mechanize
