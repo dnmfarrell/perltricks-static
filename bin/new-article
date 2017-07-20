@@ -24,7 +24,7 @@ die "$0 must be run from the root project directory!\n"
 
 # prepare the file
 my $filename = lc $title;
-$filename =~ s/\W/-/g;
+$filename =~ s/\W+/-/g;
 $filename = "content/article/$filename.md";
 die "$filename.md already exists!\n" if -e $filename;
 open my $fh, '>:utf8', $filename;
