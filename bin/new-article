@@ -12,6 +12,8 @@ GetOptions(
   'description=s' => \(my $description = ''),
   'author=s'      => \(my $author = ''),
   'help'          => \&usage,
+  'open'          => \my $open_in_editor,
+  'editor'        => \(my $editor = $ENV{EDITOR}),
 ) or usage();
 usage() unless $title && $category && (grep $_ eq $category, @categories);
 
@@ -49,6 +51,7 @@ The article body goes here. Use [GitHub Flavored Markdown](https://guides.github
 );
 
 print "$filename created\n.";
+system $editor, $filename if $open_in_editor;
 
 sub usage {
   print "\n$0 [OPTIONS]\n\n";
@@ -59,6 +62,8 @@ sub usage {
   --description, -d  Description (subtitle)
   --author, -a       Author
   --help, -h         Print help
+  --open, -o         Open in editor (defaults to $EDITOR environment variable)
+  --editor, -e       Editor to use (defaults to $EDITOR environment variable)
   \n";
   exit 0;
 }
