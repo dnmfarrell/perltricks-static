@@ -2,16 +2,16 @@
   {
     "title"  : "Pretty Printing Perl 6",
     "authors": ["brian d foy"],
-    "date"   : "2017-07-25T09:30:00",
+    "date"   : "2017-07-26T07:55:00",
     "tags"   : ["prettydump", "data-dumper", "pretty-printer"],
-    "draft"  : true,
+    "draft"  : false,
     "image"  : "",
     "description" : "When .Str is not good enough",
     "categories": "perl6"
   }
 
 
-As I was working on [Learning Perl 6](https://www.learningperl6.com/), I wanted a way to pretty print a hash to show the reader what happened. I didn't want to output from the builtin routines and a module I found was a good start but needed more work. I created the [PrettyDump module](https://github.com/briandfoy/perl6-PrettyDump), and as part of a travel grant from [The Perl Foundation](http://www.perlfoundation.org).
+As I was working on [Learning Perl 6](https://www.learningperl6.com/), I wanted a way to pretty print a hash to show the reader what happened. I didn't want to output from the builtin routines and a module I found was a good start but needed more work. So I created the [PrettyDump module](https://github.com/briandfoy/perl6-PrettyDump).
 
 Before I get to my module, Perl 6 already has some nice ways to summarize objects. My first task was to dump a match object to see what it matched. Here's a bit of code that matches a string against a regex and saves the result in `$match`. That's a [Match](https://docs.perl6.org/type/Match) object:
 
