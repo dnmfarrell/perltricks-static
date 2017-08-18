@@ -40,7 +40,10 @@ And I know who to contact about the broken build, so I can exit the bisect proce
 
 ### Bisect and exit values
 
-Bisect run treats certain exit values specially: 125 means the code cannot be tested, and 128 or higher will abort the bisect process. If Perl throws an exception it exits with 255 (instead of 0 for a pass and 1 for a test fail), aborting the bisect altogether.
+Bisect run treats certain exit values specially: 125 means the code cannot be tested, and 128 or higher will abort the bisect process. If Perl throws an exception it exits with 255 (instead of 0 for a pass and 1 for a test fail), aborting the bisect altogether:
+
+    bisect run failed:
+    exit code 141 from 't/foo.t' is < 0 or >= 128
 
 To fix this, wrap the call to `t/foo.t` in a shell script which caps the return value of the test script at 127:
 
