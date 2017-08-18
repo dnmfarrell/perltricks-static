@@ -79,6 +79,9 @@ my $yesterdayDMY = Time::Piece->strptime('08-01-14', '%d-%m-%y');
 my $lunchhour24  = Time::Piece->strptime('12:30', '%H:%M');
 my $bedtime      = Time::Piece->strptime('12:30 AM', '%l:%M %p');
 
+# epoch - no problem
+my $from_epoch   = Time::Piece->strptime(1501615857, '%s');
+
 # timezones are easy too
 my $utc_datetime = Time::Piece->strptime('Mon, 19 Jan 2015 14:56:20 +0000','%a, %d %b %Y %H:%M:%S %z');
 my $eastern_datetime = Time::Piece->strptime('2015-10-05T09:34:19 -0400','%Y-%m-%dT%T %z');
