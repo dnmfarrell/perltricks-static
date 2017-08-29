@@ -1,12 +1,12 @@
 
   {
-    "title"  : "Plotting Using Inline::Python and Matplotlib",
+    "title"  : "Plotting With Perl 6",
     "authors": ["Moritz Lenz"],
     "date"   : "2017-08-24T15:27:57",
-    "tags"   : [],
+    "tags"   : ["inline-python", "matplotlib","git"],
     "draft"  : true,
     "image"  : "/images/perl6-fundamentals/book-cover.jpg",
-    "description" : "foobar",
+    "description" : "Using Inline::Python and Matplotlib to visualize commit history",
     "categories": "perl6"
   }
 
@@ -24,7 +24,7 @@ use Python modules in Perl 6.
 We want to plot the number of commits by author and date.
 We can get this information easily by passing some options to `git log`:
 
-```perl6
+```prettyprint
 my $proc = run :out, <git log --date=short --pretty=format:%ad!%an>;
 my (%total, %by-author, %dates);
 for $proc.out.lines -> $line {
@@ -58,14 +58,14 @@ by the negative value returns the list in descending order. The list contains
 [Pair](https://docs.perl6.org/types/Pair) objects, where we only want the
 first five, and only their keys:
 
-```perl6
+```prettyprint
 my @top-authors = %total.sort(-*.value).head(5).map(*.key);
 ```
 
 For each author, we can extract the dates of their activity and their
 commit counts like this:
 
-```perl6
+```prettyprint
 my @dates  = %by-author{$author}.keys.sort;
 my @counts = %by-author{$author}{@dates};
 ```
@@ -100,7 +100,7 @@ fig.autofmt_xdate()
 plt.show()
 ```
 
-To make this run, you have to install Python 2.7 and matplotlib[^only-python-2]. You can do
+To make this run, you have to install Python 2.7 and matplotlib<sup>[1](#python2-only)</sup>. You can do
 this on Debian-based Linux systems with `apt-get install -y python-matplotlib`.
 The package name is the same on RPM-based distributions such as CentOS or SUSE
 Linux. MacOS users are advised to install Python 2.7 through homebrew and
@@ -118,7 +118,7 @@ write the plot graphic to a file:
 ## Bridging the Gap
 
 The Rakudo Perl 6 compiler comes with a handy [library for calling foreign
-functions](https://docs.perl6.org/language/nativecall) -- called 'NativeCall' -- which allows you to
+functions](https://docs.perl6.org/language/nativecall) -- called `NativeCall` -- which allows you to
 call functions written in C, or anything with a compatible binary interface.
 
 The [Inline::Python](https://github.com/niner/Inline-Python) library uses
@@ -134,7 +134,7 @@ run
 
 Now you can start to run Python 2 code in your Perl 6 programs:
 
-```perl6
+```prettyprint
 use Inline::Python;
 
 my $py = Inline::Python.new;
@@ -145,7 +145,7 @@ Besides the `run` method, which takes a string of Python code and executes it,
 you can also use `call` to call Python routines by specifying the namespace,
 the routine to call, and a list of arguments:
 
-```perl6
+```prettyprint
 use Inline::Python;
 
 my $py = Inline::Python.new;
@@ -165,7 +165,7 @@ Objects that `Inline::Python` cannot translate are handled as opaque objects
 on the Perl 6 side. You can pass them back into Python routines (as shown
 with the `print` call above) and you can call methods on them:
 
-```perl6
+```prettyprint
 say $date.isoformat().decode;               # 2017-01-31
 ```
 
@@ -174,7 +174,7 @@ accessing attributes from foreign objects directly. For instance, if you try to 
 the `year` attribute of `datetime.date` through the normal method
 call syntax, you get an error:
 
-```perl6
+```prettyprint
 say $date.year;
 ```
 
@@ -184,7 +184,7 @@ dies with
 
 Instead, you have to use the `getattr` builtin:
 
-```perl6
+```prettyprint
 say $py.call('__builtin__', 'getattr', $date, 'year');
 ```
 
@@ -193,7 +193,7 @@ say $py.call('__builtin__', 'getattr', $date, 'year');
 We need access to two namespaces in Python, `datetime` and `matplotlib.pyplot`,
 so let's start by importing them and writing some short helpers:
 
-```perl6
+```prettyprint
 my $py = Inline::Python.new;
 $py.run('import datetime');
 $py.run('import matplotlib.pyplot');
@@ -210,7 +210,7 @@ We can now call `pydate('2017-03-01')` to create a Python `datetime.date`
 object from an ISO-formatted string and call the `plot` function to access
 functionality from matplotlib:
 
-```perl6
+```prettyprint
 my ($figure, $subplots) = plot('subplots');
 $figure.autofmt_xdate();
 
@@ -232,7 +232,7 @@ the flattening.
 Now we can actually plot the number of commits by author, add a legend, and
 plot the result:
 
-```perl6
+```prettyprint
 for @top-authors -> $author {
     my @dates = %by-author{$author}.keys.sort;
     my @counts = %by-author{$author}{@dates};
@@ -275,7 +275,7 @@ set to zero.
 This time we have to construct an array of arrays where each inner array
 has the values for one author:
 
-```perl6
+```prettyprint
 my @dates = %dates.keys.sort;
 my @stack = $[] xx @top-authors;
 
@@ -289,12 +289,11 @@ for @dates -> $d {
 Now plotting becomes a simple matter of a method call, followed by the
 usual commands to add a title and show the plot:
 
-```perl6
+```prettyprint
 $subplots.stackplot($[@dates.map(&pydate)], @stack);
 plot('title', 'Contributions per day');
 plot('show');
 ```
-
 The result (again run on the zef source repository) is this:
 
 ![Stacked plot of zef contributions over time](/images/perl6-fundamentals/zef-contributors-stacked-1.png)
@@ -310,13 +309,13 @@ points means zero commits happened on that date.
 To communicate this to matplotlib, we must explicitly insert zero values
 for missing dates. This can be achieved by replacing
 
-```perl6
+```prettyprint
 my @dates = %dates.keys.sort;
 ```
 
 with the line
 
-```perl6
+```prettyprint
 my @dates = %dates.keys.minmax;
 ```
 
@@ -342,7 +341,7 @@ specifically, a stacked bar chart. Matplotlib offers the `bar` plotting
 method where the named parameter `bottom` can be used to generate the
 stacking:
 
-```perl6
+```prettyprint
 my @dates = %dates.keys.sort;
 my @stack = $[] xx @top-authors;
 my @bottom = $[] xx @top-authors;
@@ -362,7 +361,7 @@ We need to supply color names ourselves and set the edge color of the
 bars to the same color, otherwise the black edge color dominates the
 result:
 
-```perl6
+```prettyprint
 my $width = 1.0;
 my @colors = <red green blue yellow black>;
 my @plots;
@@ -434,7 +433,7 @@ This is a more object-oriented syntax for the same API.
 The previous code examples used this Perl 6 code to call the `subplots`
 symbol:
 
-```perl6
+```prettyprint
 my $py = Inline::Python.new;
 $py.run('import matplotlib.pyplot');
 sub plot(Str $name, |c) {
@@ -448,7 +447,7 @@ If we want to call `subplots()` instead of `plot('subplots')`, and
 `bar(args)` instead of `plot('bar', args)`, we can use a function to
 generate wrapper functions:
 
-```perl6
+```prettyprint
 my $py = Inline::Python.new;
 
 sub gen(Str $namespace, *@names) {
@@ -494,7 +493,7 @@ a string `'$a'`, the name of the variable.
 Let's combine this to create a wrapper that initializes subroutines for
 us:
 
-```perl6
+```prettyprint
 sub pysub(Str $namespace, |args) {
     $py.run("import $namespace");
 
@@ -516,7 +515,7 @@ Perl 6 features in sub `pysub`. Using ordinary variables means that accessing th
 variable that's used on the caller side. So we can't use slurpy
 arguments as in
 
-```perl6
+```prettyprint
 sub pysub(Str $namespace, *@subs)
 ```
 
@@ -536,7 +535,7 @@ the method calls on Python modules. For that we can implement a class with a
 method `FALLBACK`, which Perl 6 calls for us when calling a method that is not
 implemented in the class:
 
-```perl6
+```prettyprint
 class PyPlot is Mu {
     has $.py;
     submethod TWEAK {
@@ -574,7 +573,7 @@ There's nothing specific to the Python package `matplotlib.pyplot` in class
 `PyPlot`, except the namespace name. We could easily generalize it to any
 namespace:
 
-```perl6
+```prettyprint
 class PythonModule is Mu {
     has $.py;
     has $.namespace;
@@ -593,7 +592,7 @@ This is one Perl 6 type that can represent any Python module. If instead we
 want a separate Perl 6 type for each Python module, we could use roles, which
 are optionally parameterized:
 
-```perl6
+```prettyprint
 role PythonModule[Str $namespace] is Mu {
     has $.py;
     submethod TWEAK {
@@ -610,7 +609,7 @@ my $pyplot = PythonModule['matplotlib.pyplot'].new(:$py);
 Using this approach, we can create type constraints for Python modules in
 Perl 6 space:
 
-```perl6
+```prettyprint
 sub plot-histogram(PythonModule['matplotlib.pyplot'], @data) {
     # implementation here
 }
@@ -628,5 +627,5 @@ A bit of Perl 6 meta programming allowed us to emulate different kinds of
 Python APIs pretty directly in Perl 6 code, allowing a fairly direct
 translation of the original library's documentation into Perl 6 code.
 
-[^only-python-2] The reason why Python 2.7 has to be used is that, at the time of writing, `Inline::Python` does not yet support Python 3.
-
+<br/>
+<a name="python2-only">1</a>: The reason why Python 2.7 has to be used is that, at the time of writing, `Inline::Python` does not yet support Python 3.
