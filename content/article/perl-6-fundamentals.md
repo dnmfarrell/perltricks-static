@@ -1,12 +1,12 @@
 
   {
     "title"  : "Plotting Using Inline::Python and Matplotlib",
-    "authors": ["Mortiz Lenz"],
+    "authors": ["Moritz Lenz"],
     "date"   : "2017-08-24T15:27:57",
     "tags"   : [],
     "draft"  : true,
     "image"  : "/images/perl6-fundamentals/book-cover.jpg",
-    "description" : "",
+    "description" : "foobar",
     "categories": "perl6"
   }
 
