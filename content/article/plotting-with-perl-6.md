@@ -5,7 +5,7 @@
     "date"   : "2017-08-24T15:27:57",
     "tags"   : ["inline-python", "matplotlib","git"],
     "draft"  : true,
-    "image"  : "/images/perl6-fundamentals/book-cover.jpg",
+    "image"  : "/images/plotting-with-perl-6/book-cover.jpg",
     "description" : "Using Inline::Python and Matplotlib to visualize commit history",
     "categories": "perl6"
   }
@@ -113,7 +113,7 @@ When you run this script with `python2.7 dates.py`, it opens a GUI window,
 showing the plot and some controls, which allow you to zoom, scroll, and
 write the plot graphic to a file:
 
-![Basic matplotlib plotting window](/images/perl6-fundamentals/matplotlib-window.png)
+![Basic matplotlib plotting window](/images/plotting-with-perl-6/matplotlib-window.png)
 
 ## Bridging the Gap
 
@@ -254,7 +254,7 @@ plot('show');
 When run in the [zef git repository](https://github.com/ugexe/zef), it produces
 this plot:
 
-![Contributions to zef, a Perl 6 module installer](/images/perl6-fundamentals/zef-contributors.png)
+![Contributions to zef, a Perl 6 module installer](/images/plotting-with-perl-6/zef-contributors.png)
 
 ## Stacked Plots
 
@@ -296,7 +296,7 @@ plot('show');
 ```
 The result (again run on the zef source repository) is this:
 
-![Stacked plot of zef contributions over time](/images/perl6-fundamentals/zef-contributors-stacked-1.png)
+![Stacked plot of zef contributions over time](/images/plotting-with-perl-6/zef-contributors-stacked-1.png)
 
 Comparing this to the previous visualization reveals a discrepancy:
 There were no commits in 2014, and yet the stacked plot makes it appear
@@ -328,7 +328,7 @@ maps missing values to zero.
 
 The result looks a bit better, but still far from perfect:
 
-![Stacked plot of zef contributions over time, with missing dates mapped to zero](/images/perl6-fundamentals/zef-contributors-stacked-2.png)
+![Stacked plot of zef contributions over time, with missing dates mapped to zero](/images/plotting-with-perl-6/zef-contributors-stacked-2.png)
 
 Thinking more about the problem, contributions from separate days should
 not be joined together, because it produces misleading results.
@@ -386,7 +386,7 @@ plot('show');
 This produces the first plot that's actually informative and not
 misleading (provided you're not color blind):
 
-![Stacked bar plot of zef contributions over time](/images/perl6-fundamentals/zef-contributors-bars.png)
+![Stacked bar plot of zef contributions over time](/images/plotting-with-perl-6/zef-contributors-bars.png)
 
 If you want to improve the result further, you could experiment with
 limiting the number of bars by lumping together contributions by week or
