@@ -62,8 +62,8 @@ sub usage {
   --description, -d  Description (subtitle)
   --author, -a       Author
   --help, -h         Print help
-  --open, -o         Open in editor (defaults to $EDITOR environment variable)
-  --editor, -e       Editor to use (defaults to $EDITOR environment variable)
+  --open, -o         Open in editor (defaults to \$EDITOR environment variable)
+  --editor, -e       Editor to use (defaults to \$EDITOR environment variable)
   \n";
   exit 0;
 }
