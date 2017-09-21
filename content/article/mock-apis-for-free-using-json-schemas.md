@@ -2,7 +2,7 @@
   {
     "title"  : "Mock APIs for free using JSON Schemas",
     "authors": ["David Farrell"],
-    "date"   : "2017-09-19T06:57:21",
+    "date"   : "2017-09-20T06:57:21",
     "tags"   : ["json-schema", "swagger", "openapi", "mock"],
     "draft"  : false,
     "image"  : "",
@@ -10,11 +10,7 @@
     "categories": "data"
   }
 
-[JSON::Schema::ToJSON](https://metacpan.org/pod/JSON::Schema::ToJSON) is a module which takes a [JSON schema](http://json-schema.org/), and generates a data structure compliant with the schema.
-
-### Synopsis
-
-Here's a quick script to generate JSON based on a schema:
+[JSON::Schema::ToJSON](https://metacpan.org/pod/JSON::Schema::ToJSON) is a module which takes a [JSON schema](http://json-schema.org/), and generates a data structure compliant with the schema. Here's a quick script to generate a data structure based on a schema:
 
 ``` prettyprint
 #!/usr/bin/perl
