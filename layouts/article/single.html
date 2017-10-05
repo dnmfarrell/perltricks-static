@@ -7,10 +7,14 @@
           <div class="col-md-9">
             <div class="row">
               <article>
-              {{ $author_name := index .Params.authors 0 | urlize }}
-              {{ $author := index $authors $author_name }}
               <h1 class="blog-post-title">{{ .Title }}</h1>
-              <p class="blog-post-meta">{{ .Date.Format "Jan 2, 2006" }} by <a href="#author-bio">{{ $author.name }}</a></p>
+              <p class="blog-post-meta">{{ .Date.Format "Jan 2, 2006" }} by
+              {{ $author_count := add (len .Params.authors) -1 }}
+              {{ range $index, $author_name := .Params.authors }}
+                {{ $author := index $authors ($author_name | urlize) }}
+                <a href="#author-bio-{{ $author_name | urlize }}">{{ $author_name }}</a>{{ if eq $index (add $author_count -1) }} and {{ else if lt $index $author_count }}, {{ end }}
+              {{ end }}
+              </p>
               <img alt="" src="{{ .Params.image }}"/>
                 {{ .Content }}
               </article>
@@ -22,17 +26,11 @@
                 {{ end }}
               </div>
             </div>
-            <div class="row" id="author-bio">
-              <!--hr style="width:100%;border-bottom:1px solid #ccc"></hr-->
-              <div class="col-sm-2">
-                <div class="circle-avatar" style="background-image:url({{ $author.image }})"></div>
-              </div>
-              <div class="col-sm-10" style="margin:0 0 50px 0">
-                <h3>{{ $author.name }}</h3>
-                <p>{{$author.bio | markdownify }}</p>
-                <h5><a href="/authors/{{ $author_name }}">Browse their articles</a></h5>
-              </div>
-            </div>
+            {{ range .Params.authors }}
+              {{ $author_name := . | urlize }}
+              {{ $author := index $authors $author_name }}
+              {{ partial "author.html" $author }}
+            {{ end }}
           </div>
           <div class="col-md-3">
             {{ partial "sidebar.html" . }}

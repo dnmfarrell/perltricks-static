@@ -8,19 +8,10 @@
       <div class="col-sm-9">
         {{ $data := .Data }}
         {{ range $key, $value := .Data.Terms.ByCount }}
-        <div class="row">
           {{ $author_name := index $value.Name | urlize }}
           {{ $author := index $authors $author_name }}
-          <div class="col-sm-3">
-            <div class="circle-avatar" style="background-image:url({{ $author.image }})"></div>
-          </div>
-          <div class="col-sm-9">
-            <h3>{{ $author.name }}</h3>
-            <p>{{$author.bio | markdownify }}</p>
-            <h5><a href="/{{ $data.Plural }}/{{ $author_name }}">Browse their articles</a></h5>
-          </div>
-        </div>
-      {{ end }}
+          {{ partial "author.html" $author }}
+        {{ end }}
       </div>
       <div class="col-sm-3">
         {{ partial "sidebar.html" . }}
