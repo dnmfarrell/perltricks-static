@@ -2,7 +2,7 @@
    "date" : "2017-10-06T00:53:52",
    "image" : "/images/196/FA370A74-683C-11E5-9273-385046321329.png",
    "description" : "A curated look at September's new CPAN uploads",
-   "draft" : true,
+   "draft" : false,
    "authors" : [
       "David Farrell"
    ],
