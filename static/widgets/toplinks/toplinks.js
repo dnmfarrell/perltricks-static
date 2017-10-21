@@ -1,6 +1,6 @@
 (function() {
   "use strict";
-  var httpRequest, response, url, ul, i, div, css_link, head, url_parts, hostDomain, linkDomain, links, linkCount;
+  var httpRequest, response, url, ul, i, div, url_parts, hostDomain, linkDomain, links, linkCount;
   url = "https://perltricks.com/perlybot/links.json";
   linkCount = 10;
 
@@ -30,14 +30,6 @@
         }
         var div = document.getElementById("toplinks");
         div.innerHTML = '<div class="toplinksheader">LATEST COMMUNITY ARTICLES</div>' + ul + links.join('') + '</ul>';
-
-        // inject css
-        head = document.getElementsByTagName('head')[0];
-        css_link = document.createElement('link');
-        css_link.setAttribute('rel','stylesheet');
-        css_link.setAttribute('type','text/css');
-        css_link.setAttribute('href','https://perltricks.com/widgets/toplinks/toplinks.css');
-        head.appendChild(css_link);
       }
       else {
         console.log("Error requesting " + url);
