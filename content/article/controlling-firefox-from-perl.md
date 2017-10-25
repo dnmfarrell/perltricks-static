@@ -17,6 +17,7 @@
    "draft" : false
 }
 
+**N.B.** *The [mozrepl](https://github.com/bard/mozrepl) technology used by WWW::Mechanize::Firefox is end of life, due to it's dependencies being retired from Firefox in November 2017. Thanks to Christopher Nielsen for letting us know.*
 
 I've been playing with [WWW::Mechanize::Firefox](http://www.metacpan.org/module/WWW::Mechanize::Firefox). It's like the LWP-backended [WWW::Mechanize](http://www.metacpan.org/module/WWW::Mechanize), but with a browser doing all the work. Instead of doing it all in Perl, I can use it as the glue language that it is.
 
