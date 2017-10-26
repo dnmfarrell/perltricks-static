@@ -20,15 +20,19 @@
 }
 
 
-On my home machine I run Fedora, a Linux distro famous for being at the cutting-edge of Linux development. My laptop is the [Dell XPS 13](http://perltricks.com/article/187/2015/8/18/Laptop-review--Dell-XPS-13-2015/) which uses some fairly advanced hardware. In Open Source this can be dangerous combination: older Linux kernels can't handle my machine's hardware, and brand new kernels often break it too. Every time I do a software update, I'm walking a tightrope.
+On my home machine I run Fedora, a Linux distro famous for being at the cutting-edge of Linux development. My laptop is the [Dell XPS 13](http://perltricks.com/article/187/2015/8/18/Laptop-review--Dell-XPS-13-2015/) which uses some fairly advanced hardware. In Open Source this can be a dangerous combination: older Linux kernels can't handle my machine's hardware, and brand new kernels often break it too. Every time I do a software update, I'm walking a tightrope.
 
-The way I handle this is with a package manager plugin called [versionlock](https://github.com/rpm-software-management/dnf-plugins-extras). It lets me tell the package manager to lock certain packages at their current version and voilà! I can blindly apply all software updates and know that those troublesome packages will not be upgraded.
+The way I handle this is with a package manager plugin called [versionlock](http://dnf-plugins-core.readthedocs.io/en/latest/versionlock.html). It lets me tell the package manager to lock certain packages at their current version and voilà! I can blindly apply all software updates and know that those troublesome packages will not be upgraded.
 
 ### Installation
 
 The versionlock plugin is available for both dnf and yum, so pick which package manager your system is using. For dnf:
 
-    $ sudo dnf install python-dnf-plugins-extras-versionlock
+    $ sudo dnf install python2-dnf-plugins-extras-versionlock
+
+Or:
+
+    $ sudo dnf install python3-dnf-plugins-extras-versionlock
 
 And for yum:
 
@@ -46,7 +50,7 @@ The yum version:
 
 As you can see, the commands for dnf and yum are the same. You can lock multiple packages in one command. Here's how I prevent my system from upgrading the kernel packages:
 
-    $ sudo dnf versionlock add kernel-0:4.3.5-300.fc23 kernel-modules-0:4.3.5-300.fc23 kernel-core-0:4.3.5-300.fc23 kernel-devel-0:4.3.5-300.fc23
+    $ sudo dnf versionlock add sudo dnf versionlock add kernel-core kernel-devel kernel-modules kernel-modules-extra
 
 ### List locked packages
 
@@ -75,6 +79,8 @@ If you ever forget these commands, you can list the available commands with `hel
 
     $ dnf help versionlock
     versionlock [add|exclude|list|delete|clear] [<package-nevr-spec>]
+
+Or read the online [documentation](http://dnf-plugins-core.readthedocs.io/en/latest/versionlock.html).
 
 ### How many installers do you need?
 
