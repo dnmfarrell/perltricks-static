@@ -50,7 +50,7 @@ The yum version:
 
 As you can see, the commands for dnf and yum are the same. You can lock multiple packages in one command. Here's how I prevent my system from upgrading the kernel packages:
 
-    $ sudo dnf versionlock add sudo dnf versionlock add kernel-core kernel-devel kernel-modules kernel-modules-extra
+    $ sudo dnf versionlock add sudo dnf versionlock add kernel kernel-core kernel-devel kernel-modules kernel-modules-extra
 
 ### List locked packages
 
