@@ -40,7 +40,7 @@ Perl has a 'last-index' variable for arrays ($\#array\_name).
 
 ``` prettyprint
 print $#numbers_array; 
-# 5
+# 4
 print $numbers_array[$#numbers_array]; 
 # 62
 ```
