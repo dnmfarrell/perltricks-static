@@ -12,8 +12,38 @@
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/perltricks.css"/>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
 </head>
 <body>
+<!-- redirect to perl.com -->
+<a id="modalLink" data-toggle="modal" href="#redirectModal" style="display:none">Open Modal</a>
+<div id="redirectModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Redirecting you to Perl.com</h4>
+      </div>
+      <div class="modal-body">
+        <p>PerlTricks.com has merged with Perl.com, we're redirecting you there.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function redirect(destination) {
+  window.location.replace(destination);
+}
+var url = window.location.href, destination = url.replace('perltricks.com', 'perl.com');
+console.log("PerlTricks has merged with Perl.com. Redirecting to " + destination);
+$(document).ready(function(){
+  $("#modalLink").click();
+});
+//setTimeout(redirect, 10000);
+</script>
+<!-- end redirect code -->
 <!-- NAVBAR
 ================================================== -->
 <div class="container-fluid full-wdith antonio">
